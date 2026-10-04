@@ -183,7 +183,8 @@
         "We do the research first, then put the story first and protect the people on camera.",
         "We make fundraising films, impact stories, PSAs, public education films and docuseries.",
         "The films play at galas, in donor emails and grant reports, in front of lawmakers and across social."
-      ]
+      ],
+      "focus": "x74"
     },
     {
       "name": "Schools & institutions",
@@ -269,7 +270,8 @@
         "We take it from research and the first idea to delivery, and we work around your workday.",
         "We make explainers, educational films, culture, recruiting and training films, and customer stories.",
         "The films live on your website and social, in onboarding and training, and with your team in every conversation they have with customers."
-      ]
+      ],
+      "focus": "x72"
     },
     {
       "name": "Agencies & PR firms",
@@ -315,7 +317,8 @@
         "We work under your name, to your brief and on your timeline.",
         "We make story films, interviews, short documentaries, social cuts and post work for your clients.",
         "The work plays wherever your client needs it, from a press event to social, under your name."
-      ]
+      ],
+      "focus": "x56"
     }
   ],
   "industries": [
@@ -486,7 +489,7 @@
     {
       "name": "Education & research",
       "pillar": "Academics",
-      "still": "uPjYjRDq_qU",
+      "still": "uPjYjRDq_qU:1",
       "clients": [
         "Nektar",
         "Thermo Fisher",
@@ -529,7 +532,8 @@
         "We read up on the subject, check every fact and let the experts explain it in their own words.",
         "We make explainers, video essays, research stories, training films and recruiting films.",
         "The films play in classrooms and trainings, at conferences, in grant reports and online."
-      ]
+      ],
+      "focus": "x41"
     },
     {
       "name": "Tech",
@@ -578,7 +582,8 @@
         "We put the people who build and use the product ahead of the screens.",
         "We make launch films, explainers, customer stories and recruiting films.",
         "The films play on product pages, at launches and community events, in sales calls and in recruiting."
-      ]
+      ],
+      "focus": "x57"
     },
     {
       "name": "Professional Services",
@@ -965,7 +970,7 @@
       "title": "Decadence Arizona",
       "goal": "Exposure",
       "text": "Our aftermovie lets fans relive the night and puts next year's festival in front of everyone who missed it.",
-      "still": "pDk121-TCto:3",
+      "still": "pDk121-TCto",
       "zoom": true,
       "link": "/case-studies/decadence-arizona",
       "story": "Relentless Beats' New Year's Eve festival takes over Phoenix Raceway for two nights. Our aftermovie lets fans relive it, and it puts next year's festival in front of everyone who missed it.",
@@ -1098,7 +1103,7 @@
       "title": "No Trick, All Treat",
       "goal": "Exposure",
       "text": "We filmed a family pop-up event so the fun reached far beyond the families who came.",
-      "still": "B615WegPglg:3",
+      "still": "B615WegPglg",
       "link": "/case-studies/no-trick-all-treat",
       "story": "Opendoor started in Phoenix, and a family pop-up event was a chance to show up for the community in person. We filmed it so the fun reached far beyond the families who came, then cut the day into a case study.",
       "video": {
