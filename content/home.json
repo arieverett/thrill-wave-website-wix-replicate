@@ -270,6 +270,267 @@
   ],
   "industries": [
     {
+      "name": "Tribal Nations",
+      "pillar": "Academics",
+      "still": "zLy49zenWIM:1",
+      "zoom": true,
+      "clients": [
+        "Inter Tribal Council of Arizona"
+      ],
+      "link": "/sitrep#itca",
+      "text": "We make public health, education and civic films with tribal communities, told in their own voices.",
+      "title": "In their own voices.",
+      "example": {
+        "youtube": "Gh67yEMyOCs",
+        "client": "ITCA Native Vote",
+        "title": "Your Voice, Your Power"
+      },
+      "seoTitle": "Tribal Nations Video Production",
+      "intro": "We make public health, education and civic films with the Inter Tribal Council of Arizona, which represents 21 tribal nations. The lesson has been the same every time: do the research first, then let community members tell their own stories.",
+      "faq": [
+        {
+          "q": "Have you worked with tribal governments before?",
+          "a": "Yes. Our work for the Inter Tribal Council of Arizona includes WIC nutrition PSAs, vaccine education for its Tribal Epidemiology Center and Your Voice, Your Power, a 10-part docuseries on tribal voting."
+        },
+        {
+          "q": "What does a SITREP add to a film for tribal communities?",
+          "a": "It finds the real barrier before we film. For ITCA's WIC program, our research showed the problem was trust, not awareness, and that changed the whole direction of the films."
+        }
+      ],
+      "work": [
+        "QlP7wPaFcVU",
+        {
+          "youtube": "zLy49zenWIM",
+          "client": "ITCA WIC",
+          "title": "Welcome to WIC"
+        },
+        {
+          "youtube": "Gh67yEMyOCs",
+          "client": "ITCA Native Vote",
+          "title": "Your Voice, Your Power: Full Episode",
+          "frame": 3,
+          "zoom": true
+        },
+        {
+          "vimeo": "1175739079",
+          "client": "ITCA TEC",
+          "title": "Case Study Using SITREP",
+          "thumbnail": "https://i.vimeocdn.com/video/2206610840-ab9c7452ada6128dda809c82750fb931c920b1da79ebba045b626a540217cd86-d_1280x720"
+        }
+      ],
+      "about": "We make these films with the Inter Tribal Council of Arizona, and community members always tell the story themselves. Here's an episode of Your Voice, Your Power, our docuseries on tribal voting:",
+      "heading": "Research first, then listen.",
+      "approach": "Many communities have good reason to doubt messages from outside, so our research looks for that history before we plan anything. That way the film speaks to it instead of around it. Leaders, elders, mothers and young voters speak for themselves, with no outside narrator. We film where people live and work, and we ask before we point a camera at anything. Here's some of the work we've made together:",
+      "points": [
+        "We work with tribal governments, councils and tribal health programs.",
+        "We do the research first, then film leaders and community members telling their own stories, on location.",
+        "We make public health, education, civic and cultural films.",
+        "The films play at community events, in clinics, on tribal media and across social."
+      ]
+    },
+    {
+      "name": "Government & Public Affairs",
+      "pillar": "Academics",
+      "still": "tkqnm36YAfM",
+      "clients": [
+        "Inter Tribal Council of Arizona",
+        "Paradise Valley Mountain Preserve Trust"
+      ],
+      "link": "/portfolio#non-profit-government",
+      "text": "We make civic, public health and policy films for public agencies and the organizations that work alongside them.",
+      "title": "Public work, explained plainly.",
+      "example": {
+        "youtube": "Gh67yEMyOCs",
+        "client": "ITCA Native Vote",
+        "title": "Your Voice, Your Power"
+      },
+      "seoTitle": "Public Affairs Video Production",
+      "headline": "Public affairs video",
+      "intro": "Public work only matters if people understand it and show up for it. With the Inter Tribal Council of Arizona, we made Your Voice, Your Power, a 10-part docuseries on tribal voting, and vaccine education for its Tribal Epidemiology Center. We also made Protect Our Land for Paradise Valley Mountain Preserve Trust.",
+      "faq": [
+        {
+          "q": "Have you made civic engagement films?",
+          "a": "Yes. Your Voice, Your Power is a 10-part docuseries we made with ITCA Native Vote about tribal voting, told by tribal leaders and voters themselves."
+        },
+        {
+          "q": "How do you handle public health topics like vaccines?",
+          "a": "Carefully, and research first. For ITCA's Tribal Epidemiology Center, our research showed standard messaging had backfired, so we filmed tribal health leaders and community members explaining vaccines in their own words."
+        }
+      ],
+      "work": [
+        {
+          "youtube": "Gh67yEMyOCs",
+          "client": "ITCA Native Vote",
+          "title": "Your Voice, Your Power: Full Episode",
+          "frame": 3,
+          "zoom": true
+        },
+        {
+          "vimeo": "1175739079",
+          "client": "ITCA TEC",
+          "title": "Case Study Using SITREP",
+          "thumbnail": "https://i.vimeocdn.com/video/2206610840-ab9c7452ada6128dda809c82750fb931c920b1da79ebba045b626a540217cd86-d_1280x720"
+        },
+        {
+          "youtube": "zLy49zenWIM",
+          "client": "ITCA WIC",
+          "title": "Welcome to WIC"
+        },
+        "tkqnm36YAfM"
+      ],
+      "about": "Civic films work when people hear from their own neighbors and leaders. Here's an episode of Your Voice, Your Power, the docuseries on tribal voting we made with ITCA Native Vote:",
+      "heading": "Trust is earned, not announced.",
+      "approach": "People have heard plenty of official messages, so our SITREP research looks for what they already believe, and why, before we plan anything. Then we let community members, health leaders and local voices explain it in their own words, with no outside narrator talking down to anyone. We check every fact with your team, keep the language plain and make the next step clear: register, get the shot or come to the meeting. Here's some of that work:",
+      "points": [
+        "We work with public agencies, tribal governments and the organizations that work alongside them.",
+        "We do the research first, check every fact with your team and let community voices carry the message.",
+        "We make civic engagement films, public health education, PSAs and docuseries.",
+        "The films play at community events, in clinics, in briefings, on local media and across social."
+      ]
+    },
+    {
+      "name": "Medical",
+      "pillar": "Academics",
+      "still": "8BruwRwC9Tg",
+      "clients": [
+        "Boston Scientific",
+        "Thermo Fisher",
+        "Nektar",
+        "Andres Plastic Surgery"
+      ],
+      "link": "/portfolio#healthcare-medical",
+      "text": "We make patient stories, product launches and procedure explainers with the care and accuracy medicine asks for.",
+      "title": "Care and accuracy, on camera.",
+      "example": "8BruwRwC9Tg",
+      "seoTitle": "Medical Video Production",
+      "intro": "Medicine is hard to film well. The science has to be right, patients have to feel safe, and the film still has to hold someone's attention. We've done it for Boston Scientific, Thermo Fisher and Nektar, for Andres Plastic Surgery, and for clinics and practices across Phoenix.",
+      "faq": [
+        {
+          "q": "Can you film in a hospital or clinic?",
+          "a": "Yes. We work around patients and staff, follow your facility's rules and bring only the crew the shot needs. Tell us the restrictions early and we'll plan the shoot around them."
+        },
+        {
+          "q": "Do you make videos for medical device and biotech companies?",
+          "a": "We do. We've made product films and patient stories for companies like Boston Scientific and Nektar, with shorter cuts for sales teams, conferences and social."
+        }
+      ],
+      "work": [
+        "8BruwRwC9Tg",
+        "ECfZ1gZtzlE",
+        "N3yfL_gk_vE",
+        "ASbLkvgd874",
+        "Ny-eNXzNrtA"
+      ],
+      "about": "Medicine is hard to film well, because the science has to be right and patients have to feel safe. Here's Mike's story, which we made with Nektar:",
+      "heading": "The science has to be right.",
+      "approach": "We check every claim with your team before anything ships, and we build the review rounds into the schedule instead of squeezing them in at the end. On set we keep things quiet, explain everything up front and never push for a moment someone isn't ready to share. Then we turn procedures and mechanisms into clear pictures and plain words, so a patient, a buyer or a board member gets it the first time. Here are a few of the films we've made in medicine:",
+      "points": [
+        "We work with hospitals, clinics, specialty and surgical practices, and medical device and biotech companies.",
+        "We film patients, clinicians, procedures and products, and we handle all of it with discretion.",
+        "We make patient stories, launches, explainers and recruiting films.",
+        "The films play in waiting rooms, at conferences, with sales teams and on social."
+      ]
+    },
+    {
+      "name": "Tech",
+      "pillar": "Academics",
+      "still": "Jqci51WSpO0",
+      "clients": [
+        "Uber",
+        "Opendoor",
+        "Ridgeline"
+      ],
+      "link": "/portfolio#technology-manufacturing",
+      "text": "We explain products and platforms simply, with real people at the center.",
+      "title": "Complex, made simple.",
+      "example": "Jqci51WSpO0",
+      "seoTitle": "Tech & SaaS Video Production",
+      "intro": "Software is hard to film because the product lives on a screen. We put real people at the center instead, with work for companies like Uber, Opendoor, Ridgeline and Medaire.",
+      "faq": [
+        {
+          "q": "Do you make SaaS explainer videos?",
+          "a": "Yes. We make explainers, launch films and customer stories built around real people rather than screen recordings alone. For Medaire, we made a product film its sales team uses to pitch and demo."
+        },
+        {
+          "q": "Can you film our team and customers on location?",
+          "a": "Yes, in Phoenix or wherever they are. We bring the crew and gear to your office, a customer's site or your event, like the family pop-up we filmed for Opendoor in Phoenix."
+        }
+      ],
+      "work": [
+        "Jqci51WSpO0",
+        {
+          "client": "Opendoor",
+          "title": "No Trick, All Treat Case Study",
+          "youtube": "B615WegPglg"
+        },
+        "ABYrJD7QISk",
+        {
+          "youtube": "URDFnWXJH_s",
+          "client": "Uber",
+          "title": "Driven Women"
+        }
+      ],
+      "about": "Software lives on a screen, so we put the people who use it at the center instead. Here's the film we made for Ridgeline:",
+      "heading": "Screens don't move people.",
+      "approach": "A screen recording rarely moves anyone, so we show the people who use the product and what changes for them. We turn a feature list into a story a buyer can repeat to their boss. We also work to your release calendar, with shorter cuts ready for launch day. Here's some of our work in tech:",
+      "points": [
+        "We work with software, hardware and platform companies.",
+        "We put the people who build and use the product ahead of the screens.",
+        "We make launch films, explainers, customer stories and recruiting films.",
+        "The films play on product pages, at launches and community events, in sales calls and in recruiting."
+      ]
+    },
+    {
+      "name": "Professional Services",
+      "pillar": "Academics",
+      "still": "Qd40htwEmJM:2",
+      "clients": [
+        "UBS",
+        "State Farm",
+        "1st Bank"
+      ],
+      "link": "/portfolio",
+      "text": "We make films for financial, accounting and law firms, where trust is the product and every frame has to earn it.",
+      "title": "Trust, on screen.",
+      "example": "Qd40htwEmJM",
+      "seoTitle": "Professional Services Video Production",
+      "headline": "Professional services video",
+      "intro": "In professional services, trust is the product. Whether it's a wealth manager, an accounting firm or a law practice, people want to meet the team before the first meeting. We've made films for UBS, State Farm, 1st Bank, Questage and Payroc, including a team film for Finnerty Partners, a UBS Private Wealth Management team that oversees $914 million in client assets.",
+      "faq": [
+        {
+          "q": "Do you work with wealth management teams?",
+          "a": "Yes. Our film for Finnerty Partners, a UBS team, lets prospective clients feel the service before the first meeting."
+        },
+        {
+          "q": "How do you handle compliance review?",
+          "a": "We build review rounds into the schedule and keep every claim in the script, where your compliance team or your firm's counsel can check it before we shoot."
+        }
+      ],
+      "work": [
+        "Qd40htwEmJM",
+        {
+          "youtube": "oTBdp-MwnxA",
+          "client": "Questage",
+          "title": "Enduring Legacy"
+        },
+        {
+          "youtube": "d_pofos5ZLs",
+          "client": "Payroc",
+          "title": "Payments Simplified, For You"
+        },
+        "Jqci51WSpO0"
+      ],
+      "about": "In professional services, trust is the product, so we make films that let people meet the team before the first meeting. Here's the one we made for Finnerty Partners at UBS:",
+      "heading": "Polished, but still human.",
+      "approach": "We plan scripts and claims with your compliance team from the start, so approvals don't stall the edit. Advisors, accountants and attorneys aren't actors, so we coach on camera and keep interviews conversational until busy people look at ease. The look is clean and premium, but it still feels human, because clients pick people, not logos. Here are a few of the films we've made for professional firms:",
+      "points": [
+        "We work with wealth managers, banks, insurers and advisors, and we bring the same care to accounting and law firms.",
+        "We film polished interviews and team films, with compliance and your profession's rules in mind from the start.",
+        "We make team and service films, client education, explainers and recruiting films.",
+        "The films play in client meetings, in proposals, on your website and in recruiting."
+      ]
+    },
+    {
       "name": "Sports",
       "pillar": "Athletics",
       "still": "jduIrHZT0og:3",
@@ -398,6 +659,48 @@
       "link": "/portfolio#events-hospitality-travel"
     },
     {
+      "name": "Industrial",
+      "pillar": "Academics",
+      "still": "JQEb45RgaK8",
+      "clients": [
+        "Rumco",
+        "Citgo & Brundage Bone",
+        "IMS Builders"
+      ],
+      "link": "/portfolio#technology-manufacturing",
+      "text": "We film crews, plants, job sites and the scale of the work, from construction to manufacturing and energy.",
+      "title": "The scale of the work.",
+      "example": "CN1IN8xlTVg",
+      "seoTitle": "Industrial & Construction Video Production",
+      "intro": "Industrial work is done by crews, and crews make great stories. We've filmed for Rumco, IMS Builders and Citgo and Brundage Bone, from the job site to the finished build, and we bring the same approach to plants, yards and the people who run them.",
+      "faq": [
+        {
+          "q": "Can you film on an active job site or plant floor?",
+          "a": "Yes. We plan with your safety lead, wear the gear, bring only the crew we need and shoot around the work."
+        },
+        {
+          "q": "What do industrial companies use video for?",
+          "a": "Mostly company and culture films, recruiting, project recaps and safety training. Rumco's films cover both its company story and its internal operations."
+        }
+      ],
+      "work": [
+        "CN1IN8xlTVg",
+        "S6sgi9GN9PE",
+        "JQEb45RgaK8",
+        "4bg9VjczCXg"
+      ],
+      "about": "Industrial work is done by crews, and crews make great stories. Here's Building With Integrity, one of the films we made for Rumco:",
+      "heading": "Real crews, real pride.",
+      "approach": "We follow your site rules, wear the gear and work around live equipment without slowing the job. Aerials and wide moves show the size of the work in a way a phone photo never will. Hiring is hard, too, and a film that shows real crews and real pride does more for recruiting than any job post. Here's some of our work from the job site:",
+      "points": [
+        "We work with builders, contractors and suppliers, and with manufacturers and energy companies.",
+        "We shoot job sites, plants, crews and the finished work, with aerials, safely and on schedule.",
+        "We make company films, recruiting films, project recaps and safety training.",
+        "The films play in bids and proposals, on careers pages, in safety training and on your website."
+      ],
+      "headline": "Industrial video"
+    },
+    {
       "name": "Products",
       "pillar": "Arts",
       "still": "WoFqn7U9tq4",
@@ -441,309 +744,6 @@
         "We shoot in the studio and out in the world, with a cut for every place it will play.",
         "We make launch films, product demos, how-to films and social cuts.",
         "The films play on product pages, in stores, at launches and across social."
-      ]
-    },
-    {
-      "name": "Medical",
-      "pillar": "Academics",
-      "still": "8BruwRwC9Tg",
-      "clients": [
-        "Boston Scientific",
-        "Thermo Fisher",
-        "Nektar",
-        "Andres Plastic Surgery"
-      ],
-      "link": "/portfolio#healthcare-medical",
-      "text": "We make patient stories, product launches and procedure explainers with the care and accuracy medicine asks for.",
-      "title": "Care and accuracy, on camera.",
-      "example": "8BruwRwC9Tg",
-      "seoTitle": "Medical Video Production",
-      "intro": "Medicine is hard to film well. The science has to be right, patients have to feel safe, and the film still has to hold someone's attention. We've done it for Boston Scientific, Thermo Fisher and Nektar, for Andres Plastic Surgery, and for clinics and practices across Phoenix.",
-      "faq": [
-        {
-          "q": "Can you film in a hospital or clinic?",
-          "a": "Yes. We work around patients and staff, follow your facility's rules and bring only the crew the shot needs. Tell us the restrictions early and we'll plan the shoot around them."
-        },
-        {
-          "q": "Do you make videos for medical device and biotech companies?",
-          "a": "We do. We've made product films and patient stories for companies like Boston Scientific and Nektar, with shorter cuts for sales teams, conferences and social."
-        }
-      ],
-      "work": [
-        "8BruwRwC9Tg",
-        "ECfZ1gZtzlE",
-        "N3yfL_gk_vE",
-        "ASbLkvgd874",
-        "Ny-eNXzNrtA"
-      ],
-      "about": "Medicine is hard to film well, because the science has to be right and patients have to feel safe. Here's Mike's story, which we made with Nektar:",
-      "heading": "The science has to be right.",
-      "approach": "We check every claim with your team before anything ships, and we build the review rounds into the schedule instead of squeezing them in at the end. On set we keep things quiet, explain everything up front and never push for a moment someone isn't ready to share. Then we turn procedures and mechanisms into clear pictures and plain words, so a patient, a buyer or a board member gets it the first time. Here are a few of the films we've made in medicine:",
-      "points": [
-        "We work with hospitals, clinics, specialty and surgical practices, and medical device and biotech companies.",
-        "We film patients, clinicians, procedures and products, and we handle all of it with discretion.",
-        "We make patient stories, launches, explainers and recruiting films.",
-        "The films play in waiting rooms, at conferences, with sales teams and on social."
-      ]
-    },
-    {
-      "name": "Tech",
-      "pillar": "Academics",
-      "still": "Jqci51WSpO0",
-      "clients": [
-        "Uber",
-        "Opendoor",
-        "Ridgeline"
-      ],
-      "link": "/portfolio#technology-manufacturing",
-      "text": "We explain products and platforms simply, with real people at the center.",
-      "title": "Complex, made simple.",
-      "example": "Jqci51WSpO0",
-      "seoTitle": "Tech & SaaS Video Production",
-      "intro": "Software is hard to film because the product lives on a screen. We put real people at the center instead, with work for companies like Uber, Opendoor, Ridgeline and Medaire.",
-      "faq": [
-        {
-          "q": "Do you make SaaS explainer videos?",
-          "a": "Yes. We make explainers, launch films and customer stories built around real people rather than screen recordings alone. For Medaire, we made a product film its sales team uses to pitch and demo."
-        },
-        {
-          "q": "Can you film our team and customers on location?",
-          "a": "Yes, in Phoenix or wherever they are. We bring the crew and gear to your office, a customer's site or your event, like the family pop-up we filmed for Opendoor in Phoenix."
-        }
-      ],
-      "work": [
-        "Jqci51WSpO0",
-        {
-          "client": "Opendoor",
-          "title": "No Trick, All Treat Case Study",
-          "youtube": "B615WegPglg"
-        },
-        "ABYrJD7QISk",
-        {
-          "youtube": "URDFnWXJH_s",
-          "client": "Uber",
-          "title": "Driven Women"
-        }
-      ],
-      "about": "Software lives on a screen, so we put the people who use it at the center instead. Here's the film we made for Ridgeline:",
-      "heading": "Screens don't move people.",
-      "approach": "A screen recording rarely moves anyone, so we show the people who use the product and what changes for them. We turn a feature list into a story a buyer can repeat to their boss. We also work to your release calendar, with shorter cuts ready for launch day. Here's some of our work in tech:",
-      "points": [
-        "We work with software, hardware and platform companies.",
-        "We put the people who build and use the product ahead of the screens.",
-        "We make launch films, explainers, customer stories and recruiting films.",
-        "The films play on product pages, at launches and community events, in sales calls and in recruiting."
-      ]
-    },
-    {
-      "name": "Industrial",
-      "pillar": "Academics",
-      "still": "JQEb45RgaK8",
-      "clients": [
-        "Rumco",
-        "Citgo & Brundage Bone",
-        "IMS Builders"
-      ],
-      "link": "/portfolio#technology-manufacturing",
-      "text": "We film crews, plants, job sites and the scale of the work, from construction to manufacturing and energy.",
-      "title": "The scale of the work.",
-      "example": "CN1IN8xlTVg",
-      "seoTitle": "Industrial & Construction Video Production",
-      "intro": "Industrial work is done by crews, and crews make great stories. We've filmed for Rumco, IMS Builders and Citgo and Brundage Bone, from the job site to the finished build, and we bring the same approach to plants, yards and the people who run them.",
-      "faq": [
-        {
-          "q": "Can you film on an active job site or plant floor?",
-          "a": "Yes. We plan with your safety lead, wear the gear, bring only the crew we need and shoot around the work."
-        },
-        {
-          "q": "What do industrial companies use video for?",
-          "a": "Mostly company and culture films, recruiting, project recaps and safety training. Rumco's films cover both its company story and its internal operations."
-        }
-      ],
-      "work": [
-        "CN1IN8xlTVg",
-        "S6sgi9GN9PE",
-        "JQEb45RgaK8",
-        "4bg9VjczCXg"
-      ],
-      "about": "Industrial work is done by crews, and crews make great stories. Here's Building With Integrity, one of the films we made for Rumco:",
-      "heading": "Real crews, real pride.",
-      "approach": "We follow your site rules, wear the gear and work around live equipment without slowing the job. Aerials and wide moves show the size of the work in a way a phone photo never will. Hiring is hard, too, and a film that shows real crews and real pride does more for recruiting than any job post. Here's some of our work from the job site:",
-      "points": [
-        "We work with builders, contractors and suppliers, and with manufacturers and energy companies.",
-        "We shoot job sites, plants, crews and the finished work, with aerials, safely and on schedule.",
-        "We make company films, recruiting films, project recaps and safety training.",
-        "The films play in bids and proposals, on careers pages, in safety training and on your website."
-      ],
-      "headline": "Industrial video"
-    },
-    {
-      "name": "Professional Services",
-      "pillar": "Academics",
-      "still": "Qd40htwEmJM:2",
-      "clients": [
-        "UBS",
-        "State Farm",
-        "1st Bank"
-      ],
-      "link": "/portfolio",
-      "text": "We make films for financial, accounting and law firms, where trust is the product and every frame has to earn it.",
-      "title": "Trust, on screen.",
-      "example": "Qd40htwEmJM",
-      "seoTitle": "Professional Services Video Production",
-      "headline": "Professional services video",
-      "intro": "In professional services, trust is the product. Whether it's a wealth manager, an accounting firm or a law practice, people want to meet the team before the first meeting. We've made films for UBS, State Farm, 1st Bank, Questage and Payroc, including a team film for Finnerty Partners, a UBS Private Wealth Management team that oversees $914 million in client assets.",
-      "faq": [
-        {
-          "q": "Do you work with wealth management teams?",
-          "a": "Yes. Our film for Finnerty Partners, a UBS team, lets prospective clients feel the service before the first meeting."
-        },
-        {
-          "q": "How do you handle compliance review?",
-          "a": "We build review rounds into the schedule and keep every claim in the script, where your compliance team or your firm's counsel can check it before we shoot."
-        }
-      ],
-      "work": [
-        "Qd40htwEmJM",
-        {
-          "youtube": "oTBdp-MwnxA",
-          "client": "Questage",
-          "title": "Enduring Legacy"
-        },
-        {
-          "youtube": "d_pofos5ZLs",
-          "client": "Payroc",
-          "title": "Payments Simplified, For You"
-        },
-        "Jqci51WSpO0"
-      ],
-      "about": "In professional services, trust is the product, so we make films that let people meet the team before the first meeting. Here's the one we made for Finnerty Partners at UBS:",
-      "heading": "Polished, but still human.",
-      "approach": "We plan scripts and claims with your compliance team from the start, so approvals don't stall the edit. Advisors, accountants and attorneys aren't actors, so we coach on camera and keep interviews conversational until busy people look at ease. The look is clean and premium, but it still feels human, because clients pick people, not logos. Here are a few of the films we've made for professional firms:",
-      "points": [
-        "We work with wealth managers, banks, insurers and advisors, and we bring the same care to accounting and law firms.",
-        "We film polished interviews and team films, with compliance and your profession's rules in mind from the start.",
-        "We make team and service films, client education, explainers and recruiting films.",
-        "The films play in client meetings, in proposals, on your website and in recruiting."
-      ]
-    },
-    {
-      "name": "Government & Public Affairs",
-      "pillar": "Academics",
-      "still": "tkqnm36YAfM",
-      "clients": [
-        "Inter Tribal Council of Arizona",
-        "Paradise Valley Mountain Preserve Trust"
-      ],
-      "link": "/portfolio#non-profit-government",
-      "text": "We make civic, public health and policy films for public agencies and the organizations that work alongside them.",
-      "title": "Public work, explained plainly.",
-      "example": {
-        "youtube": "Gh67yEMyOCs",
-        "client": "ITCA Native Vote",
-        "title": "Your Voice, Your Power"
-      },
-      "seoTitle": "Public Affairs Video Production",
-      "headline": "Public affairs video",
-      "intro": "Public work only matters if people understand it and show up for it. With the Inter Tribal Council of Arizona, we made Your Voice, Your Power, a 10-part docuseries on tribal voting, and vaccine education for its Tribal Epidemiology Center. We also made Protect Our Land for Paradise Valley Mountain Preserve Trust.",
-      "faq": [
-        {
-          "q": "Have you made civic engagement films?",
-          "a": "Yes. Your Voice, Your Power is a 10-part docuseries we made with ITCA Native Vote about tribal voting, told by tribal leaders and voters themselves."
-        },
-        {
-          "q": "How do you handle public health topics like vaccines?",
-          "a": "Carefully, and research first. For ITCA's Tribal Epidemiology Center, our research showed standard messaging had backfired, so we filmed tribal health leaders and community members explaining vaccines in their own words."
-        }
-      ],
-      "work": [
-        {
-          "youtube": "Gh67yEMyOCs",
-          "client": "ITCA Native Vote",
-          "title": "Your Voice, Your Power: Full Episode",
-          "frame": 3,
-          "zoom": true
-        },
-        {
-          "vimeo": "1175739079",
-          "client": "ITCA TEC",
-          "title": "Case Study Using SITREP",
-          "thumbnail": "https://i.vimeocdn.com/video/2206610840-ab9c7452ada6128dda809c82750fb931c920b1da79ebba045b626a540217cd86-d_1280x720"
-        },
-        {
-          "youtube": "zLy49zenWIM",
-          "client": "ITCA WIC",
-          "title": "Welcome to WIC"
-        },
-        "tkqnm36YAfM"
-      ],
-      "about": "Civic films work when people hear from their own neighbors and leaders. Here's an episode of Your Voice, Your Power, the docuseries on tribal voting we made with ITCA Native Vote:",
-      "heading": "Trust is earned, not announced.",
-      "approach": "People have heard plenty of official messages, so our SITREP research looks for what they already believe, and why, before we plan anything. Then we let community members, health leaders and local voices explain it in their own words, with no outside narrator talking down to anyone. We check every fact with your team, keep the language plain and make the next step clear: register, get the shot or come to the meeting. Here's some of that work:",
-      "points": [
-        "We work with public agencies, tribal governments and the organizations that work alongside them.",
-        "We do the research first, check every fact with your team and let community voices carry the message.",
-        "We make civic engagement films, public health education, PSAs and docuseries.",
-        "The films play at community events, in clinics, in briefings, on local media and across social."
-      ]
-    },
-    {
-      "name": "Tribal Nations",
-      "pillar": "Academics",
-      "still": "Gh67yEMyOCs:1",
-      "zoom": true,
-      "clients": [
-        "Inter Tribal Council of Arizona"
-      ],
-      "link": "/sitrep#itca",
-      "text": "We make public health, education and civic films with tribal communities, told in their own voices.",
-      "title": "In their own voices.",
-      "example": {
-        "youtube": "Gh67yEMyOCs",
-        "client": "ITCA Native Vote",
-        "title": "Your Voice, Your Power"
-      },
-      "seoTitle": "Tribal Nations Video Production",
-      "intro": "We make public health, education and civic films with the Inter Tribal Council of Arizona, which represents 21 tribal nations. The lesson has been the same every time: do the research first, then let community members tell their own stories.",
-      "faq": [
-        {
-          "q": "Have you worked with tribal governments before?",
-          "a": "Yes. Our work for the Inter Tribal Council of Arizona includes WIC nutrition PSAs, vaccine education for its Tribal Epidemiology Center and Your Voice, Your Power, a 10-part docuseries on tribal voting."
-        },
-        {
-          "q": "What does a SITREP add to a film for tribal communities?",
-          "a": "It finds the real barrier before we film. For ITCA's WIC program, our research showed the problem was trust, not awareness, and that changed the whole direction of the films."
-        }
-      ],
-      "work": [
-        "QlP7wPaFcVU",
-        {
-          "youtube": "zLy49zenWIM",
-          "client": "ITCA WIC",
-          "title": "Welcome to WIC"
-        },
-        {
-          "youtube": "Gh67yEMyOCs",
-          "client": "ITCA Native Vote",
-          "title": "Your Voice, Your Power: Full Episode",
-          "frame": 3,
-          "zoom": true
-        },
-        {
-          "vimeo": "1175739079",
-          "client": "ITCA TEC",
-          "title": "Case Study Using SITREP",
-          "thumbnail": "https://i.vimeocdn.com/video/2206610840-ab9c7452ada6128dda809c82750fb931c920b1da79ebba045b626a540217cd86-d_1280x720"
-        }
-      ],
-      "about": "We make these films with the Inter Tribal Council of Arizona, and community members always tell the story themselves. Here's an episode of Your Voice, Your Power, our docuseries on tribal voting:",
-      "heading": "Research first, then listen.",
-      "approach": "Many communities have good reason to doubt messages from outside, so our research looks for that history before we plan anything. That way the film speaks to it instead of around it. Leaders, elders, mothers and young voters speak for themselves, with no outside narrator. We film where people live and work, and we ask before we point a camera at anything. Here's some of the work we've made together:",
-      "points": [
-        "We work with tribal governments, councils and tribal health programs.",
-        "We do the research first, then film leaders and community members telling their own stories, on location.",
-        "We make public health, education, civic and cultural films.",
-        "The films play at community events, in clinics, on tribal media and across social."
       ]
     }
   ],

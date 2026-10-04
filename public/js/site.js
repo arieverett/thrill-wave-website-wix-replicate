@@ -859,8 +859,10 @@ $$('[data-carousel]').forEach((box) => {
       let bestD = Infinity;
       items.forEach((it, i) => {
         const q = it.getBoundingClientRect();
-        const d = Math.min(1.5, Math.abs(q.left + q.width / 2 - mid) / it.offsetWidth);
+        const off = q.left + q.width / 2 - mid;
+        const d = Math.min(1.5, Math.abs(off) / it.offsetWidth);
         it.style.setProperty('--d', d.toFixed(3));
+        it.style.setProperty('--side', Math.max(-1, Math.min(1, off / it.offsetWidth)).toFixed(3));
         if (d < bestD) { bestD = d; best = i; }
       });
       if (best !== current) {
