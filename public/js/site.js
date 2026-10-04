@@ -822,6 +822,8 @@ $$('[data-carousel]').forEach((box) => {
   const focus = box.dataset.carousel === 'focus';
   const loop = focus && 'loop' in box.dataset;
   const real = [...track.children];
+  // Carousel tiles skip the scroll fade-in: copies would never be revealed, and tiles slide in sideways anyway
+  real.forEach((el) => { el.classList.remove('reveal'); $$('.reveal', el).forEach((x) => x.classList.remove('reveal')); });
   const n = real.length;
   if (loop && n > 1) {
     const copy = (el) => {
