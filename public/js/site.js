@@ -812,18 +812,43 @@ $$('img[src*="i.ytimg.com/vi/"][src*="/maxres"]').forEach((img) => {
 });
 
 // Homepage carousels. Plain ones (04 Industries) scroll a screen at a time; "focus" ones (03 Who we serve, 06 Our work)
-// keep one tile in the middle at full size while the tiles beside it shrink (and blur, on 03) the further they are
-// from the center. Faint arrows step through, the dots underneath show where you are, and arrows hide at either end.
+// keep one tile in the middle at full size while the tiles beside it shrink the further they are from the center,
+// all sitting on the same bottom line. With data-loop the row wraps around forever: the list is copied once on each
+// side (copies are hidden from screen readers) and when you scroll into a copy we quietly jump back to the real one.
+// The first item starts in the middle, so the last one peeks in on the left. Faint arrows step through; dots show where you are.
 $$('[data-carousel]').forEach((box) => {
   const track = box.firstElementChild;
   if (!track) return;
   const focus = box.dataset.carousel === 'focus';
+  const loop = focus && 'loop' in box.dataset;
+  const real = [...track.children];
+  const n = real.length;
+  if (loop && n > 1) {
+    const copy = (el) => {
+      const c = el.cloneNode(true);
+      c.setAttribute('aria-hidden', 'true');
+      c.classList.add('is-copy');
+      $$('a, button', c).forEach((a) => a.setAttribute('tabindex', '-1'));
+      $$('[id]', c).forEach((x) => x.removeAttribute('id'));
+      return c;
+    };
+    track.prepend(...real.map(copy));
+    track.append(...real.map(copy));
+  }
   const items = [...track.children];
   const smooth = reduceMotion ? 'auto' : 'smooth';
   const chevron = (d) => `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="${d}"/></svg>`;
   const step = () => (items[1] ? items[1].offsetLeft - items[0].offsetLeft : track.clientWidth);
-  const centerOn = (el, behavior = smooth) =>
-    track.scrollTo({ left: el.offsetLeft + el.offsetWidth / 2 - track.clientWidth / 2, behavior });
+  const jumpTo = (left) => {
+    track.style.scrollBehavior = 'auto';
+    track.scrollLeft = left;
+    track.style.scrollBehavior = '';
+  };
+  const centerOn = (el, behavior = smooth) => {
+    const left = el.offsetLeft + el.offsetWidth / 2 - track.clientWidth / 2;
+    if (behavior === 'auto') jumpTo(left);
+    else track.scrollTo({ left, behavior });
+  };
   const arrow = (dir) => {
     const b = document.createElement('button');
     b.type = 'button';
@@ -841,60 +866,77 @@ $$('[data-carousel]').forEach((box) => {
   box.append(prev, next, dots);
   let pages = 0;
   let current = -1;
-  const setDots = (n, on) => {
-    if (n !== pages) {
-      pages = n;
-      dots.innerHTML = '<span></span>'.repeat(n);
-      box.classList.toggle('is-static', n < 2);
+  const setDots = (count, on) => {
+    if (count !== pages) {
+      pages = count;
+      dots.innerHTML = '<span></span>'.repeat(count);
+      box.classList.toggle('is-static', count < 2);
     }
     [...dots.children].forEach((d, i) => d.classList.toggle('is-on', i === on));
   };
+  const centered = () => {
+    const r = track.getBoundingClientRect();
+    const mid = r.left + r.width / 2;
+    let best = 0;
+    let bestD = Infinity;
+    items.forEach((it, i) => {
+      const q = it.getBoundingClientRect();
+      const off = q.left + q.width / 2 - mid;
+      const d = Math.min(1.5, Math.abs(off) / it.offsetWidth);
+      it.style.setProperty('--d', d.toFixed(3));
+      it.style.setProperty('--side', Math.max(-1, Math.min(1, off / it.offsetWidth)).toFixed(3));
+      if (d < bestD) { bestD = d; best = i; }
+    });
+    return best;
+  };
   const update = () => {
-    const max = track.scrollWidth - track.clientWidth;
-    const at = track.scrollLeft;
     if (focus) {
-      const r = track.getBoundingClientRect();
-      const mid = r.left + r.width / 2;
-      let best = 0;
-      let bestD = Infinity;
-      items.forEach((it, i) => {
-        const q = it.getBoundingClientRect();
-        const off = q.left + q.width / 2 - mid;
-        const d = Math.min(1.5, Math.abs(off) / it.offsetWidth);
-        it.style.setProperty('--d', d.toFixed(3));
-        it.style.setProperty('--side', Math.max(-1, Math.min(1, off / it.offsetWidth)).toFixed(3));
-        if (d < bestD) { bestD = d; best = i; }
-      });
+      const best = centered();
       if (best !== current) {
         current = best;
         items.forEach((it, i) => it.classList.toggle('is-center', i === best));
       }
-      setDots(items.length, best);
-      prev.disabled = best === 0;
-      next.disabled = best === items.length - 1;
+      setDots(n, best % n);
+      prev.disabled = !loop && best === 0;
+      next.disabled = !loop && best === items.length - 1;
       return;
     }
-    const n = max <= 2 ? 1 : Math.ceil(max / track.clientWidth - 0.05) + 1;
-    setDots(n, at >= max - 2 ? n - 1 : Math.round(at / track.clientWidth));
+    const max = track.scrollWidth - track.clientWidth;
+    const at = track.scrollLeft;
+    const count = max <= 2 ? 1 : Math.ceil(max / track.clientWidth - 0.05) + 1;
+    setDots(count, at >= max - 2 ? count - 1 : Math.round(at / track.clientWidth));
     prev.disabled = at <= 2;
     next.disabled = at >= max - 2;
   };
+  // Once scrolling settles inside one of the copies, jump to the same spot in the real list (it looks identical)
+  const settle = () => {
+    if (!loop) return;
+    const best = centered();
+    const span = items[n].offsetLeft - items[0].offsetLeft;
+    if (best < n) jumpTo(track.scrollLeft + span);
+    else if (best >= 2 * n) jumpTo(track.scrollLeft - span);
+    update();
+  };
   let frame = 0;
-  track.addEventListener('scroll', () => { if (!frame) frame = requestAnimationFrame(() => { frame = 0; update(); }); }, { passive: true });
-  addEventListener('resize', update);
+  let idle = 0;
+  track.addEventListener('scroll', () => {
+    if (!frame) frame = requestAnimationFrame(() => { frame = 0; update(); });
+    clearTimeout(idle);
+    idle = setTimeout(settle, 140);
+  }, { passive: true });
+  addEventListener('resize', () => { if (loop) centerOn(items[current >= 0 ? current : n], 'auto'); update(); });
   if (focus) {
     // A tap on a tile at the side brings it to the middle first; a tap on the middle one opens it as usual
     track.addEventListener('click', (e) => {
-      const it = e.target.closest('.carousel--focus > * > *');
+      const it = items.find((x) => x.contains(e.target));
       if (it && !it.classList.contains('is-center')) {
         e.preventDefault();
         e.stopPropagation();
         centerOn(it);
       }
     }, true);
-    // Our work opens on the film in the middle of the row, so there's something on either side from the start
-    const start = box.dataset.start === 'middle' ? items[Math.floor(items.length / 2)] : items[0];
-    if (start) requestAnimationFrame(() => centerOn(start, 'auto'));
+    // Start on the first item (in the real list when looping, so there's a tile on either side from the start)
+    requestAnimationFrame(() => { centerOn(items[loop ? n : 0], 'auto'); update(); });
   }
   update();
 });

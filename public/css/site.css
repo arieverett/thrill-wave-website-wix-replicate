@@ -1679,13 +1679,12 @@ body:not(.page-sections) .kicker::before { content: none; }
   transition: transform .18s ease-out, opacity .18s ease-out, filter .18s ease-out;
 }
 .carousel--focus > .audience-cards > li:not(.is-center), .carousel--focus > .work-grid > .work-tile:not(.is-center) { cursor: pointer; }
-.carousel--blur > .audience-cards > li { filter: blur(calc(var(--d, 0) * 3px)); }
 .carousel--focus > .audience-cards > li:hover { transform: scale(calc(1 - var(--d, 0) * var(--focus-shrink))); }
 @media (prefers-reduced-motion: reduce) { .carousel--focus > .audience-cards > li, .carousel--focus > .work-grid > .work-tile { transition: none; } }
 
 /* 03 Who we serve: cards about a third of the column wide */
-.carousel--blur { --focus-w: clamp(250px, 24vw, 320px); --focus-gap: 4px; --focus-shrink: .22; margin-top: 18px; }
-.carousel--blur > .audience-cards { margin-inline: calc(-1 * var(--gutter)); padding-inline: calc(50% - var(--focus-w) / 2 + var(--gutter)); }
+.carousel--cards { --focus-w: clamp(250px, 24vw, 320px); --focus-gap: 4px; --focus-shrink: .22; margin-top: 18px; }
+.carousel--cards > .audience-cards { margin-inline: calc(-1 * var(--gutter)); padding-inline: calc(50% - var(--focus-w) / 2 + var(--gutter)); }
 
 /* 06 Our work: big 4:5 films, edge to edge */
 .carousel--films { --focus-w: clamp(260px, 30vw, 400px); --focus-gap: 0px; --focus-shrink: .26; margin-top: 28px; }
@@ -1696,13 +1695,13 @@ body:not(.page-sections) .kicker::before { content: none; }
 .carousel--films .carousel__arrow--prev { left: max(8px, calc(50% - var(--focus-w) / 2 - 60px)); }
 .carousel--films .carousel__arrow--next { right: max(8px, calc(50% - var(--focus-w) / 2 - 60px)); }
 @media (max-width: 800px) {
-  .carousel--blur { --focus-w: 68vw; }
+  .carousel--cards { --focus-w: 68vw; }
   .carousel--films { --focus-w: 70vw; }
 }
 @media (max-width: 700px) {
-  .carousel--blur .audience-cards__body { padding: 14px 14px 18px; }
-  .carousel--blur .audience-cards h3 { font-size: 1rem; letter-spacing: .05em; margin-bottom: .4em; }
-  .carousel--blur .audience-cards p { font-size: .86rem; line-height: 1.45; }
+  .carousel--cards .audience-cards__body { padding: 14px 14px 18px; }
+  .carousel--cards .audience-cards h3 { font-size: 1rem; letter-spacing: .05em; margin-bottom: .4em; }
+  .carousel--cards .audience-cards p { font-size: .86rem; line-height: 1.45; }
 }
 @media (max-width: 560px) {
   .carousel--films .work-grid--portrait .video { border-radius: 8px; }
@@ -1730,7 +1729,7 @@ body:not(.page-sections) .kicker::before { content: none; }
    centers (site.js sets --side to -1 on the left, 1 on the right), so the gaps stay tight.
    06 Our work stays inside the page's content width; its tiles touch with no gap. 03 keeps a small gap. */
 .carousel--focus > .audience-cards > li, .carousel--focus > .work-grid > .work-tile { transform-origin: calc(50% - var(--side, 0) * 50%) 50%; }
-.carousel--blur { --focus-gap: 10px; --focus-shrink: .16; }
+.carousel--cards { --focus-gap: 10px; --focus-shrink: .16; }
 .carousel--films { --focus-gap: 0px; --focus-shrink: .14; max-width: calc(var(--content) + 2 * var(--gutter)); margin-inline: auto; overflow: hidden; --focus-w: clamp(260px, 30vw, 360px); }
 .carousel--films > .work-grid { padding-inline: calc(50% - var(--focus-w) / 2); }
 .carousel--films .carousel__arrow--prev { left: calc(var(--gutter) + 6px); }
@@ -1742,3 +1741,25 @@ body:not(.page-sections) .kicker::before { content: none; }
 @media (max-width: 800px) { .carousel > .industry-cards { --tile-cols: 1.4; } }
 .carousel > .industry-cards h3 { font-size: clamp(1rem, 1.5vw, 1.25rem); }
 .carousel > .industry-cards .industry-cards__clients { font-size: .66rem; }
+
+/* Focus carousels, round 3 (Oct 4, 2026): no blur; every tile sits on the same bottom line, like books on a shelf
+   (they shrink toward the middle tile and down to the shelf). 06 Our work: a bigger middle film, smaller side films. */
+.carousel--focus > .audience-cards, .carousel--focus > .work-grid { align-items: flex-end; }
+.carousel--focus > .audience-cards > li, .carousel--focus > .work-grid > .work-tile { transform-origin: calc(50% - var(--side, 0) * 50%) 100%; }
+.carousel--films { --focus-w: clamp(280px, 34vw, 430px); --focus-shrink: .32; }
+@media (max-width: 800px) { .carousel--films { --focus-w: 68vw; --focus-shrink: .28; } }
+
+/* 04 Industries: tall 9:16 tiles */
+.carousel > .industry-cards > li { aspect-ratio: 9 / 16; }
+
+/* Homepage 01 into 02: a longer, eased fade to white */
+.section--after-reel.has-side-video { padding-bottom: calc(var(--section) + clamp(100px, 14vw, 200px)); }
+.section--after-reel.has-side-video::after {
+  height: calc(var(--section) + clamp(100px, 14vw, 200px));
+  background: linear-gradient(to bottom,
+    rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, .03) 12%, rgba(255, 255, 255, .1) 25%, rgba(255, 255, 255, .22) 37%,
+    rgba(255, 255, 255, .38) 50%, rgba(255, 255, 255, .56) 62%, rgba(255, 255, 255, .74) 74%, rgba(255, 255, 255, .88) 85%,
+    rgba(255, 255, 255, .97) 94%, #fff 100%);
+}
+/* 02 and 03 are both white, so they sit closer together */
+#what-we-do + #who-we-serve { padding-top: clamp(12px, 2.5vw, 32px); }

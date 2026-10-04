@@ -137,8 +137,7 @@
     {
       "name": "Nonprofits & public service",
       "text": "We make films for nonprofits, NGOs, tribal councils and public agencies that move people to give, join and act.",
-      "still": "uPjYjRDq_qU:3",
-      "zoom": true,
+      "still": "mEfrDfPj_TA:3",
       "example": "mEfrDfPj_TA",
       "title": "Films that move people to act.",
       "seoTitle": "Nonprofit & Public Service Video Production",
@@ -272,7 +271,7 @@
     {
       "name": "Tribal Nations",
       "pillar": "Academics",
-      "still": "zLy49zenWIM:1",
+      "still": "QlP7wPaFcVU:3",
       "zoom": true,
       "clients": [
         "Inter Tribal Council of Arizona"
@@ -386,7 +385,8 @@
         "We do the research first, check every fact with your team and let community voices carry the message.",
         "We make civic engagement films, public health education, PSAs and docuseries.",
         "The films play at community events, in clinics, in briefings, on local media and across social."
-      ]
+      ],
+      "zoom": true
     },
     {
       "name": "Medical",
