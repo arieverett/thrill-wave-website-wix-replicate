@@ -1595,3 +1595,4 @@ body:not(.page-sections) .kicker::before { content: none; }
   .detail-points li:nth-child(n+3) { border-top: 1px solid rgba(255, 255, 255, .14); }
   .section:not(.section--dark) .detail-points li:nth-child(n+3) { border-top-color: var(--line); }
 }
+.service-list__note { margin-top: clamp(18px, 2.5vw, 28px); }

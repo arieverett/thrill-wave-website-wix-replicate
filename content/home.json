@@ -2,31 +2,24 @@
   "services": [
     {
       "icon": "compass",
-      "name": "Strategy & creative",
-      "text": "We research your world with a SITREP, find the angle and write the script.",
-      "more": "Before anyone picks up a camera, we work out what the film has to do and who it has to reach. Our SITREP research into your craft, your peers and your industry points us to the story worth telling, and then we write it.",
-      "includes": "SITREP research, positioning, concepts, scripts, distribution plans"
-    },
-    {
-      "icon": "clipboard",
-      "name": "Pre-production",
-      "text": "We handle the producing, casting, locations, storyboards and schedule.",
-      "more": "This is the unglamorous work that makes shoot day look easy. We find the right people and the right places, then write a plan everyone on set can follow.",
-      "includes": "Producing, casting, locations, permits, storyboards, schedules"
+      "name": "Story",
+      "text": "We research your world, find the idea, write it and plan where the film will live.",
+      "more": "Every good film starts with knowing who it's for and what it has to do. Our SITREP research into your craft, your peers and your industry points us to the story worth telling, and then we write it and plan where it will play.",
+      "includes": "SITREP research, concepts, treatments, scripts, storyboards, distribution plans"
     },
     {
       "icon": "camera",
       "name": "Production",
-      "text": "We direct, shoot, light and record sound, on the ground and in the air.",
-      "more": "We bring cinema cameras, lighting, sound and aerials, run by a crew with a decade in the field. We'll shoot on location, in the studio or wherever the story happens to be.",
-      "includes": "Directing, cinematography, lighting, sound, drone, cable cam and high-speed rigs"
+      "text": "We plan the shoot and run it: casting, locations, directing, camera, light and sound, on the ground and in the air.",
+      "more": "This is everything from the first call sheet to the last shot. We find the right people and places, then bring cinema cameras, lighting, sound and aerials, run by a crew with a decade in the field.",
+      "includes": "Producing, casting, locations, permits, schedules, directing, cinematography, lighting, sound, drone, cable cam, high-speed rigs"
     },
     {
       "icon": "sliders",
-      "name": "Post-production",
-      "text": "We edit, color and mix, then cut a version for every screen.",
-      "more": "This is where the story comes together. We edit, color, mix and animate, then cut a version for every place the film needs to play.",
-      "includes": "Editing, color grading, motion graphics, subtitles, social cutdowns"
+      "name": "Editing",
+      "text": "We cut, color and finish the film, then make a version for every screen.",
+      "more": "This is where the story comes together. We edit, color, mix and add graphics, then cut a version for every place the film needs to play.",
+      "includes": "Editing, color grading, mixing, motion graphics, subtitles, social cuts"
     },
     {
       "icon": "photo",
@@ -34,13 +27,6 @@
       "text": "We shoot stills with the same eye: brand imagery, portraits, products and behind the scenes.",
       "more": "Our stills come from the same eye as our films. We can shoot them alongside the video or on their own.",
       "includes": "Brand imagery, portraits, products, behind the scenes"
-    },
-    {
-      "icon": "aperture",
-      "name": "Rentals",
-      "text": "You can rent our cinema cameras, lenses and lighting, with or without our crew.",
-      "more": "Our own cinema kit is available to rent, with our crew or without it.",
-      "includes": "Cameras, lenses, lighting, crew optional"
     }
   ],
   "audiences": [
@@ -864,9 +850,9 @@
       "lede": "Tribal mothers speak straight to other mothers, so families trust WIC enough to enroll.",
       "industry": "Tribal Nations",
       "services": [
-        "Strategy & creative",
+        "Story",
         "Production",
-        "Post-production"
+        "Editing"
       ],
       "sitrep": [
         "When ITCA came to us, its WIC program needed more families enrolled. Participation had been falling even though plenty of families were eligible.",
@@ -915,7 +901,7 @@
       "industry": "Live Events",
       "services": [
         "Production",
-        "Post-production"
+        "Editing"
       ],
       "work": [
         "pDk121-TCto",
@@ -956,7 +942,7 @@
       "customer": "Companies",
       "services": [
         "Production",
-        "Post-production"
+        "Editing"
       ],
       "work": [
         "Qd40htwEmJM"
@@ -995,9 +981,9 @@
       "lede": "Tribal health leaders explain vaccines to their own communities, in their own words.",
       "industry": "Tribal Nations",
       "services": [
-        "Strategy & creative",
+        "Story",
         "Production",
-        "Post-production"
+        "Editing"
       ],
       "sitrep": [
         "ITCA's Tribal Epidemiology Center needed vaccine education for communities with good reason to doubt government health programs.",
@@ -1046,7 +1032,7 @@
       "customer": "Brands",
       "services": [
         "Production",
-        "Post-production"
+        "Editing"
       ],
       "work": [
         {
