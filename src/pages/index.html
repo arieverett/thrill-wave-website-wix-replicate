@@ -47,7 +47,9 @@
     <p class="kicker">Who we serve</p>
     <h2 class="section__title">Built for people with something to say.</h2>
     <p>We're based in Phoenix, and we go wherever the story is. We work with organizations of every kind, from filmmakers and agencies to nonprofits, public agencies and businesses, and with anyone who believes a story told well can change how others see the world. Here's who we work with most:</p>
-    {{audience_grid}}
+    <div class="carousel carousel--focus carousel--blur" data-carousel="focus">
+      {{audience_grid}}
+    </div>
     <div class="section__actions btn-row">
       <a class="btn btn--plain btn--pill btn--clear-dark" href="/who-we-serve" data-until-built="#who-we-serve">See who we serve</a>
     </div>
@@ -59,7 +61,6 @@
     <p class="kicker">Industries</p>
     <h2 class="section__title">Good stories live in every industry.</h2>
     <p>Look closely at almost any great film or documentary and you'll find the same human drama playing out against one of three backdrops: athletics, the arts or academics, from the lab and the courtroom to the council chamber. The setting changes, but the story underneath doesn't. Here are the industries we know best, grouped that way, with a few of the names we've worked with:</p>
-    <h3 class="subhead">Where we've worked</h3>
     <div class="carousel" data-carousel>
       {{industry_grid}}
     </div>
@@ -84,7 +85,7 @@
     <h2 class="section__title">Films that stay with you.</h2>
     <p>These are a few of the stories we're proudest to have told. Each one started with a question worth answering and ended with people who felt something. Press play on any of these films:</p>
   </div>
-  <div class="carousel carousel--work" data-carousel>
+  <div class="carousel carousel--focus carousel--films" data-carousel="focus" data-start="middle">
     {{portfolio_featured}}
   </div>
   <div class="container">

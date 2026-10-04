@@ -811,19 +811,26 @@ $$('img[src*="i.ytimg.com/vi/"][src*="/maxres"]').forEach((img) => {
   else img.addEventListener('load', fix, { once: true });
 });
 
-// Homepage carousels (04 Industries, 06 Our work): the tiles scroll sideways. Faint arrows step a screen at a time and
-// the dots underneath show where you are and that there's more to see. Arrows hide at either end.
+// Homepage carousels. Plain ones (04 Industries) scroll a screen at a time; "focus" ones (03 Who we serve, 06 Our work)
+// keep one tile in the middle at full size while the tiles beside it shrink (and blur, on 03) the further they are
+// from the center. Faint arrows step through, the dots underneath show where you are, and arrows hide at either end.
 $$('[data-carousel]').forEach((box) => {
   const track = box.firstElementChild;
   if (!track) return;
+  const focus = box.dataset.carousel === 'focus';
+  const items = [...track.children];
+  const smooth = reduceMotion ? 'auto' : 'smooth';
   const chevron = (d) => `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="${d}"/></svg>`;
+  const step = () => (items[1] ? items[1].offsetLeft - items[0].offsetLeft : track.clientWidth);
+  const centerOn = (el, behavior = smooth) =>
+    track.scrollTo({ left: el.offsetLeft + el.offsetWidth / 2 - track.clientWidth / 2, behavior });
   const arrow = (dir) => {
     const b = document.createElement('button');
     b.type = 'button';
     b.className = `carousel__arrow carousel__arrow--${dir < 0 ? 'prev' : 'next'}`;
     b.setAttribute('aria-label', dir < 0 ? 'Show previous' : 'Show more');
     b.innerHTML = chevron(dir < 0 ? 'M15 5l-7 7 7 7' : 'M9 5l7 7-7 7');
-    b.addEventListener('click', () => track.scrollBy({ left: dir * track.clientWidth * 0.9, behavior: reduceMotion ? 'auto' : 'smooth' }));
+    b.addEventListener('click', () => track.scrollBy({ left: dir * (focus ? step() : track.clientWidth * 0.9), behavior: smooth }));
     return b;
   };
   const prev = arrow(-1);
@@ -833,21 +840,59 @@ $$('[data-carousel]').forEach((box) => {
   dots.setAttribute('aria-hidden', 'true');
   box.append(prev, next, dots);
   let pages = 0;
-  const update = () => {
-    const max = track.scrollWidth - track.clientWidth;
-    const n = max <= 2 ? 1 : Math.ceil(max / track.clientWidth - 0.05) + 1;
+  let current = -1;
+  const setDots = (n, on) => {
     if (n !== pages) {
       pages = n;
       dots.innerHTML = '<span></span>'.repeat(n);
       box.classList.toggle('is-static', n < 2);
     }
+    [...dots.children].forEach((d, i) => d.classList.toggle('is-on', i === on));
+  };
+  const update = () => {
+    const max = track.scrollWidth - track.clientWidth;
     const at = track.scrollLeft;
-    const page = at >= max - 2 ? n - 1 : Math.round(at / track.clientWidth);
-    [...dots.children].forEach((d, i) => d.classList.toggle('is-on', i === page));
+    if (focus) {
+      const r = track.getBoundingClientRect();
+      const mid = r.left + r.width / 2;
+      let best = 0;
+      let bestD = Infinity;
+      items.forEach((it, i) => {
+        const q = it.getBoundingClientRect();
+        const d = Math.min(1.5, Math.abs(q.left + q.width / 2 - mid) / it.offsetWidth);
+        it.style.setProperty('--d', d.toFixed(3));
+        if (d < bestD) { bestD = d; best = i; }
+      });
+      if (best !== current) {
+        current = best;
+        items.forEach((it, i) => it.classList.toggle('is-center', i === best));
+      }
+      setDots(items.length, best);
+      prev.disabled = best === 0;
+      next.disabled = best === items.length - 1;
+      return;
+    }
+    const n = max <= 2 ? 1 : Math.ceil(max / track.clientWidth - 0.05) + 1;
+    setDots(n, at >= max - 2 ? n - 1 : Math.round(at / track.clientWidth));
     prev.disabled = at <= 2;
     next.disabled = at >= max - 2;
   };
-  track.addEventListener('scroll', update, { passive: true });
+  let frame = 0;
+  track.addEventListener('scroll', () => { if (!frame) frame = requestAnimationFrame(() => { frame = 0; update(); }); }, { passive: true });
   addEventListener('resize', update);
+  if (focus) {
+    // A tap on a tile at the side brings it to the middle first; a tap on the middle one opens it as usual
+    track.addEventListener('click', (e) => {
+      const it = e.target.closest('.carousel--focus > * > *');
+      if (it && !it.classList.contains('is-center')) {
+        e.preventDefault();
+        e.stopPropagation();
+        centerOn(it);
+      }
+    }, true);
+    // Our work opens on the film in the middle of the row, so there's something on either side from the start
+    const start = box.dataset.start === 'middle' ? items[Math.floor(items.length / 2)] : items[0];
+    if (start) requestAnimationFrame(() => centerOn(start, 'auto'));
+  }
   update();
 });

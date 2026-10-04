@@ -4,7 +4,7 @@
       "icon": "compass",
       "name": "Story",
       "text": "We research your world, find the idea, write it and plan where the film will live.",
-      "more": "Every good film starts with knowing who it's for and what it has to do, and we find that out the way a reporter would. Our SITREP research into your craft, your peers and your industry points us to the story worth telling, and then we write it and plan where it will play.",
+      "more": "Every good film starts with knowing who it's for and what it has to do, and we find that out by asking good questions and checking our sources. Our SITREP research into your craft, your peers and your industry points us to the story worth telling, and then we write it and plan where it will play.",
       "includes": "SITREP research, concepts, treatments, scripts, storyboards, distribution plans"
     },
     {
@@ -135,60 +135,14 @@
       ]
     },
     {
-      "name": "Agencies & PR firms",
-      "text": "We produce for creative agencies and PR firms under your name, to your brief and on your timeline.",
-      "still": "sF4KJxf99nA",
-      "zoom": true,
-      "title": "Your brief. Our crew.",
-      "example": "sF4KJxf99nA",
-      "seoTitle": "Video Production for Agencies & PR Firms",
-      "headline": "Video for agencies and PR firms",
-      "faq": [
-        {
-          "q": "Will you work white-label?",
-          "a": "Yes. We work under your name and to your brief, and nobody has to know we were there."
-        },
-        {
-          "q": "Do you work with PR firms on public affairs?",
-          "a": "Yes. PR firms working in politics, government and advocacy can bring us in to film the people at the center of the story, under the firm's name and with the care those stories need."
-        }
-      ],
-      "work": [
-        "sF4KJxf99nA",
-        "opb_FLe4_Xo",
-        "WoFqn7U9tq4",
-        "qeCo9vV3pH8"
-      ],
-      "related": [
-        "Government & Public Affairs",
-        "Live Events",
-        "Products"
-      ],
-      "quote": {
-        "text": "We asked Thrill Wave, LLC to jump in and film a client for us when our team wasn't able to do it ourselves. They were friendly, professional, and worked with us in a limited time frame.",
-        "name": "Video N.",
-        "role": "agency partner, Thumbtack review"
-      },
-      "about": "Agency and PR work rarely gets to wear our name, so here's an aftermovie we made under our own, for Relentless Beats' Gold Rush festival:",
-      "heading": "Your name on it.",
-      "intro": "We produce for creative agencies and PR firms, including firms that work in politics, government and advocacy. It's your brief and your client, with our crew, on your timeline, and nobody ever has to know we were there.",
-      "approach": "We talk to your client as part of your team and stay out of the credits. We build to the idea you pitched, flag problems early and keep the client happy on set. You can bring in a full production crew for one shoot or a whole season of work, and when the story is a sensitive one, we treat the people on camera with real care. What we make for agencies and PR firms usually carries someone else's name, so here's a taste of what we bring to a set:",
-      "points": [
-        "We work with creative agencies and PR firms, including firms working in politics, government and advocacy.",
-        "We work under your name, to your brief and on your timeline.",
-        "We make story films, interviews, short documentaries, social cuts and post work for your clients.",
-        "The work plays wherever your client needs it, from a press event to social, under your name."
-      ]
-    },
-    {
-      "name": "Nonprofits & government",
+      "name": "Nonprofits & public service",
       "text": "We make films for nonprofits, NGOs, tribal councils and public agencies that move people to give, join and act.",
       "still": "uPjYjRDq_qU:3",
       "zoom": true,
       "example": "mEfrDfPj_TA",
       "title": "Films that move people to act.",
-      "seoTitle": "Nonprofit & Government Video Production",
-      "headline": "Nonprofit and government video",
+      "seoTitle": "Nonprofit & Public Service Video Production",
+      "headline": "Nonprofit and public service video",
       "faq": [
         {
           "q": "Can a nonprofit afford you?",
@@ -265,6 +219,52 @@
         "We take it from research and the first idea to delivery, and we work around your workday.",
         "We make explainers, educational films, culture, recruiting and training films, and customer stories.",
         "The films live on your website and social, in onboarding and training, and with your team in every conversation they have with customers."
+      ]
+    },
+    {
+      "name": "Agencies & PR firms",
+      "text": "We produce for creative agencies and PR firms under your name, to your brief and on your timeline.",
+      "still": "sF4KJxf99nA",
+      "zoom": true,
+      "title": "Your brief. Our crew.",
+      "example": "sF4KJxf99nA",
+      "seoTitle": "Video Production for Agencies & PR Firms",
+      "headline": "Video for agencies and PR firms",
+      "faq": [
+        {
+          "q": "Will you work white-label?",
+          "a": "Yes. We work under your name and to your brief, and nobody has to know we were there."
+        },
+        {
+          "q": "Do you work with PR firms on public affairs?",
+          "a": "Yes. PR firms working in politics, government and advocacy can bring us in to film the people at the center of the story, under the firm's name and with the care those stories need."
+        }
+      ],
+      "work": [
+        "sF4KJxf99nA",
+        "opb_FLe4_Xo",
+        "WoFqn7U9tq4",
+        "qeCo9vV3pH8"
+      ],
+      "related": [
+        "Government & Public Affairs",
+        "Live Events",
+        "Products"
+      ],
+      "quote": {
+        "text": "We asked Thrill Wave, LLC to jump in and film a client for us when our team wasn't able to do it ourselves. They were friendly, professional, and worked with us in a limited time frame.",
+        "name": "Video N.",
+        "role": "agency partner, Thumbtack review"
+      },
+      "about": "Agency and PR work rarely gets to wear our name, so here's an aftermovie we made under our own, for Relentless Beats' Gold Rush festival:",
+      "heading": "Your name on it.",
+      "intro": "We produce for creative agencies and PR firms, including firms that work in politics, government and advocacy. It's your brief and your client, with our crew, on your timeline, and nobody ever has to know we were there.",
+      "approach": "We talk to your client as part of your team and stay out of the credits. We build to the idea you pitched, flag problems early and keep the client happy on set. You can bring in a full production crew for one shoot or a whole season of work, and when the story is a sensitive one, we treat the people on camera with real care. What we make for agencies and PR firms usually carries someone else's name, so here's a taste of what we bring to a set:",
+      "points": [
+        "We work with creative agencies and PR firms, including firms working in politics, government and advocacy.",
+        "We work under your name, to your brief and on your timeline.",
+        "We make story films, interviews, short documentaries, social cuts and post work for your clients.",
+        "The work plays wherever your client needs it, from a press event to social, under your name."
       ]
     }
   ],
@@ -780,7 +780,7 @@
       ],
       "lede": "Tribal mothers speak straight to other mothers, so families trust WIC enough to enroll.",
       "industry": "Tribal Nations",
-      "customer": "Nonprofits & government",
+      "customer": "Nonprofits & public service",
       "services": [
         "Story",
         "Production",
@@ -913,7 +913,7 @@
       ],
       "lede": "Tribal health leaders explain vaccines to their own communities, in their own words.",
       "industry": "Tribal Nations",
-      "customer": "Nonprofits & government",
+      "customer": "Nonprofits & public service",
       "services": [
         "Story",
         "Production",

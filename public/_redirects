@@ -81,7 +81,8 @@
 /who-we-serve/agencies              /who-we-serve/agencies-and-pr-firms       301
 /who-we-serve/brands                /who-we-serve/businesses                  301
 /who-we-serve/companies             /who-we-serve/businesses                  301
-/industries/nonprofits              /who-we-serve/nonprofits-and-government   301
+/industries/nonprofits              /who-we-serve/nonprofits-and-public-service 301
+/who-we-serve/nonprofits-and-government /who-we-serve/nonprofits-and-public-service 301
 /industries/medical-and-biotech     /industries/medical                       301
 /industries/beauty                  /industries/medical                       301
 /industries/wellness                /industries/medical                       301

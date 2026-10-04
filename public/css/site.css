@@ -1236,7 +1236,7 @@ body.subnav-stuck .site-header { background: transparent; -webkit-backdrop-filte
    so its logo reads big (its black edges are cropped). It stops exactly at the right edge of the page content with a
    quick fade to black, lining up with every other section. The text sits on top on the left (two thirds wide on phones). */
 .has-side-video { position: relative; overflow: hidden; isolation: isolate; }
-.section--after-reel.has-side-video { --after-pad-t: clamp(96px, 13vw, 168px); padding-block: var(--after-pad-t) calc(clamp(96px, 13vw, 168px) + var(--section)); } /* bottom matches the space above (reel gap + top) */
+.section--after-reel.has-side-video { --after-pad-t: clamp(96px, 13vw, 168px); padding-block: var(--after-pad-t) var(--section); } /* normal gap to 02 below (Ari, Oct 4, 2026) */
 .split-media { display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(0, .75fr); align-items: center; }
 .split-media__text { position: relative; z-index: 1; }
 .split-media__clip { position: absolute; z-index: 0; top: 0; bottom: 0; left: 0; overflow: hidden; pointer-events: none;
@@ -1662,3 +1662,53 @@ body:not(.page-sections) .kicker::before { content: none; }
 .carousel--work .carousel__arrow { top: 26%; } /* clear of the films' play buttons */
 /* Industry tiles: the backdrop each one belongs to (Athletics, Arts, Academics), a small red label above the name */
 .industry-cards .industry-cards__pillar { margin: 0 0 6px; font: 500 .62rem/1 var(--font-mono); letter-spacing: .12em; text-transform: uppercase; color: var(--accent); }
+
+/* ---------- Focus carousels (03 Who we serve, 06 Our work) ----------
+   One tile sits in the middle at full size; site.js sets --d on each tile (0 in the middle, up to 1.5 at the sides)
+   and the tiles shrink and fade with it. Who we serve also blurs the side cards. 06 runs wider than the content
+   column so the side films spill toward the edges of the screen. */
+.carousel--focus > .audience-cards, .carousel--focus > .work-grid {
+  position: relative; display: flex; flex-wrap: nowrap; justify-content: flex-start; align-items: center; gap: var(--focus-gap);
+  max-width: none; margin: 0; overflow-x: auto; overscroll-behavior-x: contain; scroll-snap-type: x mandatory;
+  scrollbar-width: none; padding: 18px calc(50% - var(--focus-w) / 2); scroll-padding-inline: 0;
+}
+.carousel--focus > .audience-cards::-webkit-scrollbar, .carousel--focus > .work-grid::-webkit-scrollbar { display: none; }
+.carousel--focus > .audience-cards > li, .carousel--focus > .work-grid > .work-tile {
+  flex: 0 0 var(--focus-w); min-width: 0; scroll-snap-align: center;
+  transform: scale(calc(1 - var(--d, 0) * var(--focus-shrink))); opacity: calc(1 - var(--d, 0) * .4);
+  transition: transform .18s ease-out, opacity .18s ease-out, filter .18s ease-out;
+}
+.carousel--focus > .audience-cards > li:not(.is-center), .carousel--focus > .work-grid > .work-tile:not(.is-center) { cursor: pointer; }
+.carousel--blur > .audience-cards > li { filter: blur(calc(var(--d, 0) * 3px)); }
+.carousel--focus > .audience-cards > li:hover { transform: scale(calc(1 - var(--d, 0) * var(--focus-shrink))); }
+@media (prefers-reduced-motion: reduce) { .carousel--focus > .audience-cards > li, .carousel--focus > .work-grid > .work-tile { transition: none; } }
+
+/* 03 Who we serve: cards about a third of the column wide */
+.carousel--blur { --focus-w: clamp(250px, 32%, 320px); --focus-gap: 4px; --focus-shrink: .22; margin-top: 18px; }
+.carousel--blur > .audience-cards { margin-inline: calc(-1 * var(--gutter)); padding-inline: calc(50% - var(--focus-w) / 2 + var(--gutter)); }
+
+/* 06 Our work: big 4:5 films, edge to edge */
+.carousel--films { --focus-w: clamp(260px, 30vw, 400px); --focus-gap: 0px; --focus-shrink: .26; margin-top: 28px; }
+.carousel--films > .work-grid { padding-block: 24px; }
+.carousel--films .work-grid--portrait .video { aspect-ratio: 4 / 5; border-radius: 10px; }
+.carousel--films .work-grid--portrait .video__label { font-size: clamp(.95rem, 1.2vw, 1.1rem); }
+.carousel--films .work-tile.is-center .video .video__play { opacity: .95; transform: scale(1); }
+.carousel--films .carousel__arrow--prev { left: max(8px, calc(50% - var(--focus-w) / 2 - 60px)); }
+.carousel--films .carousel__arrow--next { right: max(8px, calc(50% - var(--focus-w) / 2 - 60px)); }
+@media (max-width: 800px) {
+  .carousel--blur { --focus-w: 68vw; }
+  .carousel--films { --focus-w: 70vw; }
+}
+@media (max-width: 700px) {
+  .carousel--blur .audience-cards__body { padding: 14px 14px 18px; }
+  .carousel--blur .audience-cards h3 { font-size: 1rem; letter-spacing: .05em; margin-bottom: .4em; }
+  .carousel--blur .audience-cards p { font-size: .86rem; line-height: 1.45; }
+}
+@media (max-width: 560px) {
+  .carousel--films .work-grid--portrait .video { border-radius: 8px; }
+  .carousel--films .work-grid--portrait .video__label { left: 12px; right: 12px; bottom: 12px; font-size: .92rem; line-height: 1.3; }
+  .carousel--films .work-grid--portrait .video .video__play { opacity: .9; transform: scale(.75); }
+}
+
+/* 04 Industries on the homepage: tall 4:5 tiles */
+.carousel > .industry-cards > li { aspect-ratio: 4 / 5; }

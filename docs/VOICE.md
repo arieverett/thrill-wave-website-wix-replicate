@@ -18,9 +18,9 @@ Describe it in plain words. It's research and a point of view, not a product pit
 
 Almost every great story, from Shakespeare to the best documentaries, plays out against one of three backdrops: athletics, the arts or academics (science, medicine, engineering, research, law and governance). Our industries are grouped that way, and copy about industries can lean on it: the setting changes, but the human story underneath doesn't.
 
-## Journalism
+## How we report
 
-We tell stories the way good documentary journalists do: we report first, follow the facts, let people speak for themselves and never stage what should be felt. Allude to it where it fits (research, interviews, honesty), without calling ourselves a news outlet.
+We work the way good documentary reporting does: we report first, check our sources, follow the facts, let people speak for themselves and never stage what should be felt. Use that approach and terminology (report, sources, facts, on the record, in their own words), but never name it: don't write "journalism", "journalist" or "reporter".
 
 ## How it sounds
 
