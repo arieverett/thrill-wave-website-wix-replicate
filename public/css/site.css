@@ -1802,3 +1802,6 @@ body:not(.page-sections) .kicker::before { content: none; }
 .carousel--films > .work-grid > .work-tile .video { transition: box-shadow .3s ease-out; }
 .carousel--films > .work-grid > .work-tile.is-center .video { box-shadow: 0 34px 60px -18px rgba(0, 0, 0, .55), 0 14px 26px -10px rgba(0, 0, 0, .35); }
 .carousel--films > .work-grid { padding-block: 24px 52px; }
+/* (gap can't go negative, so the overlap comes from negative side margins on each film instead) */
+.carousel--films { --focus-gap: 0px; }
+.carousel--films > .work-grid > .work-tile { margin-inline: calc(var(--focus-w) * -.14); }
