@@ -1775,3 +1775,30 @@ body:not(.page-sections) .kicker::before { content: none; }
 .carousel--tiles > .industry-cards::-webkit-scrollbar { display: none; }
 .carousel--tiles > .industry-cards > li { flex: 0 0 var(--focus-w); scroll-snap-align: center; }
 @media (max-width: 800px) { .carousel--tiles { --focus-w: 62vw; } }
+
+/* About hero: the studio still from the site lander, darkened so the headline reads, instead of the red gradient */
+.hero--about.hero--about-photo { background: var(--ink); }
+.hero--about-photo .hero__shade { background: linear-gradient(180deg, rgba(0, 0, 0, .55) 0%, rgba(0, 0, 0, .45) 50%, rgba(0, 0, 0, .85) 88%, var(--ink) 100%); }
+/* About values: a numbered list on black */
+.section--dark .promise-list--values h4 { color: var(--on-dark); }
+
+/* Industry tiles: pick which part of the frame shows (focus in content/home.json) */
+.industry-cards__media img { object-position: var(--focus, 50% 50%); }
+.focus-far-right { --focus: 96% 50%; }
+.focus-far-left { --focus: 4% 50%; }
+
+/* 04 Industries: lighter shade on the photos (just enough at the bottom for the names to read); tiles a bit smaller */
+.carousel > .industry-cards li::before { background: linear-gradient(to top, rgba(0, 0, 0, .78) 0%, rgba(0, 0, 0, .25) 38%, rgba(0, 0, 0, 0) 65%); }
+.carousel--tiles { --focus-w: calc((min(100vw - 2 * var(--gutter), var(--content)) - 2 * var(--focus-gap)) / 3.4); }
+@media (max-width: 800px) { .carousel--tiles { --focus-w: 54vw; } }
+
+/* 03 Who we serve: smaller cards */
+.carousel--cards { --focus-w: clamp(210px, 19vw, 260px); }
+@media (max-width: 800px) { .carousel--cards { --focus-w: 58vw; } }
+
+/* 06 Our work: side films tuck behind the middle one, which lifts off the page with a soft shadow */
+.carousel--films { --focus-gap: calc(var(--focus-w) * -.3); --focus-shrink: .3; }
+.carousel--films > .work-grid > .work-tile { transform-origin: 50% 100%; opacity: 1; filter: brightness(calc(1 - var(--d, 0) * .22)); position: relative; }
+.carousel--films > .work-grid > .work-tile .video { transition: box-shadow .3s ease-out; }
+.carousel--films > .work-grid > .work-tile.is-center .video { box-shadow: 0 34px 60px -18px rgba(0, 0, 0, .55), 0 14px 26px -10px rgba(0, 0, 0, .35); }
+.carousel--films > .work-grid { padding-block: 24px 52px; }

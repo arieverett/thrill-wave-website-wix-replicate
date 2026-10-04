@@ -887,6 +887,7 @@ $$('[data-carousel]').forEach((box) => {
       const d = Math.min(1.5, Math.abs(off) / it.offsetWidth);
       it.style.setProperty('--d', d.toFixed(3));
       it.style.setProperty('--side', Math.max(-1, Math.min(1, off / it.offsetWidth)).toFixed(3));
+      it.style.zIndex = String(10 - Math.round(d * 4)); // nearer the middle sits on top (06 tucks side films behind)
       if (d < bestD) { bestD = d; best = i; }
     });
     return best;
