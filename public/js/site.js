@@ -925,7 +925,7 @@ $$('[data-carousel]').forEach((box) => {
     idle = setTimeout(settle, 140);
   }, { passive: true });
   addEventListener('resize', () => { if (loop) centerOn(items[current >= 0 ? current : n], 'auto'); update(); });
-  if (focus) {
+  if (focus && !('openSides' in box.dataset)) {
     // A tap on a tile at the side brings it to the middle first; a tap on the middle one opens it as usual
     track.addEventListener('click', (e) => {
       const it = items.find((x) => x.contains(e.target));
@@ -935,6 +935,8 @@ $$('[data-carousel]').forEach((box) => {
         centerOn(it);
       }
     }, true);
+  }
+  if (focus) {
     // Start on the first item (in the real list when looping, so there's a tile on either side from the start)
     requestAnimationFrame(() => { centerOn(items[loop ? n : 0], 'auto'); update(); });
   }

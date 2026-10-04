@@ -1763,3 +1763,15 @@ body:not(.page-sections) .kicker::before { content: none; }
 }
 /* 02 and 03 are both white, so they sit closer together */
 #what-we-do + #who-we-serve { padding-top: clamp(12px, 2.5vw, 32px); }
+
+/* 04 Industries: a looping row of equal 9:16 tiles, three across on laptops, centered on one tile
+   (Tribal Nations first, so the last industry peeks in on the left). Side tiles stay full size and open on tap. */
+.carousel--tiles { --focus-gap: 12px; --focus-shrink: 0; --focus-w: calc((min(100vw - 2 * var(--gutter), var(--content)) - 2 * var(--focus-gap)) / 3); }
+.carousel--tiles > .industry-cards {
+  position: relative; display: flex; flex-wrap: nowrap; justify-content: flex-start; align-items: flex-end; gap: var(--focus-gap);
+  overflow-x: auto; overscroll-behavior-x: contain; scroll-snap-type: x mandatory; scrollbar-width: none;
+  margin: 0; padding: 6px calc(50% - var(--focus-w) / 2);
+}
+.carousel--tiles > .industry-cards::-webkit-scrollbar { display: none; }
+.carousel--tiles > .industry-cards > li { flex: 0 0 var(--focus-w); scroll-snap-align: center; }
+@media (max-width: 800px) { .carousel--tiles { --focus-w: 62vw; } }
