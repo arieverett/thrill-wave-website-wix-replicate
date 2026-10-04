@@ -1829,3 +1829,8 @@ body:not(.page-sections) .kicker::before { content: none; }
 .carousel--focus > .audience-cards > li:hover { transform: none; }
 .carousel--films .carousel__arrow--prev, .carousel--cards .carousel__arrow--prev, .carousel--tiles .carousel__arrow--prev { left: calc(var(--gutter) + 6px); }
 .carousel--films .carousel__arrow--next, .carousel--cards .carousel__arrow--next, .carousel--tiles .carousel__arrow--next { right: calc(var(--gutter) + 6px); }
+
+/* 03 Who we serve carousel: every card the same height (the tallest card sets it), photo on top, text below. */
+.carousel--cards > .audience-cards { align-items: stretch; }
+.carousel--cards > .audience-cards > li { align-self: stretch; }
+.carousel--cards .audience-cards__body { flex: 1 1 auto; }
