@@ -1684,7 +1684,7 @@ body:not(.page-sections) .kicker::before { content: none; }
 @media (prefers-reduced-motion: reduce) { .carousel--focus > .audience-cards > li, .carousel--focus > .work-grid > .work-tile { transition: none; } }
 
 /* 03 Who we serve: cards about a third of the column wide */
-.carousel--blur { --focus-w: clamp(250px, 32%, 320px); --focus-gap: 4px; --focus-shrink: .22; margin-top: 18px; }
+.carousel--blur { --focus-w: clamp(250px, 24vw, 320px); --focus-gap: 4px; --focus-shrink: .22; margin-top: 18px; }
 .carousel--blur > .audience-cards { margin-inline: calc(-1 * var(--gutter)); padding-inline: calc(50% - var(--focus-w) / 2 + var(--gutter)); }
 
 /* 06 Our work: big 4:5 films, edge to edge */
