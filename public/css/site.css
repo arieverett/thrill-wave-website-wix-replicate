@@ -1803,3 +1803,17 @@ body:not(.page-sections) .kicker::before { content: none; }
 /* (gap can't go negative, so the overlap comes from negative side margins on each film instead) */
 .carousel--films { --focus-gap: 0px; }
 .carousel--films > .work-grid > .work-tile { margin-inline: calc(var(--focus-w) * -.14); }
+
+/* Film tiles: which part of the frame shows in a tall crop (focus in content/portfolio.json, "x63" = 63% across) */
+.video img { object-position: var(--focus, 50% 50%); }
+.focus-x35 { --focus: 35% 50%; }
+.focus-x41 { --focus: 41% 50%; }
+.focus-x63 { --focus: 63% 50%; }
+.focus-x86 { --focus: 86% 50%; }
+
+/* 06 Our work, back to the same look as 03: side films shrink toward the middle one and sit on the same bottom line,
+   a small gap between them, no overlap, no shadow. The films stay bigger than 03's cards. */
+.carousel--films { --focus-gap: 10px; --focus-shrink: .16; }
+.carousel--films > .work-grid > .work-tile { margin-inline: 0; transform-origin: calc(50% - var(--side, 0) * 50%) 100%; opacity: calc(1 - var(--d, 0) * .4); filter: none; }
+.carousel--films > .work-grid > .work-tile.is-center .video { box-shadow: none; }
+.carousel--films > .work-grid { padding-block: 18px; }
