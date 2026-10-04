@@ -76,3 +76,16 @@
 /blog/categories/healthcare  /blog/categories/industries   301
 /blog/categories/medical     /blog/categories/industries   301
 /blog/categories/finance     /blog/categories/industries   301
+
+# Customer and industry restructure, Oct 3, 2026
+/who-we-serve/agencies              /who-we-serve/agencies-and-pr-firms       301
+/who-we-serve/brands                /who-we-serve/businesses                  301
+/who-we-serve/companies             /who-we-serve/businesses                  301
+/industries/nonprofits              /who-we-serve/nonprofits-and-government   301
+/industries/medical-and-biotech     /industries/medical                       301
+/industries/beauty                  /industries/wellness                      301
+/industries/sports-and-fitness      /industries/sports                        301
+/industries/finance                 /industries/professional-services         301
+/industries/real-estate             /industries/tech                          301
+/industries/construction            /industries/industrial                    301
+/industries/consumer-products       /industries/products                      301
