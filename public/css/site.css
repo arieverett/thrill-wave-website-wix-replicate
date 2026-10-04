@@ -1600,3 +1600,12 @@ body:not(.page-sections) .kicker::before { content: none; }
 .section--dark + .section--dark { margin-top: -1px; }
 /* A sentence that follows the promise list (Services: "in case you like numbers...") gets room to breathe */
 .promise-list + p { margin-top: clamp(22px, 3vw, 32px); }
+/* Who we serve and Industries tiles: a short last row sits in the center instead of hugging the left.
+   Same column counts as before (industries 4 / 3 / 2, customers 3), laid out with wrapping flex. */
+.industry-cards, .audience-cards { display: flex; flex-wrap: wrap; justify-content: center; gap: var(--tile-gap); }
+.industry-cards { --tile-cols: 4; --tile-gap: 12px; }
+.audience-cards { --tile-cols: 3; --tile-gap: 16px; }
+.industry-cards > li, .audience-cards > li { flex: 0 0 calc((100% - (var(--tile-cols) - 1) * var(--tile-gap)) / var(--tile-cols)); min-width: 0; }
+@media (max-width: 900px) { .industry-cards { --tile-cols: 3; } }
+@media (max-width: 800px) { .industry-cards { --tile-cols: 2; --tile-gap: 10px; } }
+@media (max-width: 700px) { .audience-cards { --tile-gap: 8px; } }
