@@ -1817,3 +1817,15 @@ body:not(.page-sections) .kicker::before { content: none; }
 .carousel--films > .work-grid > .work-tile { margin-inline: 0; transform-origin: calc(50% - var(--side, 0) * 50%) 100%; opacity: calc(1 - var(--d, 0) * .4); filter: none; }
 .carousel--films > .work-grid > .work-tile.is-center .video { box-shadow: none; }
 .carousel--films > .work-grid { padding-block: 18px; }
+
+/* Homepage carousels, round 6 (Oct 4, 2026): all three rows (03, 04, 06) share one width, the content column plus
+   the page margins on each side (so edge to edge on phones), and every tile in 03 and 06 stays the same size:
+   no grow, shrink or fade as the row moves. */
+.carousel--cards, .carousel--tiles { max-width: none; margin-inline: calc(-1 * var(--gutter)); overflow: hidden; }
+.carousel--films { max-width: calc(var(--content) + 2 * var(--gutter)); margin-inline: auto; overflow: hidden; }
+.carousel--cards > .audience-cards, .carousel--tiles > .industry-cards, .carousel--films > .work-grid { margin-inline: 0; padding-inline: calc(50% - var(--focus-w) / 2); }
+.carousel--cards, .carousel--films { --focus-shrink: 0; }
+.carousel--focus > .audience-cards > li, .carousel--focus > .work-grid > .work-tile { transform: none; opacity: 1; filter: none; transition: none; }
+.carousel--focus > .audience-cards > li:hover { transform: none; }
+.carousel--films .carousel__arrow--prev, .carousel--cards .carousel__arrow--prev, .carousel--tiles .carousel__arrow--prev { left: calc(var(--gutter) + 6px); }
+.carousel--films .carousel__arrow--next, .carousel--cards .carousel__arrow--next, .carousel--tiles .carousel__arrow--next { right: calc(var(--gutter) + 6px); }
