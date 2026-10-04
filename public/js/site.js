@@ -810,3 +810,44 @@ $$('img[src*="i.ytimg.com/vi/"][src*="/maxres"]').forEach((img) => {
   if (img.complete && img.naturalWidth) fix();
   else img.addEventListener('load', fix, { once: true });
 });
+
+// Homepage carousels (04 Industries, 06 Our work): the tiles scroll sideways. Faint arrows step a screen at a time and
+// the dots underneath show where you are and that there's more to see. Arrows hide at either end.
+$$('[data-carousel]').forEach((box) => {
+  const track = box.firstElementChild;
+  if (!track) return;
+  const chevron = (d) => `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="${d}"/></svg>`;
+  const arrow = (dir) => {
+    const b = document.createElement('button');
+    b.type = 'button';
+    b.className = `carousel__arrow carousel__arrow--${dir < 0 ? 'prev' : 'next'}`;
+    b.setAttribute('aria-label', dir < 0 ? 'Show previous' : 'Show more');
+    b.innerHTML = chevron(dir < 0 ? 'M15 5l-7 7 7 7' : 'M9 5l7 7-7 7');
+    b.addEventListener('click', () => track.scrollBy({ left: dir * track.clientWidth * 0.9, behavior: reduceMotion ? 'auto' : 'smooth' }));
+    return b;
+  };
+  const prev = arrow(-1);
+  const next = arrow(1);
+  const dots = document.createElement('div');
+  dots.className = 'carousel__dots';
+  dots.setAttribute('aria-hidden', 'true');
+  box.append(prev, next, dots);
+  let pages = 0;
+  const update = () => {
+    const max = track.scrollWidth - track.clientWidth;
+    const n = max <= 2 ? 1 : Math.ceil(max / track.clientWidth - 0.05) + 1;
+    if (n !== pages) {
+      pages = n;
+      dots.innerHTML = '<span></span>'.repeat(n);
+      box.classList.toggle('is-static', n < 2);
+    }
+    const at = track.scrollLeft;
+    const page = at >= max - 2 ? n - 1 : Math.round(at / track.clientWidth);
+    [...dots.children].forEach((d, i) => d.classList.toggle('is-on', i === page));
+    prev.disabled = at <= 2;
+    next.disabled = at >= max - 2;
+  };
+  track.addEventListener('scroll', update, { passive: true });
+  addEventListener('resize', update);
+  update();
+});

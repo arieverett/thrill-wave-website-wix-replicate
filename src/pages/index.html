@@ -60,7 +60,9 @@
     <h2 class="section__title">Good stories live in every industry.</h2>
     <p>We've filmed in clinics and tribal health programs, on job sites and festival main stages, and with pro sports leagues. The subjects change, but the care stays the same. These are the industries we know best, along with a few of the names we've worked with:</p>
     <h3 class="subhead">Where we've worked</h3>
-    {{industry_grid}}
+    <div class="carousel" data-carousel>
+      {{industry_grid}}
+    </div>
     <div class="section__actions btn-row">
       <a class="btn btn--plain btn--pill btn--clear" href="/industries">See all industries</a>
     </div>
@@ -82,7 +84,9 @@
     <h2 class="section__title">Films that stay with you.</h2>
     <p>These are a few of the stories we're proudest to have told. Each one started with a question worth answering and ended with people who felt something. Press play on any of these films:</p>
   </div>
-  {{portfolio_featured}}
+  <div class="carousel carousel--work" data-carousel>
+    {{portfolio_featured}}
+  </div>
   <div class="container">
     <div class="section__actions btn-row">
       <a class="btn btn--plain btn--pill btn--clear-dark" href="/portfolio">See all our work</a>

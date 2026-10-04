@@ -1609,3 +1609,53 @@ body:not(.page-sections) .kicker::before { content: none; }
 @media (max-width: 900px) { .industry-cards { --tile-cols: 3; } }
 @media (max-width: 800px) { .industry-cards { --tile-cols: 2; --tile-gap: 10px; } }
 @media (max-width: 700px) { .audience-cards { --tile-gap: 8px; } }
+
+/* ---------- Homepage carousels (04 Industries, 06 Our work) ----------
+   The tile list scrolls sideways and snaps tile by tile. site.js adds faint arrows on the left and right and a row of
+   dots underneath that shows how many more there are; without script it's still a swipeable row. */
+.carousel { position: relative; --car-gap: 12px; }
+.carousel > .industry-cards, .carousel > .work-grid {
+  display: flex; flex-wrap: nowrap; justify-content: flex-start; gap: var(--car-gap);
+  overflow-x: auto; overscroll-behavior-x: contain; scroll-snap-type: x mandatory; scroll-behavior: smooth;
+  scrollbar-width: none; padding-block: 6px; margin-block: -6px;
+}
+.carousel > .industry-cards::-webkit-scrollbar, .carousel > .work-grid::-webkit-scrollbar { display: none; }
+.carousel > .industry-cards > li, .carousel > .work-grid > .work-tile { scroll-snap-align: start; }
+.carousel > .industry-cards { --tile-gap: var(--car-gap); }
+.carousel--work { max-width: calc(var(--content) + 2 * var(--gutter)); margin: 32px auto 0; --car-gap: clamp(10px, 1.2vw, 16px); }
+.carousel--work > .work-grid { max-width: none; margin: 0; padding-inline: var(--gutter); scroll-padding-inline: var(--gutter); }
+.carousel--work > .work-grid > .work-tile { flex: 0 0 calc((100% - 2 * var(--car-gap)) / 3); min-width: 0; }
+.carousel__arrow {
+  position: absolute; z-index: 3; top: calc(50% - 14px); transform: translateY(-50%);
+  display: grid; place-items: center; width: 40px; height: 40px; padding: 0; border: 1px solid rgba(255, 255, 255, .35); border-radius: 50%;
+  background: rgba(0, 0, 0, .38); color: #fff; opacity: .6; cursor: pointer;
+  -webkit-backdrop-filter: blur(6px); backdrop-filter: blur(6px); transition: opacity .25s, background-color .25s;
+}
+.carousel__arrow:hover, .carousel__arrow:focus-visible { opacity: 1; background: rgba(0, 0, 0, .6); }
+.carousel__arrow:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; }
+.carousel__arrow[disabled] { opacity: 0; pointer-events: none; }
+.carousel__arrow svg { width: 18px; height: 18px; }
+.carousel__arrow--prev { left: 8px; }
+.carousel__arrow--next { right: 8px; }
+.carousel--work .carousel__arrow--prev { left: calc(var(--gutter) + 8px); }
+.carousel--work .carousel__arrow--next { right: calc(var(--gutter) + 8px); }
+.carousel__dots { display: flex; justify-content: center; gap: 8px; height: 28px; align-items: flex-end; }
+.carousel__dots span { width: 6px; height: 6px; border-radius: 50%; background: currentColor; opacity: .25; transition: opacity .25s, width .25s; }
+.carousel__dots span.is-on { opacity: .9; width: 18px; border-radius: 3px; }
+.carousel.is-static .carousel__arrow, .carousel.is-static .carousel__dots { display: none; }
+@media (max-width: 800px) {
+  .carousel > .industry-cards { --tile-cols: 1.7; }
+  .carousel--work > .work-grid > .work-tile { flex-basis: calc((100% - var(--car-gap)) / 1.6); }
+  .carousel__arrow { width: 34px; height: 34px; }
+}
+@media (max-width: 560px) {
+  .carousel--work { --car-gap: 10px; }
+  .carousel--work .work-grid--portrait .video { border-radius: 7px; }
+  .carousel--work .work-grid--portrait .video__label { left: 12px; right: 12px; bottom: 12px; font-size: .9rem; line-height: 1.3; }
+  .carousel--work .work-grid--portrait .video .video__play, .carousel--work .work-grid--portrait .video:hover .video__play { opacity: .9; transform: scale(.75); }
+}
+
+/* Phones: the newest Intel post is a 4:5 card instead of a tall 9:16 one, so it doesn't fill the screen */
+@media (max-width: 760px) {
+  .intel-card--tall .intel-card__media { aspect-ratio: 4 / 5; }
+}
