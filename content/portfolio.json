@@ -8,7 +8,7 @@
     { "client": "Relentless Beats", "title": "Decadence Arizona 2025 Aftermovie", "youtube": "pDk121-TCto", "zoom": true, "frame": 2 },
     { "client": "ITCA WIC", "title": "Dear Mom", "youtube": "QlP7wPaFcVU", "zoom": true },
     { "client": "Boston Scientific", "title": "Rezum", "youtube": "ECfZ1gZtzlE", "focus": "x41" },
-    { "client": "Training Mask", "title": "Learn To Breathe", "youtube": "jduIrHZT0og", "frame": 3 },
+    { "client": "Training Mask", "title": "Learn To Breathe", "youtube": "jduIrHZT0og", "frame": 3, "zoom": true },
     { "client": "High Vibe Kitchen", "title": "Take a Little Trip", "youtube": "D46bYNK_lvw" }
   ],
   "categories": [
@@ -60,7 +60,7 @@
         { "client": "Hypnotik", "title": "Pack it Up", "youtube": "WoFqn7U9tq4" },
         { "client": "Aurelio Physical Therapy", "title": "Fitness Forward Performance", "youtube": "ASbLkvgd874" },
         { "client": "Golf Digest", "title": "What Would Bubba Watson Shoot?", "youtube": "2g7dOnDKYZo" },
-        { "client": "Training Mask", "title": "Learn To Breathe", "youtube": "jduIrHZT0og", "frame": 3 },
+        { "client": "Training Mask", "title": "Learn To Breathe", "youtube": "jduIrHZT0og", "frame": 3, "zoom": true },
         { "client": "Training Mask", "title": "Behind the Scenes", "youtube": "qeCo9vV3pH8" }
       ]
     },
