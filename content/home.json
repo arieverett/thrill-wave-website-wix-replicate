@@ -27,6 +27,13 @@
       "text": "We shoot stills with the same eye: brand imagery, portraits, products and behind the scenes.",
       "more": "Our stills come from the same eye as our films. We can shoot them alongside the video or on their own.",
       "includes": "Brand imagery, portraits, products, behind the scenes"
+    },
+    {
+      "icon": "aperture",
+      "name": "Rentals",
+      "text": "You can rent our cinema cameras, lenses and lighting, with or without our crew.",
+      "more": "Our own cinema kit is available to rent, on its own or with our crew to run it.",
+      "includes": "Cinema cameras, lenses, lighting, crew optional"
     }
   ],
   "audiences": [
