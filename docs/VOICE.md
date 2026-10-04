@@ -16,7 +16,7 @@ Describe it in plain words. It's research and a point of view, not a product pit
 
 ## Where stories live
 
-Almost every great story, from Shakespeare to the best documentaries, plays out against one of three backdrops: athletics, the arts or academics (science, medicine, engineering, research, law and governance). Our industries are grouped that way, and copy about industries can lean on it: the setting changes, but the human story underneath doesn't.
+Almost every great story, from Shakespeare to the best documentaries, plays out against one of three backdrops: athletics, the arts or academics (science, medicine, engineering, research, law and governance). Our industries are grouped that way (the site calls them "Fields"; the address stays /industries for search), and copy about them can lean on it: the setting changes, but the human story underneath doesn't.
 
 ## How we report
 

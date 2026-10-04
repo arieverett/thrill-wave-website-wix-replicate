@@ -89,6 +89,12 @@
 /industries/sports-and-fitness      /industries/sports                        301
 /industries/finance                 /industries/professional-services         301
 /industries/real-estate             /industries/tech                          301
-/industries/construction            /industries/industrial                    301
+/industries/construction            /industries/builders-and-makers           301
 /industries/consumer-products       /industries/products                      301
-/industries/hospitality               /industries/food                          301
+/industries/hospitality               /industries/food-and-hospitality          301
+
+# Fields rename, Oct 4, 2026
+/industries/industrial              /industries/builders-and-makers           301
+/industries/manufacturing           /industries/builders-and-makers           301
+/industries/food                    /industries/food-and-hospitality          301
+/who-we-serve/media                 /who-we-serve/media-and-publishing        301

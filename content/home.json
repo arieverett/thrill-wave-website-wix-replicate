@@ -90,33 +90,39 @@
       ]
     },
     {
-      "name": "Media",
-      "text": "We do field production, promos and sizzles for networks, publishers and sports media, delivered to broadcast spec.",
+      "name": "Media & publishing",
+      "text": "We do field production, segments, promos and series for networks, public media, news outlets and publishers, delivered to broadcast spec.",
       "still": "2g7dOnDKYZo",
       "example": "2g7dOnDKYZo",
       "title": "Broadcast-ready, on deadline.",
-      "seoTitle": "Video Production for Media",
-      "headline": "Video for media",
+      "seoTitle": "Video Production for Media & Publishing",
+      "headline": "Video for media and publishing",
       "faq": [
         {
           "q": "Do you provide field crews for networks and publishers?",
           "a": "Yes. We bring camera, sound and producer support for interviews, segments and promos, delivered to your specs."
         },
         {
-          "q": "Who have you worked with in media and sports?",
-          "a": "We've worked with names like NBC, the NFL, UFC and Golf Digest, plus festival promoters like Relentless Beats."
+          "q": "Who have you worked with in media?",
+          "a": "We've worked with NBC, the NFL, UFC and Golf Digest, and Your Voice, Your Power, our docuseries with the Inter Tribal Council of Arizona, is headed to PBS."
         }
       ],
       "work": [
         "2g7dOnDKYZo",
+        {
+          "youtube": "Gh67yEMyOCs",
+          "client": "ITCA Native Vote",
+          "title": "Your Voice, Your Power: Full Episode",
+          "frame": 3,
+          "zoom": true
+        },
         "sF4KJxf99nA",
-        "24xC8pzZNxw",
         "jduIrHZT0og"
       ],
       "related": [
         "Sports",
-        "Live Events",
-        "Products"
+        "Arts & culture",
+        "Tribal Nations"
       ],
       "quote": {
         "text": "The best video production company I've ever worked with; and I have a 10 year background in television production / video production.",
@@ -125,13 +131,13 @@
       },
       "about": "We know broadcast specs and deadlines, and we show up ready to roll. Here's What Would Bubba Watson Shoot?, which we made for Golf Digest:",
       "heading": "Specs are specs.",
-      "intro": "We do field production, promos and sizzles for networks, publishers, sports media and streaming channels. We know broadcast specs, we know deadlines, and we show up ready to roll.",
+      "intro": "We do field production, segments, promos and series for networks, public media, news outlets, magazines, publishers and streaming channels. We know broadcast specs, we know deadlines, and we show up ready to roll. Your Voice, Your Power, our docuseries with the Inter Tribal Council of Arizona, is headed to PBS.",
       "approach": "Frame rates, codecs and loudness match your delivery sheet the first time. Air dates don't move, so we turn edits around fast without cutting corners. Our field crews arrive prepped and get the interview in one sitting. Here's some of what we've made for media:",
       "points": [
-        "We work with networks, publishers, sports media and streaming channels.",
-        "We send field crews, shoot interviews and turn edits around fast, delivered to your specs.",
-        "We make shows, segments, promos and sizzles.",
-        "The work runs on networks, publisher sites and sports media channels."
+        "We work with networks, public media, news outlets, magazines, publishers and streaming channels.",
+        "We send field crews, report the story, shoot interviews and turn edits around fast, delivered to your specs.",
+        "We make series, segments, promos, sizzles and short documentaries.",
+        "The work runs on broadcast and public media, on publisher and news sites and across their channels."
       ]
     },
     {
@@ -180,6 +186,51 @@
       ]
     },
     {
+      "name": "Schools & institutions",
+      "text": "We make films for universities, schools, museums, art spaces and research centers that help people learn, visit and believe in the work.",
+      "still": "n26-IyiVLsw",
+      "example": "n26-IyiVLsw",
+      "title": "Big ideas, made clear.",
+      "seoTitle": "Video Production for Schools & Institutions",
+      "headline": "Video for schools and institutions",
+      "faq": [
+        {
+          "q": "What do schools and institutions use video for?",
+          "a": "Mostly to explain the work, recruit students and staff, bring in donors and grants, and invite people to visit. One shoot can cover all of them if we plan the cuts up front."
+        },
+        {
+          "q": "Can you explain complex research on camera?",
+          "a": "Yes. We read up first, then let the people who do the work explain it in their own words, and we add visuals where words aren't enough. We've done it for Nektar's cancer research and for the Inter Tribal Council of Arizona's vaccine education."
+        }
+      ],
+      "work": [
+        "n26-IyiVLsw",
+        {
+          "vimeo": "1175739079",
+          "client": "ITCA TEC",
+          "title": "Case Study Using SITREP",
+          "thumbnail": "https://i.vimeocdn.com/video/2206610840-ab9c7452ada6128dda809c82750fb931c920b1da79ebba045b626a540217cd86-d_1280x720"
+        },
+        "8BruwRwC9Tg",
+        "uPjYjRDq_qU"
+      ],
+      "related": [
+        "Education & research",
+        "Arts & culture",
+        "Medical"
+      ],
+      "about": "Institutions have big ideas and short attention spans to win over, so we look for the person who makes the idea click. Here's Immerse Yourself, which we made for Wonderspaces:",
+      "heading": "Teach it, then show it.",
+      "intro": "Universities, schools, museums, art spaces and research centers all have the same problem: important work that is hard to explain in a minute. We help them show it instead. We've filmed immersive art at Wonderspaces, vaccine education with the Inter Tribal Council of Arizona's Tribal Epidemiology Center and patient stories for Nektar's research.",
+      "approach": "We do our homework before we film, so we can ask the questions that get experts talking like people. We keep it honest and plain, and we let the work speak for itself. Most institutions need more than one film from a shoot, so we plan the recruiting cut, the donor cut and the social cuts before we roll. Here are a few films that fit the bill:",
+      "points": [
+        "We work with universities, schools, museums, art spaces, libraries, foundations and research centers.",
+        "We research the subject first, then let teachers, researchers and artists explain it in their own words.",
+        "We make explainers, recruiting films, donor and grant films, exhibition films and short documentaries.",
+        "The films play in classrooms and lobbies, at galas, in grant reports and on websites and social."
+      ]
+    },
+    {
       "name": "Businesses",
       "text": "We make explainers, culture films and stories that connect people with what a business does, from the bakery down the street to a national company.",
       "still": "JQEb45RgaK8:1",
@@ -204,10 +255,10 @@
         "Jqci51WSpO0"
       ],
       "related": [
-        "Food",
+        "Food & hospitality",
         "Medical",
         "Professional Services",
-        "Industrial"
+        "Builders & makers"
       ],
       "about": "Every business has people and a craft worth showing, whether it's one shop or a hundred. Here's Premium Products, Excellent Service, which we made for Citgo and Brundage Bone:",
       "heading": "Your people are the story.",
@@ -432,6 +483,54 @@
       ]
     },
     {
+      "name": "Education & research",
+      "pillar": "Academics",
+      "still": "uPjYjRDq_qU",
+      "clients": [
+        "Nektar",
+        "Thermo Fisher",
+        "ITCA Tribal Epidemiology Center",
+        "New Pathways For Youth"
+      ],
+      "link": "/portfolio#healthcare-medical",
+      "text": "We explain science, research and learning on camera, from the lab to the classroom, in plain words.",
+      "title": "Hard ideas, made simple.",
+      "example": "8BruwRwC9Tg",
+      "seoTitle": "Education & Research Video Production",
+      "headline": "Education and research video",
+      "intro": "Good research and good teaching both deserve a good explanation. We've told a patient's story for Nektar's cancer research, helped the Inter Tribal Council of Arizona's Tribal Epidemiology Center explain vaccines to its own communities and filmed mentoring with New Pathways For Youth.",
+      "faq": [
+        {
+          "q": "Can you make a video essay or explainer about our research?",
+          "a": "Yes. We read the papers, talk to the people who did the work and build the story around one clear idea, with graphics where they help."
+        },
+        {
+          "q": "Do you work with schools and universities?",
+          "a": "Yes. We make recruiting films, program films and explainers, and we plan around class schedules and campus rules."
+        }
+      ],
+      "work": [
+        {
+          "vimeo": "1175739079",
+          "client": "ITCA TEC",
+          "title": "Case Study Using SITREP",
+          "thumbnail": "https://i.vimeocdn.com/video/2206610840-ab9c7452ada6128dda809c82750fb931c920b1da79ebba045b626a540217cd86-d_1280x720"
+        },
+        "8BruwRwC9Tg",
+        "uPjYjRDq_qU",
+        "ABYrJD7QISk"
+      ],
+      "about": "The best explanations come from the people who know the work best. Here's Mike's Story, which we made with Nektar about a melanoma treatment:",
+      "heading": "Check the facts, then tell the story.",
+      "approach": "We read before we film, so we can ask the questions a curious viewer would. We check every fact with the people on the record, and we let researchers, teachers and students explain things in their own words. Then we keep only what helps someone understand. Here are a few of the films we've made to teach:",
+      "points": [
+        "We work with universities, schools, labs, research teams, health educators and youth programs.",
+        "We read up on the subject, check every fact and let the experts explain it in their own words.",
+        "We make explainers, video essays, research stories, training films and recruiting films.",
+        "The films play in classrooms and trainings, at conferences, in grant reports and online."
+      ]
+    },
+    {
       "name": "Tech",
       "pillar": "Academics",
       "still": "Jqci51WSpO0",
@@ -620,17 +719,58 @@
       ]
     },
     {
-      "name": "Food",
+      "name": "Arts & culture",
+      "pillar": "Arts",
+      "still": "n26-IyiVLsw",
+      "clients": [
+        "Wonderspaces",
+        "Music Celebrations International",
+        "Relentless Beats"
+      ],
+      "link": "/portfolio#events-hospitality-travel",
+      "text": "We film music, museums, art spaces and performances, and the artists who make them.",
+      "title": "Made to be felt.",
+      "example": "n26-IyiVLsw",
+      "seoTitle": "Arts & Culture Video Production",
+      "headline": "Arts and culture video",
+      "intro": "Art is hard to describe and easy to feel, so we film it the way it feels in the room. We've filmed the immersive shows at Wonderspaces, followed Music Celebrations International's musicians to Ireland and made aftermovies for Relentless Beats.",
+      "faq": [
+        {
+          "q": "Do you make music videos?",
+          "a": "Yes. We plan the concept with the artist, shoot it like a short film and cut it to the music."
+        },
+        {
+          "q": "Can you film inside a museum or gallery?",
+          "a": "Yes. We work around open hours, light without harming the work and keep crews small so the space stays calm."
+        }
+      ],
+      "work": [
+        "n26-IyiVLsw",
+        "oXOPxKmigKA",
+        "pDk121-TCto"
+      ],
+      "about": "Art spaces are made to be walked through, so we move the camera the way a visitor would. Here's Immerse Yourself, which we made for Wonderspaces:",
+      "heading": "Let the work speak.",
+      "approach": "We spend time with the work before we film it, so the camera knows where to look. We respect the artist's vision and keep our hands off the parts that make it theirs. And we cut to the rhythm of the piece, whether that's a song, a performance or a room full of light. Here are a few of the pieces we've filmed:",
+      "points": [
+        "We work with musicians, artists, museums, galleries, art spaces and performing arts groups.",
+        "We plan with the artist, then shoot it like a short film, with light, movement and sound that match the work.",
+        "We make music videos, exhibition films, performance films, artist profiles and promos.",
+        "The films play on streaming and social, in galleries and lobbies and in grant and sponsor pitches."
+      ]
+    },
+    {
+      "name": "Food & hospitality",
       "pillar": "Arts",
       "still": "bDNn4kDE3H4",
       "clients": [
         "High Vibe Kitchen",
         "PB Americano"
       ],
-      "text": "We film kitchens, chefs, restaurants and the food people make, so viewers can almost taste it.",
+      "text": "We film kitchens, dining rooms, hotels and the people behind them, so people can almost taste it before they book.",
       "title": "Make them almost taste it.",
       "example": "D46bYNK_lvw",
-      "seoTitle": "Food and Restaurant Video Production",
+      "seoTitle": "Food & Hospitality Video Production",
       "intro": "Cooking is one of the oldest arts there is, and every kitchen has a story behind it. We film chefs, restaurants and food makers so viewers can almost taste what's on the plate, like our work for High Vibe Kitchen and PB Americano.",
       "faq": [
         {
@@ -651,15 +791,16 @@
       "heading": "Film the feeling, not the room.",
       "approach": "Food is hard to film, because steam fades, sauces set and ice melts. We light and shoot fast, so every plate looks like it just left the kitchen. Guests buy the experience rather than the square footage, so we film the moments as well as the space. We also work around service and guests, so the shoot never gets in the way of a full house. Here's some of that work:",
       "points": [
-        "We work with restaurants, chefs, kitchens and the people who make food and drink.",
-        "We film the food, the craft behind it and the people who gather around it.",
-        "We make films about the place and the people, menu and social pieces, and product films.",
-        "The films live on your website, on delivery and booking sites, on social and on screens in the room."
+        "We work with restaurants, chefs, food and drink makers, hotels and resorts.",
+        "We light food so it looks as good as it tastes, and we film the people who make the place what it is.",
+        "We make brand films, menu and product films, event recaps and social cuts.",
+        "The films play on your website and booking pages, across social and in pitches to partners and stores."
       ],
-      "link": "/portfolio#events-hospitality-travel"
+      "link": "/portfolio#events-hospitality-travel",
+      "headline": "Food and hospitality video"
     },
     {
-      "name": "Industrial",
+      "name": "Builders & makers",
       "pillar": "Academics",
       "still": "JQEb45RgaK8",
       "clients": [
@@ -668,18 +809,18 @@
         "IMS Builders"
       ],
       "link": "/portfolio#technology-manufacturing",
-      "text": "We film crews, plants, job sites and the scale of the work, from construction to manufacturing and energy.",
+      "text": "We film crews, job sites, plants and the scale of the work, across construction, manufacturing and energy.",
       "title": "The scale of the work.",
       "example": "CN1IN8xlTVg",
-      "seoTitle": "Industrial & Construction Video Production",
-      "intro": "Industrial work is done by crews, and crews make great stories. We've filmed for Rumco, IMS Builders and Citgo and Brundage Bone, from the job site to the finished build, and we bring the same approach to plants, yards and the people who run them.",
+      "seoTitle": "Construction & Manufacturing Video Production",
+      "intro": "Construction and manufacturing are done by crews, and crews make great stories. We've filmed for Rumco, IMS Builders and Citgo and Brundage Bone, from the job site to the finished build, and we bring the same approach to plants, yards and the people who run them.",
       "faq": [
         {
           "q": "Can you film on an active job site or plant floor?",
           "a": "Yes. We plan with your safety lead, wear the gear, bring only the crew we need and shoot around the work."
         },
         {
-          "q": "What do industrial companies use video for?",
+          "q": "What do construction and manufacturing companies use video for?",
           "a": "Mostly company and culture films, recruiting, project recaps and safety training. Rumco's films cover both its company story and its internal operations."
         }
       ],
@@ -689,7 +830,7 @@
         "JQEb45RgaK8",
         "4bg9VjczCXg"
       ],
-      "about": "Industrial work is done by crews, and crews make great stories. Here's Building With Integrity, one of the films we made for Rumco:",
+      "about": "Building and making things is done by crews, and crews make great stories. Here's Building With Integrity, one of the films we made for Rumco:",
       "heading": "Real crews, real pride.",
       "approach": "We follow your site rules, wear the gear and work around live equipment without slowing the job. Aerials and wide moves show the size of the work in a way a phone photo never will. Hiring is hard, too, and a film that shows real crews and real pride does more for recruiting than any job post. Here's some of our work from the job site:",
       "points": [
@@ -698,7 +839,7 @@
         "We make company films, recruiting films, project recaps and safety training.",
         "The films play in bids and proposals, on careers pages, in safety training and on your website."
       ],
-      "headline": "Industrial video",
+      "headline": "Construction and manufacturing video",
       "focus": "far-right"
     },
     {
