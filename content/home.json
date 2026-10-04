@@ -4,7 +4,7 @@
       "icon": "compass",
       "name": "Story",
       "text": "We research your world, find the idea, write it and plan where the film will live.",
-      "more": "Every good film starts with knowing who it's for and what it has to do. Our SITREP research into your craft, your peers and your industry points us to the story worth telling, and then we write it and plan where it will play.",
+      "more": "Every good film starts with knowing who it's for and what it has to do, and we find that out the way a reporter would. Our SITREP research into your craft, your peers and your industry points us to the story worth telling, and then we write it and plan where it will play.",
       "includes": "SITREP research, concepts, treatments, scripts, storyboards, distribution plans"
     },
     {
@@ -251,7 +251,7 @@
         "Jqci51WSpO0"
       ],
       "related": [
-        "Hospitality",
+        "Food",
         "Medical",
         "Professional Services",
         "Industrial"
@@ -270,49 +270,8 @@
   ],
   "industries": [
     {
-      "name": "Medical",
-      "still": "8BruwRwC9Tg",
-      "clients": [
-        "Boston Scientific",
-        "Thermo Fisher",
-        "Nektar",
-        "Andres Plastic Surgery"
-      ],
-      "link": "/portfolio#healthcare-medical",
-      "text": "We make patient stories, product launches and procedure explainers with the care and accuracy medicine asks for.",
-      "title": "Care and accuracy, on camera.",
-      "example": "8BruwRwC9Tg",
-      "seoTitle": "Medical Video Production",
-      "intro": "Medicine is hard to film well. The science has to be right, patients have to feel safe, and the film still has to hold someone's attention. We've done it for Boston Scientific, Thermo Fisher and Nektar, for Andres Plastic Surgery, and for clinics and practices across Phoenix.",
-      "faq": [
-        {
-          "q": "Can you film in a hospital or clinic?",
-          "a": "Yes. We work around patients and staff, follow your facility's rules and bring only the crew the shot needs. Tell us the restrictions early and we'll plan the shoot around them."
-        },
-        {
-          "q": "Do you make videos for medical device and biotech companies?",
-          "a": "We do. We've made product films and patient stories for companies like Boston Scientific and Nektar, with shorter cuts for sales teams, conferences and social."
-        }
-      ],
-      "work": [
-        "8BruwRwC9Tg",
-        "ECfZ1gZtzlE",
-        "N3yfL_gk_vE",
-        "ASbLkvgd874",
-        "Ny-eNXzNrtA"
-      ],
-      "about": "Medicine is hard to film well, because the science has to be right and patients have to feel safe. Here's Mike's story, which we made with Nektar:",
-      "heading": "The science has to be right.",
-      "approach": "We check every claim with your team before anything ships, and we build the review rounds into the schedule instead of squeezing them in at the end. On set we keep things quiet, explain everything up front and never push for a moment someone isn't ready to share. Then we turn procedures and mechanisms into clear pictures and plain words, so a patient, a buyer or a board member gets it the first time. Here are a few of the films we've made in medicine:",
-      "points": [
-        "We work with hospitals, clinics, specialty and surgical practices, and medical device and biotech companies.",
-        "We film patients, clinicians, procedures and products, and we handle all of it with discretion.",
-        "We make patient stories, launches, explainers and recruiting films.",
-        "The films play in waiting rooms, at conferences, with sales teams and on social."
-      ]
-    },
-    {
       "name": "Sports",
+      "pillar": "Athletics",
       "still": "jduIrHZT0og:3",
       "zoom": true,
       "clients": [
@@ -354,6 +313,7 @@
     },
     {
       "name": "Live Events",
+      "pillar": "Arts",
       "still": "24xC8pzZNxw",
       "zoom": true,
       "clients": [
@@ -399,95 +359,136 @@
       ]
     },
     {
-      "name": "Hospitality",
+      "name": "Food",
+      "pillar": "Arts",
       "still": "bDNn4kDE3H4",
       "clients": [
         "High Vibe Kitchen",
-        "EXP Trips"
+        "PB Americano"
       ],
-      "link": "/portfolio#events-hospitality-travel",
-      "text": "We film restaurants, travel and experiences so people can almost taste and feel them.",
+      "text": "We film kitchens, chefs, restaurants and the food people make, so viewers can almost taste it.",
       "title": "Make them almost taste it.",
       "example": "D46bYNK_lvw",
-      "seoTitle": "Hospitality Video Production",
-      "intro": "People book with their eyes. We film restaurants, trips and experiences so viewers can almost taste the food and feel the place, like our work for High Vibe Kitchen and EXP Trips.",
+      "seoTitle": "Food and Restaurant Video Production",
+      "intro": "Cooking is one of the oldest arts there is, and every kitchen has a story behind it. We film chefs, restaurants and food makers so viewers can almost taste what's on the plate, like our work for High Vibe Kitchen and PB Americano.",
       "faq": [
         {
           "q": "Can you film while we're open?",
           "a": "Usually, yes. We plan around service, keep the crew out of the way and save the big setups for quiet hours."
         },
         {
-          "q": "What do restaurants and travel companies usually ask for?",
-          "a": "Usually one main film about the place, a stack of short social cuts and stills from the same shoot, so the menu, the website and the feed all stay fresh."
+          "q": "What do restaurants and food makers usually ask for?",
+          "a": "Usually one main film about the people and the place, a stack of short social cuts and stills from the same shoot, so the menu, the website and the feed all stay fresh."
         }
       ],
       "work": [
         "D46bYNK_lvw",
         "bDNn4kDE3H4",
-        "mxQFKiYivmI",
-        "oXOPxKmigKA"
+        "nCmXrqVTkwA"
       ],
-      "about": "People book with their eyes, so we film the food and the feeling, not just the room. Here's Take a Little Trip, which we made for High Vibe Kitchen:",
+      "about": "People eat with their eyes first, so we film the food and the feeling, not just the room. Here's Take a Little Trip, which we made for High Vibe Kitchen:",
       "heading": "Film the feeling, not the room.",
       "approach": "Food is hard to film, because steam fades, sauces set and ice melts. We light and shoot fast, so every plate looks like it just left the kitchen. Guests buy the experience rather than the square footage, so we film the moments as well as the space. We also work around service and guests, so the shoot never gets in the way of a full house. Here's some of that work:",
       "points": [
-        "We work with restaurants, hotels, resorts and travel companies.",
-        "We film the food, the spaces and the guests so people want to be there.",
-        "We make films about the place, menu and social pieces, and travel films.",
-        "The films live on your website, on booking sites, on social and on screens in the lobby."
-      ]
+        "We work with restaurants, chefs, kitchens and the people who make food and drink.",
+        "We film the food, the craft behind it and the people who gather around it.",
+        "We make films about the place and the people, menu and social pieces, and product films.",
+        "The films live on your website, on delivery and booking sites, on social and on screens in the room."
+      ],
+      "link": "/portfolio#events-hospitality-travel"
     },
     {
-      "name": "Professional Services",
-      "still": "Qd40htwEmJM:2",
+      "name": "Products",
+      "pillar": "Arts",
+      "still": "WoFqn7U9tq4",
       "clients": [
-        "UBS",
-        "State Farm",
-        "1st Bank"
+        "Kindred",
+        "Hypnotik",
+        "Neighbor"
       ],
-      "link": "/portfolio",
-      "text": "We make films for financial, accounting and law firms, where trust is the product and every frame has to earn it.",
-      "title": "Trust, on screen.",
-      "example": "Qd40htwEmJM",
-      "seoTitle": "Professional Services Video Production",
-      "headline": "Professional services video",
-      "intro": "In professional services, trust is the product. Whether it's a wealth manager, an accounting firm or a law practice, people want to meet the team before the first meeting. We've made films for UBS, State Farm, 1st Bank, Questage and Payroc, including a team film for Finnerty Partners, a UBS Private Wealth Management team that oversees $914 million in client assets.",
+      "link": "/portfolio#product-lifestyle",
+      "text": "We make launch films, product demos and social cuts that make a product the one people reach for.",
+      "title": "The one people reach for.",
+      "example": "WoFqn7U9tq4",
+      "seoTitle": "Product Video Production",
+      "headline": "Product video",
+      "intro": "A product video has about a second to earn attention. We've made launch films, demos and social cuts for Kindred, Hypnotik, Neighbor, PB Americano and Fuji Sports.",
       "faq": [
         {
-          "q": "Do you work with wealth management teams?",
-          "a": "Yes. Our film for Finnerty Partners, a UBS team, lets prospective clients feel the service before the first meeting."
+          "q": "Can you shoot product and lifestyle on the same day?",
+          "a": "Usually, yes. We plan the studio and lifestyle setups together, so one production covers both."
         },
         {
-          "q": "How do you handle compliance review?",
-          "a": "We build review rounds into the schedule and keep every claim in the script, where your compliance team or your firm's counsel can check it before we shoot."
+          "q": "Do you deliver vertical cuts for social?",
+          "a": "Yes. We frame every shoot for vertical and horizontal and cut a version sized for each platform."
         }
       ],
       "work": [
-        "Qd40htwEmJM",
+        "opb_FLe4_Xo",
+        "WoFqn7U9tq4",
+        "nCmXrqVTkwA",
         {
-          "youtube": "oTBdp-MwnxA",
-          "client": "Questage",
-          "title": "Enduring Legacy"
-        },
-        {
-          "youtube": "d_pofos5ZLs",
-          "client": "Payroc",
-          "title": "Payments Simplified, For You"
-        },
-        "Jqci51WSpO0"
+          "client": "Neighbor",
+          "title": "Sustainable Furniture For The Modern Home",
+          "youtube": "ACgPMAyPQeI"
+        }
       ],
-      "about": "In professional services, trust is the product, so we make films that let people meet the team before the first meeting. Here's the one we made for Finnerty Partners at UBS:",
-      "heading": "Polished, but still human.",
-      "approach": "We plan scripts and claims with your compliance team from the start, so approvals don't stall the edit. Advisors, accountants and attorneys aren't actors, so we coach on camera and keep interviews conversational until busy people look at ease. The look is clean and premium, but it still feels human, because clients pick people, not logos. Here are a few of the films we've made for professional firms:",
+      "about": "A product video has about a second to earn attention, so we build the hook into the first frames. Here's Pack it Up, which we made for Hypnotik:",
+      "heading": "You get about a second.",
+      "approach": "We build the hook into the first frames and cut a version for every place it will play. We shoot close detail and real-world use in the same production, so you aren't paying for two. Product pages, social, store screens and launch events are all planned before we roll. Here are a few of the products we've filmed:",
       "points": [
-        "We work with wealth managers, banks, insurers and advisors, and we bring the same care to accounting and law firms.",
-        "We film polished interviews and team films, with compliance and your profession's rules in mind from the start.",
-        "We make team and service films, client education, explainers and recruiting films.",
-        "The films play in client meetings, in proposals, on your website and in recruiting."
+        "We work with the people who make products, from startups to names you'd find in any store.",
+        "We shoot in the studio and out in the world, with a cut for every place it will play.",
+        "We make launch films, product demos, how-to films and social cuts.",
+        "The films play on product pages, in stores, at launches and across social."
+      ]
+    },
+    {
+      "name": "Medical",
+      "pillar": "Academics",
+      "still": "8BruwRwC9Tg",
+      "clients": [
+        "Boston Scientific",
+        "Thermo Fisher",
+        "Nektar",
+        "Andres Plastic Surgery"
+      ],
+      "link": "/portfolio#healthcare-medical",
+      "text": "We make patient stories, product launches and procedure explainers with the care and accuracy medicine asks for.",
+      "title": "Care and accuracy, on camera.",
+      "example": "8BruwRwC9Tg",
+      "seoTitle": "Medical Video Production",
+      "intro": "Medicine is hard to film well. The science has to be right, patients have to feel safe, and the film still has to hold someone's attention. We've done it for Boston Scientific, Thermo Fisher and Nektar, for Andres Plastic Surgery, and for clinics and practices across Phoenix.",
+      "faq": [
+        {
+          "q": "Can you film in a hospital or clinic?",
+          "a": "Yes. We work around patients and staff, follow your facility's rules and bring only the crew the shot needs. Tell us the restrictions early and we'll plan the shoot around them."
+        },
+        {
+          "q": "Do you make videos for medical device and biotech companies?",
+          "a": "We do. We've made product films and patient stories for companies like Boston Scientific and Nektar, with shorter cuts for sales teams, conferences and social."
+        }
+      ],
+      "work": [
+        "8BruwRwC9Tg",
+        "ECfZ1gZtzlE",
+        "N3yfL_gk_vE",
+        "ASbLkvgd874",
+        "Ny-eNXzNrtA"
+      ],
+      "about": "Medicine is hard to film well, because the science has to be right and patients have to feel safe. Here's Mike's story, which we made with Nektar:",
+      "heading": "The science has to be right.",
+      "approach": "We check every claim with your team before anything ships, and we build the review rounds into the schedule instead of squeezing them in at the end. On set we keep things quiet, explain everything up front and never push for a moment someone isn't ready to share. Then we turn procedures and mechanisms into clear pictures and plain words, so a patient, a buyer or a board member gets it the first time. Here are a few of the films we've made in medicine:",
+      "points": [
+        "We work with hospitals, clinics, specialty and surgical practices, and medical device and biotech companies.",
+        "We film patients, clinicians, procedures and products, and we handle all of it with discretion.",
+        "We make patient stories, launches, explainers and recruiting films.",
+        "The films play in waiting rooms, at conferences, with sales teams and on social."
       ]
     },
     {
       "name": "Tech",
+      "pillar": "Academics",
       "still": "Jqci51WSpO0",
       "clients": [
         "Uber",
@@ -536,6 +537,7 @@
     },
     {
       "name": "Industrial",
+      "pillar": "Academics",
       "still": "JQEb45RgaK8",
       "clients": [
         "Rumco",
@@ -576,110 +578,58 @@
       "headline": "Industrial video"
     },
     {
-      "name": "Products",
-      "still": "WoFqn7U9tq4",
+      "name": "Professional Services",
+      "pillar": "Academics",
+      "still": "Qd40htwEmJM:2",
       "clients": [
-        "Kindred",
-        "Hypnotik",
-        "Neighbor"
+        "UBS",
+        "State Farm",
+        "1st Bank"
       ],
-      "link": "/portfolio#product-lifestyle",
-      "text": "We make launch films, product demos and social cuts that make a product the one people reach for.",
-      "title": "The one people reach for.",
-      "example": "WoFqn7U9tq4",
-      "seoTitle": "Product Video Production",
-      "headline": "Product video",
-      "intro": "A product video has about a second to earn attention. We've made launch films, demos and social cuts for Kindred, Hypnotik, Neighbor, PB Americano and Fuji Sports.",
+      "link": "/portfolio",
+      "text": "We make films for financial, accounting and law firms, where trust is the product and every frame has to earn it.",
+      "title": "Trust, on screen.",
+      "example": "Qd40htwEmJM",
+      "seoTitle": "Professional Services Video Production",
+      "headline": "Professional services video",
+      "intro": "In professional services, trust is the product. Whether it's a wealth manager, an accounting firm or a law practice, people want to meet the team before the first meeting. We've made films for UBS, State Farm, 1st Bank, Questage and Payroc, including a team film for Finnerty Partners, a UBS Private Wealth Management team that oversees $914 million in client assets.",
       "faq": [
         {
-          "q": "Can you shoot product and lifestyle on the same day?",
-          "a": "Usually, yes. We plan the studio and lifestyle setups together, so one production covers both."
+          "q": "Do you work with wealth management teams?",
+          "a": "Yes. Our film for Finnerty Partners, a UBS team, lets prospective clients feel the service before the first meeting."
         },
         {
-          "q": "Do you deliver vertical cuts for social?",
-          "a": "Yes. We frame every shoot for vertical and horizontal and cut a version sized for each platform."
+          "q": "How do you handle compliance review?",
+          "a": "We build review rounds into the schedule and keep every claim in the script, where your compliance team or your firm's counsel can check it before we shoot."
         }
       ],
       "work": [
-        "opb_FLe4_Xo",
-        "WoFqn7U9tq4",
-        "nCmXrqVTkwA",
+        "Qd40htwEmJM",
         {
-          "client": "Neighbor",
-          "title": "Sustainable Furniture For The Modern Home",
-          "youtube": "ACgPMAyPQeI"
-        }
+          "youtube": "oTBdp-MwnxA",
+          "client": "Questage",
+          "title": "Enduring Legacy"
+        },
+        {
+          "youtube": "d_pofos5ZLs",
+          "client": "Payroc",
+          "title": "Payments Simplified, For You"
+        },
+        "Jqci51WSpO0"
       ],
-      "about": "A product video has about a second to earn attention, so we build the hook into the first frames. Here's Pack it Up, which we made for Hypnotik:",
-      "heading": "You get about a second.",
-      "approach": "We build the hook into the first frames and cut a version for every place it will play. We shoot close detail and real-world use in the same production, so you aren't paying for two. Product pages, social, store screens and launch events are all planned before we roll. Here are a few of the products we've filmed:",
+      "about": "In professional services, trust is the product, so we make films that let people meet the team before the first meeting. Here's the one we made for Finnerty Partners at UBS:",
+      "heading": "Polished, but still human.",
+      "approach": "We plan scripts and claims with your compliance team from the start, so approvals don't stall the edit. Advisors, accountants and attorneys aren't actors, so we coach on camera and keep interviews conversational until busy people look at ease. The look is clean and premium, but it still feels human, because clients pick people, not logos. Here are a few of the films we've made for professional firms:",
       "points": [
-        "We work with the people who make products, from startups to names you'd find in any store.",
-        "We shoot in the studio and out in the world, with a cut for every place it will play.",
-        "We make launch films, product demos, how-to films and social cuts.",
-        "The films play on product pages, in stores, at launches and across social."
-      ]
-    },
-    {
-      "name": "Tribal Nations",
-      "still": "Gh67yEMyOCs:1",
-      "zoom": true,
-      "clients": [
-        "Inter Tribal Council of Arizona"
-      ],
-      "link": "/sitrep#itca",
-      "text": "We make public health, education and civic films with tribal communities, told in their own voices.",
-      "title": "In their own voices.",
-      "example": {
-        "youtube": "Gh67yEMyOCs",
-        "client": "ITCA Native Vote",
-        "title": "Your Voice, Your Power"
-      },
-      "seoTitle": "Tribal Nations Video Production",
-      "intro": "We make public health, education and civic films with the Inter Tribal Council of Arizona, which represents 21 tribal nations. The lesson has been the same every time: do the research first, then let community members tell their own stories.",
-      "faq": [
-        {
-          "q": "Have you worked with tribal governments before?",
-          "a": "Yes. Our work for the Inter Tribal Council of Arizona includes WIC nutrition PSAs, vaccine education for its Tribal Epidemiology Center and Your Voice, Your Power, a 10-part docuseries on tribal voting."
-        },
-        {
-          "q": "What does a SITREP add to a film for tribal communities?",
-          "a": "It finds the real barrier before we film. For ITCA's WIC program, our research showed the problem was trust, not awareness, and that changed the whole direction of the films."
-        }
-      ],
-      "work": [
-        "QlP7wPaFcVU",
-        {
-          "youtube": "zLy49zenWIM",
-          "client": "ITCA WIC",
-          "title": "Welcome to WIC"
-        },
-        {
-          "youtube": "Gh67yEMyOCs",
-          "client": "ITCA Native Vote",
-          "title": "Your Voice, Your Power: Full Episode",
-          "frame": 3,
-          "zoom": true
-        },
-        {
-          "vimeo": "1175739079",
-          "client": "ITCA TEC",
-          "title": "Case Study Using SITREP",
-          "thumbnail": "https://i.vimeocdn.com/video/2206610840-ab9c7452ada6128dda809c82750fb931c920b1da79ebba045b626a540217cd86-d_1280x720"
-        }
-      ],
-      "about": "We make these films with the Inter Tribal Council of Arizona, and community members always tell the story themselves. Here's an episode of Your Voice, Your Power, our docuseries on tribal voting:",
-      "heading": "Research first, then listen.",
-      "approach": "Many communities have good reason to doubt messages from outside, so our research looks for that history before we plan anything. That way the film speaks to it instead of around it. Leaders, elders, mothers and young voters speak for themselves, with no outside narrator. We film where people live and work, and we ask before we point a camera at anything. Here's some of the work we've made together:",
-      "points": [
-        "We work with tribal governments, councils and tribal health programs.",
-        "We do the research first, then film leaders and community members telling their own stories, on location.",
-        "We make public health, education, civic and cultural films.",
-        "The films play at community events, in clinics, on tribal media and across social."
+        "We work with wealth managers, banks, insurers and advisors, and we bring the same care to accounting and law firms.",
+        "We film polished interviews and team films, with compliance and your profession's rules in mind from the start.",
+        "We make team and service films, client education, explainers and recruiting films.",
+        "The films play in client meetings, in proposals, on your website and in recruiting."
       ]
     },
     {
       "name": "Government & Public Affairs",
+      "pillar": "Academics",
       "still": "tkqnm36YAfM",
       "clients": [
         "Inter Tribal Council of Arizona",
@@ -735,6 +685,65 @@
         "We do the research first, check every fact with your team and let community voices carry the message.",
         "We make civic engagement films, public health education, PSAs and docuseries.",
         "The films play at community events, in clinics, in briefings, on local media and across social."
+      ]
+    },
+    {
+      "name": "Tribal Nations",
+      "pillar": "Academics",
+      "still": "Gh67yEMyOCs:1",
+      "zoom": true,
+      "clients": [
+        "Inter Tribal Council of Arizona"
+      ],
+      "link": "/sitrep#itca",
+      "text": "We make public health, education and civic films with tribal communities, told in their own voices.",
+      "title": "In their own voices.",
+      "example": {
+        "youtube": "Gh67yEMyOCs",
+        "client": "ITCA Native Vote",
+        "title": "Your Voice, Your Power"
+      },
+      "seoTitle": "Tribal Nations Video Production",
+      "intro": "We make public health, education and civic films with the Inter Tribal Council of Arizona, which represents 21 tribal nations. The lesson has been the same every time: do the research first, then let community members tell their own stories.",
+      "faq": [
+        {
+          "q": "Have you worked with tribal governments before?",
+          "a": "Yes. Our work for the Inter Tribal Council of Arizona includes WIC nutrition PSAs, vaccine education for its Tribal Epidemiology Center and Your Voice, Your Power, a 10-part docuseries on tribal voting."
+        },
+        {
+          "q": "What does a SITREP add to a film for tribal communities?",
+          "a": "It finds the real barrier before we film. For ITCA's WIC program, our research showed the problem was trust, not awareness, and that changed the whole direction of the films."
+        }
+      ],
+      "work": [
+        "QlP7wPaFcVU",
+        {
+          "youtube": "zLy49zenWIM",
+          "client": "ITCA WIC",
+          "title": "Welcome to WIC"
+        },
+        {
+          "youtube": "Gh67yEMyOCs",
+          "client": "ITCA Native Vote",
+          "title": "Your Voice, Your Power: Full Episode",
+          "frame": 3,
+          "zoom": true
+        },
+        {
+          "vimeo": "1175739079",
+          "client": "ITCA TEC",
+          "title": "Case Study Using SITREP",
+          "thumbnail": "https://i.vimeocdn.com/video/2206610840-ab9c7452ada6128dda809c82750fb931c920b1da79ebba045b626a540217cd86-d_1280x720"
+        }
+      ],
+      "about": "We make these films with the Inter Tribal Council of Arizona, and community members always tell the story themselves. Here's an episode of Your Voice, Your Power, our docuseries on tribal voting:",
+      "heading": "Research first, then listen.",
+      "approach": "Many communities have good reason to doubt messages from outside, so our research looks for that history before we plan anything. That way the film speaks to it instead of around it. Leaders, elders, mothers and young voters speak for themselves, with no outside narrator. We film where people live and work, and we ask before we point a camera at anything. Here's some of the work we've made together:",
+      "points": [
+        "We work with tribal governments, councils and tribal health programs.",
+        "We do the research first, then film leaders and community members telling their own stories, on location.",
+        "We make public health, education, civic and cultural films.",
+        "The films play at community events, in clinics, on tribal media and across social."
       ]
     }
   ],

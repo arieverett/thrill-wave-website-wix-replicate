@@ -1660,3 +1660,5 @@ body:not(.page-sections) .kicker::before { content: none; }
   .intel-card--tall .intel-card__media { aspect-ratio: 4 / 5; }
 }
 .carousel--work .carousel__arrow { top: 26%; } /* clear of the films' play buttons */
+/* Industry tiles: the backdrop each one belongs to (Athletics, Arts, Academics), a small red label above the name */
+.industry-cards .industry-cards__pillar { margin: 0 0 6px; font: 500 .62rem/1 var(--font-mono); letter-spacing: .12em; text-transform: uppercase; color: var(--accent); }
