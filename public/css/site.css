@@ -1836,3 +1836,4 @@ body:not(.page-sections) .kicker::before { content: none; }
 .carousel--cards .audience-cards__body { flex: 1 1 auto; }
 .focus-x56 { --focus: 56% 50%; } .focus-x57 { --focus: 57% 50%; } .focus-x72 { --focus: 72% 50%; } .focus-x74 { --focus: 74% 50%; }
 .focus-x48 { --focus: 48% 50%; }
+.stats + p { margin-top: 40px; }
