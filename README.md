@@ -52,6 +52,16 @@ To add a blog post, copy any file in `content/posts/`, change the front matter a
 
 A push to `main` deploys to production. Any other branch gets its own preview URL.
 
+## Red pill / blue pill analytics
+
+The homepage Matrix easter egg counts who takes which pill. Each click goes to `/api/pill` (`functions/api/pill.js`), which saves it in the Cloudflare D1 database `thrillwave-analytics-pill`, bound to the Pages project as `TW_ANALYTICS` (production and preview). The table creates itself on first use.
+
+**Dashboard (unlisted):** `https://thrillwave.com/construct` shows the site's normal "page not found" to anyone who hasn't unlocked it, so nothing reveals it exists. To unlock a browser, open `https://thrillwave.com/construct?key=` followed by the `PILL_STATS_TOKEN` value (a secret in Pages > Settings > Variables and secrets). That sets a private cookie for a year and drops the key from the address bar; after that, plain `/construct` works in that browser. "Lock" (or `/construct?logout=1`) locks it again, and changing the secret locks every browser. The dashboard shows the red/blue split by each person's first pick, total clicks, switchers, decision time, a 30-day chart, device, country and referrer splits, and a live feed that refreshes every 30 seconds. "Ignore my clicks" stops counting clicks from that browser so the team's testing stays out of the numbers. It is served by `functions/construct.js`, never by the build, so it is not in the sitemap, menu, llms.txt or search.
+
+**Setup check:** `https://thrillwave.com/api/pill?health=1` reports whether the database is connected, how many rows it has, and whether the stats key is set. It shows no visitor data.
+
+**What gets stored:** a random browser ID (localStorage), the pill, whether it's that browser's first pick, seconds from page load to click, device type, country, referring site and campaign tags. No name, email or IP address. Clicks are only counted from the day this went live.
+
 ## Before cancelling Wix
 
 - [ ] Set `FORM_WEBHOOK_URL`, then send a test lead from a page with a lead form. (None right now: the forms were on `/marketingchallenges` and `/app-landing-page`, which were taken off the site Sept 29, 2026.)
