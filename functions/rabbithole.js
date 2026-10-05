@@ -1,11 +1,11 @@
 // Cloudflare Pages Function: /rabbithole, the private dashboard for the red / blue pill easter egg.
 //
 // Unlisted on purpose: it is served by this function (not a site page), so it never enters the build,
-// sitemap, menu or search, and anyone without the unlock cookie gets the site's ordinary 404 page,
-// so nothing shows the dashboard exists.
+// sitemap, menu or search. A browser without the unlock cookie sees a "Knock, knock" key screen.
 //
 //   /rabbithole?key=<PILL_STATS_TOKEN>   unlocks this browser for a year, then redirects to /rabbithole
-//   /rabbithole?logout=1                 locks this browser again
+//                                        (the key screen sends people here; a wrong key goes back with ?denied=1)
+//   /rabbithole?logout=1                 locks this browser again and returns to the key screen
 //
 // The numbers come from /api/pill, which checks the same cookie.
 
@@ -15,27 +15,21 @@ const PRIVATE = { 'Cache-Control': 'no-store', 'X-Robots-Tag': 'noindex, nofollo
 const cookie = (value, maxAge) => `${COOKIE}=${value}; Path=/; Max-Age=${maxAge}; HttpOnly; Secure; SameSite=Strict`;
 const go = (location, setCookie) => new Response(null, { status: 303, headers: { ...PRIVATE, Location: location, 'Set-Cookie': setCookie } });
 
-async function notFound(request, env) {
-  // Look exactly like a page that doesn't exist.
-  const page = await env.ASSETS.fetch(new URL('/404.html', request.url));
-  return new Response(page.body, { status: 404, headers: { 'Content-Type': 'text/html; charset=utf-8', ...PRIVATE } });
-}
-
 export async function onRequestGet({ request, env }) {
   const url = new URL(request.url);
 
-  if (url.searchParams.has('logout')) return go('/', cookie('', 0));
+  if (url.searchParams.has('logout')) return go('/rabbithole', cookie('', 0));
 
   const key = url.searchParams.get('key');
   if (key !== null) {
     if (await isKey(key, env)) return go('/rabbithole', cookie(await cookieValueFor(key), 60 * 60 * 24 * 365));
-    return notFound(request, env);
+    await new Promise((r) => setTimeout(r, 600)); // slow down guessing a little
+    return go('/rabbithole?denied=1', cookie('', 0));
   }
 
-  if (!(await isUnlocked(request, env))) return notFound(request, env);
-
+  const mode = (await isUnlocked(request, env)) ? 'open' : 'locked';
   const nonce = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(16))));
-  return new Response(PAGE.replaceAll('__NONCE__', nonce), {
+  return new Response(PAGE.replaceAll('__NONCE__', nonce).replace('__MODE__', mode), {
     headers: {
       ...PRIVATE,
       'Content-Type': 'text/html; charset=utf-8',
@@ -166,6 +160,16 @@ table.sr { position: absolute; left: -9999px; }
       <a class="btn" href="/rabbithole?logout=1">Lock</a>
     </div>
   </header>
+
+  <div class="lock" id="lock" hidden>
+    <h1 class="caret">Knock, knock</h1>
+    <p class="sub">Enter the key to see who took which pill. It's a line from the movie, and capitals, spaces and punctuation don't matter.</p>
+    <form id="login">
+      <input type="password" id="key" autocomplete="current-password" placeholder="The key" aria-label="Key" required>
+      <button type="submit">Jack in</button>
+    </form>
+    <p class="err" id="err" role="alert"></p>
+  </div>
 
   <main id="dash" hidden>
     <h1 class="caret" id="headline">Following the white rabbit</h1>
@@ -385,8 +389,23 @@ table.sr { position: absolute; left: -9999px; }
   }
 
   rain();
-  load();
-  setInterval(() => { if (!document.hidden) load(); }, 30000);
+  if ('__MODE__' === 'locked') {
+    $('status').innerHTML = '<span class="dot"></span>Locked';
+    $('lock').hidden = false;
+    if (new URLSearchParams(location.search).has('denied')) {
+      $('err').textContent = "That's not it. Try again.";
+      history.replaceState(null, '', '/rabbithole');
+    }
+    $('login').addEventListener('submit', (e) => {
+      e.preventDefault();
+      const v = $('key').value.trim();
+      if (v) location.assign('/rabbithole?key=' + encodeURIComponent(v));
+    });
+    $('key').focus();
+  } else {
+    load();
+    setInterval(() => { if (!document.hidden) load(); }, 30000);
+  }
   addEventListener('resize', () => { clearTimeout(resizeT); resizeT = setTimeout(() => { if (lastTrend) trend(lastTrend); }, 150); });
 })();
 </script>
