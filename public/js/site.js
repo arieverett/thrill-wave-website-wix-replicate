@@ -195,13 +195,10 @@ if (pillChoices.length) {
       utm_campaign: params.get('utm_campaign') || '',
       page: location.pathname,
     };
-    const body = JSON.stringify(payload);
-    const blob = new Blob([body], { type: 'application/json' });
-    if (navigator.sendBeacon?.('/api/pill', blob)) return;
     fetch('/api/pill', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body,
+      body: JSON.stringify(payload),
       keepalive: true,
     }).catch(() => {});
   };
