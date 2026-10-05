@@ -129,6 +129,86 @@ $$('[data-reveal-phone]').forEach((a) => a.addEventListener('click', (e) => {
 }));
 
 // ---------------------------------------------------------------------------
+// Matrix easter egg analytics: record red / blue pill choices with a tiny first-party beacon.
+// A random browser ID in localStorage distinguishes first-time from returning browsers; it is
+// not tied to a name/email and is never sent anywhere except our own /api/pill endpoint.
+// ---------------------------------------------------------------------------
+const pillChoices = $('[data-pill-choice]');
+if (pillChoices.length) {
+  const randomId = () => crypto.randomUUID?.() || `${Date.now().toString(36)}-${Math.random().toString(36).slice(2)}`;
+  const visitorKey = 'tw_visitor_v1';
+  const sessionKey = 'tw_session_v1';
+  let visitorId;
+  let sessionId;
+  let firstVisit = false;
+
+  try {
+    visitorId = localStorage.getItem(visitorKey);
+    if (!visitorId) {
+      firstVisit = true;
+      visitorId = randomId();
+      localStorage.setItem(visitorKey, visitorId);
+    }
+  } catch {
+    firstVisit = true;
+    visitorId = randomId();
+  }
+
+  try {
+    sessionId = sessionStorage.getItem(sessionKey);
+    if (!sessionId) {
+      sessionId = randomId();
+      sessionStorage.setItem(sessionKey, sessionId);
+    }
+  } catch {
+    sessionId = randomId();
+  }
+
+  const loadedAt = performance.now();
+  const params = new URLSearchParams(location.search);
+  let referrerHost = '';
+  try {
+    const host = document.referrer ? new URL(document.referrer).hostname : '';
+    if (host && host !== location.hostname && host !== `www.${location.hostname}`) referrerHost = host;
+  } catch { /* malformed referrer: leave blank */ }
+
+  const device = navigator.userAgentData?.mobile
+    ? 'mobile'
+    : innerWidth < 700
+      ? 'mobile'
+      : innerWidth < 1100
+        ? 'tablet'
+        : 'desktop';
+
+  const sendChoice = (choice) => {
+    const payload = {
+      event_id: randomId(),
+      visitor_id: visitorId,
+      session_id: sessionId,
+      choice,
+      first_visit: firstVisit,
+      elapsed_ms: Math.max(0, Math.round(performance.now() - loadedAt)),
+      device,
+      referrer_host: referrerHost,
+      utm_source: params.get('utm_source') || '',
+      utm_medium: params.get('utm_medium') || '',
+      utm_campaign: params.get('utm_campaign') || '',
+      page: location.pathname,
+    };
+    const body = JSON.stringify(payload);
+    const blob = new Blob([body], { type: 'application/json' });
+    if (navigator.sendBeacon?.('/api/pill', blob)) return;
+    fetch('/api/pill', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body,
+      keepalive: true,
+    }).catch(() => {});
+  };
+
+  pillChoices.forEach((pill) => pill.addEventListener('click', () => sendChoice(pill.dataset.pillChoice)));
+}
+// ---------------------------------------------------------------------------
 // Homepage hero: the neon line under Keep scrolling runs from the button down to just above 01's kicker
 // ---------------------------------------------------------------------------
 const trail = $('.pill-trail');
