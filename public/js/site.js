@@ -133,8 +133,11 @@ $$('[data-reveal-phone]').forEach((a) => a.addEventListener('click', (e) => {
 // A random browser ID in localStorage distinguishes first-time from returning browsers; it is
 // not tied to a name/email and is never sent anywhere except our own /api/pill endpoint.
 // ---------------------------------------------------------------------------
-const pillChoices = $('[data-pill-choice]');
-if (pillChoices.length) {
+const pillChoices = $$('[data-pill-choice]');
+// Team browsers can opt out from the dashboard at /construct, so our own clicks don't count.
+let pillIgnored = false;
+try { pillIgnored = localStorage.getItem('tw_pill_ignore') === '1'; } catch { /* storage blocked */ }
+if (pillChoices.length && !pillIgnored) {
   const randomId = () => crypto.randomUUID?.() || `${Date.now().toString(36)}-${Math.random().toString(36).slice(2)}`;
   const visitorKey = 'tw_visitor_v1';
   const sessionKey = 'tw_session_v1';
@@ -203,7 +206,21 @@ if (pillChoices.length) {
     }).catch(() => {});
   };
 
-  pillChoices.forEach((pill) => pill.addEventListener('click', () => sendChoice(pill.dataset.pillChoice)));
+  // One event per page view and pill, so double clicks and back-button returns don't inflate counts.
+  const sent = new Set();
+  const onPick = (pill) => (e) => {
+    if (e.type === 'auxclick' && e.button !== 1) return; // middle click opens a new tab: still a choice
+    const choice = pill.dataset.pillChoice;
+    if (sent.has(choice)) return;
+    sent.add(choice);
+    sendChoice(choice);
+  };
+  pillChoices.forEach((pill) => {
+    pill.addEventListener('click', onPick(pill));
+    pill.addEventListener('auxclick', onPick(pill));
+  });
+  // Coming back with the browser's Back button restores the page from memory: treat it as a fresh view.
+  addEventListener('pageshow', (e) => { if (e.persisted) sent.clear(); });
 }
 // ---------------------------------------------------------------------------
 // Homepage hero: the neon line under Keep scrolling runs from the button down to just above 01's kicker

@@ -54,24 +54,13 @@ A push to `main` deploys to production. Any other branch gets its own preview UR
 
 ## Red pill / blue pill analytics
 
-The home-page Matrix easter egg has its own first-party analytics endpoint at `/api/pill`. It records anonymous red/blue choices in Cloudflare D1 and can report total clicks, unique clickers, first choice, first-time-vs-returning first choice, switchers, average decision time, device mix, top countries, referrers, campaigns and a 30-day trend.
+The homepage Matrix easter egg counts who takes which pill. Each click goes to `/api/pill` (`functions/api/pill.js`), which saves it in the Cloudflare D1 database `thrillwave-analytics-pill`, bound to the Pages project as `TW_ANALYTICS` (production and preview). The table creates itself on first use.
 
-Setup in Cloudflare:
+**Dashboard:** open `https://thrillwave.com/construct` and enter the `PILL_STATS_TOKEN` key (a secret in Pages > Settings > Variables and secrets). The key stays in that browser. It shows the red/blue split by each person's first pick, total clicks, switchers, decision time, a 30-day chart, device, country and referrer splits, and a live feed that refreshes every 30 seconds. "Ignore my clicks" stops counting clicks from that browser, so the team's own testing stays out of the numbers. The page is served by `functions/construct.js`, so it is never in the sitemap, menu or search.
 
-1. Create a D1 database (for example `thrillwave-analytics`).
-2. Workers & Pages → this Pages project → Settings → Bindings → Add → **D1 database**. Use variable name `TW_ANALYTICS` and select the database.
-3. Add a secret/environment variable named `PILL_STATS_TOKEN` with a long random value.
-4. Redeploy the Pages project. The first event creates the table and indexes automatically; there is no migration to run.
+**Setup check:** `https://thrillwave.com/api/pill?health=1` reports whether the database is connected, how many rows it has, and whether the stats key is set. It shows no visitor data.
 
-The client uses a random first-party browser ID in `localStorage` and a per-tab/session ID in `sessionStorage`. No name, email or IP address is written to the analytics database. "First-time visitor" means the browser had no Thrill Wave visitor ID yet; clearing site data resets it.
-
-To read the aggregate JSON privately:
-
-```bash
-curl -H "Authorization: Bearer $PILL_STATS_TOKEN" https://thrillwave.com/api/pill
-```
-
-Tracking starts when this feature is deployed; earlier red/blue clicks cannot be reconstructed retroactively.
+**What gets stored:** a random browser ID (localStorage), the pill, whether it's that browser's first pick, seconds from page load to click, device type, country, referring site and campaign tags. No name, email or IP address. Clicks are only counted from the day this went live.
 
 ## Before cancelling Wix
 
