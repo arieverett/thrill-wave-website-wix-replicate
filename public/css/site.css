@@ -601,6 +601,9 @@ body:is(.nav-open, .nav-closing) .site-header { -webkit-backdrop-filter: none; b
 .work-grid .video { border-radius: 7px; }
 .work-grid--single { grid-template-columns: 1fr; margin-top: 28px; }
 .work-grid--single + .work-grid { margin-top: clamp(10px, 1.2vw, 16px); } /* ITCA film + more work read as one gallery */
+/* Portfolio: three films a row on laptops and tablets (two on phones, below) */
+.portfolio-cat .work-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.portfolio-cat .video__label { font-size: .82rem; }
 @media (max-width: 560px) {
   .work-grid { grid-template-columns: 1fr; }
   /* Portfolio on phones: two square tiles a row, smaller titles and play button */
