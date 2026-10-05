@@ -37,7 +37,7 @@
       "videos": [
         { "client": "Boston Scientific", "title": "Rezum", "youtube": "ECfZ1gZtzlE" },
         { "client": "Andres Plastic Surgery", "title": "Your Body, High Standards", "youtube": "N3yfL_gk_vE", "zoom": true },
-        { "client": "Aurelio Physical Therapy", "title": "Fitness Forward Performance", "youtube": "ASbLkvgd874" }
+        { "client": "Thrill Wave", "title": "Healthcare & Medical Supercut", "youtube": "Ny-eNXzNrtA" }
       ]
     },
     {
@@ -73,7 +73,7 @@
       "videos": [
         { "client": "Training Mask", "title": "Learn To Breathe", "youtube": "jduIrHZT0og", "frame": 3, "zoom": true },
         { "client": "Golf Digest", "title": "What Would Bubba Watson Shoot?", "youtube": "2g7dOnDKYZo" },
-        { "client": "Fuji Sports", "title": "Brand Video", "youtube": "HkZKshgwslI" }
+        { "client": "Aurelio Physical Therapy", "title": "Fitness Forward Performance", "youtube": "ASbLkvgd874" }
       ]
     },
     {
@@ -91,14 +91,14 @@
       "videos": [
         { "client": "Wonderspaces", "title": "Immerse Yourself", "youtube": "n26-IyiVLsw" },
         { "client": "Music Celebrations International", "title": "Ireland", "youtube": "oXOPxKmigKA" },
-        { "client": "Wax Society", "title": "Sweet Oblivion (An Underdog Overture)", "youtube": "6OeZDmtqx44", "frame": 2 }
+        { "client": "High Vibe Kitchen", "title": "Take a Little Trip", "youtube": "D46bYNK_lvw" }
       ]
     },
     {
       "name": "Food & hospitality",
       "slug": "food-and-hospitality",
       "videos": [
-        { "client": "High Vibe Kitchen", "title": "Take a Little Trip", "youtube": "D46bYNK_lvw" },
+        { "client": "EXP Trips", "title": "Explore More", "youtube": "mxQFKiYivmI" },
         { "client": "High Vibe Kitchen", "title": "Dinner Party", "youtube": "bDNn4kDE3H4" },
         { "client": "PB Americano", "title": "In a Nutshell", "youtube": "nCmXrqVTkwA" }
       ]
@@ -118,7 +118,7 @@
       "videos": [
         { "client": "Kindred", "title": "Break the Mold", "youtube": "opb_FLe4_Xo" },
         { "client": "Hypnotik", "title": "Pack it Up", "youtube": "WoFqn7U9tq4" },
-        { "client": "Swoon Salon", "title": "Loop-Worthy Assets", "youtube": "jqx11PcJiX0" }
+        { "client": "Fuji Sports", "title": "Brand Video", "youtube": "HkZKshgwslI" }
       ]
     }
   ]
