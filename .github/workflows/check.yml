@@ -5,9 +5,14 @@ name: Site check
 on:
   push:
   pull_request:
+# Quick back-to-back pushes cancel the older check instead of piling up in GitHub's queue
+concurrency:
+  group: site-check-${{ github.ref }}
+  cancel-in-progress: true
 jobs:
   check:
     runs-on: ubuntu-latest
+    timeout-minutes: 10
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
