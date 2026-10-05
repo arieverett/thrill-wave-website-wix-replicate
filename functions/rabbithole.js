@@ -287,30 +287,24 @@ table.sr { position: absolute; left: -9999px; }
   // Modern browsers may block audible autoplay. We try immediately; if blocked,
   // the first click/tap/key press on the page starts it automatically.
   const musicBtn = $('music'), player = $('player'), rabbitAudio = $('rabbitAudio');
-  rabbitAudio.volume = 0.35;
+  rabbitAudio.volume = 1;
   let soundWanted = store.get('tw_rabbithole_sound') !== 'off';
   const paintSound = () => {
     musicBtn.textContent = soundWanted ? '♪ Sound on' : '♪ Sound off';
     musicBtn.setAttribute('aria-pressed', soundWanted);
   };
+  const gestures = ['pointerdown', 'keydown', 'touchstart'];
+  const stopListening = () => gestures.forEach((g) => removeEventListener(g, onGesture, true));
   const tryPlay = async () => {
-    if (!soundWanted || !rabbitAudio.paused) return;
-    try {
-      await rabbitAudio.play();
-      player.hidden = true;
-    } catch {
-      // Autoplay was blocked. A real user interaction below will retry.
-    }
+    if (!soundWanted) return;
+    rabbitAudio.volume = 1;
+    if (!rabbitAudio.paused) return stopListening();
+    try { await rabbitAudio.play(); stopListening(); } catch { /* blocked until the next tap or key press */ }
   };
-  const unlockSound = () => {
-    tryPlay();
-    removeEventListener('pointerdown', unlockSound);
-    removeEventListener('keydown', unlockSound);
-    removeEventListener('touchstart', unlockSound);
-  };
-  addEventListener('pointerdown', unlockSound, { once: true });
-  addEventListener('keydown', unlockSound, { once: true });
-  addEventListener('touchstart', unlockSound, { once: true, passive: true });
+  // Browsers only allow sound after a tap, click or key press, so keep listening until it actually starts.
+  // Presses on the sound button itself are left to the button.
+  function onGesture(e) { if (!musicBtn.contains(e.target)) tryPlay(); }
+  gestures.forEach((g) => addEventListener(g, onGesture, { capture: true, passive: true }));
   musicBtn.addEventListener('click', async () => {
     soundWanted = !soundWanted;
     store.set('tw_rabbithole_sound', soundWanted ? null : 'off');
