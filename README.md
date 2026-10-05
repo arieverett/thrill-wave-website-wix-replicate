@@ -52,6 +52,27 @@ To add a blog post, copy any file in `content/posts/`, change the front matter a
 
 A push to `main` deploys to production. Any other branch gets its own preview URL.
 
+## Red pill / blue pill analytics
+
+The home-page Matrix easter egg has its own first-party analytics endpoint at `/api/pill`. It records anonymous red/blue choices in Cloudflare D1 and can report total clicks, unique clickers, first choice, first-time-vs-returning first choice, switchers, average decision time, device mix, top countries, referrers, campaigns and a 30-day trend.
+
+Setup in Cloudflare:
+
+1. Create a D1 database (for example `thrillwave-analytics`).
+2. Workers & Pages → this Pages project → Settings → Bindings → Add → **D1 database**. Use variable name `TW_ANALYTICS` and select the database.
+3. Add a secret/environment variable named `PILL_STATS_TOKEN` with a long random value.
+4. Redeploy the Pages project. The first event creates the table and indexes automatically; there is no migration to run.
+
+The client uses a random first-party browser ID in `localStorage` and a per-tab/session ID in `sessionStorage`. No name, email or IP address is written to the analytics database. "First-time visitor" means the browser had no Thrill Wave visitor ID yet; clearing site data resets it.
+
+To read the aggregate JSON privately:
+
+```bash
+curl -H "Authorization: Bearer $PILL_STATS_TOKEN" https://thrillwave.com/api/pill
+```
+
+Tracking starts when this feature is deployed; earlier red/blue clicks cannot be reconstructed retroactively.
+
 ## Before cancelling Wix
 
 - [ ] Set `FORM_WEBHOOK_URL`, then send a test lead from a page with a lead form. (None right now: the forms were on `/marketingchallenges` and `/app-landing-page`, which were taken off the site Sept 29, 2026.)
