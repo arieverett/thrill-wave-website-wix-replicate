@@ -107,6 +107,12 @@ section { margin-top: 16px; }
 .bar .r { background: var(--red); } .bar .b { background: var(--blue); }
 .bar.big { height: 22px; border-radius: 11px; }
 .note { color: var(--muted); font-size: 12px; margin-top: 10px; }
+.allclicks { margin-top: 22px; padding-top: 18px; border-top: 1px dashed var(--line); }
+.allclicks .row-head { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; margin-bottom: 10px; font-size: 12px; letter-spacing: .12em; text-transform: uppercase; color: var(--muted); }
+.allclicks .row-head b { font-size: 20px; letter-spacing: 0; color: var(--fg); }
+.allclicks .row-head .cr, .allclicks .row-head .cb { font-weight: 700; }
+.allclicks .bar { height: 12px; }
+@media (max-width: 560px) { .allclicks .row-head { flex-wrap: wrap; } .allclicks .row-head > span:nth-child(2) { order: -1; width: 100%; } }
 
 /* Breakdown rows */
 .rows { display: grid; gap: 10px; }
@@ -173,6 +179,11 @@ table.sr { position: absolute; left: -9999px; }
       </div>
       <div class="bar big" role="img" id="bigBar" aria-label="Red versus blue"><span class="r" id="bRed"></span><span class="b" id="bBlue"></span></div>
       <p class="note" id="bigNote"></p>
+      <div class="allclicks">
+        <div class="row-head"><span><b id="acRedPct">0%</b> red</span><span>All clicks, repeats included</span><span>blue <b id="acBluePct">0%</b></span></div>
+        <div class="bar" role="img" id="acBar" aria-label="All clicks, red versus blue"><span class="r" id="acRed"></span><span class="b" id="acBlue"></span></div>
+        <p class="note" id="acNote"></p>
+      </div>
     </section>
 
     <div class="grid tiles" id="tiles"></div>
@@ -279,6 +290,15 @@ table.sr { position: absolute; left: -9999px; }
     $('bBlue').style.flexGrow = blue || (red + blue ? 0 : 1);
     $('bigBar').setAttribute('aria-label', 'Red ' + red + ' people, blue ' + blue + ' people');
     $('bigNote').textContent = fmt(red) + ' chose red first, ' + fmt(blue) + ' chose blue first.';
+
+    // Every click of all time, repeats included.
+    const cr = sumBy(d.overall, 'red', 'clicks'), cb = sumBy(d.overall, 'blue', 'clicks');
+    const acr = pct(cr, cb), acb = cr + cb ? 100 - acr : 0;
+    $('acRedPct').textContent = acr + '%'; $('acBluePct').textContent = acb + '%';
+    $('acRed').style.flexGrow = cr || (cr + cb ? 0 : 1);
+    $('acBlue').style.flexGrow = cb || (cr + cb ? 0 : 1);
+    $('acBar').setAttribute('aria-label', 'All clicks: red ' + cr + ', blue ' + cb);
+    $('acNote').textContent = fmt(cr) + ' red clicks and ' + fmt(cb) + ' blue clicks in total.';
 
     const avg = (c) => { const r = d.decision_time.find((x) => x.choice === c); return r?.avg_ms ? (r.avg_ms / 1000).toFixed(1) + 's' : '–'; };
     const tiles = [
