@@ -703,7 +703,7 @@ body.subnav-stuck .site-header { background: transparent; -webkit-backdrop-filte
 /* Each link carries a slash on its left; the list is pulled left and clipped, so a line never starts with a slash */
 .chip-nav ul { list-style: none; display: flex; flex-wrap: wrap; align-items: baseline; row-gap: 2px; min-width: 0; margin: 0 0 0 -26px; padding: 0; overflow: hidden; clip-path: inset(-4px -4px -4px 26px); }
 .chip-nav li { position: relative; margin-left: 26px; white-space: nowrap; font: 500 .66rem/1.9 var(--font-body); }
-.chip-nav li::before { content: "/"; position: absolute; top: 0; left: -16px; font: 400 .66rem/1.9 var(--font-body); color: var(--muted); opacity: .6; }
+.chip-nav li::before { content: "\00B7"; position: absolute; top: 0; left: -16px; width: 6px; text-align: center; font: 700 .9rem/1.39 var(--font-body); color: var(--muted); opacity: .8; }
 .chip-nav a { white-space: nowrap; text-decoration: none; font: 500 .66rem/1.9 var(--font-body); letter-spacing: .1em; text-transform: uppercase; color: var(--muted); border-bottom: 1px solid transparent; transition: color .2s, border-color .2s; }
 .chip-nav a:hover, .chip-nav a[aria-current] { color: var(--ink); border-bottom-color: var(--accent); }
 .portfolio-cat { padding: clamp(28px, 4vw, 48px) 0 clamp(20px, 3vw, 36px); scroll-margin-top: calc(var(--header-h) + 64px); }
@@ -855,9 +855,11 @@ body.subnav-stuck .site-header { background: transparent; -webkit-backdrop-filte
 .post__cover { margin: 24px auto 40px; }
 .post__cover img { width: 100%; max-height: 560px; object-fit: cover; border-radius: 4px; animation: tw-fade 1s var(--ease) .1s backwards; }
 .post__footer { padding-bottom: var(--section); }
-.post__cats { display: flex; flex-wrap: wrap; gap: 10px; }
-.post__cats a { display: inline-flex; align-items: center; justify-content: center; min-height: 38px; white-space: nowrap; text-decoration: none; font: 500 .68rem/1 var(--font-body); letter-spacing: .1em; text-transform: uppercase; padding: 0 18px; border: 1px solid var(--ink); border-radius: 999px; transition: background-color .25s, color .25s, border-color .25s; }
-.post__cats a:hover { background: var(--ink); color: var(--paper); }
+/* Post categories: the same dotted line of text links as the Work page's field bar */
+.post__cats { display: flex; flex-wrap: wrap; align-items: baseline; row-gap: 4px; margin-left: -30px; overflow: hidden; clip-path: inset(-4px -4px -4px 30px); }
+.post__cats a { position: relative; margin-left: 30px; white-space: nowrap; text-decoration: none; font: 500 .74rem/1.9 var(--font-body); letter-spacing: .1em; text-transform: uppercase; color: inherit; border-bottom: 1px solid transparent; transition: color .2s, border-color .2s; }
+.post__cats a::before { content: "\00B7"; position: absolute; top: 0; left: -18px; width: 6px; text-align: center; font: 700 1rem/1.42 var(--font-body); color: var(--muted); opacity: .8; }
+.post__cats a:hover { color: var(--accent); border-bottom-color: var(--accent); }
 
 .prose { font-size: 1.02rem; line-height: 1.75; }
 .prose h2, .prose h3 { margin-top: 1.8em; line-height: 1.1; }
@@ -1556,14 +1558,14 @@ body:not(.page-sections) .kicker::before { content: none; }
 /* A line of text links with slashes between them, like the Work page's field bar; a line never starts with a slash */
 .chip-links { list-style: none; display: flex; flex-wrap: wrap; align-items: baseline; row-gap: 6px; margin: 24px 0 0 -30px; padding: 0; overflow: hidden; clip-path: inset(-4px -4px -4px 30px); }
 .chip-links li { position: relative; margin-left: 30px; white-space: nowrap; font: 500 .78rem/1.9 var(--font-body); }
-.chip-links li::before { content: "/"; position: absolute; top: 0; left: -19px; font: 400 .78rem/1.9 var(--font-body); color: var(--muted); opacity: .6; }
+.chip-links li::before { content: "\00B7"; position: absolute; top: 0; left: -18px; width: 6px; text-align: center; font: 700 1.05rem/1.42 var(--font-body); color: var(--muted); opacity: .8; }
 .chip-links a { white-space: nowrap; text-decoration: none; font: 500 .78rem/1.9 var(--font-body); letter-spacing: .1em; text-transform: uppercase; color: var(--ink); border-bottom: 1px solid transparent; transition: color .2s, border-color .2s; }
 .chip-links a:hover { color: var(--accent); border-bottom-color: var(--accent); }
 @media (max-width: 560px) {
   .chip-links { row-gap: 0; margin-left: -22px; clip-path: inset(-4px -4px -4px 22px); }
   .chip-links li { margin-left: 22px; }
-  .chip-links li::before { left: -14px; }
-  .chip-links li, .chip-links li::before, .chip-links a { font-size: .64rem; letter-spacing: .06em; }
+  .chip-links li::before { left: -14px; font-size: .9rem; line-height: 1.33; }
+  .chip-links li, .chip-links a { font-size: .64rem; letter-spacing: .06em; }
 }
 /* Case study facts box: client, goal, industry, services */
 .facts { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); margin: 28px 0 0; border-top: 1px solid rgba(255, 255, 255, .14); border-bottom: 1px solid rgba(255, 255, 255, .14); }
