@@ -1837,3 +1837,18 @@ body:not(.page-sections) .kicker::before { content: none; }
 .focus-x56 { --focus: 56% 50%; } .focus-x57 { --focus: 57% 50%; } .focus-x72 { --focus: 72% 50%; } .focus-x74 { --focus: 74% 50%; }
 .focus-x48 { --focus: 48% 50%; }
 .stats + p { margin-top: 40px; }
+
+/* =====================================================================
+   404: a full black hero with the homepage's headline and pill buttons
+   ===================================================================== */
+.hero--404 { min-height: 100vh; min-height: 100svh; }
+.hero--404 .hero__content { width: 100%; padding-top: calc(var(--header-h) + 48px); padding-bottom: 64px; }
+.hero--404 .kicker { color: #9a9a9f; margin-bottom: 22px; }
+.page-404 .hero--404 .kicker::before { content: ""; counter-increment: none; width: 9px; height: 9px; border-radius: 50%; background: var(--accent); box-shadow: 0 0 10px var(--accent); animation: rec-blink 1.6s steps(1) infinite; }
+.hero--404 .kicker::after { display: none; }
+.hero--404 h1.hero__stack { margin: 0 0 24px; }
+.hero--404 .lede { color: rgba(255, 255, 255, .78); margin: 0 0 36px; }
+@keyframes rec-blink { 50% { opacity: .25; } }
+@media (prefers-reduced-motion: reduce) { .page-404 .hero--404 .kicker::before { animation: none; } }
+.hero--404 .btn-row { display: grid; grid-auto-flow: column; grid-auto-columns: 1fr; width: max-content; max-width: 100%; }
+@media (max-width: 560px) { .hero--404 .btn-row { grid-auto-flow: row; } }
