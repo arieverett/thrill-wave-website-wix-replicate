@@ -1,11 +1,11 @@
-// Cloudflare Pages Function: /construct, the private dashboard for the red / blue pill easter egg.
+// Cloudflare Pages Function: /rabbithole, the private dashboard for the red / blue pill easter egg.
 //
 // Unlisted on purpose: it is served by this function (not a site page), so it never enters the build,
 // sitemap, menu or search, and anyone without the unlock cookie gets the site's ordinary 404 page,
 // so nothing shows the dashboard exists.
 //
-//   /construct?key=<PILL_STATS_TOKEN>   unlocks this browser for a year, then redirects to /construct
-//   /construct?logout=1                 locks this browser again
+//   /rabbithole?key=<PILL_STATS_TOKEN>   unlocks this browser for a year, then redirects to /rabbithole
+//   /rabbithole?logout=1                 locks this browser again
 //
 // The numbers come from /api/pill, which checks the same cookie.
 
@@ -28,7 +28,7 @@ export async function onRequestGet({ request, env }) {
 
   const key = url.searchParams.get('key');
   if (key !== null) {
-    if (await isKey(key, env)) return go('/construct', cookie(await cookieValueFor(key), 60 * 60 * 24 * 365));
+    if (await isKey(key, env)) return go('/rabbithole', cookie(await cookieValueFor(key), 60 * 60 * 24 * 365));
     return notFound(request, env);
   }
 
@@ -51,7 +51,7 @@ const PAGE = /* html */ `<!doctype html>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex, nofollow">
-<title>The Construct</title>
+<title>Down the Rabbit Hole</title>
 <link rel="icon" href="/favicon.ico">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap" nonce="__NONCE__">
@@ -152,17 +152,17 @@ table.sr { position: absolute; left: -9999px; }
 <canvas id="rain" aria-hidden="true"></canvas>
 <div class="wrap">
   <header>
-    <div class="brand">THRILL WAVE <b>//</b> THE CONSTRUCT</div>
+    <div class="brand">THRILL WAVE <b>//</b> THE RABBIT HOLE</div>
     <div class="status" id="status"><span class="dot"></span>Offline</div>
     <div class="tools" id="tools" hidden>
       <button type="button" id="refresh">Refresh</button>
       <button type="button" id="ignore" aria-pressed="false" title="Stop counting pill clicks from this browser">Ignore my clicks</button>
-      <a class="btn" href="/construct?logout=1">Lock</a>
+      <a class="btn" href="/rabbithole?logout=1">Lock</a>
     </div>
   </header>
 
   <main id="dash" hidden>
-    <h1 class="caret" id="headline">Loading the construct</h1>
+    <h1 class="caret" id="headline">Following the white rabbit</h1>
     <p class="sub" id="since"></p>
 
     <section class="panel">
@@ -242,7 +242,7 @@ table.sr { position: absolute; left: -9999px; }
   };
 
   // ---- Locked out (cookie expired or key changed): go back to the plain 404 ----
-  const locked = () => location.replace('/construct');
+  const locked = () => location.replace('/rabbithole');
   $('refresh').addEventListener('click', () => load());
 
   // Opt this browser out of the counts (the homepage beacon reads the same flag).

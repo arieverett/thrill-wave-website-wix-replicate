@@ -2,10 +2,10 @@
 //
 // POST /api/pill            records one anonymous choice in the D1 database bound as TW_ANALYTICS.
 // GET  /api/pill?health=1   setup check (binding, table, row count, whether the stats key is set). No visitor data.
-// GET  /api/pill            aggregate stats, only for a browser unlocked for /construct (cookie)
+// GET  /api/pill            aggregate stats, only for a browser unlocked for /rabbithole (cookie)
 //                           or with the header  Authorization: Bearer <PILL_STATS_TOKEN>
 //
-// The dashboard that reads these stats lives at /construct (functions/construct.js). It is unlisted:
+// The dashboard that reads these stats lives at /rabbithole (functions/rabbithole.js). It is unlisted:
 // without the unlock cookie it answers with the site's normal 404 page.
 // The table is created on first use, so setup is: create a D1 database, bind it to the
 // Pages project as TW_ANALYTICS, and add the secret PILL_STATS_TOKEN.
@@ -176,13 +176,17 @@ export async function onRequestGet({ request, env }) {
   });
 }
 
-// ---- Who may see the stats (shared with functions/construct.js) ----
-// A browser is unlocked by visiting /construct?key=<PILL_STATS_TOKEN> once. That sets an HttpOnly
+// ---- Who may see the stats (shared with functions/rabbithole.js) ----
+// A browser is unlocked by visiting /rabbithole?key=<PILL_STATS_TOKEN> once. That sets an HttpOnly
 // cookie holding a hash of the key (never the key itself); changing the secret logs everyone out.
-export const COOKIE = 'tw_construct';
+export const COOKIE = 'tw_rabbithole';
+
+// Keys are compared loosely so a quote can be typed naturally: case, spaces and punctuation
+// don't matter ("There is no spoon." = "there-is-no-spoon" = "thereisnospoon").
+const normalize = (value) => String(value).toLowerCase().replace(/[^a-z0-9]/g, '');
 
 const sha256 = async (value) =>
-  [...new Uint8Array(await crypto.subtle.digest('SHA-256', new TextEncoder().encode(`tw-construct:${value}`)))]
+  [...new Uint8Array(await crypto.subtle.digest('SHA-256', new TextEncoder().encode(`tw-rabbithole:${normalize(value)}`)))]
     .map((b) => b.toString(16).padStart(2, '0')).join('');
 
 // Constant-time comparison so a value can't be guessed one character at a time.
