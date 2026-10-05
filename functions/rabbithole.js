@@ -46,6 +46,18 @@ const PAGE = /* html */ `<!doctype html>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex, nofollow">
 <title>Down the Rabbit Hole</title>
+<meta name="description" content="Who took the red pill, and who kept scrolling.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Thrill Wave">
+<meta property="og:title" content="Down the Rabbit Hole">
+<meta property="og:description" content="Who took the red pill, and who kept scrolling.">
+<meta property="og:url" content="https://thrillwave.com/rabbithole">
+<meta property="og:image" content="https://thrillwave.com/images/og/rabbithole.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="A red pill and a blue pill over green Matrix code, with the words Down the rabbit hole">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://thrillwave.com/images/og/rabbithole.jpg">
 <link rel="icon" href="/favicon.ico">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap" nonce="__NONCE__">
