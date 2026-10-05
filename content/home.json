@@ -146,7 +146,7 @@
       "short": "Nonprofits",
       "text": "We make films for nonprofits, NGOs, tribal councils and public agencies that move people to give, join and act.",
       "still": "mEfrDfPj_TA:3",
-      "example": "mEfrDfPj_TA",
+      "example": { "youtube": "mEfrDfPj_TA", "client": "UMOM New Day Centers", "title": "Kelly's Story" },
       "title": "Films that move people to act.",
       "seoTitle": "Nonprofit & Public Service Video Production",
       "headline": "Nonprofit and public service video",
@@ -161,8 +161,8 @@
         }
       ],
       "work": [
-        "mEfrDfPj_TA",
-        "uPjYjRDq_qU",
+        { "youtube": "mEfrDfPj_TA", "client": "UMOM New Day Centers", "title": "Kelly's Story" },
+        { "youtube": "uPjYjRDq_qU", "client": "New Pathways For Youth", "title": "It Begins With Me" },
         "tkqnm36YAfM",
         {
           "youtube": "Gh67yEMyOCs",
@@ -216,7 +216,7 @@
           "thumbnail": "https://i.vimeocdn.com/video/2206610840-ab9c7452ada6128dda809c82750fb931c920b1da79ebba045b626a540217cd86-d_1280x720"
         },
         "8BruwRwC9Tg",
-        "uPjYjRDq_qU"
+        { "youtube": "uPjYjRDq_qU", "client": "New Pathways For Youth", "title": "It Begins With Me" }
       ],
       "related": [
         "Education & research",
@@ -300,7 +300,7 @@
         "sF4KJxf99nA",
         "opb_FLe4_Xo",
         "WoFqn7U9tq4",
-        "qeCo9vV3pH8"
+        { "youtube": "qeCo9vV3pH8", "client": "Training Mask", "title": "Behind the Scenes" }
       ],
       "related": [
         "Government & Public Affairs",
@@ -475,7 +475,7 @@
         "ECfZ1gZtzlE",
         "N3yfL_gk_vE",
         "ASbLkvgd874",
-        "Ny-eNXzNrtA"
+        { "youtube": "Ny-eNXzNrtA", "client": "Thrill Wave", "title": "Healthcare & Medical Supercut" }
       ],
       "about": "Medicine is hard to film well, because the science has to be right and patients have to feel safe. Here's Mike's story, which we made with Nektar:",
       "heading": "The science has to be right.",
@@ -501,7 +501,7 @@
       "link": "/portfolio#education-and-research",
       "text": "We explain science, research and learning on camera, from the lab to the classroom, in plain words.",
       "title": "Hard ideas, made simple.",
-      "example": "uPjYjRDq_qU",
+      "example": { "youtube": "uPjYjRDq_qU", "client": "New Pathways For Youth", "title": "It Begins With Me" },
       "seoTitle": "Education & Research Video Production",
       "headline": "Education and research video",
       "intro": "Good research and good teaching both deserve a good explanation. We've told a patient's story for Nektar's cancer research, helped the Inter Tribal Council of Arizona's Tribal Epidemiology Center explain vaccines to its own communities and filmed mentoring with New Pathways For Youth.",
@@ -523,7 +523,7 @@
           "thumbnail": "https://i.vimeocdn.com/video/2206610840-ab9c7452ada6128dda809c82750fb931c920b1da79ebba045b626a540217cd86-d_1280x720"
         },
         "8BruwRwC9Tg",
-        "uPjYjRDq_qU",
+        { "youtube": "uPjYjRDq_qU", "client": "New Pathways For Youth", "title": "It Begins With Me" },
         "ABYrJD7QISk"
       ],
       "about": "The best explanations come from the people who know the work best. Here's Mike's Story, which we made with Nektar about a melanoma treatment:",

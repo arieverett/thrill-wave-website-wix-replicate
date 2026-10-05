@@ -16,12 +16,9 @@
       "name": "Tribal Nations",
       "slug": "tribal-nations",
       "videos": [
-        { "client": "ITCA WIC", "title": "Dear Mom", "youtube": "QlP7wPaFcVU", "zoom": true },
-        { "youtube": "Gh67yEMyOCs", "client": "ITCA Native Vote", "title": "Your Voice, Your Power: Full Episode", "zoom": true, "frame": 3 },
-        { "youtube": "3hlumlH16HI", "client": "ITCA TEC", "title": "Recommended Respiratory Vaccinations" },
-        { "client": "ITCA TEC", "title": "Talk to Your Healthcare Provider", "youtube": "zs1_1xC4My8", "frame": 3 },
-        { "client": "ITCA TEC", "title": "Contact Your Healthcare Provider", "youtube": "_OCpwTAXRNk", "frame": 1 },
-        { "client": "ITCA TEC", "title": "Speak with Your Healthcare Provider", "youtube": "cmaXGZGLShU", "frame": 3 }
+        { "client": "ITCA WIC", "title": "Dear Mom", "youtube": "QlP7wPaFcVU" },
+        { "youtube": "Gh67yEMyOCs", "client": "ITCA Native Vote", "title": "Your Voice, Your Power: Full Episode", "frame": 3, "zoom": true },
+        { "youtube": "3hlumlH16HI", "client": "ITCA TEC", "title": "Recommended Respiratory Vaccinations" }
       ]
     },
     {
@@ -29,12 +26,9 @@
       "slug": "government-and-public-affairs",
       "short": "Government",
       "videos": [
-        { "client": "Paradise Valley Mountain Preserve Trust", "title": "Protect Our Land", "youtube": "tkqnm36YAfM" },
-        { "client": "UMOM New Day Centers", "title": "Stephanie's Story", "youtube": "gHevHv0usIo" },
-        { "client": "UMOM New Day Centers", "title": "Kelly's Story", "youtube": "mEfrDfPj_TA" },
-        { "client": "UMOM New Day Centers", "title": "Donor Campaign 2021 with Jackson", "youtube": "OMNXgaK9JZE" },
-        { "client": "New Pathways For Youth", "title": "It Begins With Me", "youtube": "uPjYjRDq_qU", "frame": 2 },
-        { "youtube": "Gh67yEMyOCs", "client": "ITCA Native Vote", "title": "Your Voice, Your Power: Full Episode", "zoom": true, "frame": 3 }
+        { "client": "Paradise Valley Mountain Preserve Trust", "title": "Protect Our Land", "youtube": "tkqnm36YAfM", "zoom": true },
+        { "client": "ITCA TEC", "title": "Contact Your Healthcare Provider", "youtube": "_OCpwTAXRNk", "frame": 1 },
+        { "client": "UMOM New Day Centers", "title": "Stephanie's Story", "youtube": "gHevHv0usIo" }
       ]
     },
     {
@@ -43,10 +37,7 @@
       "videos": [
         { "client": "Boston Scientific", "title": "Rezum", "youtube": "ECfZ1gZtzlE" },
         { "client": "Andres Plastic Surgery", "title": "Your Body, High Standards", "youtube": "N3yfL_gk_vE", "zoom": true },
-        { "client": "Nektar", "title": "Mike's Story with Melanoma Treatment", "youtube": "8BruwRwC9Tg" },
-        { "client": "Aurelio Physical Therapy", "title": "Fitness Forward Performance", "youtube": "ASbLkvgd874" },
-        { "client": "Thrill Wave", "title": "Show Your Practice To The World", "youtube": "EgloZ5_aPXs" },
-        { "client": "Thrill Wave", "title": "Healthcare & Medical Supercut", "youtube": "Ny-eNXzNrtA" }
+        { "client": "Aurelio Physical Therapy", "title": "Fitness Forward Performance", "youtube": "ASbLkvgd874" }
       ]
     },
     {
@@ -55,10 +46,7 @@
       "videos": [
         { "client": "Nektar", "title": "Mike's Story with Melanoma Treatment", "youtube": "8BruwRwC9Tg" },
         { "client": "Medaire", "title": "Digital Assessment Kit", "youtube": "ABYrJD7QISk" },
-        { "client": "New Pathways For Youth", "title": "It Begins With Me", "youtube": "uPjYjRDq_qU", "frame": 2 },
-        { "youtube": "3hlumlH16HI", "client": "ITCA TEC", "title": "Recommended Respiratory Vaccinations" },
-        { "client": "ITCA WIC", "title": "Dear Mom", "youtube": "QlP7wPaFcVU", "zoom": true },
-        { "client": "Golf Digest", "title": "What Would Bubba Watson Shoot?", "youtube": "2g7dOnDKYZo" }
+        { "client": "ITCA TEC", "title": "Talk to Your Healthcare Provider", "youtube": "zs1_1xC4My8", "frame": 3 }
       ]
     },
     {
@@ -66,10 +54,7 @@
       "slug": "tech",
       "videos": [
         { "client": "Ridgeline", "title": "Manage Your Risk, Revolutionize Your Returns", "youtube": "Jqci51WSpO0" },
-        { "client": "Opendoor", "title": "No Trick, All Treat Case Study", "youtube": "B615WegPglg", "frame": 3 },
         { "youtube": "URDFnWXJH_s", "client": "Uber", "title": "Driven Women", "frame": 2 },
-        { "client": "Medaire", "title": "Digital Assessment Kit", "youtube": "ABYrJD7QISk" },
-        { "client": "Boston Scientific", "title": "Rezum", "youtube": "ECfZ1gZtzlE" },
         { "youtube": "d_pofos5ZLs", "client": "Payroc", "title": "Payments Simplified, For You" }
       ]
     },
@@ -79,22 +64,16 @@
       "videos": [
         { "client": "UBS & Finnerty Partners", "title": "Service Without Compromise", "youtube": "Qd40htwEmJM", "frame": 2 },
         { "youtube": "oTBdp-MwnxA", "client": "Questage", "title": "Enduring Legacy", "frame": 1 },
-        { "youtube": "d_pofos5ZLs", "client": "Payroc", "title": "Payments Simplified, For You" },
-        { "client": "Ridgeline", "title": "Manage Your Risk, Revolutionize Your Returns", "youtube": "Jqci51WSpO0" },
-        { "client": "Thrill Wave", "title": "Show Your Practice To The World", "youtube": "EgloZ5_aPXs" },
-        { "client": "Opendoor", "title": "No Trick, All Treat Case Study", "youtube": "B615WegPglg", "frame": 3 }
+        { "client": "Thrill Wave", "title": "Show Your Practice To The World", "youtube": "EgloZ5_aPXs" }
       ]
     },
     {
       "name": "Sports",
       "slug": "sports",
       "videos": [
-        { "client": "Training Mask", "title": "Learn To Breathe", "youtube": "jduIrHZT0og", "zoom": true, "frame": 3 },
+        { "client": "Training Mask", "title": "Learn To Breathe", "youtube": "jduIrHZT0og", "frame": 3, "zoom": true },
         { "client": "Golf Digest", "title": "What Would Bubba Watson Shoot?", "youtube": "2g7dOnDKYZo" },
-        { "client": "Fuji Sports", "title": "Brand Video", "youtube": "HkZKshgwslI" },
-        { "client": "Training Mask", "title": "Behind the Scenes", "youtube": "qeCo9vV3pH8", "frame": 2 },
-        { "client": "Hypnotik", "title": "Pack it Up", "youtube": "WoFqn7U9tq4" },
-        { "client": "Aurelio Physical Therapy", "title": "Fitness Forward Performance", "youtube": "ASbLkvgd874" }
+        { "client": "Fuji Sports", "title": "Brand Video", "youtube": "HkZKshgwslI" }
       ]
     },
     {
@@ -103,10 +82,7 @@
       "videos": [
         { "client": "Relentless Beats", "title": "Decadence Arizona 2025 Aftermovie", "youtube": "pDk121-TCto", "zoom": true },
         { "client": "Relentless Beats", "title": "Decadence 2023 Aftermovie", "youtube": "24xC8pzZNxw", "zoom": true },
-        { "client": "Relentless Beats", "title": "Gold Rush 2024 Aftermovie", "youtube": "sF4KJxf99nA", "zoom": true },
-        { "client": "Wonderspaces", "title": "Immerse Yourself", "youtube": "n26-IyiVLsw" },
-        { "client": "Opendoor", "title": "No Trick, All Treat Case Study", "youtube": "B615WegPglg", "frame": 3 },
-        { "client": "Music Celebrations International", "title": "Ireland", "youtube": "oXOPxKmigKA" }
+        { "client": "Relentless Beats", "title": "Gold Rush 2024 Aftermovie", "youtube": "sF4KJxf99nA", "zoom": true }
       ]
     },
     {
@@ -115,10 +91,7 @@
       "videos": [
         { "client": "Wonderspaces", "title": "Immerse Yourself", "youtube": "n26-IyiVLsw" },
         { "client": "Music Celebrations International", "title": "Ireland", "youtube": "oXOPxKmigKA" },
-        { "client": "Wax Society", "title": "Sweet Oblivion (An Underdog Overture)", "youtube": "6OeZDmtqx44", "frame": 2 },
-        { "client": "Relentless Beats", "title": "Decadence Arizona 2025 Aftermovie", "youtube": "pDk121-TCto", "zoom": true },
-        { "client": "High Vibe Kitchen", "title": "Take a Little Trip", "youtube": "D46bYNK_lvw" },
-        { "client": "Swoon Salon", "title": "Loop-Worthy Assets", "youtube": "jqx11PcJiX0" }
+        { "client": "Wax Society", "title": "Sweet Oblivion (An Underdog Overture)", "youtube": "6OeZDmtqx44", "frame": 2 }
       ]
     },
     {
@@ -127,10 +100,7 @@
       "videos": [
         { "client": "High Vibe Kitchen", "title": "Take a Little Trip", "youtube": "D46bYNK_lvw" },
         { "client": "High Vibe Kitchen", "title": "Dinner Party", "youtube": "bDNn4kDE3H4" },
-        { "client": "PB Americano", "title": "In a Nutshell", "youtube": "nCmXrqVTkwA" },
-        { "client": "EXP Trips", "title": "Explore More", "youtube": "mxQFKiYivmI" },
-        { "client": "Music Celebrations International", "title": "Ireland", "youtube": "oXOPxKmigKA" },
-        { "client": "Swoon Salon", "title": "Join the Squad", "youtube": "foVEyujIc3k" }
+        { "client": "PB Americano", "title": "In a Nutshell", "youtube": "nCmXrqVTkwA" }
       ]
     },
     {
@@ -139,10 +109,7 @@
       "videos": [
         { "client": "Rumco", "title": "Building With Integrity", "youtube": "CN1IN8xlTVg" },
         { "client": "Citgo & Brundage Bone", "title": "Premium Products, Excellent Service", "youtube": "JQEb45RgaK8" },
-        { "client": "Neighbor", "title": "Sustainable Furniture For The Modern Home", "youtube": "ACgPMAyPQeI" },
-        { "client": "Kindred", "title": "Break the Mold", "youtube": "opb_FLe4_Xo" },
-        { "client": "PB Americano", "title": "In a Nutshell", "youtube": "nCmXrqVTkwA" },
-        { "client": "Hypnotik", "title": "Pack it Up", "youtube": "WoFqn7U9tq4" }
+        { "client": "Neighbor", "title": "Sustainable Furniture For The Modern Home", "youtube": "ACgPMAyPQeI" }
       ]
     },
     {
@@ -151,10 +118,7 @@
       "videos": [
         { "client": "Kindred", "title": "Break the Mold", "youtube": "opb_FLe4_Xo" },
         { "client": "Hypnotik", "title": "Pack it Up", "youtube": "WoFqn7U9tq4" },
-        { "client": "Neighbor", "title": "Sustainable Furniture For The Modern Home", "youtube": "ACgPMAyPQeI" },
-        { "client": "Swoon Salon", "title": "Loop-Worthy Assets", "youtube": "jqx11PcJiX0" },
-        { "client": "Swoon Salon", "title": "Join the Squad", "youtube": "foVEyujIc3k" },
-        { "client": "Fuji Sports", "title": "Brand Video", "youtube": "HkZKshgwslI" }
+        { "client": "Swoon Salon", "title": "Loop-Worthy Assets", "youtube": "jqx11PcJiX0" }
       ]
     }
   ]
