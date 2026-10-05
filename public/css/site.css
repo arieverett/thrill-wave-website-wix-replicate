@@ -1553,9 +1553,18 @@ body:not(.page-sections) .kicker::before { content: none; }
 .clients-line { margin: 28px 0 0; font: 500 .74rem/1.6 var(--font-body); letter-spacing: .08em; text-transform: uppercase; }
 .clients-line span { color: var(--accent); margin-right: .6em; }
 /* Plain link chips (other industries) */
-.chip-links { list-style: none; display: flex; flex-wrap: wrap; gap: 10px; margin: 24px 0 0; padding: 0; }
-.chip-links a { display: inline-flex; align-items: center; justify-content: center; min-height: 38px; white-space: nowrap; text-decoration: none; font: 500 .68rem/1 var(--font-body); letter-spacing: .1em; text-transform: uppercase; padding: 0 18px; border: 1px solid var(--ink); border-radius: 999px; transition: background-color .25s, color .25s, border-color .25s; }
-.chip-links a:hover { background: var(--ink); color: var(--paper); }
+/* A line of text links with slashes between them, like the Work page's field bar; a line never starts with a slash */
+.chip-links { list-style: none; display: flex; flex-wrap: wrap; align-items: baseline; row-gap: 6px; margin: 24px 0 0 -30px; padding: 0; overflow: hidden; clip-path: inset(-4px -4px -4px 30px); }
+.chip-links li { position: relative; margin-left: 30px; white-space: nowrap; font: 500 .78rem/1.9 var(--font-body); }
+.chip-links li::before { content: "/"; position: absolute; top: 0; left: -19px; font: 400 .78rem/1.9 var(--font-body); color: var(--muted); opacity: .6; }
+.chip-links a { white-space: nowrap; text-decoration: none; font: 500 .78rem/1.9 var(--font-body); letter-spacing: .1em; text-transform: uppercase; color: var(--ink); border-bottom: 1px solid transparent; transition: color .2s, border-color .2s; }
+.chip-links a:hover { color: var(--accent); border-bottom-color: var(--accent); }
+@media (max-width: 560px) {
+  .chip-links { row-gap: 0; margin-left: -22px; clip-path: inset(-4px -4px -4px 22px); }
+  .chip-links li { margin-left: 22px; }
+  .chip-links li::before { left: -14px; }
+  .chip-links li, .chip-links li::before, .chip-links a { font-size: .64rem; letter-spacing: .06em; }
+}
 /* Case study facts box: client, goal, industry, services */
 .facts { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); margin: 28px 0 0; border-top: 1px solid rgba(255, 255, 255, .14); border-bottom: 1px solid rgba(255, 255, 255, .14); }
 .facts div { padding: 18px 16px 18px 0; }
