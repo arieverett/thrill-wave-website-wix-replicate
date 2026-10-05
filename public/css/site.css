@@ -695,14 +695,14 @@ body.subnav-stuck .chip-nav::before { top: calc(-1 * var(--header-h)); }
 body.subnav-stuck .site-header { background: transparent; -webkit-backdrop-filter: none; backdrop-filter: none; }
 .chip-nav__label { margin: 0 0 10px; font: 700 .7rem/1 var(--font-body); letter-spacing: .14em; text-transform: uppercase; color: var(--muted); }
 .chip-nav ul { list-style: none; display: flex; flex-wrap: wrap; gap: 8px; margin: 0; padding: 0; }
-.chip-nav a { display: block; white-space: nowrap; text-decoration: none; font: 800 .7rem/1 var(--font-display); letter-spacing: .04em; text-transform: uppercase; padding: 9px 13px 8px; border: 1.5px solid var(--ink); border-radius: 6px; transition: background-color .2s, color .2s; }
+.chip-nav a { display: inline-flex; align-items: center; justify-content: center; min-height: 38px; white-space: nowrap; text-decoration: none; font: 500 .68rem/1 var(--font-body); letter-spacing: .1em; text-transform: uppercase; padding: 0 18px; border: 1px solid var(--ink); border-radius: 999px; transition: background-color .25s, color .25s, border-color .25s; }
 .chip-nav a:hover, .chip-nav a[aria-current] { background: var(--ink); color: var(--paper); }
 .portfolio-cat { padding: clamp(28px, 4vw, 48px) 0 clamp(20px, 3vw, 36px); scroll-margin-top: calc(var(--header-h) + 84px); }
 @media (max-width: 760px) {
   .chip-nav { position: static; }
   .chip-nav::before { background: var(--paper); -webkit-backdrop-filter: none; backdrop-filter: none; }
   .chip-nav ul { gap: 6px; }
-  .chip-nav a { font-size: .66rem; padding: 8px 10px 7px; }
+  .chip-nav a { min-height: 34px; font-size: .64rem; padding: 0 14px; }
   .portfolio-cat { scroll-margin-top: calc(var(--header-h) + 8px); }
 }
 .portfolio-cat__title { font-size: clamp(1.3rem, 2.4vw, 1.8rem); margin: 0; }
@@ -844,8 +844,8 @@ body.subnav-stuck .site-header { background: transparent; -webkit-backdrop-filte
 .post__cover { margin: 24px auto 40px; }
 .post__cover img { width: 100%; max-height: 560px; object-fit: cover; border-radius: 4px; animation: tw-fade 1s var(--ease) .1s backwards; }
 .post__footer { padding-bottom: var(--section); }
-.post__cats { display: flex; flex-wrap: wrap; gap: 8px; }
-.post__cats a { font: 800 .72rem/1 var(--font-display); letter-spacing: .06em; text-transform: uppercase; text-decoration: none; border: 1.5px solid var(--ink); border-radius: 6px; padding: 8px 12px 7px; transition: background-color .2s, color .2s; }
+.post__cats { display: flex; flex-wrap: wrap; gap: 10px; }
+.post__cats a { display: inline-flex; align-items: center; justify-content: center; min-height: 38px; white-space: nowrap; text-decoration: none; font: 500 .68rem/1 var(--font-body); letter-spacing: .1em; text-transform: uppercase; padding: 0 18px; border: 1px solid var(--ink); border-radius: 999px; transition: background-color .25s, color .25s, border-color .25s; }
 .post__cats a:hover { background: var(--ink); color: var(--paper); }
 
 .prose { font-size: 1.02rem; line-height: 1.75; }
@@ -1261,7 +1261,7 @@ body.subnav-stuck .site-header { background: transparent; -webkit-backdrop-filte
 .page-black .page-head__follow a { color: var(--on-dark); font-weight: 600; text-underline-offset: 3px; }
 .page-black .chip-nav::before { background: rgba(0, 0, 0, .78); }
 .page-black .chip-nav__label { color: #9a9a9f; }
-.page-black .chip-nav a { color: var(--on-dark); border-color: rgba(255, 255, 255, .6); }
+.page-black .chip-nav a { color: var(--on-dark); border-color: rgba(255, 255, 255, .85); }
 .page-black .chip-nav a:hover, .page-black .chip-nav a[aria-current] { background: var(--paper); color: var(--ink); border-color: var(--paper); }
 /* When the category bar sticks, keep the white header instead of blending it into the dark bar */
 .page-black .post-card__media { background: #151515; }
@@ -1542,8 +1542,8 @@ body:not(.page-sections) .kicker::before { content: none; }
 .clients-line { margin: 28px 0 0; font: 500 .74rem/1.6 var(--font-body); letter-spacing: .08em; text-transform: uppercase; }
 .clients-line span { color: var(--accent); margin-right: .6em; }
 /* Plain link chips (other industries) */
-.chip-links { list-style: none; display: flex; flex-wrap: wrap; gap: 8px; margin: 24px 0 0; padding: 0; }
-.chip-links a { display: block; white-space: nowrap; text-decoration: none; font: 800 .74rem/1 var(--font-display); letter-spacing: .04em; text-transform: uppercase; padding: 10px 14px 9px; border: 1.5px solid var(--ink); border-radius: 6px; transition: background-color .2s, color .2s; }
+.chip-links { list-style: none; display: flex; flex-wrap: wrap; gap: 10px; margin: 24px 0 0; padding: 0; }
+.chip-links a { display: inline-flex; align-items: center; justify-content: center; min-height: 38px; white-space: nowrap; text-decoration: none; font: 500 .68rem/1 var(--font-body); letter-spacing: .1em; text-transform: uppercase; padding: 0 18px; border: 1px solid var(--ink); border-radius: 999px; transition: background-color .25s, color .25s, border-color .25s; }
 .chip-links a:hover { background: var(--ink); color: var(--paper); }
 /* Case study facts box: client, goal, industry, services */
 .facts { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); margin: 28px 0 0; border-top: 1px solid rgba(255, 255, 255, .14); border-bottom: 1px solid rgba(255, 255, 255, .14); }
