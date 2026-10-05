@@ -7,7 +7,7 @@
   "scripts": {
     "build": "node build.mjs",
     "dev": "node scripts/dev.mjs",
-    "check": "node build.mjs && node scripts/check.mjs"
+    "check": "node --check functions/api/contact.js && node --check functions/api/pill.js && node build.mjs && node scripts/check.mjs"
   },
   "dependencies": {
     "marked": "^18.0.0"
