@@ -1,6 +1,6 @@
-# Twice-monthly blog post (scheduled task playbook)
+# Weekly blog post (scheduled task playbook)
 
-A scheduled task runs this on the 1st and 15th of each month. It writes one new Intel post, checks it and publishes it to thrillwave.com. Partners can change anything here in plain English ("make the posts shorter", "more posts about editing", "pause the posts") and Claude updates this file or the scheduled task.
+A scheduled task runs this every Tuesday morning (Phoenix time; weekly since Ari's request on Oct 5, 2026). It writes one new Intel post, checks it and publishes it to thrillwave.com. Partners can change anything here in plain English ("make the posts shorter", "more posts about editing", "pause the posts") and Claude updates this file or the scheduled task.
 
 ## What these posts are
 
@@ -11,9 +11,10 @@ Education and expertise first, search second, selling never. Each post teaches a
 Thrill Wave is a production company and a team of creatives (writers, producers, directors, cinematographers, editors, sound people) who care about the world, people and stories, and about the communication, tech and medicine that make the world go round. Posts sound like us talking shop, not like a company pitching.
 
 - Never say how many people Thrill Wave is, or call it small, tiny or lean (no "the three of us", "three partners", "small team"). Say "we", "our founders" or "our crew".
-- No selling, pricing, promo or "why you should hire a video team". Never "marketing agency" or "ad agency". Prefer films, stories, work and craft over "content" and "campaign".
+- No hard selling, pricing, promo or "why you should hire a video team". Never "marketing agency" or "ad agency". Prefer films, stories, work and craft over "content" and "campaign".
 - Never mention AI or how the post was made.
-- At most one short, soft line at the very end that points somewhere useful (a related film, `/portfolio`, `/sitrep` or `/contact`). The page already ends with a "Start a project" block.
+- Craft posts: at most one short, soft line at the very end that points somewhere useful (a related film, `/portfolio`, `/sitrep` or `/contact`). The page already ends with a "Start a project" block.
+- Field and customer posts (see step 2) may close with a short section speaking to that reader directly and inviting them to message us. Write it with good intentions: it should read like advice from people who know their world, not a pitch.
 
 ## 1. Get set up
 
@@ -23,7 +24,12 @@ Thrill Wave is a production company and a team of creatives (writers, producers,
 
 ## 2. Pick the topic
 
-One specific question a filmmaker, producer, communicator or curious client would actually search or ask an AI assistant. Niche is good: a narrow, deep, correct answer beats a broad, shallow one. Rotate through these veins:
+**Alternate two kinds of posts week to week** (check the last post's kind and do the other):
+
+- **Craft posts** (the veins below): the art, science and tech of filmmaking and communication.
+- **Field and customer posts:** one post about how film and storytelling work in one of our fields (`industries` in `content/home.json`) or for one of our customer types (`audiences`), rotating so every field and customer type gets covered before any repeats. Teach that reader something genuinely useful about telling their story on film: what makes stories in their world hard to tell, what kinds of films serve them (explainers, documentary portraits, training films, event films...), how a shoot in their setting actually works (a clinic, a courtroom, a lab, a stadium, a council chamber), what to prepare, and what we've learned doing it. Show our capabilities through specifics and our real work (films from that field's `work` list in `content/home.json`, embedded with `{{youtube:ID}}`, and its case study if there is one), never through claims. Link to that field's or customer type's page (`/industries/<slug>` or `/who-we-serve/<slug>`). End with a short section addressed to that reader ("If you run a clinic...", "If you're a tribal health department...") that invites them to [message us](/contact) about their story. Educational first, a little sales-y at the very end at most, always with good intentions. Use the categories Industries or Planning a Video.
+
+For craft posts, pick one specific question a filmmaker, producer, communicator or curious client would actually search or ask an AI assistant. Niche is good: a narrow, deep, correct answer beats a broad, shallow one. Rotate through these veins:
 
 - **Gear and glass:** specific lenses, cameras and tools. Angénieux zooms and anamorphics, Cooke, Zeiss, Atlas, Sirui; Sony FX9, FX6, FX3, Burano and Venice; anamorphic squeeze factors and desqueeze; ND filters; gimbals and drones.
 - **How-tos for working crews:** setting up vertical anamorphic on a Sony FX9; matching two camera bodies in color; recording clean dialogue in a loud room; lighting an interview in an Arizona office with a west-facing window.

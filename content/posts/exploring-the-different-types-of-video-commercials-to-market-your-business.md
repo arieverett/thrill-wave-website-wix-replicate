@@ -1,43 +1,72 @@
 ---
-title: "Types of Video Commercials to Market Your Business"
+title: "Films People Actually Want to Watch, and What Each One Is For"
 date: 2026-09-29
 author: Chris Kuzman
-cover_image: https://images.unsplash.com/photo-1682130301125-5b63bbf93241?w=1600&h=900&fit=crop&q=80&auto=format
-cover_alt: "A film clapperboard on a white background"
-description: "Explainers, testimonials, brand films and more: the main types of video commercials, and what each one is good for."
-categories: [Planning a Video]
+cover_image: https://images.unsplash.com/photo-1726994133940-1e029529cc12?w=1600&h=900&fit=crop&q=80&auto=format
+cover_alt: "A camera lens catching the light against a black background"
+description: "Explainers, documentary portraits, origin stories and more: the kinds of films we make for organizations, and what each one is good for."
+categories: [Planning a Video, Storytelling]
 ---
 
-A good commercial grabs attention and leaves people feeling something about your business. But "make a video" can mean a lot of things, and picking the wrong kind is an expensive way to learn. Here are the main types we make, and what each one is good for.
+Most business video is built to interrupt you, and most of it gets skipped the second that little button shows up. We'd rather make something people choose to watch. Our films are made for businesses and organizations too, but they're the kind people like: they teach something, tell a true story or bring people a little closer together.
 
-## Explainer videos
+"Make a video" can mean a lot of things, though, and picking the wrong kind is an expensive way to learn. Here are the kinds of films we make most, and what each one is good for:
 
-Explainers take something complicated and make it simple. They often use animation, graphics or voiceover to walk people through a product or service. Use one when people keep asking you the same questions, or when what you do is hard to describe in a sentence.
+| Kind of film | What it does | When it fits |
+|---|---|---|
+| Explainer | Makes a complicated idea simple | People keep asking you the same questions |
+| How it works | Shows the thing doing its job | Your product or procedure is hard to picture |
+| Documentary portrait | Lets real people speak for themselves | You need trust more than attention |
+| Origin story | Says why you exist and what you care about | People should know who's behind the name |
+| Behind the scenes | Opens the doors on the work | The care you put in is invisible from outside |
+| Event film | Keeps a moment alive after it ends | You want people back next year |
 
-## Product demos
+## Films that teach
 
-A demo shows your product in action and makes its best features obvious. It's perfect for a launch, or for answering "but how does it actually work?" before anyone has to ask.
+An explainer takes something complicated and makes it simple enough to remember. The hard part isn't the graphics, it's the thinking: finding the one idea the viewer needs and cutting everything that gets in its way. We do our homework first, so the expert on camera can explain it in their own words and we can tell when a sentence is doing real work. Here's one we made for MedAire, explaining a kit that helps crews handle a medical emergency far from a hospital, in the air or at sea:
 
-## Testimonials
+{{youtube:ABYrJD7QISk}}
+*MedAire, Digital Assessment Kit.*
 
-Nothing sells like a happy customer telling the truth. Testimonials give people proof from someone just like them. We shoot ours documentary-style, so they feel like real conversations instead of scripted endorsements. They work hard on your website and in paid ads aimed at people similar to the customers on screen.
+## Films that show how something works
 
-## Brand films
+Some things are hard to picture until you see them. A medical device, a new procedure or a piece of equipment can take a page of text to describe and ten seconds to show. These films need a steady hand with facts, because doctors, engineers and regulators will watch them as closely as patients and buyers. This is how we showed a urology treatment for Boston Scientific:
 
-A brand film tells the story of who you are and what you stand for. It's less about features and more about feeling: the reason someone chooses you and sticks around. If people should care about your business, this is where you give them a reason to.
+{{youtube:ECfZ1gZtzlE}}
+*Boston Scientific, Rezum.*
 
-## Behind the scenes
+## Films that let people speak
 
-Show people how the work gets done and who does it. Behind-the-scenes video builds trust because it's honest. It puts faces to your name and shows the care that goes into what you make.
+When trust matters more than attention, nothing beats real people telling the truth in their own words. We film these like a documentary: no script to recite, just good questions, patience and enough time for the real answer to show up. For the Inter Tribal Council of Arizona, tribal mothers spoke straight to other mothers about WIC:
 
-## Live video
+{{youtube:QlP7wPaFcVU}}
+*ITCA WIC, Dear Mom.*
 
-Live streams let you talk with your audience in real time, whether it's an event, a launch or a Q&A. Plan it well and the recording keeps working long after the stream ends, cut down into clips for your site and social channels.
+## Films about why you exist
 
-## So which one is right?
+An origin story is less about what you sell and more about who you are: the reason you started, what you won't compromise on and why people stick around. The best ones feel like meeting someone, not reading their résumé. Here's how Rumco, a Phoenix construction company, told theirs:
 
-Usually more than one. The right mix depends on who you're trying to reach and what you need them to do. That's why we start every project with a SITREP, our research into your audience and your competitors, so we make the film that will actually move the needle.
+{{youtube:CN1IN8xlTVg}}
+*Rumco, Building With Integrity.*
 
-Not sure where to start? [Tell us what you're after](/contact).
+## Films that open the doors
 
-*Cover photo: The Maker Jess on [Unsplash](https://unsplash.com/photos/a-black-and-white-movie-clapper-on-a-white-background-33LxhLSWQx0).*
+A lot of the care that goes into good work is invisible from the outside. Behind-the-scenes films put faces to the name and show the craft and the people doing it. They're honest by nature, which is exactly why they build trust. This is a look behind the scenes of our shoot for Training Mask:
+
+{{youtube:qeCo9vV3pH8}}
+*Training Mask, Behind the Scenes.*
+
+## Films that keep a moment alive
+
+An event lasts a night, but a good event film keeps working all year. It lets the people who were there relive it and shows everyone who missed it what they'll want to be part of next time. We made this one for Relentless Beats at Decadence Arizona:
+
+{{youtube:pDk121-TCto}}
+*Relentless Beats, Decadence Arizona 2025.*
+
+## So which one do you need?
+
+Usually more than one, and that's good news, because one well-planned shoot can give you several of these. The right mix depends on who you need to reach and what you need them to understand, feel or do. That's why every project starts with our [SITREP](/sitrep): research into your craft, your field and the people you're talking to, so we can recommend the story worth telling instead of guessing.
+
+If you're not sure which kind of film fits what you're working on, [send us a message](/contact) and tell us about it. We'll give you a straight answer.
+
+*Cover photo: Indra Projects on [Unsplash](https://unsplash.com/photos/a-camera-lens-in-the-dark-with-a-black-background-9RfFXS0QvHM).*
