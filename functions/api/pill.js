@@ -26,15 +26,14 @@ CREATE TABLE IF NOT EXISTS pill_events (
   country TEXT,
   created_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP
 );
+CREATE INDEX IF NOT EXISTS pill_events_visitor ON pill_events(visitor_id);
+CREATE INDEX IF NOT EXISTS pill_events_choice ON pill_events(choice);
+CREATE INDEX IF NOT EXISTS pill_events_created ON pill_events(created_at);
 `;
 
 async function ensureSchema(db) {
-  await db.batch([
-    db.prepare(SCHEMA),
-    db.prepare('CREATE INDEX IF NOT EXISTS pill_events_visitor ON pill_events(visitor_id)'),
-    db.prepare('CREATE INDEX IF NOT EXISTS pill_events_choice ON pill_events(choice)'),
-    db.prepare('CREATE INDEX IF NOT EXISTS pill_events_created ON pill_events(created_at)'),
-  ]);
+  // D1.exec() is intended for one-shot maintenance and migration work and accepts multiple statements.
+  await db.exec(SCHEMA);
 }
 
 const text = (value, max = 120) => (typeof value === 'string' ? value.trim().slice(0, max) : '');
@@ -103,6 +102,30 @@ export async function onRequestPost({ request, env }) {
 }
 
 export async function onRequestGet({ request, env }) {
+  const url = new URL(request.url);
+
+  // Safe setup/diagnostic endpoint. It exposes no visitor data.
+  if (url.searchParams.get('health') === '1') {
+    if (!env.TW_ANALYTICS) {
+      return Response.json({ ok: false, binding: 'TW_ANALYTICS', error: 'binding missing' }, {
+        status: 503,
+        headers: { 'Cache-Control': 'no-store', 'X-Robots-Tag': 'noindex, nofollow' },
+      });
+    }
+    try {
+      await ensureSchema(env.TW_ANALYTICS);
+      const row = await env.TW_ANALYTICS.prepare('SELECT COUNT(*) AS rows FROM pill_events').first();
+      return Response.json({ ok: true, binding: 'TW_ANALYTICS', table: 'pill_events', rows: Number(row?.rows || 0) }, {
+        headers: { 'Cache-Control': 'no-store', 'X-Robots-Tag': 'noindex, nofollow' },
+      });
+    } catch (error) {
+      return Response.json({ ok: false, binding: 'TW_ANALYTICS', error: String(error?.message || error) }, {
+        status: 500,
+        headers: { 'Cache-Control': 'no-store', 'X-Robots-Tag': 'noindex, nofollow' },
+      });
+    }
+  }
+
   if (!env.TW_ANALYTICS) return new Response('Analytics database not configured.', { status: 503 });
 
   const auth = request.headers.get('Authorization') || '';
