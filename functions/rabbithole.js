@@ -34,7 +34,7 @@ export async function onRequestGet({ request, env }) {
       ...PRIVATE,
       'Content-Type': 'text/html; charset=utf-8',
       'X-Content-Type-Options': 'nosniff',
-      'Content-Security-Policy': `default-src 'none'; script-src 'nonce-${nonce}'; style-src 'nonce-${nonce}' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; connect-src 'self'; img-src 'self' data:; base-uri 'none'; form-action 'none'; frame-ancestors 'none'`,
+      'Content-Security-Policy': `default-src 'none'; script-src 'nonce-${nonce}'; style-src 'nonce-${nonce}' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; connect-src 'self'; frame-src https://open.spotify.com; img-src 'self' data:; base-uri 'none'; form-action 'none'; frame-ancestors 'none'`,
     },
   });
 }
@@ -160,6 +160,9 @@ section { margin-top: 16px; }
 @media (hover: none), (pointer: coarse), (max-width: 760px) { .lock input, .lock button { font-size: 16px; } }
 .lock input:focus, button:focus-visible { outline: 2px solid var(--green); outline-offset: 2px; }
 .err { color: var(--red); font-size: 12px; margin-top: 10px; min-height: 18px; }
+/* Soundtrack: the Spotify player only loads once someone asks for it */
+.player { margin: -14px 0 24px; }
+.player iframe { display: block; width: 100%; height: 80px; border: 0; border-radius: 12px; background: var(--panel); }
 [hidden] { display: none !important; }
 table.sr { position: absolute; left: -9999px; }
 @media (max-width: 560px) { .feed li { grid-template-columns: 14px 52px 1fr; } .feed .when { grid-column: 3; } }
@@ -172,12 +175,17 @@ table.sr { position: absolute; left: -9999px; }
   <header>
     <div class="brand">THRILL WAVE <b>//</b> THE RABBIT HOLE <span class="brand-emoji" aria-hidden="true">🐇 🥩</span></div>
     <div class="status" id="status"><span class="dot"></span>Offline</div>
-    <div class="tools" id="tools" hidden>
-      <button type="button" id="refresh">Refresh</button>
-      <button type="button" id="ignore" aria-pressed="false" title="Stop counting pill clicks from this browser">Ignore my clicks</button>
-      <a class="btn" href="/rabbithole?logout=1">Lock</a>
+    <div class="tools">
+      <button type="button" id="music" aria-expanded="false" aria-controls="player" title="Clubbed to Death, Rob Dougan">♪ Soundtrack</button>
+      <div class="tools" id="tools" hidden>
+        <button type="button" id="refresh">Refresh</button>
+        <button type="button" id="ignore" aria-pressed="false" title="Stop counting pill clicks from this browser">Ignore my clicks</button>
+        <a class="btn" href="/rabbithole?logout=1">Lock</a>
+      </div>
     </div>
   </header>
+
+  <div class="player" id="player" hidden></div>
 
   <div class="lock" id="lock" hidden>
     <h1 class="caret">Knock, knock</h1>
@@ -273,6 +281,22 @@ table.sr { position: absolute; left: -9999px; }
     };
     setInterval(tick, 70);
   };
+
+  // ---- Soundtrack: Clubbed to Death (Kurayamino Variation), Rob Dougan, from The Matrix ----
+  const musicBtn = $('music'), player = $('player');
+  musicBtn.addEventListener('click', () => {
+    if (!player.firstChild) {
+      const f = document.createElement('iframe');
+      f.src = 'https://open.spotify.com/embed/track/43tJydZ6HAunzHR1BhOOJR?utm_source=generator&theme=0';
+      f.title = 'Clubbed to Death by Rob Dougan on Spotify';
+      f.allow = 'autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture';
+      f.loading = 'lazy';
+      player.appendChild(f);
+    }
+    player.hidden = !player.hidden;
+    musicBtn.setAttribute('aria-expanded', !player.hidden);
+    musicBtn.setAttribute('aria-pressed', !player.hidden);
+  });
 
   // ---- Locked out (cookie expired or key changed): go back to the plain 404 ----
   const locked = () => location.replace('/rabbithole');
