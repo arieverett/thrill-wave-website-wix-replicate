@@ -2,8 +2,8 @@
 title: "Types of Video Commercials to Market Your Business"
 date: 2026-09-29
 author: Chris Kuzman
-cover_image: https://images.unsplash.com/photo-1580852300513-9b50125bf293?w=1600&h=900&fit=crop&q=80&auto=format
-cover_alt: "The front of a camera lens in the dark"
+cover_image: https://images.unsplash.com/photo-1682130301125-5b63bbf93241?w=1600&h=900&fit=crop&q=80&auto=format
+cover_alt: "A film clapperboard on a white background"
 description: "Explainers, testimonials, brand films and more: the main types of video commercials, and what each one is good for."
 categories: [Planning a Video]
 ---
@@ -40,4 +40,4 @@ Usually more than one. The right mix depends on who you're trying to reach and w
 
 Not sure where to start? [Tell us what you're after](/contact).
 
-*Cover photo: Marcos Paulo Prado on [Unsplash](https://unsplash.com/photos/black-camera-lens-on-white-background-QYVCzK-bnYU).*
+*Cover photo: The Maker Jess on [Unsplash](https://unsplash.com/photos/a-black-and-white-movie-clapper-on-a-white-background-33LxhLSWQx0).*
