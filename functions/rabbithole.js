@@ -5,6 +5,7 @@
 //
 //   /rabbithole?key=<PILL_STATS_TOKEN>   unlocks this browser for a year, then redirects to /rabbithole
 //                                        (the key screen sends people here; a wrong key goes back with ?denied=1)
+//   /rabbithole?key=…&json=1             same check without a reload, used by the key screen (answers {ok})
 //   /rabbithole?logout=1                 locks this browser again and returns to the key screen
 //
 // The numbers come from /api/pill, which checks the same cookie.
@@ -22,6 +23,15 @@ export async function onRequestGet({ request, env }) {
 
   const key = url.searchParams.get('key');
   if (key !== null) {
+    // The key screen checks the key in the background (?json=1) so the page, and its music, never reloads.
+    if (url.searchParams.has('json')) {
+      const ok = await isKey(key, env);
+      if (!ok) await new Promise((r) => setTimeout(r, 600));
+      return new Response(JSON.stringify({ ok }), {
+        status: ok ? 200 : 401,
+        headers: { ...PRIVATE, 'Content-Type': 'application/json', 'Set-Cookie': ok ? cookie(await cookieValueFor(key), 60 * 60 * 24 * 365) : cookie('', 0) },
+      });
+    }
     if (await isKey(key, env)) return go('/rabbithole', cookie(await cookieValueFor(key), 60 * 60 * 24 * 365));
     await new Promise((r) => setTimeout(r, 600)); // slow down guessing a little
     return go('/rabbithole?denied=1', cookie('', 0));
@@ -455,14 +465,32 @@ table.sr { position: absolute; left: -9999px; }
       $('err').textContent = "That's not it. Try again.";
       history.replaceState(null, '', '/rabbithole');
     }
-    $('login').addEventListener('submit', (e) => {
+    $('login').addEventListener('submit', async (e) => {
       e.preventDefault();
       const v = $('key').value.trim();
-      if (v) location.assign('/rabbithole?key=' + encodeURIComponent(v));
+      if (!v) return;
+      const btn = $('login').querySelector('button');
+      btn.disabled = true; $('err').textContent = '';
+      try {
+        const res = await fetch('/rabbithole?json=1&key=' + encodeURIComponent(v), { cache: 'no-store', credentials: 'same-origin' });
+        if (res.ok) {
+          // In: swap the key screen for the dashboard without reloading, so the music keeps playing.
+          $('lock').hidden = true; $('key').value = '';
+          $('status').innerHTML = '<span class="dot"></span>Connecting';
+          startDash();
+          return;
+        }
+        if (res.status !== 401) throw new Error();
+        $('err').textContent = "That's not it. Try again.";
+      } catch {
+        $('err').textContent = 'Signal lost. Try again.';
+      }
+      btn.disabled = false; $('key').select();
     });
     // Put the cursor in the box on computers only: on phones it pops the keyboard up and shifts the page.
     if (matchMedia('(hover: hover) and (pointer: fine)').matches) $('key').focus();
-  } else {
+  } else startDash();
+  function startDash() {
     load();
     setInterval(() => { if (!document.hidden) load(); }, 30000);
   }
