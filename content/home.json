@@ -91,6 +91,7 @@
     },
     {
       "name": "Media & publishing",
+      "short": "Media",
       "text": "We do field production, segments, promos and series for networks, public media, news outlets and publishers, delivered to broadcast spec.",
       "still": "2g7dOnDKYZo",
       "example": "2g7dOnDKYZo",
@@ -142,6 +143,7 @@
     },
     {
       "name": "Nonprofits & public service",
+      "short": "Nonprofits",
       "text": "We make films for nonprofits, NGOs, tribal councils and public agencies that move people to give, join and act.",
       "still": "mEfrDfPj_TA:3",
       "example": "mEfrDfPj_TA",
@@ -188,6 +190,7 @@
     },
     {
       "name": "Schools & institutions",
+      "short": "Schools",
       "text": "We make films for universities, schools, museums, art spaces and research centers that help people learn, visit and believe in the work.",
       "still": "n26-IyiVLsw",
       "example": "n26-IyiVLsw",
@@ -275,6 +278,7 @@
     },
     {
       "name": "Agencies & PR firms",
+      "short": "Agencies",
       "text": "We produce for creative agencies and PR firms under your name, to your brief and on your timeline.",
       "still": "sF4KJxf99nA",
       "zoom": true,
@@ -383,6 +387,7 @@
     },
     {
       "name": "Government & Public Affairs",
+      "short": "Government",
       "pillar": "Academics",
       "still": "Gh67yEMyOCs:1",
       "clients": [
@@ -484,6 +489,7 @@
     },
     {
       "name": "Education & research",
+      "short": "Education",
       "pillar": "Academics",
       "still": "uPjYjRDq_qU:1",
       "clients": [
@@ -780,6 +786,7 @@
     },
     {
       "name": "Food & hospitality",
+      "short": "Food",
       "pillar": "Arts",
       "still": "bDNn4kDE3H4",
       "clients": [
@@ -1056,21 +1063,9 @@
         "title": "Case Study Using SITREP"
       },
       "stats": [
-        {
-          "value": "32%",
-          "label": "American Indian and Alaska Native people with at least one dose by April 2021, the highest of any group",
-          "source": "KFF"
-        },
-        {
-          "value": "1.7x",
-          "label": "The rate for white Americans at the same point (19%)",
-          "source": "KFF"
-        },
-        {
-          "value": "21",
-          "label": "Tribal nations in the Inter Tribal Council of Arizona",
-          "source": "ITCA"
-        }
+        { "value": "1.4x", "label": "Flu hospitalization rate for American Indian and Alaska Native adults compared with White adults, 2009 to 2023", "source": "CDC" },
+        { "value": "35%", "label": "American Indian and Alaska Native adults who got a flu shot in the 2023 to 2024 season", "source": "CDC" },
+        { "value": "21", "label": "Tribal nations in the Inter Tribal Council of Arizona", "source": "ITCA" }
       ],
       "lede": "Tribal health leaders explain vaccines to their own communities, in their own words.",
       "industry": "Tribal Nations",
@@ -1086,6 +1081,10 @@
         "So we filmed tribal health directors and community members on location, speaking in their own words."
       ],
       "work": [
+        { "youtube": "3hlumlH16HI", "client": "ITCA TEC", "title": "Recommended Respiratory Vaccinations" },
+        { "youtube": "zs1_1xC4My8", "client": "ITCA TEC", "title": "Talk to Your Healthcare Provider" },
+        { "youtube": "_OCpwTAXRNk", "client": "ITCA TEC", "title": "Contact Your Healthcare Provider" },
+        { "youtube": "cmaXGZGLShU", "client": "ITCA TEC", "title": "Speak with Your Healthcare Provider" },
         {
           "vimeo": "1175739079",
           "client": "ITCA TEC",

@@ -96,6 +96,7 @@ a[href^="tel:"] { white-space: nowrap; }
   font: 500 .68rem/1 var(--font-body);
   letter-spacing: .1em;
   text-transform: uppercase;
+  white-space: nowrap;
   text-decoration: none;
   background: var(--ink);
   color: var(--paper);
@@ -388,8 +389,8 @@ body:is(.nav-open, .nav-closing) .site-header { -webkit-backdrop-filter: none; b
 @media (max-width: 760px) { .hero h1.hero__stack, .hero--home h1.hero__stack { font-size: clamp(2.6rem, 12.5vw, 3.8rem); } .hero__stack > span { display: inline; } } /* phones: one flowing sentence */
 @media (max-width: 760px) { .hero--home h1.hero__stack { font-size: clamp(2.2rem, 10.5vw, 3.2rem); } } /* the homepage line is longer, so a touch smaller */
 /* Reel sits right under the hero buttons and overlaps the bottom of the hero, like the SITREP dashboard loop */
-/* Hero buttons: two equal-width buttons, text left and arrow box right */
-.hero .btn-row { display: inline-grid; grid-template-columns: 1fr 1fr; }
+/* Hero buttons: each only as wide as its label */
+.hero .btn-row { display: flex; flex-wrap: wrap; }
 .hero .btn-row .btn { justify-content: space-between; }
 .hero .btn-row .btn--plain { justify-content: center; }
 
@@ -402,7 +403,7 @@ body:is(.nav-open, .nav-closing) .site-header { -webkit-backdrop-filter: none; b
 .hero .pill-row .btn { min-height: 50px; }
 /* Homepage hero: plain black, headline, the lander video, then the two buttons, sitting a little higher than other heroes */
 /* Each button only as wide as its label plus a little room for the round ends */
-.hero .btn-row.pill-row { grid-template-columns: auto auto; justify-content: start; }
+.hero .btn-row.pill-row { flex-wrap: nowrap; justify-content: start; }
 .hero .pill-row .btn.btn--plain { padding: 0 18px; }
 /* Blue first, red second, side by side at every screen size; on phones the labels are a touch smaller */
 @media (max-width: 760px) {
@@ -482,7 +483,7 @@ body:is(.nav-open, .nav-closing) .site-header { -webkit-backdrop-filter: none; b
 @keyframes tw-trail { 0% { top: -60px; opacity: 0; } 10% { opacity: 1; } 88% { opacity: 1; } 100% { top: calc(100% - 60px); opacity: 0; } }
 @media (max-width: 760px) {
   .hero--home h1 { font-size: clamp(2.3rem, 10.5vw, 3.4rem); line-height: .94; max-width: none; }
-  .hero .btn-row { display: inline-grid; grid-template-columns: 1fr; } /* stacked, both as wide as the longer label */
+  .hero .btn-row { display: flex; flex-wrap: wrap; }
 }
 @media (max-width: 760px) {
   .hero { min-height: 74vh; }
@@ -587,8 +588,8 @@ body:is(.nav-open, .nav-closing) .site-header { -webkit-backdrop-filter: none; b
 .section__actions { margin-top: 36px; }
 /* Every section ends with a button row: a clear "more" button to the section's own page, plus an optional red one.
    Buttons share one width; stacked on phones, like the hero buttons. */
-.section__actions.btn-row { display: grid; grid-auto-flow: column; grid-auto-columns: 1fr; gap: 12px; width: max-content; max-width: 100%; }
-@media (max-width: 560px) { .section__actions.btn-row { grid-auto-flow: row; } }
+/* Section buttons: each only as wide as its label, side by side, wrapping onto a new line when there's no room */
+.section__actions.btn-row { display: flex; flex-wrap: wrap; align-items: center; gap: 12px; }
 
 .embed-16x9 { position: relative; aspect-ratio: 16 / 9; margin-top: 28px; background: #111; border-radius: 4px; overflow: hidden; }
 .embed-16x9 iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
@@ -1386,7 +1387,7 @@ body.subnav-stuck .site-header { background: transparent; -webkit-backdrop-filte
 .lead-form--dark :is(input, textarea) { background: #0b0b0c; color: var(--on-dark); border-color: rgba(255, 255, 255, .18); resize: vertical; }
 .lead-form--dark :is(input, textarea)::placeholder { color: #6b6b70; }
 .lead-form--dark :is(input, textarea):focus { border-color: var(--accent); box-shadow: 0 0 0 3px rgba(255, 0, 0, .2); }
-.lead-form--dark .btn { justify-self: stretch; min-height: 48px; }
+.lead-form--dark .btn { justify-self: start; min-height: 48px; }
 .lead-form--dark .form-status.is-ok { color: #3ddc84; }
 .lead-form--dark .form-status.is-error { color: #ff8a80; }
 .lead-form--dark .form-status.is-error a { color: inherit; }
@@ -1848,5 +1849,4 @@ body:not(.page-sections) .kicker::before { content: none; }
 .hero--404 .lede { color: rgba(255, 255, 255, .78); margin: 0 0 36px; }
 @keyframes rec-blink { 50% { opacity: .25; } }
 @media (prefers-reduced-motion: reduce) { .page-404 .hero--404 .kicker::before { animation: none; } }
-.hero--404 .btn-row { display: grid; grid-auto-flow: column; grid-auto-columns: 1fr; width: max-content; max-width: 100%; }
-@media (max-width: 560px) { .hero--404 .btn-row { grid-auto-flow: row; } }
+.hero--404 .btn-row { display: flex; flex-wrap: wrap; gap: 12px; }
