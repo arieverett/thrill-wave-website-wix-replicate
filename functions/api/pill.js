@@ -2,9 +2,11 @@
 //
 // POST /api/pill            records one anonymous choice in the D1 database bound as TW_ANALYTICS.
 // GET  /api/pill?health=1   setup check (binding, table, row count, whether the stats key is set). No visitor data.
-// GET  /api/pill            aggregate stats, only with the header  Authorization: Bearer <PILL_STATS_TOKEN>
+// GET  /api/pill            aggregate stats, only for a browser unlocked for /construct (cookie)
+//                           or with the header  Authorization: Bearer <PILL_STATS_TOKEN>
 //
-// The dashboard that reads these stats lives at /construct (functions/construct.js).
+// The dashboard that reads these stats lives at /construct (functions/construct.js). It is unlisted:
+// without the unlock cookie it answers with the site's normal 404 page.
 // The table is created on first use, so setup is: create a D1 database, bind it to the
 // Pages project as TW_ANALYTICS, and add the secret PILL_STATS_TOKEN.
 
@@ -124,10 +126,7 @@ export async function onRequestGet({ request, env }) {
     }
   }
 
-  const expected = env.PILL_STATS_TOKEN || '';
-  if (!expected || !(await sameSecret(request.headers.get('Authorization') || '', `Bearer ${expected}`))) {
-    return json({ error: 'not authorized' }, 401);
-  }
+  if (!(await isUnlocked(request, env))) return json({ error: 'not authorized' }, 401);
   if (!db) return json({ error: 'analytics database not configured' }, 503);
 
   await ensureSchema(db);
@@ -177,14 +176,38 @@ export async function onRequestGet({ request, env }) {
   });
 }
 
-// Constant-time comparison so the key can't be guessed one character at a time.
-async function sameSecret(a, b) {
-  const enc = new TextEncoder();
-  const [ha, hb] = await Promise.all([crypto.subtle.digest('SHA-256', enc.encode(a)), crypto.subtle.digest('SHA-256', enc.encode(b))]);
-  const x = new Uint8Array(ha), y = new Uint8Array(hb);
+// ---- Who may see the stats (shared with functions/construct.js) ----
+// A browser is unlocked by visiting /construct?key=<PILL_STATS_TOKEN> once. That sets an HttpOnly
+// cookie holding a hash of the key (never the key itself); changing the secret logs everyone out.
+export const COOKIE = 'tw_construct';
+
+const sha256 = async (value) =>
+  [...new Uint8Array(await crypto.subtle.digest('SHA-256', new TextEncoder().encode(`tw-construct:${value}`)))]
+    .map((b) => b.toString(16).padStart(2, '0')).join('');
+
+// Constant-time comparison so a value can't be guessed one character at a time.
+function same(a, b) {
+  if (a.length !== b.length) return false;
   let diff = 0;
-  for (let i = 0; i < x.length; i++) diff |= x[i] ^ y[i];
+  for (let i = 0; i < a.length; i++) diff |= a.charCodeAt(i) ^ b.charCodeAt(i);
   return diff === 0;
+}
+
+export const cookieValueFor = (key) => sha256(key);
+
+export async function isKey(candidate, env) {
+  const expected = env.PILL_STATS_TOKEN || '';
+  return Boolean(expected && candidate) && same(await sha256(candidate), await sha256(expected));
+}
+
+export async function isUnlocked(request, env) {
+  const expected = env.PILL_STATS_TOKEN || '';
+  if (!expected) return false;
+  const want = await sha256(expected);
+  const cookie = (request.headers.get('Cookie') || '').split(/;\s*/).find((c) => c.startsWith(`${COOKIE}=`))?.slice(COOKIE.length + 1) || '';
+  if (cookie && same(cookie, want)) return true;
+  const bearer = (request.headers.get('Authorization') || '').replace(/^Bearer\s+/, '');
+  return isKey(bearer, env);
 }
 
 function empty() {

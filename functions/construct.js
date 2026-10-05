@@ -1,17 +1,44 @@
-// Cloudflare Pages Function: GET /construct, the private dashboard for the red / blue pill easter egg.
+// Cloudflare Pages Function: /construct, the private dashboard for the red / blue pill easter egg.
 //
-// It's a single self-contained page served by this function (not a site page), so it never enters
-// the build, the sitemap, the menu or search. The page asks for the PILL_STATS_TOKEN key once,
-// keeps it in this browser only, and reads the numbers from /api/pill.
+// Unlisted on purpose: it is served by this function (not a site page), so it never enters the build,
+// sitemap, menu or search, and anyone without the unlock cookie gets the site's ordinary 404 page,
+// so nothing shows the dashboard exists.
+//
+//   /construct?key=<PILL_STATS_TOKEN>   unlocks this browser for a year, then redirects to /construct
+//   /construct?logout=1                 locks this browser again
+//
+// The numbers come from /api/pill, which checks the same cookie.
 
-export function onRequestGet() {
+import { COOKIE, cookieValueFor, isKey, isUnlocked } from './api/pill.js';
+
+const PRIVATE = { 'Cache-Control': 'no-store', 'X-Robots-Tag': 'noindex, nofollow', 'Referrer-Policy': 'no-referrer' };
+const cookie = (value, maxAge) => `${COOKIE}=${value}; Path=/; Max-Age=${maxAge}; HttpOnly; Secure; SameSite=Strict`;
+const go = (location, setCookie) => new Response(null, { status: 303, headers: { ...PRIVATE, Location: location, 'Set-Cookie': setCookie } });
+
+async function notFound(request, env) {
+  // Look exactly like a page that doesn't exist.
+  const page = await env.ASSETS.fetch(new URL('/404.html', request.url));
+  return new Response(page.body, { status: 404, headers: { 'Content-Type': 'text/html; charset=utf-8', ...PRIVATE } });
+}
+
+export async function onRequestGet({ request, env }) {
+  const url = new URL(request.url);
+
+  if (url.searchParams.has('logout')) return go('/', cookie('', 0));
+
+  const key = url.searchParams.get('key');
+  if (key !== null) {
+    if (await isKey(key, env)) return go('/construct', cookie(await cookieValueFor(key), 60 * 60 * 24 * 365));
+    return notFound(request, env);
+  }
+
+  if (!(await isUnlocked(request, env))) return notFound(request, env);
+
   const nonce = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(16))));
   return new Response(PAGE.replaceAll('__NONCE__', nonce), {
     headers: {
+      ...PRIVATE,
       'Content-Type': 'text/html; charset=utf-8',
-      'Cache-Control': 'no-store',
-      'X-Robots-Tag': 'noindex, nofollow',
-      'Referrer-Policy': 'no-referrer',
       'X-Content-Type-Options': 'nosniff',
       'Content-Security-Policy': `default-src 'none'; script-src 'nonce-${nonce}'; style-src 'nonce-${nonce}' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; connect-src 'self'; img-src 'self' data:; base-uri 'none'; form-action 'none'; frame-ancestors 'none'`,
     },
@@ -46,7 +73,7 @@ header { display: flex; flex-wrap: wrap; gap: 12px 20px; align-items: baseline; 
 .status .dot { display: inline-block; width: 7px; height: 7px; border-radius: 50%; background: var(--green); margin-right: 6px; box-shadow: 0 0 8px var(--green); animation: pulse 2s infinite; }
 @keyframes pulse { 50% { opacity: .35; } }
 .tools { display: flex; flex-wrap: wrap; gap: 8px; }
-button, .btn { font: inherit; font-size: 12px; color: var(--green); background: transparent; border: 1px solid var(--dim); border-radius: 4px; padding: 6px 10px; cursor: pointer; }
+button, .btn { text-decoration: none; font: inherit; font-size: 12px; color: var(--green); background: transparent; border: 1px solid var(--dim); border-radius: 4px; padding: 6px 10px; cursor: pointer; }
 button:hover { border-color: var(--green); }
 button[aria-pressed="true"] { background: var(--green); color: #000; border-color: var(--green); }
 h1 { font-size: clamp(22px, 4vw, 34px); font-weight: 700; letter-spacing: -.01em; margin-bottom: 6px; }
@@ -130,19 +157,9 @@ table.sr { position: absolute; left: -9999px; }
     <div class="tools" id="tools" hidden>
       <button type="button" id="refresh">Refresh</button>
       <button type="button" id="ignore" aria-pressed="false" title="Stop counting pill clicks from this browser">Ignore my clicks</button>
-      <button type="button" id="logout">Log out</button>
+      <a class="btn" href="/construct?logout=1">Lock</a>
     </div>
   </header>
-
-  <div class="lock" id="lock" hidden>
-    <h1 class="caret">Knock, knock</h1>
-    <p class="sub">Enter the stats key to see who took which pill. It stays in this browser only.</p>
-    <form id="login">
-      <input type="password" id="key" autocomplete="current-password" placeholder="PILL_STATS_TOKEN" aria-label="Stats key" required>
-      <button type="submit">Jack in</button>
-    </form>
-    <p class="err" id="err" role="alert"></p>
-  </div>
 
   <main id="dash" hidden>
     <h1 class="caret" id="headline">Loading the construct</h1>
@@ -183,7 +200,6 @@ table.sr { position: absolute; left: -9999px; }
 
 <script nonce="__NONCE__">
 (() => {
-  const KEY = 'tw_construct_key';
   const $ = (id) => document.getElementById(id);
   const esc = (s) => String(s ?? '').replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[c]);
   const store = {
@@ -225,10 +241,8 @@ table.sr { position: absolute; left: -9999px; }
     setInterval(tick, 70);
   };
 
-  // ---- Auth ----
-  const showLock = (msg = '') => { $('lock').hidden = false; $('dash').hidden = true; $('tools').hidden = true; $('err').textContent = msg; $('status').innerHTML = '<span class="dot"></span>Locked'; $('key').focus(); };
-  $('login').addEventListener('submit', (e) => { e.preventDefault(); store.set(KEY, $('key').value.trim()); $('key').value = ''; load(true); });
-  $('logout').addEventListener('click', () => { store.set(KEY, null); showLock(); });
+  // ---- Locked out (cookie expired or key changed): go back to the plain 404 ----
+  const locked = () => location.replace('/construct');
   $('refresh').addEventListener('click', () => load());
 
   // Opt this browser out of the counts (the homepage beacon reads the same flag).
@@ -239,20 +253,17 @@ table.sr { position: absolute; left: -9999px; }
 
   // ---- Data ----
   let seen = new Set(), firstLoad = true, lastTrend = null, resizeT;
-  async function load(fromLogin) {
-    const key = store.get(KEY);
-    if (!key) return showLock();
+  async function load() {
     try {
-      const res = await fetch('/api/pill?tz=' + -new Date().getTimezoneOffset(), { headers: { Authorization: 'Bearer ' + key }, cache: 'no-store' });
-      if (res.status === 401) { store.set(KEY, null); return showLock(fromLogin ? 'That key did not work.' : ''); }
+      const res = await fetch('/api/pill?tz=' + -new Date().getTimezoneOffset(), { cache: 'no-store', credentials: 'same-origin' });
+      if (res.status === 401) return locked();
       if (!res.ok) throw new Error('HTTP ' + res.status);
       const data = await res.json();
-      $('lock').hidden = true; $('dash').hidden = false; $('tools').hidden = false;
+      $('dash').hidden = false; $('tools').hidden = false;
       render(data);
       $('status').innerHTML = '<span class="dot"></span>Live · updated ' + new Date().toLocaleTimeString([], { hour: 'numeric', minute: '2-digit' });
     } catch (err) {
       $('status').innerHTML = '<span class="dot"></span>Signal lost (' + esc(err.message) + ')';
-      if (fromLogin) $('err').textContent = 'Could not reach the stats. Try again in a moment.';
     }
   }
 
@@ -355,7 +366,7 @@ table.sr { position: absolute; left: -9999px; }
 
   rain();
   load();
-  setInterval(() => { if (!document.hidden && store.get(KEY)) load(); }, 30000);
+  setInterval(() => { if (!document.hidden) load(); }, 30000);
   addEventListener('resize', () => { clearTimeout(resizeT); resizeT = setTimeout(() => { if (lastTrend) trend(lastTrend); }, 150); });
 })();
 </script>
