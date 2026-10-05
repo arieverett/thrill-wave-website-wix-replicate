@@ -690,23 +690,30 @@ body:is(.nav-open, .nav-closing) .site-header { -webkit-backdrop-filter: none; b
 html:has(.lightbox[open]) { overflow: hidden; }
 
 /* ---------- portfolio: category chips + stacked categories ---------- */
-/* Desktop: sticks under the header while you scroll. Phones: all chips wrap into view (no sideways scrolling). */
+/* Desktop: a slim line of field links that sticks under the header. Phones: one line that scrolls sideways, not sticky. */
 /* The frost lives on a pseudo-element so that, once the bar sticks under the header, it can stretch
    up behind the (then transparent) header: one continuous blurred surface, no seam (see site.js). */
-.chip-nav { position: sticky; top: var(--header-h); z-index: 20; padding: 14px 0 16px; }
+.chip-nav { position: sticky; top: var(--header-h); z-index: 20; padding: 12px 0; }
 .chip-nav::before { content: ""; position: absolute; inset: 0; z-index: -1; background: var(--frost); -webkit-backdrop-filter: saturate(1.6) blur(14px); backdrop-filter: saturate(1.6) blur(14px); }
 body.subnav-stuck .chip-nav::before { top: calc(-1 * var(--header-h)); }
 body.subnav-stuck .site-header { background: transparent; -webkit-backdrop-filter: none; backdrop-filter: none; }
-.chip-nav__label { margin: 0 0 10px; font: 700 .7rem/1 var(--font-body); letter-spacing: .14em; text-transform: uppercase; color: var(--muted); }
-.chip-nav ul { list-style: none; display: flex; flex-wrap: wrap; gap: 8px; margin: 0; padding: 0; }
-.chip-nav a { display: inline-flex; align-items: center; justify-content: center; min-height: 38px; white-space: nowrap; text-decoration: none; font: 500 .68rem/1 var(--font-body); letter-spacing: .1em; text-transform: uppercase; padding: 0 18px; border: 1px solid var(--ink); border-radius: 999px; transition: background-color .25s, color .25s, border-color .25s; }
-.chip-nav a:hover, .chip-nav a[aria-current] { background: var(--ink); color: var(--paper); }
-.portfolio-cat { padding: clamp(28px, 4vw, 48px) 0 clamp(20px, 3vw, 36px); scroll-margin-top: calc(var(--header-h) + 84px); }
+/* A slim line of text links with slashes between them (label inline), two lines at most on laptops */
+.chip-nav .container { display: flex; align-items: baseline; gap: 14px; }
+.chip-nav__label { flex: none; margin: 0; font: 700 .66rem/1.9 var(--font-body); letter-spacing: .14em; text-transform: uppercase; color: var(--muted); }
+/* Each link carries a slash on its left; the list is pulled left and clipped, so a line never starts with a slash */
+.chip-nav ul { list-style: none; display: flex; flex-wrap: wrap; align-items: baseline; row-gap: 2px; min-width: 0; margin: 0 0 0 -26px; padding: 0; overflow: hidden; clip-path: inset(-4px -4px -4px 26px); }
+.chip-nav li { position: relative; margin-left: 26px; white-space: nowrap; font: 500 .66rem/1.9 var(--font-body); }
+.chip-nav li::before { content: "/"; position: absolute; top: 0; left: -16px; font: 400 .66rem/1.9 var(--font-body); color: var(--muted); opacity: .6; }
+.chip-nav a { white-space: nowrap; text-decoration: none; font: 500 .66rem/1.9 var(--font-body); letter-spacing: .1em; text-transform: uppercase; color: var(--muted); border-bottom: 1px solid transparent; transition: color .2s, border-color .2s; }
+.chip-nav a:hover, .chip-nav a[aria-current] { color: var(--ink); border-bottom-color: var(--accent); }
+.portfolio-cat { padding: clamp(28px, 4vw, 48px) 0 clamp(20px, 3vw, 36px); scroll-margin-top: calc(var(--header-h) + 64px); }
 @media (max-width: 760px) {
   .chip-nav { position: static; }
   .chip-nav::before { background: var(--paper); -webkit-backdrop-filter: none; backdrop-filter: none; }
-  .chip-nav ul { gap: 6px; }
-  .chip-nav a { min-height: 34px; font-size: .64rem; padding: 0 14px; }
+  .chip-nav { padding: 10px 0; }
+  .chip-nav .container { gap: 10px; }
+  .chip-nav ul { flex-wrap: nowrap; overflow-x: auto; overflow-y: hidden; scrollbar-width: none; -webkit-mask-image: linear-gradient(90deg, #000 85%, transparent); mask-image: linear-gradient(90deg, #000 85%, transparent); padding-right: 32px; }
+  .chip-nav ul::-webkit-scrollbar { display: none; }
   .portfolio-cat { scroll-margin-top: calc(var(--header-h) + 8px); }
 }
 .portfolio-cat__title { font-size: clamp(1.3rem, 2.4vw, 1.8rem); margin: 0; }
@@ -1265,8 +1272,8 @@ body.subnav-stuck .site-header { background: transparent; -webkit-backdrop-filte
 .page-black .page-head__follow a { color: var(--on-dark); font-weight: 600; text-underline-offset: 3px; }
 .page-black .chip-nav::before { background: rgba(0, 0, 0, .78); }
 .page-black .chip-nav__label { color: #9a9a9f; }
-.page-black .chip-nav a { color: var(--on-dark); border-color: rgba(255, 255, 255, .85); }
-.page-black .chip-nav a:hover, .page-black .chip-nav a[aria-current] { background: var(--paper); color: var(--ink); border-color: var(--paper); }
+.page-black .chip-nav a { color: #b5b5ba; }
+.page-black .chip-nav a:hover, .page-black .chip-nav a[aria-current] { color: var(--on-dark); border-bottom-color: var(--accent); }
 /* When the category bar sticks, keep the white header instead of blending it into the dark bar */
 .page-black .post-card__media { background: #151515; }
 .page-black .post-card__meta, .page-black .post-card p:last-child { color: #9a9a9f; }
