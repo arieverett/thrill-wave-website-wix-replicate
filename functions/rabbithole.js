@@ -181,7 +181,7 @@ table.sr { position: absolute; left: -9999px; }
       <div class="tools" id="tools" hidden>
         <button type="button" id="refresh">Refresh</button>
         <button type="button" id="ignore" aria-pressed="false" title="Stop counting pill clicks from this browser">Ignore my clicks</button>
-        <a class="btn" href="/rabbithole?logout=1">Lock</a>
+        <a class="btn" href="/rabbithole?logout=1">Log out</a>
       </div>
     </div>
   </header>
