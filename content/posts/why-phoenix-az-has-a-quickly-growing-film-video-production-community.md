@@ -2,7 +2,8 @@
 title: "Why Phoenix Has a Fast-Growing Film and Video Community"
 date: 2026-06-05
 author: Chris Kuzman
-cover_image: /images/blog/why-phoenix-az-has-a-quickly-growing-film-video-production-community/camera-overlooking-phoenix-at-dusk.jpg
+cover_image: https://images.unsplash.com/photo-1783217561643-2064dd31d7dd?w=1600&h=900&fit=crop&q=80&auto=format
+cover_alt: "Saguaro cacti against an Arizona sunset"
 categories: [Arizona]
 ---
 
@@ -29,3 +30,5 @@ When productions shoot locally, the money stays local too: crews, caterers, rent
 We're a Phoenix video production company, and we're excited to see where this community goes next.
 
 Want to make something here? [Let's talk](/contact).
+
+*Cover photo: Emily Irene Photo Co. on [Unsplash](https://unsplash.com/photos/saguaro-cacti-silhouetted-against-a-desert-sunset-WVMkYUynVkA).*

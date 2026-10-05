@@ -2,7 +2,8 @@
 title: "Types of Video Commercials to Market Your Business"
 date: 2026-09-29
 author: Chris Kuzman
-cover_image: /images/blog/exploring-the-different-types-of-video-commercials-to-market-your-business/crew-on-photo-studio-set.jpg
+cover_image: https://images.unsplash.com/photo-1580852300513-9b50125bf293?w=1600&h=900&fit=crop&q=80&auto=format
+cover_alt: "The front of a camera lens in the dark"
 description: "Explainers, testimonials, brand films and more: the main types of video commercials, and what each one is good for."
 categories: [Planning a Video]
 ---
@@ -38,3 +39,5 @@ Live streams let you talk with your audience in real time, whether it's an event
 Usually more than one. The right mix depends on who you're trying to reach and what you need them to do. That's why we start every project with a SITREP, our research into your audience and your competitors, so we make the film that will actually move the needle.
 
 Not sure where to start? [Tell us what you're after](/contact).
+
+*Cover photo: Marcos Paulo Prado on [Unsplash](https://unsplash.com/photos/black-camera-lens-on-white-background-QYVCzK-bnYU).*

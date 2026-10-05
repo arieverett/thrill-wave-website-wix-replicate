@@ -2,7 +2,8 @@
 title: "Understanding Your Target Audience and How to Reach It"
 date: 2026-09-17
 author: Chris Kuzman
-cover_image: /images/blog/understanding-your-target-audience-main-segments-and-how-to-approach-them/market-segmentation-charts.jpg
+cover_image: https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?w=1600&h=900&fit=crop&q=80&auto=format
+cover_alt: "Rows of empty red theater seats"
 categories: [Planning a Video]
 ---
 
@@ -45,3 +46,5 @@ Start with research, not assumptions. Talk to your actual customers. Look at who
 Then look at age, place and values together, and let what you learn decide the story, the voice and where it should live. Do that, and your film won't just reach people, it will move them.
 
 Want to know who your story is really for? [Let's find out together](/contact).
+
+*Cover photo: Felix Mooneeram on [Unsplash](https://unsplash.com/photos/red-cinema-chair-evlkOfkQ5rE).*

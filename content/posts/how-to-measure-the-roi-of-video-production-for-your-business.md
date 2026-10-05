@@ -2,7 +2,8 @@
 title: "How to Measure the ROI of Video Production for Your Business"
 date: 2026-04-08
 author: Chris Kuzman
-cover_image: /images/blog/how-to-measure-the-roi-of-video-production-for-your-business/dollar-bill-and-cinema-camera.jpg
+cover_image: https://images.unsplash.com/photo-1683884361203-69b7f969e9ff?w=1600&h=900&fit=crop&q=80&auto=format
+cover_alt: "A white calculator on a grey table"
 categories: [Planning a Video]
 ---
 
@@ -35,3 +36,5 @@ Now look honestly at what happened. If the return is positive, great: you've fou
 Set clear goals, track the right numbers, count your costs and be honest about the results. Do that, and you'll know exactly what your video is worth and how to make the next one work even harder.
 
 Want a film that earns its keep? [Let's talk](/contact).
+
+*Cover photo: Teuku Fadhil on [Unsplash](https://unsplash.com/photos/a-white-calculator-sitting-on-top-of-a-table-aqB6_P5Z_Lg).*

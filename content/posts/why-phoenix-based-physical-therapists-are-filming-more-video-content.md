@@ -2,7 +2,8 @@
 title: "Why Phoenix Physical Therapists Are Filming More Video"
 date: 2026-05-01
 author: Chris Kuzman
-cover_image: /images/blog/why-phoenix-based-physical-therapists-are-filming-more-video-content/physical-therapist-senior-exercise.jpg
+cover_image: https://images.unsplash.com/photo-1566568531155-07244e00963d?w=1600&h=900&fit=crop&q=80&auto=format
+cover_alt: "A kettlebell on a gym floor"
 categories: [Industries]
 ---
 
@@ -37,3 +38,5 @@ Phoenix has plenty of physical therapy options. A film that shows who you are, a
 For an example, see *Fitness Forward Performance*, our film with [Aurelio Physical Therapy](/portfolio).
 
 Ready to show patients what makes your practice special? [Let's talk](/contact).
+
+*Cover photo: Content Pixie on [Unsplash](https://unsplash.com/photos/black-kettle-bell-be-6rpnQ30k).*

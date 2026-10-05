@@ -2,7 +2,8 @@
 title: "Video and Photography for Phoenix Financial Services Firms"
 date: 2026-08-25
 author: Chris Kuzman
-cover_image: /images/blog/video-production-and-commercial-photography-services-for-financial-services-companies-in-phoenix-and/businessman-in-modern-office.jpg
+cover_image: https://images.unsplash.com/photo-1705411394725-9f76e0979e4b?w=1600&h=900&fit=crop&q=80&auto=format
+cover_alt: "A glass office tower against the sky"
 categories: [Industries]
 ---
 
@@ -29,3 +30,5 @@ Stock photos of strangers shaking hands won't tell anyone who you are. Your own 
 In finance, trust is the product. Good films and photos help people get to know you, like you and believe you before you ever meet. They're easy to share, too, so your best story keeps working long after the shoot wraps.
 
 Ready to show people who you really are? [Let's talk](/contact).
+
+*Cover photo: Uran Wang on [Unsplash](https://unsplash.com/photos/a-tall-building-with-a-sky-in-the-background-HkyWIigb5bg).*

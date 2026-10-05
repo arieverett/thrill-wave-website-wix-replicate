@@ -2,7 +2,8 @@
 title: "Hiring a Video Team for Your Phoenix Law Office"
 date: 2026-07-21
 author: Chris Kuzman
-cover_image: /images/blog/considerations-when-hiring-a-video-team-for-your-phoenix-law-offices/lawyer-desk-scales-of-justice.jpg
+cover_image: https://images.unsplash.com/photo-1566827886072-417be1953f36?w=1600&h=900&fit=crop&q=80&auto=format
+cover_alt: "A stack of old books on a wooden desk"
 categories: [Industries]
 ---
 
@@ -43,3 +44,5 @@ Read the reviews and ask for references. Past clients will tell you what it was 
 Take your time choosing. The right crew will make you look like yourself on a good day, which is exactly who clients want to hire.
 
 Want a crew that checks every box? [Get in touch](/contact).
+
+*Cover photo: ROBIN WORRALL on [Unsplash](https://unsplash.com/photos/books-and-pencil-on-wooden-table-Q8HfuO9udts).*

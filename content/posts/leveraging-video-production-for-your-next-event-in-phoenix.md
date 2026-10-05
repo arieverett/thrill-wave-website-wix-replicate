@@ -2,7 +2,8 @@
 title: "Leveraging Video Production for Your Next Event in Phoenix"
 date: 2026-02-21
 author: Chris Kuzman
-cover_image: /images/blog/leveraging-video-production-for-your-next-event-in-phoenix/phoenix-skyline-golden-haze.jpg
+cover_image: https://images.unsplash.com/photo-1583482183620-f692113aafc3?w=1600&h=900&fit=crop&q=80&auto=format
+cover_alt: "A stage lit up before an event"
 categories: [Arizona, Industries]
 ---
 
@@ -35,3 +36,5 @@ Nothing sells an event like the people who went. Short interviews with attendees
 A highlight reel, a live stream and a few honest testimonials can make your Phoenix event last long after the last guest goes home. They help people remember it, and they help you fill the room next time.
 
 Planning an event worth remembering? [Let's film it together](/contact).
+
+*Cover photo: Mark Thompson on [Unsplash](https://unsplash.com/photos/grayscale-photo-of-people-walking-on-hall-QM3suFW_Y4E).*

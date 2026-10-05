@@ -2,7 +2,8 @@
 title: "Grow Your Dental Practice With Video Production"
 date: 2026-03-16
 author: Chris Kuzman
-cover_image: /images/blog/grow-your-dental-practice-with-video-production/dental-patient-smiling-in-chair.jpg
+cover_image: https://images.unsplash.com/photo-1722586663955-2f96a4c1f255?w=1600&h=900&fit=crop&q=80&auto=format
+cover_alt: "An empty orange dental chair"
 categories: [Industries]
 ---
 
@@ -28,3 +29,5 @@ That mix builds a real relationship with your community, and one well-planned sh
 We've made films for medical and healthcare practices, and we bring the same care to dental work. Whether you want to introduce your team, promote a new service or help patients understand their care, we'll help you tell it well.
 
 Ready to show patients what your practice is all about? [Reach out](/contact).
+
+*Cover photo: note thanun on [Unsplash](https://unsplash.com/photos/a-dental-room-with-a-chair-and-lights-MCSmR0mw1CU).*

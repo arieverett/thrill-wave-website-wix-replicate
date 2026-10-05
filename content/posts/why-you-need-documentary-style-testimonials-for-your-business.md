@@ -2,7 +2,8 @@
 title: "Why You Need Documentary-Style Testimonials for Your Business"
 date: 2026-05-13
 author: Chris Kuzman
-cover_image: /images/blog/why-you-need-documentary-style-testimonials-for-your-business/documentary-interview-lighting-setup.jpg
+cover_image: https://images.unsplash.com/photo-1554941829-fcef7b298d5d?w=1600&h=900&fit=crop&q=80&auto=format
+cover_alt: "An empty chair waiting on a lit studio set"
 categories: [Craft, Planning a Video]
 ---
 
@@ -23,3 +24,5 @@ This is some of our favorite work. Films like *Mike's Story with Melanoma Treatm
 If you want to earn trust with the people you're trying to reach, let your customers tell your story.
 
 Know someone with a story worth telling? [Let's film it](/contact).
+
+*Cover photo: Keagan Henman on [Unsplash](https://unsplash.com/photos/black-metal-framed-padded-folding-chair-iFBIdX54BOk).*

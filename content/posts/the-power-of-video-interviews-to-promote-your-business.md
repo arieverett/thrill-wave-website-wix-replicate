@@ -2,7 +2,8 @@
 title: "The Power of Video Interviews To Promote Your Business"
 date: 2026-03-27
 author: Chris Kuzman
-cover_image: /images/blog/the-power-of-video-interviews-to-promote-your-business/video-interview-behind-the-scenes.jpg
+cover_image: https://images.unsplash.com/photo-1590602846989-e99596d2a6ee?w=1600&h=900&fit=crop&q=80&auto=format
+cover_alt: "A microphone on a boom arm"
 categories: [Craft, Planning a Video]
 ---
 
@@ -36,3 +37,5 @@ Finally, don't let it sit on a hard drive. Put it on your website and social cha
 Video interviews put real people at the center of your story. Plan with a clear goal, film with care and share it widely, and you'll build trust that a sales pitch never could.
 
 Have someone worth putting on camera? [Let's talk](/contact).
+
+*Cover photo: Jukka Aalho on [Unsplash](https://unsplash.com/photos/black-and-silver-microphone-with-white-background-_t9c-kmMjl8).*

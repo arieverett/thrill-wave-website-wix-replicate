@@ -2,7 +2,8 @@
 title: "No, AI Will Not Be Totally Replacing Humans for Video Production"
 date: 2026-04-20
 author: Chris Kuzman
-cover_image: /images/blog/no-ai-will-not-be-totally-replacing-humans-for-video-production/robots-on-film-set.jpg
+cover_image: https://images.unsplash.com/photo-1478720568477-152d9b164e26?w=1600&h=900&fit=crop&q=80&auto=format
+cover_alt: "A vintage film projector throwing light"
 categories: [Craft]
 ---
 
@@ -33,3 +34,5 @@ Most of all, people make films that make people feel something. A film that make
 AI may help fill a gap in the process, but it can't replace the vision, connection, craft, flexibility and heart that people bring to a film. Those are the things that make an audience care, and they're why real production isn't going anywhere.
 
 Want a film made by people who care? [Let's talk](/contact).
+
+*Cover photo: Jeremy Yap on [Unsplash](https://unsplash.com/photos/turned-on-projector-J39X2xX_8CQ).*

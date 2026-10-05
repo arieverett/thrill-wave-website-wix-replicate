@@ -2,7 +2,8 @@
 title: "Why Video Production Is So Expensive"
 date: 2026-06-16
 author: Chris Kuzman
-cover_image: /images/blog/why-video-production-for-marketing-campaigns-are-so-expensive/dollar-bill-and-cinema-camera.jpg
+cover_image: https://images.unsplash.com/photo-1589976584421-86fda88fa33a?w=1600&h=900&fit=crop&q=80&auto=format
+cover_alt: "A rigged cinema camera on a tripod"
 categories: [Planning a Video]
 ---
 
@@ -37,3 +38,5 @@ Our pricing is straight, fair and quick. No smoke and mirrors. We'll tell you wh
 A great film is an investment, and we want every dollar of it to show on screen.
 
 Curious what your project would cost? [Ask us](/contact).
+
+*Cover photo: Matteo Bernardis on [Unsplash](https://unsplash.com/photos/black-and-red-dslr-camera-aGFRlHHPmkE).*

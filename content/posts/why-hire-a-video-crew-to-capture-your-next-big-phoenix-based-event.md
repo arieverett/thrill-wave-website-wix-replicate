@@ -2,7 +2,8 @@
 title: "Why Hire a Video Crew for Your Next Phoenix Event"
 date: 2026-06-28
 author: Chris Kuzman
-cover_image: /images/blog/why-hire-a-video-crew-to-capture-your-next-big-phoenix-based-event/videographer-filming-concert.jpg
+cover_image: https://images.unsplash.com/photo-1453090927415-5f45085b65c0?w=1600&h=900&fit=crop&q=80&auto=format
+cover_alt: "A microphone under a spotlight on a foggy stage"
 categories: [Arizona, Industries]
 ---
 
@@ -41,3 +42,5 @@ Every event is different. Before the day, we sit down with you to learn what it'
 We've filmed festival aftermovies for [Relentless Beats](/portfolio), and we love filming events in Phoenix and beyond.
 
 Have an event coming up? [Let's get it on film](/contact).
+
+*Cover photo: Oscar Keys on [Unsplash](https://unsplash.com/photos/photo-of-microphone-on-foggy-stage-ojVMh1QTVGY).*

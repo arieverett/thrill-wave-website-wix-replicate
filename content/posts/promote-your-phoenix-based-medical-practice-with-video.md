@@ -2,7 +2,8 @@
 title: "Promote Your Phoenix-Based Medical Practice With Video"
 date: 2026-03-04
 author: Chris Kuzman
-cover_image: /images/blog/promote-your-phoenix-based-medical-practice-with-video/doctor-at-computer-desk.jpg
+cover_image: https://images.unsplash.com/photo-1505751172876-fa1923c5c528?w=1600&h=900&fit=crop&q=80&auto=format
+cover_alt: "A stethoscope on a white sheet"
 categories: [Industries]
 ---
 
@@ -35,3 +36,5 @@ Nothing is more convincing than a patient telling their own story. Filmed with c
 Show your expertise, open your doors with a virtual tour and let your patients speak for you. Do that, and your Phoenix practice will feel trusted and familiar long before the first appointment. We've filmed for clinics and practices across Phoenix, and we handle every patient and clinician with discretion.
 
 Ready to show patients who you are? [Let's talk](/contact).
+
+*Cover photo: Hush Naidoo Jade Photography on [Unsplash](https://unsplash.com/photos/black-and-gray-stethoscope-yo01Z-9HQAw).*

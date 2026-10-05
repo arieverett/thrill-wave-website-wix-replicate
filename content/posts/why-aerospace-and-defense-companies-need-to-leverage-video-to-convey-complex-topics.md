@@ -2,7 +2,8 @@
 title: "Video for Aerospace and Defense: Explaining Complex Topics"
 date: 2026-05-24
 author: Chris Kuzman
-cover_image: /images/blog/why-aerospace-and-defense-companies-need-to-leverage-video-to-convey-complex-topics/fighter-jet-illustration.jpg
+cover_image: https://images.unsplash.com/photo-1570728281949-126fc89a4da7?w=1600&h=900&fit=crop&q=80&auto=format
+cover_alt: "A fighter jet banking through the clouds"
 categories: [Industries]
 ---
 
@@ -35,3 +36,5 @@ Before we shoot, we run a SITREP, our research into who the film is for and what
 Big ideas deserve to be understood. Video makes that possible, and we'd love to help.
 
 Building something complicated? [Let's make it make sense](/contact).
+
+*Cover photo: Timothy Holmes on [Unsplash](https://unsplash.com/photos/gray-airplane-DXIpirwgP2Q).*

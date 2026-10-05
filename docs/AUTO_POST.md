@@ -80,6 +80,8 @@ The workspace can't download images from other sites, so outside images are show
 2. **A frame from one of our films:** YouTube `https://i.ytimg.com/vi/<ID>/maxresdefault.jpg` (IDs in `content/portfolio.json`; `maxres1.jpg` to `maxres3.jpg` give other frames, but only use those for IDs the site already uses that way, e.g. a `still` of `ID:2` in `content/home.json`). Caption it with the film's name.
 3. **Stock from Unsplash** (free Unsplash License only, never Unsplash+ / plus.unsplash.com): find a photo with WebFetch on `https://unsplash.com/s/photos/<search-terms>`, take its `https://images.unsplash.com/photo-...` address and add `?w=1600&h=900&fit=crop&q=80&auto=format` (in-post images may use other sizes, always with both `w` and `h`). Caption: `*Photo: <Photographer> on [Unsplash](<photo page URL>).*`. Pick photos that look real and cinematic, not cheesy stock.
 
+**Image style (Ari, Oct 4, 2026):** simple, uncluttered photos with one clear subject, like the vertical anamorphic post's cover (a lens on a table) or the Unsplash covers chosen Oct 4, 2026: a stethoscope, a kettlebell, an empty chair on a lit set. Real photos only: never AI-generated images, illustrations or busy, cheesy stock. Our own set photos (the crew shots on the Phoenix metro and hiring posts) always beat stock.
+
 In the post, every image is followed on the next line by an italic caption: `![alt text](src)` then `*caption*`. Alt text describes the image; the caption adds meaning or credit.
 
 ## 6. Check and publish
