@@ -1,6 +1,6 @@
 # Thrill Wave voice guide
 
-How every page, post and line on thrillwave.com (and terminal.thrillwave.com) should sound. Set by Ari, Oct 3, 2026. When in doubt, read sandwich.co out loud, then do the opposite of lookstudios.co.
+How every page, post and line on thrillwave.com (and terminal.thrillwave.com) should sound. When in doubt, read sandwich.co out loud, then do the opposite of lookstudios.co.
 
 ## Who we are, in one breath
 
@@ -12,7 +12,7 @@ People come to us for our expertise, so we lead. We do the research, we have a p
 
 SITREP is our research. Before we film, we dig deep into the client's craft, their peers, their industry and their sector. Think of it as a third-party R&D department that cares deeply about the story, lines up with the client's goals and helps direct it. It's how we lead.
 
-Describe it in plain words. It's research and a point of view, not a product pitch, not a "proprietary software platform", not "data-driven insights". Mention the software we built for it only in passing, if at all.
+Describe it in plain words. It's research and a point of view, not a product pitch, not a "proprietary software platform", not "data-driven insights". The software we built for it can come up briefly; the research and the point of view are the story.
 
 ## Where stories live
 
@@ -37,7 +37,7 @@ We work the way good documentary reporting does: we report first, check our sour
 - Never call Thrill Wave an agency (marketing, ad or creative). It's a production company. Agencies can be clients.
 - No agency or big-business speak, buzzwords or jargon: no "leverage", "synergy", "solutions", "drive results", "elevate", "unlock", "full-service", "end-to-end", "best-in-class", "ROI-driven", "content", "campaign", "deliverables", "assets", "stakeholders", "brand storytelling", "data-driven", "proprietary".
 - No selling, pitching or market talk. No urgency, no "get a quote today", no claims we can't show.
-- Nothing that echoes lookstudios.co's copy or layout: no "what makes it tricky" cards, no catalog of formats with lengths and "from $" prices, no walls of FAQs, no filler stats from third parties. Some familiar formats are fine in our own voice (Ari, Oct 3, 2026): the "what we hear" cards on Services (a client's words as the heading, our answer in full sentences, a "What helps:" line), the five promises and our own numbers on Services, and the four numbered points on industry and customer pages ("Who we work with / How we help / What we make / Where it plays", each a full sentence, with a lead-in).
+- Nothing that echoes lookstudios.co's copy or layout: no "what makes it tricky" cards, no catalog of formats with lengths and "from $" prices, no walls of FAQs, no filler stats from third parties. Some familiar formats are fine in our own voice (Oct 3, 2026): the "what we hear" cards on Services (a client's words as the heading, our answer in full sentences, a "What helps:" line), the five promises and our own numbers on Services, and the four numbered points on industry and customer pages ("Who we work with / How we help / What we make / Where it plays", each a full sentence, with a lead-in).
 - No em dashes or spaced dashes (use a comma, colon or new sentence). No exclamation-point hype.
 - Never mention AI in our own process.
 
