@@ -1,10 +1,10 @@
 ---
 title: "How to Film Public Health Stories With Tribal Communities"
 description: "What changes when you make a health film with a tribal community: who speaks, what to ask before you film, and why trust matters more than reach."
-date: 2026-10-06
+date: 2026-10-02
 author: Thrill Wave
-cover_image: https://images.unsplash.com/photo-1728272870377-4c4a2c95ae30?w=1600&h=900&fit=crop&q=80&auto=format
-cover_alt: "A camera on a tripod standing in the sand"
+cover_image: https://images.unsplash.com/photo-1681407979962-9ca360f881c9?w=1600&h=900&fit=crop&q=80&auto=format
+cover_alt: "A saguaro cactus against the sunrise in Saguaro National Park, Arizona"
 categories: [Industries, Planning a Video]
 ---
 
@@ -69,6 +69,8 @@ It also helps to keep the gear out of the way. Quiet lights, a tidy setup and a 
 ## If you run a tribal health or community program
 
 If you're planning a film about a health program, a service or a vote, start with the question this post started with: what's keeping people from acting, and who would they believe? The answer usually shapes everything else, from who speaks to where it plays. You can see more of the work we've made with tribal communities on our [Tribal Nations page](/industries/tribal-nations), and if you'd like to talk through your story, [message us](/contact). We're happy to think it through with you.
+
+*Cover photo: Jacob Diehl on [Unsplash](https://unsplash.com/photos/the-sun-is-setting-over-the-mountains-in-the-desert-f4mkl9mXXQ0).*
 
 ## Sources
 
