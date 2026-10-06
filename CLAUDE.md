@@ -2,6 +2,8 @@
 
 The Thrill Wave partners (Ari, Tony, Chris) are not developers. They ask Claude to make changes in plain English; Claude edits this repo, checks the result, and pushes. Keep explanations non-technical and confirm what changed on the live site.
 
+Before making changes, read `docs/WORKING_RULES.md` (how the partners like work done, who can change what, and the standing decisions behind the site) along with `docs/VOICE.md`.
+
 ## How the site works
 
 - `build.mjs` turns templates + content into plain HTML in `dist/`. Never edit `dist/`; it is regenerated. `build.mjs` only lists the build steps in order; the code lives in `lib/` (the map at the top of `build.mjs` says which file holds what: page shell and menu in `lib/layout.mjs`, `{{blocks}}` in `lib/blocks.mjs`, blog pages in `lib/blog.mjs`, breakout pages in `lib/breakout.mjs`, structured data in `lib/schema.mjs`, video tiles in `lib/media.mjs`).
