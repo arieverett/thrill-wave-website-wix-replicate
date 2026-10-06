@@ -843,6 +843,9 @@ body.subnav-stuck .site-header { background: transparent; -webkit-backdrop-filte
 .post-card a:hover :is(h2, h3) { background-size: 100% 2px; }
 .post-card p:last-child { color: var(--muted); font-size: .88rem; margin: 8px 0 0; }
 
+/* Blog posts read in a narrower column than the rest of the site (about 70 characters a line).
+   Set on .post so the header, cover, body and categories line up; "Keep reading" below stays full width. */
+.post { --content: 720px; }
 .post__header { padding-top: clamp(40px, 7vw, 88px); }
 .post__header > * { animation: tw-rise .8s var(--ease) backwards; }
 .post__header > :nth-child(2) { animation-delay: .06s; }
@@ -861,7 +864,9 @@ body.subnav-stuck .site-header { background: transparent; -webkit-backdrop-filte
 .post__cats a::before { content: "\00B7"; position: absolute; top: 0; left: -18px; width: 6px; text-align: center; font: 700 1rem/1.42 var(--font-body); color: var(--muted); opacity: .8; }
 .post__cats a:hover { color: var(--accent); border-bottom-color: var(--accent); }
 
-.prose { font-size: 1.02rem; line-height: 1.75; }
+/* Montserrat runs wide, so long reading gets a touch smaller, slightly tighter tracking
+   and a soft black instead of pure black (easier on the eyes over many paragraphs) */
+.prose { font-size: .96rem; line-height: 1.75; letter-spacing: -.008em; color: var(--ink-soft); }
 .prose h2, .prose h3 { margin-top: 1.8em; line-height: 1.1; }
 .prose h2 { font-size: 1.6rem; }
 .prose h3 { font-size: 1.2rem; }
