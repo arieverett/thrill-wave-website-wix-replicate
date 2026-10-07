@@ -661,6 +661,9 @@ body:is(.nav-open, .nav-closing) .site-header { -webkit-backdrop-filter: none; b
 /* Thumbnails with letterbox bars baked in: crop in past them */
 .video--zoom img { transform: scale(1.4); }
 .video--zoom:hover img, .video--zoom:focus-visible img { transform: scale(1.46); }
+/* Our own still (content/video-thumbnails.json) has no bars to crop, even on a zoomed video */
+.video--zoom.video--still img { transform: none; }
+.video--zoom.video--still:hover img, .video--zoom.video--still:focus-visible img { transform: scale(1.05); }
 .cta--dark .work-grid { margin: 28px 0 32px; }
 /* Homepage "Our work": 3 across and 3 rows of 4:5 tiles, like a social profile grid. Phones keep 3 across with tight gaps,
    smaller titles and a smaller play button. */
