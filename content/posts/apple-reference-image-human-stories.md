@@ -1,5 +1,5 @@
 ---
-title: "The Fight Against AI: How Apple and Thrill Wave Keep It Human"
+title: "Proof of the Real: How Apple and Thrill Wave Keep It Human"
 description: "Apple's iPhone 18 Pro can sign every pixel to prove a photo is real. How it works, why it matters, and why human stories matter more than ever."
 date: 2026-10-06
 author: Thrill Wave
@@ -10,7 +10,7 @@ categories: [Gear and Tech, Storytelling]
 
 For almost two centuries, a photograph was its own proof. If there was a picture, something real had stood in front of a lens. That deal is over. An image generator can now make a "photo" of anything, and most of us can't tell the difference.
 
-On September 9, Apple answered with a new camera mode on the iPhone 18 Pro called Apple Reference Image. Most tools in this fight try to catch fakes. This one proves what's real. Here's how it works, why it matters to anyone who makes or watches films, and why the human story behind an image matters more now than it ever has.
+On September 9, Apple answered with a new camera mode on the iPhone 18 Pro called Apple Reference Image. Most authenticity tools try to catch fakes. This one proves what's real. Here's how it works, why it matters to anyone who makes or watches films, and why the human story behind an image matters more now than it ever has.
 
 ## How Apple signs every pixel
 
@@ -98,7 +98,7 @@ Here's a full episode of Your Voice, Your Power:
 
 {{youtube:Gh67yEMyOCs}}
 
-No signature in any sensor can do what that series does. It puts real people on the record, in their own voices, about something that matters to their community. That's the part of this fight we're in, and it's the part that will stay human.
+No signature in any sensor can do what that series does. It puts real people on the record, in their own voices, about something that matters to their community. That's the part of the work we do, and it's the part that will stay human.
 
 If you have a story that deserves to be told by people, for people, [message us](/contact). We'd love to hear it.
 
