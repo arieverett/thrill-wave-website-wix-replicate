@@ -60,7 +60,7 @@ For craft posts, pick one specific question a filmmaker, producer, communicator 
   - one of our films embedded with `{{youtube:ID}}` on its own line, when it fits.
   Use real numbers, percentages, measurements and dollars wherever they teach something (focal lengths, stops, millimeters, frame rates, bit rates, kilograms, years).
 - Link to 1 or 2 relevant pages on the site where natural, and to sources inline where a claim comes from them.
-- End with a `## Sources` list of 10 or fewer, one line each, as `- [Publisher: short topic](URL)` (about 3 to 6 words, e.g. `- [CDC: flu vaccination inequities](https://...)`). It renders as a small two-column list, so keep names short and cut sources the post doesn't lean on.
+- End with a `## Sources` list of 10 or fewer, one line each, as `- [Publisher: short topic](URL)` (about 3 to 6 words, e.g. `- [CDC: flu vaccination inequities](https://...)`). It renders as a small three-column list, so keep names short and cut sources the post doesn't lean on.
 - No em dashes or spaced dashes (comma, colon or new sentence). No `<br>`. Keep Phoenix and Arizona mentions where they're natural, never stuffed.
 
 Front matter:
