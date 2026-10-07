@@ -53,7 +53,20 @@ Here's the uncomfortable part: our eyes are no longer a reliable test. In a stud
 ![Bar chart: people in the study correctly identified real versus AI images 54 percent of the time, compared with 50 percent for a coin flip](/images/blog/apple-reference-image-human-stories/spotting-ai-images.svg)
 *Share of images people classified correctly. Source: Pavão, "We are not able to identify AI-generated images," arXiv, 2025.*
 
-The fakes are only half the damage. The other half is doubt. Back in 2019, law professors Bobby Chesney and Danielle Citron gave it a name: the liar's dividend. Once anything could be fake, anyone can wave away real footage as fake. A true image of a flood, a protest or a patient's recovery loses its power the moment someone says "AI" and enough people shrug.
+None of this is hypothetical. Here are three places the fakes have already shown up:
+
+- **Accounts with no one behind them.** In January 2025, people noticed that Meta itself was running AI-made profiles on Instagram and Facebook. One, "Liv," carried a verified badge and presented herself as a Black queer mother of two. When Washington Post columnist Karen Attiah asked the bot who built it, it admitted that no Black employees had worked on it. Meta deleted the accounts after the backlash.
+- **A race to the bottom.** When a fake costs almost nothing to make, volume wins. In late 2025, Kapwing started a fresh YouTube account and found that more than one in five Shorts it was shown were AI-generated "slop," and the ten biggest slop channels it tracked earn about $33.6 million a year. Music has the same problem: Spotify removed 75 million spam tracks in a single year.
+- **Rug pulls.** A rug pull is a crypto project that hypes a token, collects buyers' money and vanishes. In 2021, a token called SQUID falsely claimed to be the official partner of Netflix's Squid Game. Buyers found they couldn't sell, the price climbed to about $2,850, and then it fell to almost nothing within minutes as its creators walked off with about $3.38 million. Today the same playbook runs on deepfaked faces and voices.
+
+Here's how Spotify's cleanup compares to the size of its real catalog:
+
+![Bar chart: Spotify removed 75 million spam tracks in one year, compared with a real music catalog of about 100 million tracks](/images/blog/apple-reference-image-human-stories/spotify-spam-vs-catalog.svg)
+*Tracks, in millions. Source: Spotify, via DJ Mag, September 2025.*
+
+> **$17 billion** taken by crypto scams in 2025, by Chainalysis' estimate. Impersonation scams grew more than 1,400%, and scams using AI tools made 4.5 times more per operation.
+
+Every one of these runs on the same thing: a face, a voice or a story that looks real enough to trust. The fakes are only half the damage. The other half is doubt. Back in 2019, law professors Bobby Chesney and Danielle Citron gave it a name: the liar's dividend. Once anything could be fake, anyone can wave away real footage as fake. A true image of a flood, a protest or a patient's recovery loses its power the moment someone says "AI" and enough people shrug.
 
 People feel it. The Reuters Institute surveys about 100,000 people in 48 markets every year, and its 2026 report found worry about telling real from fake online rising again:
 
@@ -100,6 +113,11 @@ If you have a story that deserves to be told by people, for people, [message us]
 - [Apple Reference Image vs C2PA Content Credentials](https://c2paviewer.com/articles/apple-reference-image-vs-c2pa), C2PA Viewer
 - [Sony's camera authenticity solution now supports video](https://www.newsshooter.com/2026/03/12/sonys-camera-authenticity-solution-now-supports-video/), Newsshooter
 - [We are not able to identify AI-generated images](https://arxiv.org/abs/2512.22236), Adrien Pavão, arXiv
+- [Meta Purges AI-Generated Facebook and Instagram Accounts Amid Backlash](https://petapixel.com/2025/01/06/meta-purge-ai-generated-facebook-and-instagram-accounts-amid-backlash), PetaPixel
+- [One in five YouTube Shorts shown to new users is AI-generated slop, study finds](https://the-decoder.com/one-in-five-youtube-shorts-shown-to-new-users-is-ai-generated-slop-study-finds/), The Decoder
+- [Spotify removes 75 million spam tracks in AI crackdown](https://djmag.com/news/spotify-removes-75-million-spam-tracks-platform-ai-crackdown), DJ Mag
+- [Squid Game-inspired crypto scam collapses as price crashes from $2.8K to zero](https://cointelegraph.com/markets/game-over-squid-game-inspired-crypto-scam-collapses-as-price-crashes-from-2-8k-to-zero), Cointelegraph
+- [AI and impersonation drove crypto scam losses to a record $17 billion in 2025](https://decrypt.co/354624/ai-impersonation-drove-crypto-scam-losses-record-17-billion-2025-chainalysis), Decrypt
 - [Deep Fakes: A Looming Challenge for Privacy, Democracy, and National Security](https://law.utexas.edu/faculty/publications/2019-deep-fakes-a-looming-challenge-for-privacy-democracy-and-national-security/), Chesney and Citron, California Law Review
 - [Digital News Report 2026: Executive Summary](https://reutersinstitute.politics.ox.ac.uk/digital-news-report/2026/dnr-executive-summary), Reuters Institute
 - [Global audiences concerned about AI-generated news content](https://www.verdict.co.uk/global-audiences-concerned-about-ai-generated-news-content-report-finds/), Verdict
