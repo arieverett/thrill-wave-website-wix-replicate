@@ -1,24 +1,22 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 560" role="img" aria-labelledby="t d">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 420" width="720" height="420" role="img" aria-labelledby="t d" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif">
 <title id="t">How an Apple Reference Image is made</title>
 <desc id="d">Four steps: the sensor signs the pixels, the Secure Enclave signs the camera settings, the phone saves a secure digital negative, and Private Cloud Compute checks everything, develops the photo and signs it.</desc>
-<rect width="800" height="560" fill="#ffffff"/>
-<text x="40" y="52" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="bold" fill="#000">How a reference image is made</text>
-<line x1="70" y1="130" x2="70" y2="490" stroke="#e2e0dc" stroke-width="4"/>
-<g font-family="DejaVu Sans, Arial, sans-serif">
-  <circle cx="70" cy="130" r="26" fill="#ff0000"/><text x="70" y="139" text-anchor="middle" font-size="24" font-weight="bold" fill="#fff">1</text>
-  <text x="120" y="122" font-size="24" font-weight="bold" fill="#000">The sensor signs the pixels</text>
-  <text x="120" y="154" font-size="20" fill="#6b6b70">It reboots into a locked mode and seals the raw frame.</text>
-
-  <circle cx="70" cy="250" r="26" fill="#000"/><text x="70" y="259" text-anchor="middle" font-size="24" font-weight="bold" fill="#fff">2</text>
-  <text x="120" y="242" font-size="24" font-weight="bold" fill="#000">The Secure Enclave signs the settings</text>
-  <text x="120" y="274" font-size="20" fill="#6b6b70">Zoom, focal length and timestamps get their own seal.</text>
-
-  <circle cx="70" cy="370" r="26" fill="#000"/><text x="70" y="379" text-anchor="middle" font-size="24" font-weight="bold" fill="#fff">3</text>
-  <text x="120" y="362" font-size="24" font-weight="bold" fill="#000">The phone saves a digital negative</text>
-  <text x="120" y="394" font-size="20" fill="#6b6b70">A DNG file holds the raw pixels and both signatures.</text>
-
-  <circle cx="70" cy="490" r="26" fill="#000"/><text x="70" y="499" text-anchor="middle" font-size="24" font-weight="bold" fill="#fff">4</text>
-  <text x="120" y="482" font-size="24" font-weight="bold" fill="#000">Apple's cloud checks, develops and signs</text>
-  <text x="120" y="514" font-size="20" fill="#6b6b70">Private Cloud Compute verifies it, then makes the JPEG.</text>
+<rect width="720" height="420" fill="#ffffff"/>
+<text x="0" y="22" font-size="18" font-weight="700" fill="#000" letter-spacing="-0.2">How a reference image is made</text>
+<line x1="14" y1="86" x2="14" y2="356" stroke="#e2e0dc" stroke-width="2" stroke-linecap="round"/>
+<line x1="14" y1="86" x2="14" y2="176" stroke="#ff0000" stroke-width="2" stroke-linecap="round"/>
+<g>
+  <circle cx="14" cy="86" r="14" fill="#ff0000"/><text x="14" y="91" text-anchor="middle" font-size="13" font-weight="700" fill="#fff">1</text>
+  <text x="44" y="82" font-size="17" font-weight="700" fill="#000">The sensor signs the pixels</text>
+  <text x="44" y="106" font-size="15" fill="#6b6b70">It reboots into a locked mode and seals the raw frame.</text>
+  <circle cx="14" cy="176" r="14" fill="#fff" stroke="#000" stroke-width="2"/><text x="14" y="181" text-anchor="middle" font-size="13" font-weight="700" fill="#000">2</text>
+  <text x="44" y="172" font-size="17" font-weight="700" fill="#000">The Secure Enclave signs the settings</text>
+  <text x="44" y="196" font-size="15" fill="#6b6b70">Zoom, focal length and timestamps get their own seal.</text>
+  <circle cx="14" cy="266" r="14" fill="#fff" stroke="#000" stroke-width="2"/><text x="14" y="271" text-anchor="middle" font-size="13" font-weight="700" fill="#000">3</text>
+  <text x="44" y="262" font-size="17" font-weight="700" fill="#000">The phone saves a digital negative</text>
+  <text x="44" y="286" font-size="15" fill="#6b6b70">A DNG file holds the raw pixels and both signatures.</text>
+  <circle cx="14" cy="356" r="14" fill="#000"/><text x="14" y="361" text-anchor="middle" font-size="13" font-weight="700" fill="#fff">4</text>
+  <text x="44" y="352" font-size="17" font-weight="700" fill="#000">Apple's cloud checks, develops and signs</text>
+  <text x="44" y="376" font-size="15" fill="#6b6b70">Private Cloud Compute verifies it, then makes the JPEG.</text>
 </g>
 </svg>
