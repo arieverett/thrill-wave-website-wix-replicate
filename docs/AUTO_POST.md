@@ -54,13 +54,13 @@ For craft posts, pick one specific question a filmmaker, producer, communicator 
 - **Something visual in nearly every section** (roughly every two or three short paragraphs), mixing types, at least four per post:
   - a table (specs, comparisons, settings, a checklist of numbers),
   - a chart made with `scripts/chart.py` (only sourced numbers; source in the caption),
-    column charts are compact, so set them beside the text: `![alt](src "side")` floats the chart and its caption to the right of the paragraphs after it on laptops and stacks it on phones,
+    use horizontal bars (the default) for every comparison, including a few years side by side, so charts run the full column width with no gaps between bars; use `line()` for a trend over many points; avoid column charts,
   - a big-number callout: `> **2x** squeeze: an anamorphic lens fits twice the width of view onto the same sensor.`,
   - a photo or film frame with a caption (see step 5),
   - one of our films embedded with `{{youtube:ID}}` on its own line, when it fits.
   Use real numbers, percentages, measurements and dollars wherever they teach something (focal lengths, stops, millimeters, frame rates, bit rates, kilograms, years).
 - Link to 1 or 2 relevant pages on the site where natural, and to sources inline where a claim comes from them.
-- End with a `## Sources` list: `- [Title](URL), Publisher`.
+- End with a `## Sources` list of 10 or fewer, one line each, as `- [Publisher: short topic](URL)` (about 3 to 6 words, e.g. `- [CDC: flu vaccination inequities](https://...)`). It renders as a small two-column list, so keep names short and cut sources the post doesn't lean on.
 - No em dashes or spaced dashes (comma, colon or new sentence). No `<br>`. Keep Phoenix and Arizona mentions where they're natural, never stuffed.
 
 Front matter:

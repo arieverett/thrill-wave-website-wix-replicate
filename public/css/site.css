@@ -883,6 +883,12 @@ body.subnav-stuck .site-header { background: transparent; -webkit-backdrop-filte
 .prose p:has(> img) img { margin: 0; width: 100%; border-radius: 4px; }
 .prose p:has(> img) em { display: block; margin-top: .6em; font-size: .82rem; font-style: normal; line-height: 1.5; color: var(--muted); }
 .prose p:has(> img) em a { color: inherit; }
+/* Sources at the end of a post: a small label and a compact two-column list (Oct 7, 2026) */
+.prose .sources__title { margin: 3em 0 .8em; padding-top: 1.2em; border-top: 1px solid var(--line); font: 800 .72rem/1.2 var(--font-display); letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
+.prose .sources { list-style: none; padding: 0; margin: 0 0 2.4em; columns: 2; column-gap: 28px; font-size: .8rem; line-height: 1.45; color: var(--muted); }
+.prose .sources li { break-inside: avoid; margin: 0 0 .6em; }
+.prose .sources a { color: var(--ink-soft); }
+@media (max-width: 639px) { .prose .sources { columns: 1; } }
 /* Side figures: ![alt](src "side") puts a compact chart and its caption in a right-hand column, text flows beside it (Oct 6, 2026) */
 .prose h2, .prose h3 { clear: both; }
 .prose blockquote, .prose table { overflow: hidden; }

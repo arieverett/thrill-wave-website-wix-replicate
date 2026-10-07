@@ -64,10 +64,9 @@ def _col(x, y, w, h, r):
 def bar(path, labels, values, unit="", highlight=None, title=None, horizontal=True, fmt="{:g}", scale=None):
     """Thin bars in grey, the one that matters in red, values printed beside them.
 
-    Vertical charts are compact (about 96px per column) so the columns sit close
-    together; place them beside the text with a "side" title in the post:
-    ![alt](/images/blog/<slug>/chart.svg "side") floats it right of the paragraph
-    on laptops and stacks it on phones.
+    Use horizontal (the default) for every comparison, years included: it fills
+    the post column with no gaps between bars and reads well on phones. Vertical
+    columns are compact and best avoided; use line() for a trend over many points.
 
     Horizontal: each row is a label and its value on one line, with a slim rounded
     bar on a soft full-width track underneath (the track is 100% for percentages,

@@ -74,9 +74,9 @@ If you're planning a film about a health program, a service or a vote, start wit
 
 ## Sources
 
-- [Flu Vaccination Inequities (Vital Signs)](https://www.cdc.gov/vitalsigns/flu-inequities/), Centers for Disease Control and Prevention
-- [About ITCA](https://itcaonline.com/about-itca/), Inter Tribal Council of Arizona
-- [Arizona's Federally Recognized Tribes](https://www.azed.gov/oie/arizonas-federally-recognized-tribes), Arizona Department of Education
-- [Visitor Etiquette](https://jan.ucc.nau.edu/hcpo-p/Visitor%20Etiquette.pdf), Hopi Cultural Preservation Office
-- [Commercial Film and Photography Permits](https://navajonationparks.org/permits/commercial-film-photography), Navajo Nation Parks and Recreation
-- [CARE Principles for Indigenous Data Governance](https://www.imperial.ac.uk/research-and-innovation/support-for-staff/scholarly-communication/research-data-management/care-data-principles/), Imperial College London (summary of Carroll et al., 2020)
+- [CDC: flu vaccination inequities](https://www.cdc.gov/vitalsigns/flu-inequities/)
+- [ITCA: about the council](https://itcaonline.com/about-itca/)
+- [Arizona Dept. of Education: tribes](https://www.azed.gov/oie/arizonas-federally-recognized-tribes)
+- [Hopi Cultural Preservation: etiquette](https://jan.ucc.nau.edu/hcpo-p/Visitor%20Etiquette.pdf)
+- [Navajo Nation Parks: film permits](https://navajonationparks.org/permits/commercial-film-photography)
+- [Imperial College: CARE principles](https://www.imperial.ac.uk/research-and-innovation/support-for-staff/scholarly-communication/research-data-management/care-data-principles/)

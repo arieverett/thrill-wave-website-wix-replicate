@@ -102,13 +102,13 @@ It's a small rotation with a big change in feeling, and that's our favorite kind
 
 ## Sources
 
-- [ARRI Rental's custom anamorphic lenses for Project Hail Mary](https://www.newsshooter.com/2026/03/20/arri-rentals-custom-set-of-anamorphic-lenses-for-project-hail-mary/), Newsshooter
-- [Greig Fraser on Project Hail Mary](https://definitionmagazine.com/features/greig-fraser-project-hail-mary/), Definition
-- [April 2026 issue: Project Hail Mary](https://theasc.com/news/april-2026-issue-american-cinematographer/), American Cinematographer
-- [ALEXA 65 specifications](https://www.arrirental.com/en/cameras/digital-65-mm-cameras/alexa-65), ARRI Rental
-- [PXW-FX9 specifications](https://pro.sony/en_MM/pdf/pxw-fx9), Sony
-- [FX9 version 3 firmware deep dive](https://sony-cinematography.com/articles/fx9-version-3-firmware-update-feature-deep-dive/), Sony Cinematography
-- [AtlasScope vertical anamorphic](https://www.newsshooter.com/2025/07/08/atlasscope-vertical-anamorphic/), Newsshooter
-- [How to shoot Vertiscope](https://blazarlens.com/blog/how-to-shoot-vertiscope-the-complete-guide-to-vertical-anamorphic-filmmaking/), Blazar
-- [Atlas Mercury 1.5x anamorphic lenses](https://www.provideocoalition.com/atlas-lens-co-launches-new-mercury-line-of-1-5x-anamorphic-lenses/), ProVideo Coalition
-- [Optimo Anamorphic 56–152 A2S](https://www.angenieux.com/lenses/legacy-series/optimo-anamorphic-56-152-a2s-compact-lens-zoom/), Angénieux
+- [Newsshooter: Hail Mary lenses](https://www.newsshooter.com/2026/03/20/arri-rentals-custom-set-of-anamorphic-lenses-for-project-hail-mary/)
+- [Definition: Greig Fraser interview](https://definitionmagazine.com/features/greig-fraser-project-hail-mary/)
+- [American Cinematographer: April 2026](https://theasc.com/news/april-2026-issue-american-cinematographer/)
+- [ARRI Rental: ALEXA 65 specs](https://www.arrirental.com/en/cameras/digital-65-mm-cameras/alexa-65)
+- [Sony: FX9 specs](https://pro.sony/en_MM/pdf/pxw-fx9)
+- [Sony: FX9 version 3 firmware](https://sony-cinematography.com/articles/fx9-version-3-firmware-update-feature-deep-dive/)
+- [Newsshooter: AtlasScope](https://www.newsshooter.com/2025/07/08/atlasscope-vertical-anamorphic/)
+- [Blazar: shooting Vertiscope](https://blazarlens.com/blog/how-to-shoot-vertiscope-the-complete-guide-to-vertical-anamorphic-filmmaking/)
+- [ProVideo Coalition: Atlas Mercury](https://www.provideocoalition.com/atlas-lens-co-launches-new-mercury-line-of-1-5x-anamorphic-lenses/)
+- [Angénieux: Optimo Anamorphic 56–152](https://www.angenieux.com/lenses/legacy-series/optimo-anamorphic-56-152-a2s-compact-lens-zoom/)

@@ -70,7 +70,7 @@ Every one of these runs on the same thing: a face, a voice or a story that looks
 
 People feel it. The Reuters Institute surveys about 100,000 people in 48 markets every year, and its 2026 report found worry about telling real from fake online rising again:
 
-![Bar chart: share of people worried about telling real from fake online was 59 percent in 2024, 58 percent in 2025 and 62 percent in 2026](/images/blog/apple-reference-image-human-stories/worried-real-vs-fake.svg "side")
+![Bar chart: share of people worried about telling real from fake online was 59 percent in 2024, 58 percent in 2025 and 62 percent in 2026](/images/blog/apple-reference-image-human-stories/worried-real-vs-fake.svg)
 *Share of people worried about what's real and fake online. Source: Reuters Institute Digital News Report, 2024 to 2026.*
 
 > **37%** of people say they trust the news most of the time, the lowest figure since the Reuters Institute started measuring in 2015.
@@ -106,18 +106,18 @@ If you have a story that deserves to be told by people, for people, [message us]
 
 ## Sources
 
-- [Apple debuts iPhone 18 Pro and iPhone 18 Pro Max](https://www.apple.com/newsroom/2026/09/apple-debuts-iphone-18-pro-and-iphone-18-pro-max/), Apple Newsroom
-- [Apple Reference Image: A New Approach for Verified Photography](https://security.apple.com/blog/apple-reference-image/), Apple Security Research
-- [Apple launches a new way to prove a photo was shot with an iPhone](https://www.niemanlab.org/2026/09/apple-launches-a-new-way-to-prove-a-photo-was-shot-with-an-iphone-not-generated-by-ai/), Nieman Lab
-- [iOS 27 Hints at 'Apple Reference Image' Photo Authentication](https://www.macrumors.com/2026/08/10/ios-27-apple-reference-image/), MacRumors
-- [Apple Reference Image vs C2PA Content Credentials](https://c2paviewer.com/articles/apple-reference-image-vs-c2pa), C2PA Viewer
-- [Sony's camera authenticity solution now supports video](https://www.newsshooter.com/2026/03/12/sonys-camera-authenticity-solution-now-supports-video/), Newsshooter
-- [We are not able to identify AI-generated images](https://arxiv.org/abs/2512.22236), Adrien Pavão, arXiv
-- [Meta Purges AI-Generated Facebook and Instagram Accounts Amid Backlash](https://petapixel.com/2025/01/06/meta-purge-ai-generated-facebook-and-instagram-accounts-amid-backlash), PetaPixel
-- [One in five YouTube Shorts shown to new users is AI-generated slop, study finds](https://the-decoder.com/one-in-five-youtube-shorts-shown-to-new-users-is-ai-generated-slop-study-finds/), The Decoder
-- [Spotify removes 75 million spam tracks in AI crackdown](https://djmag.com/news/spotify-removes-75-million-spam-tracks-platform-ai-crackdown), DJ Mag
-- [Squid Game-inspired crypto scam collapses as price crashes from $2.8K to zero](https://cointelegraph.com/markets/game-over-squid-game-inspired-crypto-scam-collapses-as-price-crashes-from-2-8k-to-zero), Cointelegraph
-- [AI and impersonation drove crypto scam losses to a record $17 billion in 2025](https://decrypt.co/354624/ai-impersonation-drove-crypto-scam-losses-record-17-billion-2025-chainalysis), Decrypt
-- [Deep Fakes: A Looming Challenge for Privacy, Democracy, and National Security](https://law.utexas.edu/faculty/publications/2019-deep-fakes-a-looming-challenge-for-privacy-democracy-and-national-security/), Chesney and Citron, California Law Review
-- [Digital News Report 2026: Executive Summary](https://reutersinstitute.politics.ox.ac.uk/digital-news-report/2026/dnr-executive-summary), Reuters Institute
-- [Global audiences concerned about AI-generated news content](https://www.verdict.co.uk/global-audiences-concerned-about-ai-generated-news-content-report-finds/), Verdict
+- [Apple: iPhone 18 Pro announcement](https://www.apple.com/newsroom/2026/09/apple-debuts-iphone-18-pro-and-iphone-18-pro-max/)
+- [Apple: Reference Image design](https://security.apple.com/blog/apple-reference-image/)
+- [Nieman Lab: proving a photo is real](https://www.niemanlab.org/2026/09/apple-launches-a-new-way-to-prove-a-photo-was-shot-with-an-iphone-not-generated-by-ai/)
+- [MacRumors: iOS 27 code hints](https://www.macrumors.com/2026/08/10/ios-27-apple-reference-image/)
+- [C2PA Viewer: Apple vs. C2PA](https://c2paviewer.com/articles/apple-reference-image-vs-c2pa)
+- [Newsshooter: Sony video signing](https://www.newsshooter.com/2026/03/12/sonys-camera-authenticity-solution-now-supports-video/)
+- [Pavão: spotting AI images (arXiv)](https://arxiv.org/abs/2512.22236)
+- [PetaPixel: Meta's AI accounts](https://petapixel.com/2025/01/06/meta-purge-ai-generated-facebook-and-instagram-accounts-amid-backlash)
+- [The Decoder: Kapwing slop study](https://the-decoder.com/one-in-five-youtube-shorts-shown-to-new-users-is-ai-generated-slop-study-finds/)
+- [DJ Mag: Spotify spam cleanup](https://djmag.com/news/spotify-removes-75-million-spam-tracks-platform-ai-crackdown)
+- [Cointelegraph: the SQUID collapse](https://cointelegraph.com/markets/game-over-squid-game-inspired-crypto-scam-collapses-as-price-crashes-from-2-8k-to-zero)
+- [Decrypt: Chainalysis scam report](https://decrypt.co/354624/ai-impersonation-drove-crypto-scam-losses-record-17-billion-2025-chainalysis)
+- [Chesney & Citron: the liar's dividend](https://law.utexas.edu/faculty/publications/2019-deep-fakes-a-looming-challenge-for-privacy-democracy-and-national-security/)
+- [Reuters Institute: 2026 news report](https://reutersinstitute.politics.ox.ac.uk/digital-news-report/2026/dnr-executive-summary)
+- [Verdict: 2024 news report figures](https://www.verdict.co.uk/global-audiences-concerned-about-ai-generated-news-content-report-finds/)
