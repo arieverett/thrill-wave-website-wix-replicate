@@ -54,6 +54,7 @@ For craft posts, pick one specific question a filmmaker, producer, communicator 
 - **Something visual in nearly every section** (roughly every two or three short paragraphs), mixing types, at least four per post:
   - a table (specs, comparisons, settings, a checklist of numbers),
   - a chart made with `scripts/chart.py` (only sourced numbers; source in the caption),
+    column charts are compact, so set them beside the text: `![alt](src "side")` floats the chart and its caption to the right of the paragraphs after it on laptops and stacks it on phones,
   - a big-number callout: `> **2x** squeeze: an anamorphic lens fits twice the width of view onto the same sensor.`,
   - a photo or film frame with a caption (see step 5),
   - one of our films embedded with `{{youtube:ID}}` on its own line, when it fits.

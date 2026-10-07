@@ -70,7 +70,7 @@ Every one of these runs on the same thing: a face, a voice or a story that looks
 
 People feel it. The Reuters Institute surveys about 100,000 people in 48 markets every year, and its 2026 report found worry about telling real from fake online rising again:
 
-![Bar chart: share of people worried about telling real from fake online was 59 percent in 2024, 58 percent in 2025 and 62 percent in 2026](/images/blog/apple-reference-image-human-stories/worried-real-vs-fake.svg)
+![Bar chart: share of people worried about telling real from fake online was 59 percent in 2024, 58 percent in 2025 and 62 percent in 2026](/images/blog/apple-reference-image-human-stories/worried-real-vs-fake.svg "side")
 *Share of people worried about what's real and fake online. Source: Reuters Institute Digital News Report, 2024 to 2026.*
 
 > **37%** of people say they trust the news most of the time, the lowest figure since the Reuters Institute started measuring in 2015.

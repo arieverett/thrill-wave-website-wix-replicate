@@ -883,6 +883,15 @@ body.subnav-stuck .site-header { background: transparent; -webkit-backdrop-filte
 .prose p:has(> img) img { margin: 0; width: 100%; border-radius: 4px; }
 .prose p:has(> img) em { display: block; margin-top: .6em; font-size: .82rem; font-style: normal; line-height: 1.5; color: var(--muted); }
 .prose p:has(> img) em a { color: inherit; }
+/* Side figures: ![alt](src "side") puts a compact chart and its caption in a right-hand column, text flows beside it (Oct 6, 2026) */
+.prose h2, .prose h3 { clear: both; }
+.prose blockquote, .prose table { overflow: hidden; }
+@media (min-width: 640px) {
+  .prose p:has(> img.is-side) { float: right; width: 44%; margin: .35em 0 1.2em 32px; }
+}
+@media (max-width: 639px) {
+  .prose p:has(> img.is-side) img { max-width: 360px; }
+}
 /* Tables: specs, comparisons, numbers */
 .prose table { width: 100%; margin: 1.8em 0; border-collapse: collapse; font-size: .92rem; line-height: 1.45; display: block; overflow-x: auto; }
 .prose th, .prose td { padding: 10px 14px 10px 0; text-align: left; vertical-align: top; border-bottom: 1px solid var(--line); }

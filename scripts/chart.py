@@ -25,17 +25,28 @@ FONT = "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue',
 W = 720  # viewBox width; the image scales to the post column
 
 
-def _svg(h, body, title):
+def _svg(h, body, title, w=W):
     t = escape(title or "Chart")
-    return (f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {h}" width="{W}" height="{h}" '
+    return (f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {w} {h}" width="{w}" height="{h}" '
             f'role="img" aria-label="{t}" font-family="{escape(FONT)}">'
-            f'<rect width="{W}" height="{h}" fill="#ffffff"/>{body}</svg>')
+            f'<rect width="{w}" height="{h}" fill="#ffffff"/>{body}</svg>')
 
 
-def _title(title):
+def _title(title, max_chars=70):
+    """Title in bold; wraps onto a second line when the chart is narrow."""
     if not title:
         return "", 0
-    return f'<text x="0" y="22" font-size="18" font-weight="700" fill="{INK}" letter-spacing="-0.2">{escape(title)}</text>', 52
+    lines, cur = [], ""
+    for word in title.split():
+        if cur and len(cur) + 1 + len(word) > max_chars:
+            lines.append(cur)
+            cur = word
+        else:
+            cur = f"{cur} {word}".strip()
+    lines.append(cur)
+    out = "".join(f'<text x="0" y="{22 + i * 24}" font-size="18" font-weight="700" fill="{INK}" letter-spacing="-0.2">{escape(l)}</text>'
+                  for i, l in enumerate(lines))
+    return out, 52 + (len(lines) - 1) * 24
 
 
 def _fmt(v, unit, fmt):
@@ -53,13 +64,19 @@ def _col(x, y, w, h, r):
 def bar(path, labels, values, unit="", highlight=None, title=None, horizontal=True, fmt="{:g}", scale=None):
     """Thin bars in grey, the one that matters in red, values printed beside them.
 
+    Vertical charts are compact (about 96px per column) so the columns sit close
+    together; place them beside the text with a "side" title in the post:
+    ![alt](/images/blog/<slug>/chart.svg "side") floats it right of the paragraph
+    on laptops and stacks it on phones.
+
     Horizontal: each row is a label and its value on one line, with a slim rounded
     bar on a soft full-width track underneath (the track is 100% for percentages,
     otherwise the largest value, or `scale`). Vertical: slim columns with rounded
     tops on a hairline baseline, value above and label below.
     """
     top = scale or (100 if unit == "%" and max(values) <= 100 else max(values))
-    head, y0 = _title(title)
+    width = W if horizontal else max(300, len(labels) * 96)
+    head, y0 = _title(title, 70 if horizontal else int(width / 10.5))
     parts = [head]
     if horizontal:
         row, bh = 50, 8
@@ -74,9 +91,9 @@ def bar(path, labels, values, unit="", highlight=None, title=None, horizontal=Tr
             parts.append(f'<rect x="0" y="{y + 24}" width="{w:.1f}" height="{bh}" rx="{bh / 2}" fill="{c}"/>')
         h = y0 + len(labels) * row - 12
     else:
-        plot_h, cw = 150, 34
+        plot_h, cw = 150, 40
         base = y0 + 26 + plot_h
-        slot = W / len(labels)
+        slot = width / len(labels)
         for i, (l, v) in enumerate(zip(labels, values)):
             cx = slot * i + slot / 2
             bh = max(6, plot_h * v / top)
@@ -84,9 +101,9 @@ def bar(path, labels, values, unit="", highlight=None, title=None, horizontal=Tr
             parts.append(f'<path d="{_col(cx - cw / 2, base - bh, cw, bh, 6)}" fill="{RED if hi else REST}"/>')
             parts.append(f'<text x="{cx:.1f}" y="{base - bh - 10:.1f}" font-size="15" font-weight="700" text-anchor="middle" fill="{INK}">{escape(_fmt(v, unit, fmt))}</text>')
             parts.append(f'<text x="{cx:.1f}" y="{base + 24}" font-size="14" text-anchor="middle" fill="{SOFT if hi else MUTED}" font-weight="{600 if hi else 400}">{escape(l)}</text>')
-        parts.append(f'<line x1="0" y1="{base + 0.5}" x2="{W}" y2="{base + 0.5}" stroke="{BASE}" stroke-width="1"/>')
+        parts.append(f'<line x1="0" y1="{base + 0.5}" x2="{width}" y2="{base + 0.5}" stroke="{BASE}" stroke-width="1"/>')
         h = base + 34
-    open(path, "w").write(_svg(h, "".join(parts), title))
+    open(path, "w").write(_svg(h, "".join(parts), title, width))
 
 
 def line(path, x, series, xlabel="", ylabel="", title=None, highlight=None, unit="", fmt="{:g}"):
