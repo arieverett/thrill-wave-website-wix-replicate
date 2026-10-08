@@ -72,3 +72,9 @@ Where the new site goes beyond Wix, it's additive: entrance and scroll animation
 - **Content engine:** automatically draft and publish new Intel articles every week or month for SEO and answer engines (AEO).
 - **Rebuild on Astro** plus a broader design and backend overhaul (see README > Moving to Astro later).
 - ~~**Code cleanup, round 2**~~ Done Oct 3, 2026: build.mjs split into `lib/` modules (output byte-for-byte identical), a few dead style rules removed (a scan found the stylesheet otherwise fully used), RSS feed images fixed for remote covers.
+
+## Manifesto pass, v2 (Oct 8, 2026)
+
+- **What changed:** Chris's manifesto draft (v0.1, "There's no such thing as an audience. There are only people.") put on the site as copy only, on branch `manifesto-v2` with its own preview link. Home (meta description, hero line, 01 Who we are, Who we serve and Fields intros, the three How we work promises, the team section's red button now "What we believe"), About ("What we believe." replaces mission, vision and charter, new hero lede, "We protect the people we film" kept as the closing line), Process ("The Thrill Wave treatment." and all five steps, short and long), SITREP (the question every SITREP starts with), the shared Start a project ending and the post "Understanding Your Target Audience and How to Reach It" (rewritten to argue for one person). `docs/VOICE.md` and rule 11 in `docs/WORKING_RULES.md` follow the new position.
+- **Rollback:** the site as it was before this pass is tagged `pre-manifesto-v0` (commit `ace9097`). Each page is its own commit, so one page can be reverted on its own.
+- **Still a draft:** Chris, Ari and Tony are working through the manifesto over the next few weeks. Until ITCA okays it, don't name anyone in *Your Voice, Your Power* or describe individual episodes, and claim nothing about its viewers or results.

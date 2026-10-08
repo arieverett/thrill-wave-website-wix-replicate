@@ -8,6 +8,16 @@ Thrill Wave is a video production company in Phoenix. We care about story, about
 
 People come to us for our expertise, so we lead. We do the research, we have a point of view, and we guide clients to the story worth telling.
 
+## What we believe (manifesto draft, Chris, Oct 8, 2026)
+
+The manifesto is a draft the founders are still working through. The full text is on the About page ("What we believe."); this is the short version every line of copy should agree with.
+
+- **There's no such thing as an audience, only people.** No one has ever been moved as a demographic. People are moved one at a time, by someone they recognize, so we make each film for one person and the crowd recognizes itself.
+- **Every organization changes someone's life.** A tribal council, a bank, a festival, a clinic: somewhere the work lands on a person. Before we film, we find out whose life it is and what it means to them (that's what SITREP is for).
+- **There's no neutral film.** Every cut is a choice about what stays and what goes. We take a side and say whose. We don't lecture, trick anyone or claim what we can't show, and the people in the frame should recognize themselves.
+- **The Thrill Wave treatment.** Clients don't hire a few people with cameras; they get a way of working. Every project has a safe version and a good version, and we push for the good one and say why. An aftermovie gets the same care as a docuseries, because to the person it's for, it matters just as much. We don't put our name on anything we don't mean.
+- **The proof comes as a pair.** *Your Voice, Your Power* (ITCA Native Vote) was briefed as an educational series on how government works; we argued that nobody watches homework, and each of the ten episodes follows a person instead of a civics lesson. The *Decadence* aftermovies (Relentless Beats) are cut for the fans who build their year around two nights at Phoenix Raceway, not for a demographic. Together they show the treatment is an approach, not a genre. Until ITCA okays it, don't name anyone in the series or describe individual episodes, and claim nothing about its viewers or results (it hasn't aired). Say Relentless Beats has trusted us "for years".
+
 ## SITREP
 
 SITREP is our research. Before we film, we dig deep into the client's craft, their peers, their industry and their sector. Think of it as a third-party R&D department that cares deeply about the story, lines up with the client's goals and helps direct it. It's how we lead.
@@ -25,7 +35,7 @@ We work the way good documentary reporting does: we report first, check our sour
 ## How it sounds
 
 - **Like a conversation.** Every page reads like one of us walking someone through it over coffee: a short, clear elevator pitch that flows from the top of the page to the bottom and ends with an invitation to write to us.
-- **Chill, warm, plain and confident.** Short, precise sentences that explain one thing each, like sandwich.co. A little humor is welcome when it's natural.
+- **Warm, plain and confident, and willing to take a side.** Short, precise sentences that explain one thing each, like sandwich.co. Say the bold thing plainly and stop: no hype, no exclamation points. A little humor is welcome when it's natural.
 - **Full sentences only.** No fragments ("Real people. Real stakes."), no slogan stacks, no one-word labels standing in for a thought. Headlines can be short, but body copy is always complete sentences.
 - **Explicit, never left to chance.** Say what the next thing on the page is. When a paragraph introduces a list, grid, films or cards, end it with a sentence that leads into them, finishing with a colon. Vary it: "Here are a few of the films we've made for them:", "This is what that looks like in practice:", "Here's who we work with most:".
 - **Top down, left to right, toward a message.** Each section hands off to the next. The page ends by asking the reader to reach out.
@@ -40,10 +50,11 @@ We work the way good documentary reporting does: we report first, check our sour
 - Nothing that echoes lookstudios.co's copy or layout: no "what makes it tricky" cards, no catalog of formats with lengths and "from $" prices, no walls of FAQs, no filler stats from third parties. Some familiar formats are fine in our own voice (Oct 3, 2026): the "what we hear" cards on Services (a client's words as the heading, our answer in full sentences, a "What helps:" line), the five promises and our own numbers on Services, and the four numbered points on industry and customer pages ("Who we work with / How we help / What we make / Where it plays", each a full sentence, with a lead-in).
 - No em dashes or spaced dashes (use a comma, colon or new sentence). No exclamation-point hype.
 - Never mention AI in our own process.
+- Avoid "audience" (and "target audience", "segments", "demographics", "personas") except when the copy is arguing against the idea. Say "people" or "the person it's for".
 
 ## Words we like
 
-Films, stories, people, craft, research, the edit, the light, set, shoot, crew, care, honest, clear, simple, together.
+Films, stories, people, person, craft, research, the edit, the light, set, shoot, crew, care, honest, clear, simple, together.
 
 ## Quick test before publishing
 
