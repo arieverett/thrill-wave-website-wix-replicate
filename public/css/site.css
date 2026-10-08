@@ -1639,6 +1639,19 @@ body:not(.page-sections) .kicker::before { content: none; }
 .clients-line + p { margin-top: 20px; }
 @media (max-width: 760px) { .case-study__grid--text-first { grid-template-columns: 1fr; } }
 /* Lead-in sentence above the three numbered points (customer and industry pages), and the paragraph after them */
+/* Case study SITREP: three steps side by side, with reading-size text */
+.detail-points--story { grid-template-columns: repeat(3, minmax(0, 1fr)); margin-top: clamp(20px, 3vw, 32px); }
+.detail-points--story li { padding-top: 26px; padding-bottom: 26px; }
+.detail-points--story li + li { padding-left: 24px; }
+.detail-points--story li { padding-right: 24px; }
+.detail-points--story h3 { font-size: 1.05rem; margin-bottom: 12px; }
+.detail-points--story p { font-size: 1rem; line-height: 1.6; }
+.section:not(.section--dark) .detail-points--story p { color: var(--ink); }
+.detail-points--story + .section__actions { margin-top: clamp(28px, 4vw, 44px); }
+@media (max-width: 700px) {
+  .detail-points--story { grid-template-columns: 1fr; }
+  .detail-points--story li, .detail-points--story li + li { padding: 20px 0; border-left: 0; }
+}
 .detail-points__lead { margin: clamp(24px, 3vw, 36px) 0 0; }
 .detail-points__lead + .detail-points { margin-top: 14px; }
 .detail-points + .detail-points__after { margin-top: clamp(24px, 3vw, 36px); }
