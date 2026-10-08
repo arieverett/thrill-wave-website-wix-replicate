@@ -2,22 +2,22 @@
   "intro": "Good stories live in every field. Here's our work, grouped by the fields we know best, so you can start with the one closest to yours:",
   "featured": [
     { "client": "UBS & Finnerty Partners", "title": "Service Without Compromise", "youtube": "Qd40htwEmJM", "autoplay": true, "focus": "x63", "frame": 2 },
+    { "client": "ITCA Native Vote", "title": "Your Voice, Your Power: Official Trailer", "youtube": "GeGdzjb263U", "frame": 2 },
     { "client": "Andres Plastic Surgery", "title": "Your Body, High Standards", "youtube": "N3yfL_gk_vE", "zoom": true, "focus": "x35" },
     { "client": "Rumco", "title": "Building With Integrity", "youtube": "CN1IN8xlTVg" },
     { "client": "Music Celebrations International", "title": "Ireland", "youtube": "oXOPxKmigKA", "focus": "x86" },
     { "client": "Relentless Beats", "title": "Decadence Arizona 2025 Aftermovie", "youtube": "pDk121-TCto", "zoom": true, "frame": 2 },
     { "client": "ITCA WIC", "title": "Dear Mom", "youtube": "QlP7wPaFcVU", "zoom": true },
     { "client": "Boston Scientific", "title": "Rezum", "youtube": "ECfZ1gZtzlE", "focus": "x41" },
-    { "client": "Training Mask", "title": "Learn To Breathe", "youtube": "jduIrHZT0og", "frame": 3, "zoom": true },
-    { "client": "High Vibe Kitchen", "title": "Take a Little Trip", "youtube": "D46bYNK_lvw" }
+    { "client": "Training Mask", "title": "Learn To Breathe", "youtube": "jduIrHZT0og", "frame": 3, "zoom": true }
   ],
   "categories": [
     {
       "name": "Tribal Nations",
       "slug": "tribal-nations",
       "videos": [
-        { "client": "ITCA WIC", "title": "Dear Mom", "youtube": "QlP7wPaFcVU", "zoom": true },
         { "youtube": "Gh67yEMyOCs", "client": "ITCA Native Vote", "title": "Your Voice, Your Power", "frame": 3, "zoom": true },
+        { "client": "ITCA WIC", "title": "Dear Mom", "youtube": "QlP7wPaFcVU", "zoom": true },
         { "youtube": "3hlumlH16HI", "client": "ITCA TEC", "title": "Recommended Respiratory Vaccinations" }
       ]
     },

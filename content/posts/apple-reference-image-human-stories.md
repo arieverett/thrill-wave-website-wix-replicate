@@ -92,7 +92,7 @@ So we work the way good documentary reporting does. We do the research first (we
 
 - **Connection.** People trust people, so we let them speak in their own words. For the Inter Tribal Council of Arizona's WIC program, our research found the barrier was trust, not awareness. So in [Dear Mom](/case-studies/dear-mom), tribal mothers talk straight to other mothers, filmed in unbroken takes so they read as neighbors, not as an ad.
 - **Education.** We take complex things and make them simple, clear and true. For ITCA's Tribal Epidemiology Center, standard messaging had backfired, so tribal health leaders and community members explain vaccines to their own communities, on location. The full story is in our [vaccine education case study](/case-studies/vaccine-education).
-- **Guidance.** We lead with a point of view, because people come to us for our expertise. With ITCA Native Vote, that became Your Voice, Your Power, a 10-part docuseries about tribal voting that's headed to PBS.
+- **Guidance.** We lead with a point of view, because people come to us for our expertise. With ITCA Native Vote, that became Your Voice, Your Power, a 10-part docuseries about tribal voting that has already played at two film festivals.
 
 Here's a full episode of Your Voice, Your Power:
 

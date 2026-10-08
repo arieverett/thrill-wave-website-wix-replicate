@@ -42,7 +42,7 @@
       "text": "We make documentaries, docuseries and shorts with filmmakers and studios, from the first treatment to the festival cut.",
       "still": "oXOPxKmigKA",
       "focus": "right",
-      "example": "oXOPxKmigKA",
+      "example": { "youtube": "GeGdzjb263U", "client": "ITCA Native Vote", "title": "Your Voice, Your Power: Official Trailer", "frame": 2 },
       "title": "Stories that take time to tell.",
       "seoTitle": "Documentary Film Production",
       "headline": "Documentary film",
@@ -53,7 +53,7 @@
         },
         {
           "q": "Have you made a docuseries?",
-          "a": "We have. Your Voice, Your Power is a 10-part docuseries we made with ITCA Native Vote about tribal voting."
+          "a": "We have. Your Voice, Your Power is a 10-part docuseries on tribal voting that we made with ITCA Native Vote over a year, and it has already played at two film festivals."
         }
       ],
       "work": [
@@ -78,7 +78,7 @@
         "name": "Rhys",
         "role": "Google review"
       },
-      "about": "We bring a decade in the field to stories that take time, as the whole crew or as an extra set of hands. Here's Ireland, a film we made with Music Celebrations International:",
+      "about": "We bring a decade in the field to stories that take time, as the whole crew or as an extra set of hands. Here's the trailer for Your Voice, Your Power, the 10-part docuseries we made with ITCA Native Vote:",
       "heading": "Patience is part of the job.",
       "intro": "Documentaries, docuseries and shorts take time, and we like it that way. We bring a decade in the field to stories that need room to breathe, whether we're the whole crew or an extra set of hands on someone else's film.",
       "approach": "A documentary needs people who can work quietly for weeks, and our founders have run sets for a decade. The best moments come once people forget the camera is there, so we earn their trust before we roll. When it's time to finish, we do color, sound and delivery to spec for festivals, streaming or broadcast. Here are a few of the films we've made:",
@@ -105,7 +105,7 @@
         },
         {
           "q": "Who have you worked with in media?",
-          "a": "We've worked with NBC, the NFL, UFC and Golf Digest, and Your Voice, Your Power, our docuseries with the Inter Tribal Council of Arizona, is headed to PBS."
+          "a": "We've worked with NBC, the NFL, UFC and Golf Digest, and Your Voice, Your Power, our 10-part docuseries with the Inter Tribal Council of Arizona, has played at two film festivals."
         }
       ],
       "work": [
@@ -132,7 +132,7 @@
       },
       "about": "We know broadcast specs and deadlines, and we show up ready to roll. Here's What Would Bubba Watson Shoot?, which we made for Golf Digest:",
       "heading": "Specs are specs.",
-      "intro": "We do field production, segments, promos and series for networks, public media, news outlets, magazines, publishers and streaming channels. We know broadcast specs, we know deadlines, and we show up ready to roll. Your Voice, Your Power, our docuseries with the Inter Tribal Council of Arizona, is headed to PBS.",
+      "intro": "We do field production, segments, promos and series for networks, public media, news outlets, magazines, publishers and streaming channels. We know broadcast specs, we know deadlines, and we show up ready to roll. Your Voice, Your Power, our docuseries with the Inter Tribal Council of Arizona, has played at two film festivals.",
       "approach": "Frame rates, codecs and loudness match your delivery sheet the first time. Air dates don't move, so we turn edits around fast without cutting corners. Our field crews arrive prepped and get the interview in one sitting. Here's some of what we've made for media:",
       "points": [
         "We work with networks, public media, news outlets, magazines, publishers and streaming channels.",
@@ -906,6 +906,134 @@
     }
   ],
   "cases": [
+    {
+      "client": "ITCA Native Vote",
+      "title": "Your Voice, Your Power",
+      "goal": "Education",
+      "text": "A 10-part docuseries that shows Native voters how every level of government reaches their lives, in time for the 2026 midterms.",
+      "still": "Gh67yEMyOCs:3",
+      "zoom": true,
+      "link": "/case-studies/your-voice-your-power",
+      "seoTitle": "Your Voice, Your Power: A Native Voter Docuseries",
+      "lede": "Tribal leaders, legal experts and voters explain how government touches tribal life, one office at a time, so Native voters walk into the 2026 midterms ready.",
+      "story": "Arizona Native Vote, an initiative of the Inter Tribal Council of Arizona, wanted voter education that tribal members would actually watch. Civics usually arrives as a pamphlet or a lecture. We made it a documentary series instead: ten episodes, each built around one question about how a part of government shapes tribal communities, answered by tribal leaders, legal experts, public servants and community members in their own words. It's nonpartisan from start to finish: it doesn't tell anyone how to vote, it shows why the vote matters. We timed it to land before the 2026 midterms, and it has already played at two film festivals.",
+      "video": {
+        "youtube": "GeGdzjb263U",
+        "client": "ITCA Native Vote",
+        "title": "Your Voice, Your Power: Official Trailer",
+        "frame": 2
+      },
+      "stats": [
+        {
+          "value": "1948",
+          "label": "The year the Arizona Supreme Court recognized the Native right to vote, 24 years after the Indian Citizenship Act",
+          "source": "ITCA"
+        },
+        {
+          "value": "1970",
+          "label": "The year federal law ended the literacy tests that kept most Native Arizonans from voting after 1948",
+          "source": "ITCA"
+        },
+        {
+          "value": "2008",
+          "label": "The year Arizona Native Vote began, after the state's voter ID law kept Native voters from the polls in disproportionate numbers",
+          "source": "Arizona Native Vote"
+        }
+      ],
+      "industry": "Government & Public Affairs",
+      "customer": "Nonprofits & public service",
+      "services": [
+        "Story",
+        "Production",
+        "Editing"
+      ],
+      "facts": [
+        {
+          "label": "Episodes",
+          "value": "10, plus a trailer"
+        },
+        {
+          "label": "Production",
+          "value": "9 months"
+        },
+        {
+          "label": "Start to finish",
+          "value": "1 year"
+        },
+        {
+          "label": "Crew on set",
+          "value": "About 5, at most 10"
+        },
+        {
+          "label": "Festivals",
+          "value": "2 so far"
+        }
+      ],
+      "sitrep": [
+        "ITCA asked for a ten-part docuseries to help more tribal members vote in the 2026 midterm election, and to explain how state, county and federal government actually reach their communities.",
+        "Our research found that people weren't staying home out of apathy. Staying home was a reasonable response to a long history of broken promises, and the series had to face that history before it could ask anyone to show up.",
+        "So we let the people closest to the issue carry it. We kept the crew small on purpose, usually around five people, so interviews felt like conversations rather than productions, and tribal leaders, elders, experts and young voters could speak honestly and at their own pace."
+      ],
+      "episodes": [
+        {
+          "youtube": "pKr7EyiMad8",
+          "title": "Office of the Arizona Governor",
+          "question": "How does the Arizona Governor's office affect Tribal communities?"
+        },
+        {
+          "youtube": "AWT0vb2nbng",
+          "title": "Office of the Arizona Secretary of State",
+          "question": "What does the Arizona Secretary of State have to do with your vote?"
+        },
+        {
+          "youtube": "i7OCNhqYpbY",
+          "title": "Office of the Arizona Attorney General",
+          "question": "How does the Arizona Attorney General impact Tribal Nations?"
+        },
+        {
+          "youtube": "Gh67yEMyOCs",
+          "title": "Office of the Arizona State Legislature",
+          "question": "How does the Arizona Legislature shape the lives of Tribal communities?"
+        },
+        {
+          "youtube": "bQE9Q0cX1jo",
+          "title": "Ballot Propositions",
+          "question": "How can ballot propositions affect Tribal communities?"
+        },
+        {
+          "youtube": "5vpyJDpj2_Q",
+          "title": "The Federal Government",
+          "question": "How does the federal government affect Tribal Nations?"
+        },
+        {
+          "youtube": "GQcN3mln-4U",
+          "title": "Coordination Between Arizona and Tribal Nations",
+          "question": "How does the state government coordinate with Tribal Nations?"
+        },
+        {
+          "youtube": "WjgMoJ-OVJM",
+          "title": "County Elections and Tribal Nations",
+          "question": "How does county government affect Tribal Nations?"
+        },
+        {
+          "youtube": "utLEBsw_6oE",
+          "title": "Two Nations, One Voice",
+          "question": "What does it mean to be a Native voter living on or off Tribal lands?"
+        },
+        {
+          "youtube": "zfxiUOdNpDc",
+          "title": "Your Voice, Your Power",
+          "question": "Why is it important for Native voters to take part in state, local and federal elections?"
+        }
+      ],
+      "series": {
+        "url": "https://aznativevote.org/docuseries/",
+        "playlist": "https://www.youtube.com/playlist?list=PLbmd3hV88tMY",
+        "presentedBy": "Inter Tribal Council of Arizona",
+        "createdBy": "Arizona Native Vote",
+        "collaborator": "Arizona State University Indian Legal Clinic"
+      }
+    },
     {
       "client": "ITCA WIC",
       "title": "Dear Mom",
