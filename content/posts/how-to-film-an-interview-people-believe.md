@@ -44,7 +44,7 @@ Viewers forgive a soft picture long before they forgive bad audio. Here's the or
 
 In the edit, the goal is to keep people sounding like themselves. We cut for clarity, not to change what someone meant. Sometimes that means leaving in a pause or a laugh, because that's what makes it real.
 
-Some of our favorite interviews barely get cut at all. In [Dear Mom](/case-studies/dear-mom), tribal mothers speak straight to camera to other mothers in unbroken takes, so they read as neighbors, not as an ad. Here's the film:
+Some of our favorite interviews barely get cut at all. In [Dear Mom](/case-studies/welcome-to-wic), tribal mothers speak straight to camera to other mothers in unbroken takes, so they read as neighbors, not as an ad. Here's the film:
 
 {{youtube:QlP7wPaFcVU}}
 

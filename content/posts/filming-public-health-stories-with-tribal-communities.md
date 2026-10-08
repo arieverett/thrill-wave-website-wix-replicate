@@ -29,7 +29,7 @@ A chart like this tells you there's a gap. It doesn't tell you why. That's what 
 
 The CDC report makes the same point from the other side: it names partnerships with community organizations and "trusted messengers" as a way to raise vaccination rates. On film, that means the person on camera matters more than the script.
 
-So we leave out the narrator. In [Dear Mom](/case-studies/dear-mom), tribal mothers talk straight to camera to other mothers, with no institutional voice and no one telling anyone what to do. We shot them in unbroken takes so they read as neighbors, not as a cut-together ad. Here's the film:
+So we leave out the narrator. In [Dear Mom](/case-studies/welcome-to-wic), tribal mothers talk straight to camera to other mothers, with no institutional voice and no one telling anyone what to do. We shot them in unbroken takes so they read as neighbors, not as a cut-together ad. Here's the film:
 
 {{youtube:QlP7wPaFcVU}}
 

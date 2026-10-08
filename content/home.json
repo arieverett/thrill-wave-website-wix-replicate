@@ -1036,13 +1036,13 @@
     },
     {
       "client": "ITCA WIC",
-      "title": "Dear Mom",
+      "title": "Welcome to WIC",
       "goal": "Education",
-      "text": "Tribal mothers speak straight to other mothers, so families trust WIC enough to enroll.",
+      "text": "A welcome film, a series of short guides and Dear Mom, so tribal families trust WIC enough to enroll and know what to do once they have.",
       "still": "QlP7wPaFcVU:2",
       "zoom": true,
-      "link": "/case-studies/dear-mom",
-      "story": "The Inter Tribal Council of Arizona's WIC program had eligible families who weren't enrolling. Our SITREP research found the barrier was trust, not awareness. So we put tribal mothers on camera talking straight to other mothers, with no narration and no institutional voice, and we shot them in unbroken takes so they read as neighbors.",
+      "link": "/case-studies/welcome-to-wic",
+      "story": "The Inter Tribal Council of Arizona's WIC program had eligible families who weren't enrolling. Our SITREP research found the barrier was trust, not awareness. So we made Welcome to WIC, a series of short films that walk families through the program in plain language, from the first visit to the checkout line, and then Dear Mom, where tribal mothers speak straight to other mothers with no narration and no institutional voice, shot in unbroken takes so they read as neighbors.",
       "video": {
         "youtube": "QlP7wPaFcVU",
         "zoom": true
@@ -1064,7 +1064,7 @@
           "source": "USDA"
         }
       ],
-      "lede": "Tribal mothers speak straight to other mothers, so families trust WIC enough to enroll.",
+      "lede": "A welcome film, a series of short guides and Dear Mom, so tribal families trust WIC enough to enroll and know what to do once they have.",
       "industry": "Tribal Nations",
       "customer": "Nonprofits & public service",
       "services": [
@@ -1075,7 +1075,7 @@
       "sitrep": [
         "When ITCA came to us, its WIC program needed more families enrolled. Participation had been falling even though plenty of families were eligible.",
         "Our research found that many tribal members linked WIC with government surveillance. The barrier wasn't awareness, it was trust.",
-        "So we filmed tribal mothers speaking straight to camera in unbroken takes, with no narration and no institutional framing."
+        "So we made Welcome to WIC, a series of short films that answer one question each, from how to shop to what to do when a card doesn't work, and then Dear Mom, where tribal mothers speak straight to camera in unbroken takes, with no narration and no institutional framing."
       ],
       "work": [
         "QlP7wPaFcVU",
@@ -1083,7 +1083,25 @@
           "youtube": "zLy49zenWIM",
           "client": "ITCA WIC",
           "title": "Welcome to WIC"
-        }
+        },
+        { "youtube": "Aw8qYvjGDgI", "client": "ITCA WIC", "title": "How to Shop with WIC" },
+        { "youtube": "BLz_vcY9-GE", "client": "ITCA WIC", "title": "Finding WIC Stores" },
+        { "youtube": "WHQgR8FTRYg", "client": "ITCA WIC", "title": "Using the WIC App" },
+        { "youtube": "xUxcyko3LPE", "client": "ITCA WIC", "title": "Reading Your Receipt and Benefit List" },
+        { "youtube": "VjNtO9g8XeU", "client": "ITCA WIC", "title": "What to Do If Your Card Doesn't Work in the Store" },
+        { "youtube": "jP1DUIE_7l8", "client": "ITCA WIC", "title": "What to Do If You Can't Buy Something" },
+        { "youtube": "Ba3KjePGtDA", "client": "ITCA WIC", "title": "Fruits and Veggies" },
+        { "youtube": "TEPaChzpEOg", "client": "ITCA WIC", "title": "Whole Grains" },
+        { "youtube": "UqS2udpkl-A", "client": "ITCA WIC", "title": "Cereal" },
+        { "youtube": "eFSHmFLqi7Y", "client": "ITCA WIC", "title": "Milk and Lactose Free Milk" },
+        { "youtube": "PlCqvp4aJq4", "client": "ITCA WIC", "title": "Milk Alternatives" },
+        { "youtube": "n4r1AQigbVY", "client": "ITCA WIC", "title": "Yogurt" },
+        { "youtube": "OnWAyUHf6jE", "client": "ITCA WIC", "title": "Cheese and Eggs" },
+        { "youtube": "WBT8BqBOK3M", "client": "ITCA WIC", "title": "Beans and Peanut Butter" },
+        { "youtube": "s79VLWFeJ8g", "client": "ITCA WIC", "title": "Canned Fish" },
+        { "youtube": "uHuDTpE5i0Y", "client": "ITCA WIC", "title": "Juice" },
+        { "youtube": "59KnjYdf8mM", "client": "ITCA WIC", "title": "Infant Foods" },
+        { "youtube": "HrzU8obX0ao", "client": "ITCA WIC", "title": "Infant Formula" }
       ]
     },
     {
