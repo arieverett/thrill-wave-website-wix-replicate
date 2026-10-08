@@ -1131,33 +1131,33 @@
     {
       "icon": "bulb",
       "name": "Idea",
-      "text": "Bring us an idea, a brief or a blank page, and we'll find the story in it together.",
-      "more": "It starts with a call. Bring us a spark, a brief or a blank page, and we'll talk it through until we know what's worth saying."
+      "text": "Bring us a brief, a hunch or a blank page, and we'll read it for what it's really asking.",
+      "more": "It starts with a call. Bring us a brief, a hunch or a blank page, and we'll read it for what it's really asking, which isn't always what it says on paper. We talk it through until we both know what the film has to do."
     },
     {
       "icon": "search",
       "name": "Discovery",
-      "text": "We listen first: to your people, your history and what you hope the film will do.",
-      "more": "We listen first: to your people, your history, the people you want to reach and what you hope to leave behind. You come away with a clear plan, a schedule and a budget."
+      "text": "We find out whose life your work touches and what it means to them.",
+      "more": "We find out whose life your work touches and what it means to them. We listen to your people, your history and the people on the other end of what you do. You come away with a clear plan, a schedule and a budget."
     },
     {
       "icon": "radar",
       "name": "SITREP",
-      "text": "We research your craft, your peers and your industry, then bring you a point of view on the story.",
+      "text": "We research your world until we know the person the story happens to, then bring you a point of view.",
       "link": "#sitrep",
-      "more": "SITREP is our research. Before we film, we dig into your craft, your peers, your industry and the wider sector, like an outside R&D department that cares about your story as much as you do. Then we bring you a point of view and help steer the film toward the story worth telling."
+      "more": "SITREP is our research. We dig into your craft, your peers, your industry and the wider sector, like an outside R&D department that cares about your story as much as you do, until we know the person the story happens to. Then we bring you a point of view on the version of the film worth making, and we tell you why."
     },
     {
       "icon": "camera",
       "name": "Production",
-      "text": "Our crew shoots it with cinema cameras and real care, on location or in the studio.",
-      "more": "Our crew shoots with cinema cameras, lighting and sound, on location or in the studio."
+      "text": "We put them on screen, let them speak for themselves and shoot it like it matters.",
+      "more": "We put that person on screen and let them speak for themselves, and we never stage what should be felt. Our crew shoots with cinema cameras, lighting and sound, on location or in the studio, and we shoot it like it matters, because to them it does."
     },
     {
       "icon": "check",
       "name": "Completion",
-      "text": "We edit, color, mix and deliver it, and we make it to hold up for years.",
-      "more": "We edit, color and mix the film, then cut a version for every place it needs to play. We make it to hold up for years, not just for launch week."
+      "text": "We cut it for that one person, then plan where it will find everyone else like them.",
+      "more": "We edit, color and mix the film for that one person, so it speaks to them directly. Then we cut a version for every place it needs to play and plan where it will find everyone else like them. We make it to hold up for years, not just for launch week."
     }
   ],
   "clients": [
