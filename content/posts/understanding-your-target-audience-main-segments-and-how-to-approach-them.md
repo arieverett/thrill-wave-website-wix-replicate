@@ -33,7 +33,7 @@ This isn't only our hunch. Researchers have measured it. In a 2007 study, psycho
 
 One girl drew about twice as much as the statistics. Adding the numbers to her story pulled giving back down, so the facts didn't add to people's sympathy, they diluted it. A second study found the same thing even when the group had faces:
 
-> **2x**: in a 2005 study by Tehilla Kogut and Ilana Ritov, people gave about twice as much to help one sick child as to help a group of eight, even when every child in the group was named and pictured too.
+> **2x** as much given to help one sick child as to help a group of eight, even when every child in the group was named and pictured too, in a 2005 study by Tehilla Kogut and Ilana Ritov.
 
 Slovic later named the pattern psychic numbing, and he took the title of his paper on it from Mother Teresa: "If I look at the mass I will never act. If I look at the one, I will."
 
