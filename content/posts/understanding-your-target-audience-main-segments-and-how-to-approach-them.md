@@ -1,5 +1,6 @@
 ---
 title: "Understanding Your Target Audience and How to Reach It"
+description: "You've been told to understand your target audience. The better question is who one person is, and why a film made for them reaches everyone else."
 date: 2026-09-17
 author: Chris Kuzman
 cover_image: https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?w=1600&h=900&fit=crop&q=80&auto=format
@@ -7,44 +8,70 @@ cover_alt: "Rows of empty red theater seats"
 categories: [Planning a Video]
 ---
 
-Every great film starts with knowing who it's for. Who are you trying to reach? What do they care about, and where do they spend their time? Get those answers right and your story lands. Get them wrong and even a beautiful video can miss.
+Almost every brief we read has a section called "target audience." It usually reads something like this: women 25 to 44, suburban, household income above a certain number, values family and convenience. The standard advice is to study that group, break it into segments by age, place and values, and speak to each one. An earlier version of this post said exactly that.
 
-That's why we never start with the camera. Before every production we run a [SITREP](/sitrep), our own research into your audience and landscape, so we know which story is worth telling and who needs to hear it. You can start thinking the same way by looking at your audience through three lenses.
+We've changed our minds, because the question is wrong. Nobody has ever been moved as a demographic. People are moved one at a time, by someone they recognize. So instead of understanding your target audience, we'd ask you to understand one person.
 
-## Age Segments
+## Why the standard advice falls short
 
-Different generations grew up with different media, and they tend to respond to different things. These are broad strokes, not rules, but they're a useful starting point.
+Segments have their uses, mostly in deciding where a film will play. They don't help much when you sit down to decide what the film says. A segment has no face, no history and nothing at stake, so a film written for it ends up talking to nobody in particular. You can hear it in the script: "busy families," "today's professionals," "people who care about their community." Everyone fits, so no one feels spoken to.
 
-1. **Generation Z (born 1997 to 2012):** Grew up online and can spot a fake from a mile away. Meet them with honest, real-feeling stories on social video platforms, and let real people do the talking.
-2. **Millennials (born 1981 to 1996):** Tech-savvy and socially conscious, often valuing experiences over things. Stories about purpose, impact and what it feels like to be part of something tend to connect.
-3. **Generation X (born 1965 to 1980):** Often overlooked, but they care about quality, reliability and family. Clear, no-nonsense stories that show you deliver, through email, your website and traditional channels like TV.
-4. **Baby Boomers (born 1946 to 1964):** Loyal once you've earned it, but they need to trust you first. Personal connection and proof of quality matter most, and traditional channels like TV still reach them.
+Here's how that looks in a typical brief, and the question we'd ask in its place:
 
-## Geographic Segments
+| The brief says | We'd ask |
+|---|---|
+| Women 25 to 44 in Maricopa County | Who is one mother who almost didn't sign up, and what stopped her? |
+| Fans aged 18 to 34 | Who bought a ticket in the summer and has been counting down since? |
+| Raise awareness of the program | Who already knows about it and still says no, and why? |
 
-Where people live shapes what they need and how they hear you.
+## Nobody is moved as a segment
 
-1. **Urban:** Often younger, diverse and always connected. Social video and local community events are good ways in.
-2. **Suburban:** Often family-focused and short on time. Stories about convenience and family life work well, through email and traditional channels.
-3. **Rural:** Often older and rooted in tradition and community. Show respect for local values, show up at community events and use the channels people already trust.
+This isn't only our hunch. Researchers have measured it. In a 2007 study, psychologists Deborah Small, George Loewenstein and Paul Slovic paid people $5 for filling in an unrelated survey, then gave them the chance to give some of it to Save the Children. One group read statistics about food shortages affecting millions of people in several African countries. Another read about Rokia, a 7-year-old girl from Mali. A third read about Rokia with the statistics alongside. Here's what each group gave:
 
-## Psychographic Segments
+![Bar chart of average donations out of 5 dollars: 1.14 dollars after reading statistics about millions of people facing hunger, 2.38 dollars after reading about Rokia, one 7-year-old girl, and 1.43 dollars after reading about Rokia plus the statistics](/images/blog/understanding-your-target-audience-main-segments-and-how-to-approach-them/one-girl-vs-statistics.svg)
+*Average donation in each group, study 3. Source: Small, Loewenstein and Slovic, 2007.*
 
-This is where it gets interesting: grouping people by what they value and how they live, not just their age or zip code.
+One girl drew about twice as much as the statistics. Adding the numbers to her story pulled giving back down, so the facts didn't add to people's sympathy, they diluted it. A second study found the same thing even when the group had faces:
 
-1. **Adventurers:** Love excitement and new experiences. Give them something to feel, not just something to read.
-2. **Achievers:** Value success and status. Aspirational stories and a premium look speak their language.
-3. **Sociables:** Care about relationships and community. Show real people together, and give them something worth sharing.
-4. **Creatives:** Value self-expression and originality. Invite them in, let them make it their own, and don't play it safe.
+> **2x**: in a 2005 study by Tehilla Kogut and Ilana Ritov, people gave about twice as much to help one sick child as to help a group of eight, even when every child in the group was named and pictured too.
 
-## Putting It Together
+Slovic later named the pattern psychic numbing, and he took the title of his paper on it from Mother Teresa: "If I look at the mass I will never act. If I look at the one, I will."
 
-These segments overlap. A suburban Gen X adventurer is a real person, and probably a fun one. The point isn't to put people in boxes, it's to understand them well enough to tell a story they'll recognize as theirs.
+## Research the world, film the person
 
-Start with research, not assumptions. Talk to your actual customers. Look at who already works with you, who doesn't, and why. The answers are often surprising, and that's usually where the best story is hiding.
+None of this means research doesn't matter. It's how you find the one person worth filming. Research finds what's particular about a world, and the film speaks to what's universal about the person in it.
 
-Then look at age, place and values together, and let what you learn decide the story, the voice and where it should live. Do that, and your film won't just reach people, it will move them.
+For the Inter Tribal Council of Arizona's WIC program, plenty of families qualified, but participation kept dropping. Our research (we call it a [SITREP](/sitrep)) found that many tribal members connected WIC with government surveillance. The barrier was trust, not awareness. That's the particular part, and no age bracket or zip code would have shown it to us.
 
-Want to know who your story is really for? [Let's find out together](/contact).
+The film speaks to the universal part: mothers talking to other mothers, straight to camera, with no narrator and no official voice telling anyone what to do. We shot them in unbroken takes so they come across as neighbors, not actors. A mother watching it doesn't see a demographic. She sees someone she recognizes. Here's the film:
+
+{{youtube:QlP7wPaFcVU}}
+
+## The same rule at a festival
+
+This isn't only for serious films. Relentless Beats' Decadence takes over Phoenix Raceway for two nights around New Year's Eve, and [EDM Maniac](https://edmmaniac.com/festival-report-card-decadence-arizona-2025/) estimated about 50,000 fans came in 2025. You could describe those people as ravers aged 18 to 34 and cut a highlight reel for that group. We cut the aftermovie for one of them: the person who bought a ticket months ago and has been counting down ever since.
+
+Relentless Beats has trusted us with these films for years, and you'll find three of them on our [Work page](/portfolio#live-events). Each one is made for someone who was there, so they can live it again. Everyone who missed it recognizes what they missed, and that's how a crowd recognizes itself. This is the 2025 aftermovie:
+
+{{youtube:pDk121-TCto}}
+
+The most serious film we make and the most fun one start in the same place, with one person.
+
+## Where to start
+
+If you're writing a brief this week, keep the section on who it's for, but change what goes in it. Try these three:
+
+1. Name one real person the film is for, or someone close enough that you could describe their morning.
+2. Write down what changes in their life because of your work.
+3. Ask what they already believe about you, and why.
+
+Then let research tell you what's particular about their world, and let the film speak to what anyone would feel in their place. If you'd like help finding the person your story is really about, [write to us](/contact).
+
+## Sources
+
+- [Small, Loewenstein and Slovic: Sympathy and callousness (2007)](https://doi.org/10.1016/j.obhdp.2006.01.005)
+- [Kogut and Ritov: The identified victim effect (2005)](https://doi.org/10.1002/bdm.492)
+- [Slovic: If I look at the mass I will never act (2007)](https://journal.sjdm.org/jdm7303a.pdf)
+- [EDM Maniac: Decadence Arizona 2025 report card](https://edmmaniac.com/festival-report-card-decadence-arizona-2025/)
 
 *Cover photo: Felix Mooneeram on [Unsplash](https://unsplash.com/photos/red-cinema-chair-evlkOfkQ5rE).*
