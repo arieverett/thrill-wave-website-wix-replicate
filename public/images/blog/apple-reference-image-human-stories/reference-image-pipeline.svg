@@ -1,7 +1,7 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 420" width="720" height="420" role="img" aria-labelledby="t d" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-28 -24 776 468" width="776" height="468" data-inset="28 24" role="img" aria-labelledby="t d" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif">
 <title id="t">How an Apple Reference Image is made</title>
 <desc id="d">Four steps: the sensor signs the pixels, the Secure Enclave signs the camera settings, the phone saves a secure digital negative, and Private Cloud Compute checks everything, develops the photo and signs it.</desc>
-<rect width="720" height="420" fill="#ffffff"/>
+<rect x="-28" y="-24" width="776" height="468" fill="#ffffff"/>
 <text x="0" y="22" font-size="18" font-weight="700" fill="#000" letter-spacing="-0.2">How a reference image is made</text>
 <line x1="14" y1="86" x2="14" y2="356" stroke="#e2e0dc" stroke-width="2" stroke-linecap="round"/>
 <line x1="14" y1="86" x2="14" y2="176" stroke="#ff0000" stroke-width="2" stroke-linecap="round"/>

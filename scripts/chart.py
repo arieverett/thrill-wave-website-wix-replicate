@@ -17,21 +17,23 @@ Then in the post:  ![Sensor width by format](/images/blog/<slug>/sensor-sizes.sv
                    *Sensor width in mm. Source: manufacturer specs.*
 
 Only chart numbers you can source; put the source in the caption.
-The SVG draws edge to edge on purpose: the site's stylesheet insets every
-chart on the page (.prose img[src*=".svg"]), so don't add padding here.
+Every chart keeps an inset (PAD_X, PAD_Y) between its text and the edge of
+its white box, so numbers never touch the edge (Ari, Oct 8, 2026).
 """
 from html import escape
 
 INK, SOFT, MUTED, TRACK, BASE, REST, RED = "#000000", "#1c1c1c", "#6b6b70", "#f1f0ee", "#e2e0dc", "#a3a3a8", "#ff0000"
 FONT = "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif"
 W = 720  # viewBox width; the image scales to the post column
+PAD_X, PAD_Y = 28, 24  # inset between the drawing and the edge of the white box
 
 
 def _svg(h, body, title, w=W):
     t = escape(title or "Chart")
-    return (f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {w} {h}" width="{w}" height="{h}" '
-            f'role="img" aria-label="{t}" font-family="{escape(FONT)}">'
-            f'<rect width="{w}" height="{h}" fill="#ffffff"/>{body}</svg>')
+    bw, bh = w + 2 * PAD_X, h + 2 * PAD_Y
+    return (f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="{-PAD_X} {-PAD_Y} {bw} {bh}" width="{bw}" height="{bh}" '
+            f'data-inset="{PAD_X} {PAD_Y}" role="img" aria-label="{t}" font-family="{escape(FONT)}">'
+            f'<rect x="{-PAD_X}" y="{-PAD_Y}" width="{bw}" height="{bh}" fill="#ffffff"/>{body}</svg>')
 
 
 def _title(title, max_chars=70):

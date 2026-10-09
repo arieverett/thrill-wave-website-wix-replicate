@@ -901,8 +901,6 @@ body.subnav-stuck .site-header { background: transparent; -webkit-backdrop-filte
 .prose h3 { font-size: 1.2rem; }
 .prose img { margin: 1.5em 0; }
 .prose .video img { margin: 0; }
-/* Charts and diagrams (SVG from scripts/chart.py) draw edge to edge, so the page insets them */
-.prose img[src*=".svg"] { box-sizing: border-box; background: #fff; padding: clamp(18px, 3vw, 28px) clamp(18px, 3.5vw, 32px); }
 .prose li { margin-bottom: .5em; }
 .prose a { text-decoration-thickness: 1px; text-underline-offset: 3px; }
 .prose .work-grid { margin: 2em 0; }
