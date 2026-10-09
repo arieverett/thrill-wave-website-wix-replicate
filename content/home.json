@@ -42,7 +42,7 @@
       "text": "We make documentaries, docuseries and shorts with filmmakers and studios, from the first treatment to the festival cut.",
       "still": "oXOPxKmigKA",
       "focus": "right",
-      "example": { "youtube": "GeGdzjb263U", "client": "ITCA Native Vote", "title": "Your Voice, Your Power: Official Trailer", "frame": 2 },
+      "example": { "youtube": "GeGdzjb263U", "client": "ITCA Native Vote", "title": "Your Voice, Your Power: Official Trailer", "frame": 2, "zoom": true, "focus": "right" },
       "title": "Stories that take time to tell.",
       "seoTitle": "Documentary Film Production",
       "headline": "Documentary film",
@@ -917,9 +917,11 @@
       "link": "/case-studies/your-voice-your-power",
       "seoTitle": "Your Voice, Your Power: A Native Voter Docuseries",
       "lede": "Tribal leaders, legal experts and voters explain how government touches tribal life, one office at a time, so Native voters walk into the 2026 midterms ready.",
-      "story": "Arizona Native Vote, an initiative of the Inter Tribal Council of Arizona, wanted voter education that tribal members would actually watch. Civics usually arrives as a pamphlet or a lecture. We made it a documentary series instead: ten episodes, each built around one question about how a part of government shapes tribal communities, answered by tribal leaders, legal experts, public servants and community members in their own words. It's nonpartisan from start to finish: it doesn't tell anyone how to vote, it shows why the vote matters. We timed it to land before the 2026 midterms, and it has already played at the NatiVisions Film Festival in Parker and at the Heard Museum's First Friday in Phoenix.",
+      "story": "Arizona Native Vote, an initiative of the Inter Tribal Council of Arizona, wanted voter education that tribal members would actually watch. So instead of a pamphlet, we made a ten-part documentary series: one question per episode about how a part of government shapes tribal communities, answered by tribal leaders, legal experts and community members in their own words. It's nonpartisan from start to finish, it landed before the 2026 midterms, and it has already played at the NatiVisions Film Festival and the Heard Museum.",
       "video": {
         "youtube": "GeGdzjb263U",
+        "zoom": true,
+        "focus": "right",
         "client": "ITCA Native Vote",
         "title": "Your Voice, Your Power: Official Trailer",
         "frame": 2
@@ -992,7 +994,6 @@
         },
         {
           "youtube": "bQE9Q0cX1jo",
-          "frame": 3,
           "title": "Ballot Propositions",
           "question": "How can ballot propositions affect Tribal communities?"
         },

@@ -4,7 +4,7 @@
     <h1>{{title}}</h1>
     <p class="post__meta"><span>{{author}}</span> <span aria-hidden="true">&middot;</span> <time datetime="{{date}}">{{dateLabel}}</time> <span aria-hidden="true">&middot;</span> <span>{{minutes}} min read</span></p>
   </header>
-  <figure class="post__cover container">
+  <figure class="post__cover container{{coverZoom}}">
     <img src="{{cover}}"{{coverSrcset}} alt="{{coverAlt}}" fetchpriority="high">
   </figure>
   <div class="post__body prose container">
