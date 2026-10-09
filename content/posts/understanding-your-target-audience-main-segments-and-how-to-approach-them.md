@@ -1,6 +1,6 @@
 ---
 title: "Understanding Your Target Audience and How to Reach It"
-description: "You've been told to understand your target audience. The better question is who one person is, and why a film made for them reaches everyone else."
+description: "You've been told to understand your target audience. People take in stories in remarkably similar ways, and films built on that outlast the rest."
 date: 2026-09-17
 author: Chris Kuzman
 cover_image: https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?w=1600&h=900&fit=crop&q=80&auto=format
@@ -8,70 +8,64 @@ cover_alt: "Rows of empty red theater seats"
 categories: [Planning a Video]
 ---
 
-Almost every brief we read has a section called "target audience." It usually reads something like this: women 25 to 44, suburban, household income above a certain number, values family and convenience. The standard advice is to study that group, break it into segments by age, place and values, and speak to each one. An earlier version of this post said exactly that.
+Almost every brief we read has a section called "target audience." It usually reads something like this: women 25 to 44, suburban, household income above a certain number, values family and convenience. The standard advice is to study that group, break it into segments by age, place and values, and give each one a story that looks like their own life. An earlier version of this post said exactly that.
 
-We've changed our minds, because the question is wrong. Nobody has ever been moved as a demographic. People feel for one person at a time, and the research on that is surprisingly clear. So instead of understanding your target audience, we'd ask you to understand one person.
+We've changed our minds. That advice assumes people need to see their own lives on screen before they'll care. They don't. People take in stories in remarkably similar ways, and the films that last are built on what's true for everyone.
 
 ## Why the standard advice falls short
 
-Segments have their uses, mostly in deciding where a film will play. They don't help much when you sit down to decide what the film says. A segment has no face, no history and nothing at stake, so a film written for it ends up talking to nobody in particular. You can hear it in the script: "busy families," "today's professionals," "people who care about their community." Everyone fits, so no one feels spoken to.
+Segments have their uses, mostly in deciding where a film will play. They don't help much when you sit down to decide what the film says. Underneath every segment in a brief is something any person would understand, and that's the part worth filming. Here's what we mean:
 
-Here's how that looks in a typical brief, and the question we'd ask in its place:
-
-| The brief says | We'd ask |
+| The brief says | What's true for anyone |
 |---|---|
-| Women 25 to 44 in Maricopa County | Who is one mother who almost didn't sign up, and what stopped her? |
-| Fans aged 18 to 34 | Who bought a ticket in the summer and has been counting down since? |
-| Raise awareness of the program | Who already knows about it and still says no, and why? |
+| Women 25 to 44 in Maricopa County | Wanting to do right by your kids |
+| Fans aged 18 to 34 | Waiting all year for one night that feels like yours |
+| Decision makers at mid-size firms | Not wanting to be the one who got it wrong |
 
-## Nobody is moved as a segment
+A film about the first column reaches the people in it, if you're lucky. A film about the second column reaches anyone, including the people in the first.
 
-This isn't only our hunch. Researchers have measured it. In a 2007 study, psychologists Deborah Small, George Loewenstein and Paul Slovic paid people $5 for filling in an unrelated survey, then gave them the chance to give some of it to Save the Children. One group read statistics about food shortages affecting millions of people in several African countries. Another read about Rokia, a 7-year-old girl from Mali. A third read about Rokia with the statistics alongside. Here's what each group gave:
+## Good films pull brains into step
 
-![Bar chart of average donations out of 5 dollars: 1.14 dollars after reading statistics about millions of people facing hunger, 2.38 dollars after reading about Rokia, one 7-year-old girl, and 1.43 dollars after reading about Rokia plus the statistics](/images/blog/understanding-your-target-audience-main-segments-and-how-to-approach-them/one-girl-vs-statistics.svg)
-*Average donation in each group, study 3. Source: Small, Loewenstein and Slovic, 2007.*
+Neuroscientist Uri Hasson and his colleagues put viewers in an fMRI scanner and played them half an hour of *The Good, the Bad and the Ugly*. In their 2004 study, more than 29% of the cortex responded in sync from one viewer to the next, a "surprising tendency of individual brains to 'tick collectively'," in the authors' words.
 
-One girl drew about twice as much as the statistics. Adding the numbers to her story pulled giving back down, so the facts didn't add to people's sympathy, they diluted it. A second study found the same thing even when the group had faces:
+In a 2008 follow-up, they compared clips from very different films. The more carefully a film was made, the more alike people's brains responded:
 
-> **2x** as much given to help one sick child as to help a group of eight, even when every child in the group was named and pictured too, in a 2005 study by Tehilla Kogut and Ilana Ritov.
+![Bar chart of the share of the cortex responding in sync across viewers: over 65 percent for Hitchcock's Bang! You're Dead, 45 percent for The Good, the Bad and the Ugly, 18 percent for Curb Your Enthusiasm and under 5 percent for unedited footage of a park concert](/images/blog/understanding-your-target-audience-main-segments-and-how-to-approach-them/brains-in-sync-by-film.svg)
+*Share of the cortex responding in sync across viewers (over 65% for the Hitchcock episode, under 5% for the park footage). Source: Hasson et al., 2008.*
 
-Slovic later named the pattern psychic numbing, and he took the title of his paper on it from Mother Teresa: "If I look at the mass I will never act. If I look at the one, I will."
+The viewers were college students, and the researchers are careful to say a film's effect will vary from group to group. But look at what changed between the clips. It wasn't whether the subject matched anyone's life. A Hitchcock episode about a boy with a loaded gun is nobody's life, and it pulled people into step anyway. A real concert in a real park, filmed without any storytelling, barely moved them at all. The difference was the craft.
 
-## Research the world, film the person
+## Nobody has lived on Arrakis
 
-None of this means research doesn't matter. It's how you find the one person worth filming. Research finds what's particular about a world, and the film speaks to what's universal about the person in it.
+*Dune* came out in 1965. It's set on a desert planet thousands of years from now, among noble houses, spice and giant sandworms, and nobody who's read it has lived a day of that life (though a Phoenix summer comes close). It has still sold nearly 20 million copies in dozens of languages, because it's about things everyone understands: losing a father, fearing what you might become, loyalty, power and belonging. The films travel the same way:
 
-For the Inter Tribal Council of Arizona's WIC program, plenty of families qualified, but participation kept dropping. Our research (we call it a [SITREP](/sitrep)) found that many tribal members connected WIC with government surveillance. The barrier was trust, not awareness. That's the particular part, and no age bracket or zip code would have shown it to us.
+> **60%** of *Dune: Part Two*'s $715 million at the box office came from outside the US and Canada, according to Box Office Mojo.
 
-The film speaks to the universal part: mothers talking to other mothers, straight to camera, with no narrator and no official voice telling anyone what to do. We shot them in unbroken takes so they come across as neighbors, not actors. A mother watching it doesn't see a demographic. She sees someone she recognizes. Here's the film:
+A story about a desert planet crosses every border because the people in it feel like people.
+
+## What this looks like in our films
+
+For the Inter Tribal Council of Arizona's WIC program, our research (we call it a [SITREP](/sitrep)) found that many tribal members connected WIC with government surveillance. The barrier was trust, not awareness. That finding was particular to one community's history. The film rests on something any parent understands: wanting to do right by your kids, and hearing about it from another mother instead of from an institution. Here's the film:
 
 {{youtube:QlP7wPaFcVU}}
 
-## The same rule at a festival
-
-This isn't only for serious films. Relentless Beats' Decadence takes over Phoenix Raceway for two nights around New Year's Eve, and [EDM Maniac](https://edmmaniac.com/festival-report-card-decadence-arizona-2025/) estimated about 50,000 fans came in 2025. You could describe those people as ravers aged 18 to 34 and cut a highlight reel for that group. We cut the aftermovie for one of them: the person who bought a ticket months ago and has been counting down ever since.
-
-Relentless Beats has trusted us with these films for years, and you'll find three of them on our [Work page](/portfolio#live-events). Each one is made for someone who was there, so they can live it again. The more specific the film is about one person's night, the easier it is for everyone who missed it to picture their own. This is the 2025 aftermovie:
+Our Decadence aftermovies for Relentless Beats work the same way, and Relentless Beats has trusted us with them for years. Not everyone has danced through New Year's Eve at Phoenix Raceway, but almost everyone has had a night they waited all year for. We cut the film around that feeling, so it lands with people who were there and people who weren't. This is the 2025 aftermovie:
 
 {{youtube:pDk121-TCto}}
 
-The most serious film we make and the most fun one start in the same place, with one person.
+## Timeless is the safe bet
+
+The standard advice feels safe because it's tidy: pick a segment, make something that looks like their life and follow whatever is working this year. It's actually the risky way to spend money on a film. Trends date fast, a film made for one segment only works on that segment, and the next brief starts from scratch. A film built on something true about people keeps working for anyone who sees it, for years. That makes timeless art the responsible choice, not the indulgent one.
 
 ## Where to start
 
-If you're writing a brief this week, keep the section on who it's for, but change what goes in it. Try these three:
-
-1. Name one real person the film is for, or someone close enough that you could describe their morning.
-2. Write down what changes in their life because of your work.
-3. Ask what they already believe about you, and why.
-
-Then let research tell you what's particular about their world, and let the film speak to what anyone would feel in their place. If you'd like help finding the person your story is really about, [write to us](/contact).
+If you're writing a brief this week, keep the section on who it's for, and add one line under it: what's true about this story for anyone? If you can answer that, you have the start of a film worth making. If you'd like help finding it, [write to us](/contact).
 
 ## Sources
 
-- [Small, Loewenstein and Slovic: Sympathy and callousness (2007)](https://doi.org/10.1016/j.obhdp.2006.01.005)
-- [Kogut and Ritov: The identified victim effect (2005)](https://doi.org/10.1002/bdm.492)
-- [Slovic: If I look at the mass I will never act (2007)](https://journal.sjdm.org/jdm7303a.pdf)
-- [EDM Maniac: Decadence Arizona 2025 report card](https://edmmaniac.com/festival-report-card-decadence-arizona-2025/)
+- [Hasson et al.: Intersubject synchronization of cortical activity during natural vision (2004)](https://doi.org/10.1126/science.1089506)
+- [Hasson et al.: Neurocinematics, the neuroscience of film (2008)](https://doi.org/10.3167/proj.2008.020102)
+- [Herbert estate: Frank Herbert](https://dunenovels.com/frank-herbert/)
+- [Box Office Mojo: Dune: Part Two](https://www.boxofficemojo.com/title/tt15239678/)
 
 *Cover photo: Felix Mooneeram on [Unsplash](https://unsplash.com/photos/red-cinema-chair-evlkOfkQ5rE).*
