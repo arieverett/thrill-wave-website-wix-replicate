@@ -10,7 +10,7 @@ categories: [Planning a Video]
 
 Almost every brief we read has a section called "target audience." It usually reads something like this: women 25 to 44, suburban, household income above a certain number, values family and convenience. The standard advice is to study that group, break it into segments by age, place and values, and speak to each one. An earlier version of this post said exactly that.
 
-We've changed our minds, because the question is wrong. Nobody has ever been moved as a demographic. People are moved one at a time, by someone they recognize. So instead of understanding your target audience, we'd ask you to understand one person.
+We've changed our minds, because the question is wrong. Nobody has ever been moved as a demographic. People feel for one person at a time, and the research on that is surprisingly clear. So instead of understanding your target audience, we'd ask you to understand one person.
 
 ## Why the standard advice falls short
 
@@ -51,7 +51,7 @@ The film speaks to the universal part: mothers talking to other mothers, straigh
 
 This isn't only for serious films. Relentless Beats' Decadence takes over Phoenix Raceway for two nights around New Year's Eve, and [EDM Maniac](https://edmmaniac.com/festival-report-card-decadence-arizona-2025/) estimated about 50,000 fans came in 2025. You could describe those people as ravers aged 18 to 34 and cut a highlight reel for that group. We cut the aftermovie for one of them: the person who bought a ticket months ago and has been counting down ever since.
 
-Relentless Beats has trusted us with these films for years, and you'll find three of them on our [Work page](/portfolio#live-events). Each one is made for someone who was there, so they can live it again. Everyone who missed it recognizes what they missed, and that's how a crowd recognizes itself. This is the 2025 aftermovie:
+Relentless Beats has trusted us with these films for years, and you'll find three of them on our [Work page](/portfolio#live-events). Each one is made for someone who was there, so they can live it again. The more specific the film is about one person's night, the easier it is for everyone who missed it to picture their own. This is the 2025 aftermovie:
 
 {{youtube:pDk121-TCto}}
 
