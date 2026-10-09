@@ -35,14 +35,6 @@ In a 2008 follow-up, they compared clips from very different films. The more car
 
 The viewers were college students, and the researchers are careful to say a film's effect will vary from group to group. But look at what changed between the clips. It wasn't whether the subject matched anyone's life. A Hitchcock episode about a boy with a loaded gun is nobody's life, and it pulled people into step anyway. A real concert in a real park, filmed without any storytelling, barely moved them at all. The difference was the craft.
 
-## Nobody has lived on Arrakis
-
-*Dune* came out in 1965. It's set on a desert planet thousands of years from now, among noble houses, spice and giant sandworms, and nobody who's read it has lived a day of that life (though a Phoenix summer comes close). It has still sold nearly 20 million copies in dozens of languages, because it's about things everyone understands: losing a father, fearing what you might become, loyalty, power and belonging. The films travel the same way:
-
-> **60%** of *Dune: Part Two*'s $715 million at the box office came from outside the US and Canada, according to Box Office Mojo.
-
-A story about a desert planet crosses every border because the people in it feel like people.
-
 ## What this looks like in our films
 
 For the Inter Tribal Council of Arizona's WIC program, our research (we call it a [SITREP](/sitrep)) found that many tribal members connected WIC with government surveillance. The barrier was trust, not awareness. That finding was particular to one community's history. The film rests on something any parent understands: wanting to do right by your kids, and hearing about it from another mother instead of from an institution. Here's the film:
@@ -65,7 +57,5 @@ If you're writing a brief this week, keep the section on who it's for, and add o
 
 - [Hasson et al.: Intersubject synchronization of cortical activity during natural vision (2004)](https://doi.org/10.1126/science.1089506)
 - [Hasson et al.: Neurocinematics, the neuroscience of film (2008)](https://doi.org/10.3167/proj.2008.020102)
-- [Herbert estate: Frank Herbert](https://dunenovels.com/frank-herbert/)
-- [Box Office Mojo: Dune: Part Two](https://www.boxofficemojo.com/title/tt15239678/)
 
 *Cover photo: Felix Mooneeram on [Unsplash](https://unsplash.com/photos/red-cinema-chair-evlkOfkQ5rE).*
