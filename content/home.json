@@ -913,6 +913,7 @@
       "text": "A 10-part docuseries that shows Native voters how every level of government reaches their lives, in time for the 2026 midterms.",
       "still": "Gh67yEMyOCs:3",
       "zoom": true,
+      "focus": "left",
       "link": "/case-studies/your-voice-your-power",
       "seoTitle": "Your Voice, Your Power: A Native Voter Docuseries",
       "lede": "Tribal leaders, legal experts and voters explain how government touches tribal life, one office at a time, so Native voters walk into the 2026 midterms ready.",
@@ -987,16 +988,19 @@
         },
         {
           "youtube": "i7OCNhqYpbY",
+          "frame": 1,
           "title": "Office of the Arizona Attorney General",
           "question": "How does the Arizona Attorney General impact Tribal Nations?"
         },
         {
           "youtube": "Gh67yEMyOCs",
+          "frame": 3,
           "title": "Office of the Arizona State Legislature",
           "question": "How does the Arizona Legislature shape the lives of Tribal communities?"
         },
         {
           "youtube": "bQE9Q0cX1jo",
+          "frame": 3,
           "title": "Ballot Propositions",
           "question": "How can ballot propositions affect Tribal communities?"
         },
@@ -1012,11 +1016,13 @@
         },
         {
           "youtube": "WjgMoJ-OVJM",
+          "frame": 1,
           "title": "County Elections and Tribal Nations",
           "question": "How does county government affect Tribal Nations?"
         },
         {
           "youtube": "utLEBsw_6oE",
+          "frame": 1,
           "title": "Two Nations, One Voice",
           "question": "What does it mean to be a Native voter living on or off Tribal lands?"
         },
