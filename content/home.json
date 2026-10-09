@@ -10,15 +10,15 @@
     {
       "icon": "camera",
       "name": "Production",
-      "text": "We plan the shoot and run it: casting, locations, directing, camera, light and sound, on the ground and in the air.",
+      "text": "We plan the shoot and run it: finding the right people and places, directing, camera, light and sound, on the ground and in the air.",
       "more": "This is everything from the first call sheet to the last shot. We find the right people and places, then bring cinema cameras, lighting, sound and aerials, run by a crew with a decade in the field.",
-      "includes": "Producing, casting, locations, permits, schedules, directing, cinematography, lighting, sound, drone, cable cam, high-speed rigs"
+      "includes": "Producing, finding the people on camera, locations, permits, schedules, directing, cinematography, lighting, sound, drone, cable cam, high-speed rigs"
     },
     {
       "icon": "sliders",
       "name": "Editing",
-      "text": "We cut, color and finish the film, then make a version for every screen.",
-      "more": "This is where the story comes together. We edit, color, mix and add graphics, then cut a version for every place the film needs to play.",
+      "text": "We cut, color and finish the film, then make cuts for every screen.",
+      "more": "This is where the story comes together. We edit, color, mix and add graphics, then make cuts for every place the film needs to play.",
       "includes": "Editing, color grading, mixing, motion graphics, subtitles, social cuts"
     },
     {
@@ -909,7 +909,7 @@
     {
       "client": "ITCA Native Vote",
       "title": "Your Voice, Your Power",
-      "goal": "Education",
+      "goal": "Turnout",
       "text": "A 10-part docuseries that shows Native voters how every level of government reaches their lives, in time for the 2026 midterms.",
       "still": "Gh67yEMyOCs:3",
       "zoom": true,
@@ -1037,7 +1037,7 @@
     {
       "client": "ITCA WIC",
       "title": "Welcome to WIC",
-      "goal": "Education",
+      "goal": "Enrollment",
       "text": "A welcome film, a series of short guides and Dear Mom, so tribal families trust WIC enough to enroll and know what to do once they have.",
       "still": "QlP7wPaFcVU:2",
       "zoom": true,
@@ -1107,12 +1107,12 @@
     {
       "client": "Relentless Beats",
       "title": "Decadence Arizona",
-      "goal": "Exposure",
-      "text": "Our aftermovie lets fans relive the night and puts next year's festival in front of everyone who missed it.",
+      "goal": "Reliving the night",
+      "text": "We cut the aftermovie for the fans who wait all year for these two nights, so they can live them again.",
       "still": "pDk121-TCto",
       "zoom": true,
       "link": "/case-studies/decadence-arizona",
-      "story": "Relentless Beats' New Year's Eve festival takes over Phoenix Raceway for two nights. Our aftermovie lets fans relive it, and it puts next year's festival in front of everyone who missed it.",
+      "story": "Relentless Beats' New Year's Eve festival takes over Phoenix Raceway for two nights, and for a lot of the people there, it's the night they've waited all year for. We cut the aftermovie for them, so they can live it again, and anyone who missed it can see exactly what they missed.",
       "video": {
         "youtube": "pDk121-TCto"
       },
@@ -1133,7 +1133,7 @@
           "source": "EDM Maniac"
         }
       ],
-      "lede": "We cut two nights at Phoenix Raceway into an aftermovie that sells next year's festival.",
+      "lede": "We cut two nights at Phoenix Raceway into an aftermovie for the fans who were there.",
       "industry": "Live Events",
       "customer": "Businesses",
       "services": [
@@ -1149,7 +1149,7 @@
       "client": "UBS & Finnerty Partners",
       "title": "Service Without Compromise",
       "seoTitle": "UBS: Service Without Compromise",
-      "goal": "Sales",
+      "goal": "New clients",
       "text": "We made a team film that lets prospective clients feel the service before the first meeting.",
       "still": "Qd40htwEmJM:1",
       "link": "/case-studies/service-without-compromise",
@@ -1188,7 +1188,7 @@
     {
       "client": "ITCA TEC",
       "title": "Vaccine education",
-      "goal": "Awareness",
+      "goal": "Trust",
       "text": "Tribal health leaders explain vaccines to their own communities, in their own words.",
       "image": "https://i.vimeocdn.com/video/2206610840-ab9c7452ada6128dda809c82750fb931c920b1da79ebba045b626a540217cd86-d_1280x720",
       "link": "/case-studies/vaccine-education",
@@ -1232,7 +1232,7 @@
     {
       "client": "Opendoor",
       "title": "No Trick, All Treat",
-      "goal": "Exposure",
+      "goal": "Community",
       "text": "We filmed a family pop-up event so the fun reached far beyond the families who came.",
       "still": "B615WegPglg",
       "link": "/case-studies/no-trick-all-treat",
