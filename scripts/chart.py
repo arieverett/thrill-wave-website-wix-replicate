@@ -17,6 +17,8 @@ Then in the post:  ![Sensor width by format](/images/blog/<slug>/sensor-sizes.sv
                    *Sensor width in mm. Source: manufacturer specs.*
 
 Only chart numbers you can source; put the source in the caption.
+The SVG draws edge to edge on purpose: the site's stylesheet insets every
+chart on the page (.prose img[src*=".svg"]), so don't add padding here.
 """
 from html import escape
 

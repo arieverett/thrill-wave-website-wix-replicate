@@ -3,9 +3,8 @@ title: "Making Your Voice, Your Power: A Docuseries for Native Voters"
 description: "How we made a 10-part nonpartisan docuseries with ITCA Native Vote that explains how every level of government reaches tribal communities."
 date: 2026-10-08
 author: Thrill Wave
-cover_image: https://i.ytimg.com/vi/AWT0vb2nbng/maxres2.jpg
-cover_zoom: true
-cover_alt: "A still from Your Voice, Your Power, the ITCA Native Vote docuseries"
+cover_image: /images/blog/making-your-voice-your-power-docuseries/your-voice-your-power-poster.jpg
+cover_alt: "The Your Voice, Your Power poster: silhouettes of tribal members in front of the Capitol"
 categories: [Storytelling, Industries]
 ---
 
