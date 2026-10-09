@@ -1132,32 +1132,32 @@
       "icon": "bulb",
       "name": "Idea",
       "text": "Bring us a brief, a hunch or a blank page, and we'll read it for what it's really asking.",
-      "more": "It starts with a call. Bring us a brief, a hunch or a blank page, and we'll read it for what it's really asking, which isn't always what it says on paper. We talk it through until we both know what the film has to do."
+      "more": "It starts with a call, and this is where the real work begins. Bring us a brief, a hunch or a blank page, and we'll read it for what it's really asking, which isn't always what it says on paper. We talk it through until we both know what the film has to do."
     },
     {
       "icon": "search",
       "name": "Discovery",
-      "text": "We find out whose life your work touches and what it means to them.",
-      "more": "We find out whose life your work touches and what it means to them. We listen to your people, your history and the people on the other end of what you do. You come away with a clear plan, a schedule and a budget."
+      "text": "We find the people with the true story and start earning their trust.",
+      "more": "We find out whose life your work touches and who can tell that story in their own words. Then we start earning their trust, long before a camera shows up, because nobody tells the truth to a stranger. You come away with a clear plan, a schedule and a budget."
     },
     {
       "icon": "radar",
       "name": "SITREP",
-      "text": "We research your world until we know the person the story happens to, then bring you a point of view.",
+      "text": "We research your world so we know which hard questions to ask, then bring you a point of view.",
       "link": "#sitrep",
-      "more": "SITREP is our research. We dig into your craft, your peers, your industry and the wider sector, like an outside R&D department that cares about your story as much as you do, until we know the person the story happens to. Then we bring you a point of view on the version of the film worth making, and we tell you why."
+      "more": "SITREP is our research, and it's where going and getting the true thing starts. We dig into your craft, your peers, your industry and the wider sector, like an outside R&D department that cares about your story as much as you do, because you can't ask the hard question without knowing the world. Then we bring you a point of view on the version of the film worth making, and we tell you why."
     },
     {
       "icon": "camera",
       "name": "Production",
-      "text": "We put them on screen, let them speak for themselves and shoot it like it matters.",
-      "more": "We put that person on screen and let them speak for themselves, and we never stage what should be felt. Our crew shoots with cinema cameras, lighting and sound, on location or in the studio, and we shoot it like it matters, because to them it does."
+      "text": "The camera comes last: by the time we roll, we know who we're filming and what we need to hear.",
+      "more": "The camera comes last. By the time we roll, we know who we're filming and what we need to hear, so the shoot is about patience: we ask the hard questions, wait for the true answers and never stage what should be felt. Our crew shoots with cinema cameras, lighting and sound, on location or in the studio, with no actors and no scripted scenes."
     },
     {
       "icon": "check",
       "name": "Completion",
-      "text": "We cut it around the truth at its center, so it works for anyone who sees it, then plan where it will play.",
-      "more": "We edit, color and mix the film around the human truth at its center, so it works for anyone who sees it, not just the people it was briefed for. Then we cut a version for every place it needs to play. We make it to hold up for years, not just for launch week."
+      "text": "We keep the true thing in the cut, then make cuts for every place the film will play.",
+      "more": "The edit takes nerve: we keep the true thing in, even when it's uncomfortable, and cut anything that tells people what to feel. We color and mix the film, then make cuts for every place it needs to play, from vertical cuts to 30-second cuts. We make it to hold up for years, not just for launch week."
     }
   ],
   "clients": [
