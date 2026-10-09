@@ -20,6 +20,7 @@ All three can change this site. Only Ari works on the terminal site (`thrill-wav
 - Anything a partner should approve first goes to a branch, with the Cloudflare preview link. Changes to a partner's bio, byline or films always go to a preview first, so that person sees them before they go live.
 - If two partners ask for conflicting changes, don't pick a side. Lay out both requests and let them decide together.
 - Design and copy often go through several quick rounds in one sitting. Keep each change small, clear and easy to undo.
+- All three partners update this site, often at the same time with their own Claude. Before starting, fetch the latest `main` and check for other branches and recent commits so you don't work on top of a stale copy or redo someone else's change. Touch only the pages, content and code the request needs: no drive-by cleanups, reformatting or "while I'm here" edits in shared files (`site.css`, `lib/`, `content/*.json`). Never touch, rebase, merge or delete someone else's branch, and never force-push. Right before pushing, fetch and rebase onto the latest `main` again; if a conflict touches someone else's work, stop and ask rather than choosing a side.
 - Quality over quantity: keep sections and pages concise, and cut the weakest films rather than add more.
 - Odd-numbered lists are preferred (for example, five services).
 - Keep fast code and SEO/AEO in mind in every change.
