@@ -30,7 +30,7 @@ All site copy (pages, content JSON, blocks, posts, the terminal site) follows `d
 | Homepage lists: services (What we do), Who we serve, Industries and Case studies (`cases`: client, title, goal, one sentence, `still` or `image`, link; photo tiles: `still` is a YouTube ID, or `ID:2` for YouTube's auto frame 1 to 3; `zoom` crops out baked-in black bars, `"vertical"` for phone-shot video; `focus` shifts the crop left/right), Our process steps, client logo carousel | `content/home.json` (icons are named in `ICONS` in `lib/blocks.mjs`) |
 | Header background video on Home and SITREP (Vimeo ID + poster, which is the video's Vimeo thumbnail URL) | `content/site.json` → `headerVideo` |
 | Vertical clip beside the text in 01 Who we are and the closing Start a project block (every page) | `content/site.json` → `sideVideo` |
-| SITREP page dashboard loop (under the hero) | `content/site.json` → `sitrepLoop` |
+| SITREP page film under the hero buttons (plays muted on scroll, controls on hover) | `content/site.json` → `sitrepLoop` |
 | Blog page description (shown in Google) | `lib/blog.mjs`, the `write('/blog', …)` call; the category pages' descriptions are in `categoryDescriptions` in the same file |
 | Header, footer, `<head>` | `src/partials/` |
 | Colors, fonts, spacing, animation | `public/css/site.css` (tokens at the top) |

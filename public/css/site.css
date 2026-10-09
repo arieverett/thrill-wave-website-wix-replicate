@@ -546,6 +546,8 @@ body:is(.nav-open, .nav-closing) .site-header { -webkit-backdrop-filter: none; b
 .loop-panel { position: relative; aspect-ratio: 16 / 9; overflow: hidden; border: 1px solid rgba(255, 255, 255, .45); border-radius: 7px; background: #0f0f10; }
 .loop-panel .bg-video { animation: none; }
 .section--loop .loop-panel + p { margin-top: 32px; }
+.section--loop .reel--sitrep { margin-top: 0; }
+.section--loop .reel--sitrep + p { margin-top: 32px; }
 
 /* Contact-style banner */
 .banner { position: relative; min-height: 300px; display: flex; align-items: center; background: var(--ink); color: var(--on-dark); overflow: hidden; }
