@@ -75,7 +75,7 @@ Ten episodes is a lot of story to keep straight. Every episode had to stand on i
 
 ## Where it's playing
 
-All ten episodes are free to watch on [Arizona Native Vote's docuseries page](https://aznativevote.org/docuseries/) and on YouTube, and the series has already played at two film festivals. The series is presented by the Inter Tribal Council of Arizona and created by Arizona Native Vote, in collaboration with the Arizona State University Indian Legal Clinic. We're proud to have made it with them.
+All ten episodes are free to watch on [Arizona Native Vote's docuseries page](https://aznativevote.org/docuseries/) and on YouTube, and the series has already played at the [NatiVisions Film Festival](https://www.instagram.com/nativisionsfilmfest/) in Parker and at the [Heard Museum's First Friday](https://www.facebook.com/HeardMuseum/posts/catch-a-special-screening-of-your-voice-your-power-during-this-octobers-first-fr/1559882776176112/) in Phoenix. The series is presented by the Inter Tribal Council of Arizona and created by Arizona Native Vote, in collaboration with the Arizona State University Indian Legal Clinic. We're proud to have made it with them.
 
 The full story of how we made it, with the research behind it, is in our [Your Voice, Your Power case study](/case-studies/your-voice-your-power).
 
