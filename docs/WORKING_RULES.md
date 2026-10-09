@@ -30,38 +30,39 @@ All three can change this site. Only Ari works on the terminal site (`thrill-wav
 **Words and positioning**
 
 1. Never call Thrill Wave an agency (marketing, ad or creative). It's a video production company. Agencies can be clients.
-2. Never use "content" or "campaign". Avoid describing the work as "videos" or "commercials" where a better word fits: the films educate, tell stories and connect people.
+2. Never use "content" or "campaign". Everything we make is a "film", and its derivatives are "cuts" (vertical cuts, 30-second cuts, social cuts). "Video" describes our own work only in the category phrase "video production company" (titles, meta descriptions, the Google Business Profile, the first line of the homepage). We're filmmakers or our crew, never videographers (Oct 9, 2026). Full word rules are in `docs/VOICE.md`.
 3. Never mention AI in Thrill Wave's own process. A post that touches AI puts people first.
 4. Never mention headcount or call Thrill Wave small, tiny, lean or scrappy. Say "we", "our founders", "our crew" or "our team".
-5. No agency or big-business jargon, buzzwords or sales pitching. Chill and conversational, like sandwich.co, and nothing like lookstudios.co.
+5. No agency or big-business jargon, buzzwords or sales pitching. Warm and conversational, like sandwich.co, and willing to take a side; nothing like lookstudios.co.
 6. Every page reads like an elevator pitch that flows top to bottom toward reaching out, in full sentences, with a colon lead-in before every list, grid or set of films.
 7. Use a documentary reporting approach and vocabulary (report, sources, facts, in their own words), but never name journalism, journalists or reporters.
 8. Stories live against three backdrops: athletics, the arts and academics. Fields copy can lean on that.
 9. Thrill Wave reads as dependable and true, never fleeting or mercenary. Avoid lines like "We go wherever the story is."
 10. Copy shows complex things made simple, effective and beautiful.
-11. Copy about who we serve says first that Thrill Wave serves everyone and their communities, then names the recurring ones.
+11. Copy about who we serve starts from the idea that every organization changes someone's life, and our job is to find whose (manifesto draft, Oct 8, 2026; this replaces the Oct 5 rule that the copy first says Thrill Wave serves everyone). Then it names the recurring ones.
 12. Don't claim a founder leads every project.
 13. No em dashes or spaced dashes, and no exclamation-point hype.
 
 **Content and curation**
 
-14. No client testimonials or quotes on the homepage. Client quotes appear sparingly, where they mean something, on case study, customer and field pages.
-15. Show only the best work: a few strong films per field with no repeats, and clean stills, never thumbnails with text on them.
-16. Images are always real photos. Never use AI-generated images, illustrations or busy stock. Our own set photos come first, then frames from our films, then Unsplash (free license only). On Unsplash, only use photos whose page shows a real camera model, and skip anything tagged or described as AI-generated, a render or an illustration.
+14. Thrill Wave is a nonfiction house: real people telling real stories, no actors and no scripted drama. Any claim about emotion sits next to the nevers (no narration, no actors, no stock, nothing telling the viewer what to feel). Every film ends on a card that reads "A Thrill Wave film" (Chris, Oct 9, 2026).
+15. No client testimonials or quotes on the homepage. Client quotes appear sparingly, where they mean something, on case study, customer and field pages.
+16. Show only the best work: a few strong films per field with no repeats, and clean stills, never thumbnails with text on them.
+17. Images are always real photos. Never use AI-generated images, illustrations or busy stock. Our own set photos come first, then frames from our films, then Unsplash (free license only). On Unsplash, only use photos whose page shows a real camera model, and skip anything tagged or described as AI-generated, a render or an illustration.
 
 **Services and pricing**
 
-17. Five services (Story, Production, Editing, Photography, Rentals), six customer types and twelve fields, as listed in `content/home.json`. "Photography", not "Commercial photography".
-18. Never ask for a client's budget first (the contact form has no budget or timeline fields). Pricing is top-down: what the film needs to do and the timeline, then a fair number. Price questions point people to message us, not to an FAQ.
+18. Five services (Story, Production, Editing, Photography, Rentals), six customer types and twelve fields, as listed in `content/home.json`. "Photography", not "Commercial photography".
+19. Never ask for a client's budget first (the contact form has no budget or timeline fields). Pricing is top-down: what the film needs to do and the timeline, then a fair number. Price questions point people to message us, not to an FAQ.
 
 **Design**
 
-19. Buttons stay lean: labels of 3 to 5 words, never stretched to fill a column. Long lists of links are a slim line of text links separated by dots, not rows of buttons.
-20. One accent color, pure red #FF0000, on black and white. Red fades into black, not white.
-21. Paragraph text runs the full width of its column on every screen. Only headlines may be capped (`npm run check` enforces this).
+20. Buttons stay lean: labels of 3 to 5 words, never stretched to fill a column. Long lists of links are a slim line of text links separated by dots, not rows of buttons.
+21. One accent color, pure red #FF0000, on black and white. Red fades into black, not white.
+22. Paragraph text runs the full width of its column on every screen. Only headlines may be capped (`npm run check` enforces this).
 
 **Terminal site**
 
-22. Keep terminal.thrillwave.com out of search (noindexed) as an easter egg.
-23. Games, their menus and popups never need scrolling.
-24. If a visitor's phone is on silent, no sound plays anywhere on the terminal site.
+23. Keep terminal.thrillwave.com out of search (noindexed) as an easter egg.
+24. Games, their menus and popups never need scrolling.
+25. If a visitor's phone is on silent, no sound plays anywhere on the terminal site.

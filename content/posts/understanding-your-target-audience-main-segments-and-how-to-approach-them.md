@@ -1,5 +1,6 @@
 ---
 title: "Understanding Your Target Audience and How to Reach It"
+description: "You've been told to understand your target audience. People take in stories in remarkably similar ways, and films built on that outlast the rest."
 date: 2026-09-17
 author: Chris Kuzman
 cover_image: https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?w=1600&h=900&fit=crop&q=80&auto=format
@@ -7,44 +8,64 @@ cover_alt: "Rows of empty red theater seats"
 categories: [Planning a Video]
 ---
 
-Every great film starts with knowing who it's for. Who are you trying to reach? What do they care about, and where do they spend their time? Get those answers right and your story lands. Get them wrong and even a beautiful video can miss.
+Almost every brief we read has a section called "target audience." It usually reads something like this: women 25 to 44, suburban, household income above a certain number, values family and convenience. The standard advice is to study that group, break it into segments by age, place and values, and give each one a story that looks like their own life. An earlier version of this post said exactly that.
 
-That's why we never start with the camera. Before every production we run a [SITREP](/sitrep), our own research into your audience and landscape, so we know which story is worth telling and who needs to hear it. You can start thinking the same way by looking at your audience through three lenses.
+We've changed our minds. That advice assumes people need to see their own lives on screen before they'll care. They don't. People take in stories in remarkably similar ways, and the films that last are built on what's true for everyone.
 
-## Age Segments
+## Why the standard advice falls short
 
-Different generations grew up with different media, and they tend to respond to different things. These are broad strokes, not rules, but they're a useful starting point.
+Segments have their uses, mostly in deciding where a film will play. They don't help much when you sit down to decide what the film says. Underneath every segment in a brief is something any person would understand, and that's the part worth filming. Here's what we mean:
 
-1. **Generation Z (born 1997 to 2012):** Grew up online and can spot a fake from a mile away. Meet them with honest, real-feeling stories on social video platforms, and let real people do the talking.
-2. **Millennials (born 1981 to 1996):** Tech-savvy and socially conscious, often valuing experiences over things. Stories about purpose, impact and what it feels like to be part of something tend to connect.
-3. **Generation X (born 1965 to 1980):** Often overlooked, but they care about quality, reliability and family. Clear, no-nonsense stories that show you deliver, through email, your website and traditional channels like TV.
-4. **Baby Boomers (born 1946 to 1964):** Loyal once you've earned it, but they need to trust you first. Personal connection and proof of quality matter most, and traditional channels like TV still reach them.
+| The brief says | What's true for anyone |
+|---|---|
+| Women 25 to 44 in Maricopa County | Wanting to do right by your kids |
+| Fans aged 18 to 34 | Waiting all year for one night that feels like yours |
+| Decision makers at mid-size firms | Not wanting to be the one who got it wrong |
 
-## Geographic Segments
+A film about the first column reaches the people in it, if you're lucky. A film about the second column reaches anyone, including the people in the first.
 
-Where people live shapes what they need and how they hear you.
+## Good films pull brains into step
 
-1. **Urban:** Often younger, diverse and always connected. Social video and local community events are good ways in.
-2. **Suburban:** Often family-focused and short on time. Stories about convenience and family life work well, through email and traditional channels.
-3. **Rural:** Often older and rooted in tradition and community. Show respect for local values, show up at community events and use the channels people already trust.
+Neuroscientist Uri Hasson and his colleagues put viewers in an fMRI scanner and played them half an hour of *The Good, the Bad and the Ugly*. In their 2004 study, more than 29% of the cortex responded in sync from one viewer to the next, a "surprising tendency of individual brains to 'tick collectively'," in the authors' words.
 
-## Psychographic Segments
+In a 2008 follow-up, they compared clips from very different films. The more carefully a film was made, the more alike people's brains responded:
 
-This is where it gets interesting: grouping people by what they value and how they live, not just their age or zip code.
+![Bar chart of the share of the cortex responding in sync across viewers: over 65 percent for Hitchcock's Bang! You're Dead, 45 percent for The Good, the Bad and the Ugly, 18 percent for Curb Your Enthusiasm and under 5 percent for unedited footage of a park concert](/images/blog/understanding-your-target-audience-main-segments-and-how-to-approach-them/brains-in-sync-by-film.svg)
+*Share of the cortex responding in sync across viewers (over 65% for the Hitchcock episode, under 5% for the park footage). Source: Hasson et al., 2008.*
 
-1. **Adventurers:** Love excitement and new experiences. Give them something to feel, not just something to read.
-2. **Achievers:** Value success and status. Aspirational stories and a premium look speak their language.
-3. **Sociables:** Care about relationships and community. Show real people together, and give them something worth sharing.
-4. **Creatives:** Value self-expression and originality. Invite them in, let them make it their own, and don't play it safe.
+The viewers were college students, and the researchers are careful to say a film's effect will vary from group to group. But look at what changed between the clips. It wasn't whether the subject matched anyone's life. A Hitchcock episode about a boy with a loaded gun is nobody's life, and it pulled people into step anyway. A real concert in a real park, filmed without any storytelling, barely moved them at all. The difference was the craft.
 
-## Putting It Together
+## Nobody has lived on Arrakis
 
-These segments overlap. A suburban Gen X adventurer is a real person, and probably a fun one. The point isn't to put people in boxes, it's to understand them well enough to tell a story they'll recognize as theirs.
+*Dune* came out in 1965. It's set on a desert planet thousands of years from now, among noble houses, spice and giant sandworms, and nobody who's read it has lived a day of that life (though a Phoenix summer comes close). It has still sold nearly 20 million copies in dozens of languages, because it's about things everyone understands: losing a father, fearing what you might become, loyalty, power and belonging. The films travel the same way:
 
-Start with research, not assumptions. Talk to your actual customers. Look at who already works with you, who doesn't, and why. The answers are often surprising, and that's usually where the best story is hiding.
+> **60%** of *Dune: Part Two*'s $715 million at the box office came from outside the US and Canada, according to Box Office Mojo.
 
-Then look at age, place and values together, and let what you learn decide the story, the voice and where it should live. Do that, and your film won't just reach people, it will move them.
+A story about a desert planet crosses every border because the people in it feel like people.
 
-Want to know who your story is really for? [Let's find out together](/contact).
+## What this looks like in our films
+
+For the Inter Tribal Council of Arizona's WIC program, our research (we call it a [SITREP](/sitrep)) found that many tribal members connected WIC with government surveillance. The barrier was trust, not awareness. That finding was particular to one community's history. The film rests on something any parent understands: wanting to do right by your kids, and hearing about it from another mother instead of from an institution. Here's the film:
+
+{{youtube:QlP7wPaFcVU}}
+
+Our Decadence aftermovies for Relentless Beats work the same way, and Relentless Beats has trusted us with them for years. Not everyone has danced through New Year's Eve at Phoenix Raceway, but almost everyone has had a night they waited all year for. We cut the film around that feeling, so it lands with people who were there and people who weren't. This is the 2025 aftermovie:
+
+{{youtube:pDk121-TCto}}
+
+## Timeless is the safe bet
+
+The standard advice feels safe because it's tidy: pick a segment, make something that looks like their life and follow whatever is working this year. It's actually the risky way to spend money on a film. Trends date fast, a film made for one segment only works on that segment, and the next brief starts from scratch. A film built on something true about people keeps working for anyone who sees it, for years. That makes timeless art the responsible choice, not the indulgent one.
+
+## Where to start
+
+If you're writing a brief this week, keep the section on who it's for, and add one line under it: what's true about this story for anyone? If you can answer that, you have the start of a film worth making. If you'd like help finding it, [write to us](/contact).
+
+## Sources
+
+- [Hasson et al.: Intersubject synchronization of cortical activity during natural vision (2004)](https://doi.org/10.1126/science.1089506)
+- [Hasson et al.: Neurocinematics, the neuroscience of film (2008)](https://doi.org/10.3167/proj.2008.020102)
+- [Herbert estate: Frank Herbert](https://dunenovels.com/frank-herbert/)
+- [Box Office Mojo: Dune: Part Two](https://www.boxofficemojo.com/title/tt15239678/)
 
 *Cover photo: Felix Mooneeram on [Unsplash](https://unsplash.com/photos/red-cinema-chair-evlkOfkQ5rE).*

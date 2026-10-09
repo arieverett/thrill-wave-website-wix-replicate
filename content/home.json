@@ -25,7 +25,7 @@
       "icon": "photo",
       "name": "Photography",
       "text": "We shoot stills with the same eye: brand imagery, portraits, products and behind the scenes.",
-      "more": "Our stills come from the same eye as our films. We can shoot them alongside the video or on their own.",
+      "more": "Our stills come from the same eye as our films. We can shoot them alongside the film or on their own.",
       "includes": "Brand imagery, portraits, products, behind the scenes"
     },
     {
@@ -97,7 +97,7 @@
       "example": "2g7dOnDKYZo",
       "title": "Broadcast-ready, on deadline.",
       "seoTitle": "Video Production for Media & Publishing",
-      "headline": "Video for media and publishing",
+      "headline": "Films for media and publishing",
       "faq": [
         {
           "q": "Do you provide field crews for networks and publishers?",
@@ -149,7 +149,7 @@
       "example": { "youtube": "mEfrDfPj_TA", "client": "UMOM New Day Centers", "title": "Kelly's Story" },
       "title": "Films that move people to act.",
       "seoTitle": "Nonprofit & Public Service Video Production",
-      "headline": "Nonprofit and public service video",
+      "headline": "Nonprofit and public service films",
       "faq": [
         {
           "q": "Can a nonprofit afford you?",
@@ -196,10 +196,10 @@
       "example": "n26-IyiVLsw",
       "title": "Big ideas, made clear.",
       "seoTitle": "Video Production for Schools & Institutions",
-      "headline": "Video for schools and institutions",
+      "headline": "Films for schools and institutions",
       "faq": [
         {
-          "q": "What do schools and institutions use video for?",
+          "q": "What do schools and institutions use films for?",
           "a": "Mostly to explain the work, recruit students and staff, bring in donors and grants, and invite people to visit. One shoot can cover all of them if we plan the cuts up front."
         },
         {
@@ -236,15 +236,15 @@
     },
     {
       "name": "Businesses",
-      "text": "We make explainers, culture films and stories that connect people with what a business does, from the bakery down the street to a national company.",
+      "text": "We find the story every business assumes is too boring to tell, from the bakery down the street to a national company.",
       "still": "JQEb45RgaK8:1",
       "example": "JQEb45RgaK8",
       "title": "The story behind what you do.",
       "seoTitle": "Business Video Production",
-      "headline": "Business video",
+      "headline": "Business films",
       "faq": [
         {
-          "q": "What do businesses use video for?",
+          "q": "What do businesses use films for?",
           "a": "Mostly explainers, educational films, culture and recruiting films, training, and stories that show customers what you do and the people behind it."
         },
         {
@@ -264,10 +264,10 @@
         "Professional Services",
         "Builders & makers"
       ],
-      "about": "Every business has people and a craft worth showing, whether it's one shop or a hundred. Here's Premium Products, Excellent Service, which we made for Citgo and Brundage Bone:",
-      "heading": "Your people are the story.",
-      "intro": "We work with businesses of every size, from a neighborhood bakery to a chain of doctor's offices to a national company. We make explainers, educational films, culture, recruiting and training films, and stories that help people in your community understand what you do and why it matters.",
-      "approach": "We start with research, because a good film needs a point of view, and the best one is usually the thing only you can say. We schedule around your workday and keep interviews quick and painless. One shoot can give you the main film, shorter cuts and stills, plus a library of footage for onboarding, training and your website long after we leave. Here are a few of the films we've made for businesses:",
+      "about": "Oil, concrete and payments don't sound like stories until someone goes and looks at the people behind them. Here's Premium Products, Excellent Service, which we made for Citgo and Brundage Bone:",
+      "heading": "Nobody's business is boring.",
+      "intro": "Blood, sweat and tears built this boring world. Most businesses assume their story is dull, and nobody's is: they just haven't let anyone look. We work with businesses of every size, from a neighborhood bakery to a chain of doctor's offices to a national company, and we make explainers, culture, recruiting and training films, and stories that show people what you do and why it matters.",
+      "approach": "We start with research, because you can't find the story in a business you don't understand, and the best one is usually the thing only you can say. Then we go and get it from the people who do the work, on the shop floor, at the job site or behind the counter, in their own words. We schedule around your workday, and one shoot can give you the main film, shorter cuts and stills, plus a library of footage for onboarding, training and your website long after we leave. Here are a few of the films we've made for businesses:",
       "points": [
         "We work with businesses of every size, from the shop down the street to national companies.",
         "We take it from research and the first idea to delivery, and we work around your workday.",
@@ -285,7 +285,7 @@
       "title": "Your brief. Our crew.",
       "example": "sF4KJxf99nA",
       "seoTitle": "Video Production for Agencies & PR Firms",
-      "headline": "Video for agencies and PR firms",
+      "headline": "Films for agencies and PR firms",
       "faq": [
         {
           "q": "Will you work white-label?",
@@ -399,7 +399,7 @@
       "title": "Public work, explained plainly.",
       "example": "tkqnm36YAfM",
       "seoTitle": "Public Affairs Video Production",
-      "headline": "Public affairs video",
+      "headline": "Public affairs films",
       "intro": "Public work only matters if people understand it and show up for it. With the Inter Tribal Council of Arizona, we made Your Voice, Your Power, a 10-part docuseries on tribal voting, and vaccine education for its Tribal Epidemiology Center. We also made Protect Our Land for Paradise Valley Mountain Preserve Trust.",
       "faq": [
         {
@@ -466,7 +466,7 @@
           "a": "Yes. We work around patients and staff, follow your facility's rules and bring only the crew the shot needs. Tell us the restrictions early and we'll plan the shoot around them."
         },
         {
-          "q": "Do you make videos for medical device and biotech companies?",
+          "q": "Do you make films for medical device and biotech companies?",
           "a": "We do. We've made product films and patient stories for companies like Boston Scientific and Nektar, with shorter cuts for sales teams, conferences and social."
         }
       ],
@@ -503,11 +503,11 @@
       "title": "Hard ideas, made simple.",
       "example": { "youtube": "uPjYjRDq_qU", "client": "New Pathways For Youth", "title": "It Begins With Me" },
       "seoTitle": "Education & Research Video Production",
-      "headline": "Education and research video",
+      "headline": "Education and research films",
       "intro": "Good research and good teaching both deserve a good explanation. We've told a patient's story for Nektar's cancer research, helped the Inter Tribal Council of Arizona's Tribal Epidemiology Center explain vaccines to its own communities and filmed mentoring with New Pathways For Youth.",
       "faq": [
         {
-          "q": "Can you make a video essay or explainer about our research?",
+          "q": "Can you make an explainer or essay film about our research?",
           "a": "Yes. We read the papers, talk to the people who did the work and build the story around one clear idea, with graphics where they help."
         },
         {
@@ -532,7 +532,7 @@
       "points": [
         "We work with universities, schools, labs, research teams, health educators and youth programs.",
         "We read up on the subject, check every fact and let the experts explain it in their own words.",
-        "We make explainers, video essays, research stories, training films and recruiting films.",
+        "We make explainers, essay films, research stories, training films and recruiting films.",
         "The films play in classrooms and trainings, at conferences, in grant reports and online."
       ],
       "focus": "x41"
@@ -554,7 +554,7 @@
       "intro": "Software is hard to film because the product lives on a screen. We put real people at the center instead, with work for companies like Uber, Opendoor, Ridgeline and Medaire.",
       "faq": [
         {
-          "q": "Do you make SaaS explainer videos?",
+          "q": "Do you make explainers for SaaS companies?",
           "a": "Yes. We make explainers, launch films and customer stories built around real people rather than screen recordings alone. For Medaire, we made a product film its sales team uses to pitch and demo."
         },
         {
@@ -601,8 +601,8 @@
       "title": "Trust, on screen.",
       "example": "Qd40htwEmJM",
       "seoTitle": "Professional Services Video Production",
-      "headline": "Professional services video",
-      "intro": "In professional services, trust is the product. Whether it's a wealth manager, an accounting firm or a law practice, people want to meet the team before the first meeting. We've made films for UBS, State Farm, 1st Bank, Questage and Payroc, including a team film for Finnerty Partners, a UBS Private Wealth Management team that oversees $914 million in client assets.",
+      "headline": "Professional services films",
+      "intro": "In professional services, trust is the product, and most firms assume the work behind it is too dry to film. It isn't. Whether it's a wealth manager, an accounting firm or a law practice, there are people behind every account who've given their careers to it, and that's who clients want to meet before the first meeting. We've made films for UBS, State Farm, 1st Bank, Questage and Payroc, including a team film for Finnerty Partners, a UBS Private Wealth Management team that oversees $914 million in client assets.",
       "faq": [
         {
           "q": "Do you work with wealth management teams?",
@@ -629,7 +629,7 @@
       ],
       "about": "In professional services, trust is the product, so we make films that let people meet the team before the first meeting. Here's the one we made for Finnerty Partners at UBS:",
       "heading": "Polished, but still human.",
-      "approach": "We plan scripts and claims with your compliance team from the start, so approvals don't stall the edit. Advisors, accountants and attorneys aren't actors, so we coach on camera and keep interviews conversational until busy people look at ease. The look is clean and premium, but it still feels human, because clients pick people, not logos. Here are a few of the films we've made for professional firms:",
+      "approach": "We plan scripts and claims with your compliance team from the start, so approvals don't stall the edit. Advisors, accountants and attorneys aren't actors, and we'd never ask them to be. We keep interviews conversational and take the time it takes for busy people to stop presenting and start talking. The look is clean and premium, but it still feels human, because clients pick people, not logos. Here are a few of the films we've made for professional firms:",
       "points": [
         "We work with wealth managers, banks, insurers and advisors, and we bring the same care to accounting and law firms.",
         "We film polished interviews and team films, with compliance and your profession's rules in mind from the start.",
@@ -742,7 +742,7 @@
       "title": "Made to be felt.",
       "example": "n26-IyiVLsw",
       "seoTitle": "Arts & Culture Video Production",
-      "headline": "Arts and culture video",
+      "headline": "Arts and culture films",
       "intro": "Art is hard to describe and easy to feel, so we film it the way it feels in the room. We've filmed the immersive shows at Wonderspaces, followed Music Celebrations International's musicians to Ireland and made aftermovies for Relentless Beats, and our founders have been making music videos since long before Thrill Wave, many of them with the hip-hop collective Wax Society.",
       "faq": [
         {
@@ -813,7 +813,7 @@
         "The films play on your website and booking pages, across social and in pitches to partners and stores."
       ],
       "link": "/portfolio#food-and-hospitality",
-      "headline": "Food and hospitality video"
+      "headline": "Food and hospitality films"
     },
     {
       "name": "Builders & makers",
@@ -829,14 +829,14 @@
       "title": "The scale of the work.",
       "example": "CN1IN8xlTVg",
       "seoTitle": "Construction & Manufacturing Video Production",
-      "intro": "Construction and manufacturing are done by crews, and crews make great stories. We've filmed for Rumco, IMS Builders and Citgo and Brundage Bone, from the job site to the finished build, and we bring the same approach to plants, yards and the people who run them.",
+      "intro": "Blood, sweat and tears built this boring world, and on a job site you can see all three. Construction and manufacturing are done by crews, and crews make great stories. We've filmed for Rumco, IMS Builders and Citgo and Brundage Bone, from the job site to the finished build, and we bring the same approach to plants, yards and the people who run them.",
       "faq": [
         {
           "q": "Can you film on an active job site or plant floor?",
           "a": "Yes. We plan with your safety lead, wear the gear, bring only the crew we need and shoot around the work."
         },
         {
-          "q": "What do construction and manufacturing companies use video for?",
+          "q": "What do construction and manufacturing companies use films for?",
           "a": "Mostly company and culture films, recruiting, project recaps and safety training. Rumco's films cover both its company story and its internal operations."
         }
       ],
@@ -855,7 +855,7 @@
         "We make company films, recruiting films, project recaps and safety training.",
         "The films play in bids and proposals, on careers pages, in safety training and on your website."
       ],
-      "headline": "Construction and manufacturing video",
+      "headline": "Construction and manufacturing films",
       "focus": "far-right"
     },
     {
@@ -872,8 +872,8 @@
       "title": "The one people reach for.",
       "example": "WoFqn7U9tq4",
       "seoTitle": "Product Video Production",
-      "headline": "Product video",
-      "intro": "A product video has about a second to earn attention. We've made launch films, demos and social cuts for Kindred, Hypnotik, Neighbor, PB Americano and Fuji Sports.",
+      "headline": "Product films",
+      "intro": "A product film has about a second to earn attention. We've made launch films, demos and social cuts for Kindred, Hypnotik, Neighbor, PB Americano and Fuji Sports.",
       "faq": [
         {
           "q": "Can you shoot product and lifestyle on the same day?",
@@ -894,7 +894,7 @@
           "youtube": "ACgPMAyPQeI"
         }
       ],
-      "about": "A product video has about a second to earn attention, so we build the hook into the first frames. Here's Pack it Up, which we made for Hypnotik:",
+      "about": "A product film has about a second to earn attention, so we build the hook into the first frames. Here's Pack it Up, which we made for Hypnotik:",
       "heading": "You get about a second.",
       "approach": "We build the hook into the first frames and cut a version for every place it will play. We shoot close detail and real-world use in the same production, so you aren't paying for two. Product pages, social, store screens and launch events are all planned before we roll. Here are a few of the products we've filmed:",
       "points": [
@@ -1277,33 +1277,33 @@
     {
       "icon": "bulb",
       "name": "Idea",
-      "text": "Bring us an idea, a brief or a blank page, and we'll find the story in it together.",
-      "more": "It starts with a call. Bring us a spark, a brief or a blank page, and we'll talk it through until we know what's worth saying."
+      "text": "Bring us a brief, a hunch or a blank page, and we'll read it for what it's really asking.",
+      "more": "It starts with a call, and this is where the real work begins. Bring us a brief, a hunch or a blank page, and we'll read it for what it's really asking, which isn't always what it says on paper. We talk it through until we both know what the film has to do."
     },
     {
       "icon": "search",
       "name": "Discovery",
-      "text": "We listen first: to your people, your history and what you hope the film will do.",
-      "more": "We listen first: to your people, your history, the people you want to reach and what you hope to leave behind. You come away with a clear plan, a schedule and a budget."
+      "text": "We find the people with the true story and start earning their trust.",
+      "more": "We find out whose life your work touches and who can tell that story in their own words. Then we start earning their trust, long before a camera shows up, because nobody tells the truth to a stranger. You come away with a clear plan, a schedule and a budget."
     },
     {
       "icon": "radar",
       "name": "SITREP",
-      "text": "We research your craft, your peers and your industry, then bring you a point of view on the story.",
+      "text": "We research your world so we know which hard questions to ask, then bring you a point of view.",
       "link": "#sitrep",
-      "more": "SITREP is our research. Before we film, we dig into your craft, your peers, your industry and the wider sector, like an outside R&D department that cares about your story as much as you do. Then we bring you a point of view and help steer the film toward the story worth telling."
+      "more": "SITREP is our research, and it's where going and getting the true thing starts. We dig into your craft, your peers, your industry and the wider sector, like an outside R&D department that cares about your story as much as you do, because you can't ask the hard question without knowing the world. Then we bring you a point of view on the version of the film worth making, and we tell you why."
     },
     {
       "icon": "camera",
       "name": "Production",
-      "text": "Our crew shoots it with cinema cameras and real care, on location or in the studio.",
-      "more": "Our crew shoots with cinema cameras, lighting and sound, on location or in the studio."
+      "text": "The camera comes last: by the time we roll, we know who we're filming and what we need to hear.",
+      "more": "The camera comes last. By the time we roll, we know who we're filming and what we need to hear, so the shoot is about patience: we ask the hard questions, wait for the true answers and never stage what should be felt. Our crew shoots with cinema cameras, lighting and sound, on location or in the studio, with no actors and no scripted scenes."
     },
     {
       "icon": "check",
       "name": "Completion",
-      "text": "We edit, color, mix and deliver it, and we make it to hold up for years.",
-      "more": "We edit, color and mix the film, then cut a version for every place it needs to play. We make it to hold up for years, not just for launch week."
+      "text": "We keep the true thing in the cut, then make cuts for every place the film will play.",
+      "more": "The edit takes nerve: we keep the true thing in, even when it's uncomfortable, and cut anything that tells people what to feel. We color and mix the film, then make cuts for every place it needs to play, from vertical cuts to 30-second cuts. We make it to hold up for years, not just for launch week."
     }
   ],
   "clients": [

@@ -11,7 +11,7 @@ Education and expertise first, search second, selling never. Each post teaches a
 Thrill Wave is a production company and a team of creatives (writers, producers, directors, cinematographers, editors, sound people) who care about the world, people and stories, and about the communication, tech and medicine that make the world go round. Posts sound like us talking shop, not like a company pitching.
 
 - Never say how many people Thrill Wave is, or call it small, tiny or lean (no "the three of us", "three partners", "small team"). Say "we", "our founders" or "our crew".
-- No hard selling, pricing, promo or "why you should hire a video team". Never "marketing agency" or "ad agency". Prefer films, stories, work and craft over "content" and "campaign".
+- No hard selling, pricing, promo or "why you should hire a video team". Never "marketing agency" or "ad agency". Never "content" or "campaign". Follow the word rules in `docs/VOICE.md`: our work is a "film" and its derivatives "cuts", "video" only in "video production company", and we're filmmakers, never videographers.
 - Never mention AI or how the post was made.
 - Craft posts: at most one short, soft line at the very end that points somewhere useful (a related film, `/portfolio`, `/sitrep` or `/contact`). The page already ends with a "Start a project" block.
 - Field and customer posts (see step 2) may close with a short section speaking to that reader directly and inviting them to message us. Write it with good intentions: it should read like advice from people who know their world, not a pitch.

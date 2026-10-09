@@ -13,7 +13,7 @@ Before making changes, read `docs/WORKING_RULES.md` (how the partners like work 
 
 ## Voice
 
-All site copy (pages, content JSON, blocks, posts, the terminal site) follows `docs/VOICE.md`: a production company that cares about story, craft, tech and people; conversational, full sentences, a colon lead-in before every list or grid; no headcount, no "friends", no agency or buzzword talk; SITREP is our research. Read it before writing any copy.
+All site copy (pages, content JSON, blocks, posts, the terminal site) follows `docs/VOICE.md`: a production company that cares about story, craft, tech and people; conversational, full sentences, a colon lead-in before every list or grid; no headcount, no "friends", no agency or buzzword talk; nonfiction only (real people, no actors); our work is always a "film" and its derivatives "cuts", with "video" only in the phrase "video production company"; SITREP is our research. Read it before writing any copy.
 
 ## Where to make common changes
 
