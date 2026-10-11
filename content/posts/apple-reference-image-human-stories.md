@@ -83,7 +83,7 @@ Still, it's worth being clear about what a signature can and can't do. It proves
 
 That gap is where people come in. Apple can prove the pixels. Only people can prove the meaning: by showing up, asking good questions, checking the facts and letting others speak for themselves. When anything can be generated, the things that can't be generated become the whole point.
 
-We've said before that [AI won't be replacing people](/post/no-ai-will-not-be-totally-replacing-humans-for-video-production) in this work. Apple's new camera mode is a good reminder of why. The value was never only in the image. It's in the trust between the people on both sides of the lens.
+We've said before that [AI won't be replacing people](/blog/no-ai-will-not-be-totally-replacing-humans-for-video-production) in this work. Apple's new camera mode is a good reminder of why. The value was never only in the image. It's in the trust between the people on both sides of the lens.
 
 ![Thrill Wave crew members setting up a cinema camera on an outdoor shoot](/images/blog/what-to-consider-when-hiring-a-video-production-crew-in-phoenix/crew-filming-outdoor-shoot.webp)
 *Our crew setting up a shot. Every film we make starts with real people in a real place.*

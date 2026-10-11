@@ -5,7 +5,7 @@ date: 2026-03-04
 author: Chris Kuzman
 cover_image: https://images.unsplash.com/photo-1505751172876-fa1923c5c528?w=1600&h=900&fit=crop&q=80&auto=format
 cover_alt: "A stethoscope on a white sheet"
-categories: [Industries]
+categories: [Fields]
 ---
 
 Most people meet a new doctor at a bad moment: they're worried, a little lost and short on time. A good film can meet them earlier, when they're calm enough to listen. It can explain a condition in plain words, show them the room they'll walk into and let them hear from someone who's been where they are.

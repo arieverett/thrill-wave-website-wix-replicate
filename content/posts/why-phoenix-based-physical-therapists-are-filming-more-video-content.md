@@ -4,7 +4,7 @@ date: 2026-05-01
 author: Chris Kuzman
 cover_image: https://images.unsplash.com/photo-1566568531155-07244e00963d?w=1600&h=900&fit=crop&q=80&auto=format
 cover_alt: "A kettlebell on a gym floor"
-categories: [Industries]
+categories: [Fields]
 ---
 
 Physical therapy is personal. Patients want to know who will be working with them, what it will feel like and whether it will help. As more practices open across Phoenix, video is one of the best ways to answer those questions before someone ever walks through your door.

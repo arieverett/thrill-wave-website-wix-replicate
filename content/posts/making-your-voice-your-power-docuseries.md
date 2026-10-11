@@ -5,7 +5,7 @@ date: 2026-10-08
 author: Thrill Wave
 cover_image: /images/blog/making-your-voice-your-power-docuseries/your-voice-your-power-poster.jpg
 cover_alt: "The Your Voice, Your Power poster: silhouettes of tribal members in front of the Capitol"
-categories: [Storytelling, Industries]
+categories: [Storytelling, Fields]
 ---
 
 Civics usually shows up as a pamphlet, a lecture or a checklist. It tells you what an office is called and what it's supposed to do, and then it leaves you to work out why any of it matters to your family. For tribal communities in Arizona, that gap is wide, and it has a long history behind it.

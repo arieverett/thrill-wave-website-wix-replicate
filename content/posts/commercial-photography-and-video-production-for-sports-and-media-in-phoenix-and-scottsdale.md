@@ -4,7 +4,7 @@ date: 2026-08-13
 author: Chris Kuzman
 cover_image: https://images.unsplash.com/photo-1485827031228-b1736cb1fd06?w=1600&h=900&fit=crop&q=80&auto=format
 cover_alt: "A football resting on the 30-yard line, seen from above"
-categories: [Industries]
+categories: [Fields]
 ---
 
 Sport is fast, loud and over in a second. If you need video or photography in Phoenix or Scottsdale that keeps up, here's what we bring to the field.

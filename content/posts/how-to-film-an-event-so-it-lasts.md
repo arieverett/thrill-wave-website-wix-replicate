@@ -5,7 +5,7 @@ date: 2026-02-21
 author: Chris Kuzman
 cover_image: https://images.unsplash.com/photo-1583482183620-f692113aafc3?w=1600&h=900&fit=crop&q=80&auto=format
 cover_alt: "A stage lit up before an event"
-categories: [Arizona, Industries]
+categories: [Arizona, Fields]
 ---
 
 Phoenix has something happening all year round, from music festivals to conferences and everything in between. Every one of them shares the same problem: the night ends. The people who were there remember it for a while, and the people who weren't never really know what they missed.

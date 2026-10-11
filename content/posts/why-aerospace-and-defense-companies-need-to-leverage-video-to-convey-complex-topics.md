@@ -4,7 +4,7 @@ date: 2026-05-24
 author: Chris Kuzman
 cover_image: https://images.unsplash.com/photo-1570728281949-126fc89a4da7?w=1600&h=900&fit=crop&q=80&auto=format
 cover_alt: "A fighter jet banking through the clouds"
-categories: [Industries]
+categories: [Fields]
 ---
 
 Aerospace and defense companies build some of the most impressive things on the planet. Explaining them is another story. Video is one of the best tools these companies have for showing people why their work matters, whoever is watching.

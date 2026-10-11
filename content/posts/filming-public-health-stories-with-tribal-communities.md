@@ -5,7 +5,7 @@ date: 2026-10-02
 author: Thrill Wave
 cover_image: https://images.unsplash.com/photo-1681407979962-9ca360f881c9?w=1600&h=900&fit=crop&q=80&auto=format
 cover_alt: "A saguaro cactus against the sunrise in Saguaro National Park, Arizona"
-categories: [Industries, Planning a Video]
+categories: [Fields, Planning a Video]
 ---
 
 Most public health films are built to reach as many people as possible. A film for a tribal community has a harder job first: it has to be believed. A message about vaccines, nutrition or voting can be accurate, well shot and still land badly if it sounds like one more outsider telling people what to do.

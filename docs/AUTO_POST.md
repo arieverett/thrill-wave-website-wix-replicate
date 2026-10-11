@@ -27,7 +27,7 @@ Thrill Wave is a production company and a team of creatives (writers, producers,
 **Alternate two kinds of posts week to week** (check the last post's kind and do the other):
 
 - **Craft posts** (the veins below): the art, science and tech of filmmaking and communication.
-- **Field and customer posts:** one post about how film and storytelling work in one of our fields (`industries` in `content/home.json`) or for one of our customer types (`audiences`), rotating so every field and customer type gets covered before any repeats. Teach that reader something genuinely useful about telling their story on film: what makes stories in their world hard to tell, what kinds of films serve them (explainers, documentary portraits, training films, event films...), how a shoot in their setting actually works (a clinic, a courtroom, a lab, a stadium, a council chamber), what to prepare, and what we've learned doing it. Show our capabilities through specifics and our real work (films from that field's `work` list in `content/home.json`, embedded with `{{youtube:ID}}`, and its case study if there is one), never through claims. Link to that field's or customer type's page (`/fields/<slug>` or `/customers/<slug>`). End with a short section addressed to that reader ("If you run a clinic...", "If you're a tribal health department...") that invites them to [message us](/contact) about their story. Educational first, a little sales-y at the very end at most, always with good intentions. Use the categories Industries or Planning a Video.
+- **Field and customer posts:** one post about how film and storytelling work in one of our fields (`industries` in `content/home.json`) or for one of our customer types (`audiences`), rotating so every field and customer type gets covered before any repeats. Teach that reader something genuinely useful about telling their story on film: what makes stories in their world hard to tell, what kinds of films serve them (explainers, documentary portraits, training films, event films...), how a shoot in their setting actually works (a clinic, a courtroom, a lab, a stadium, a council chamber), what to prepare, and what we've learned doing it. Show our capabilities through specifics and our real work (films from that field's `work` list in `content/home.json`, embedded with `{{youtube:ID}}`, and its case study if there is one), never through claims. Link to that field's or customer type's page (`/fields/<slug>` or `/clients/<slug>`). End with a short section addressed to that reader ("If you run a clinic...", "If you're a tribal health department...") that invites them to [message us](/contact) about their story. Educational first, a little sales-y at the very end at most, always with good intentions. Use the categories Fields or Planning a Video.
 
 For craft posts, pick one specific question a filmmaker, producer, communicator or curious client would actually search or ask an AI assistant. Niche is good: a narrow, deep, correct answer beats a broad, shallow one. Rotate through these veins:
 
@@ -73,7 +73,7 @@ date: <today, YYYY-MM-DD>
 author: Thrill Wave
 cover_image: <see step 5>
 cover_alt: "What the cover image shows, in a short phrase"
-categories: [<one or two of: Gear and Tech, Craft, Storytelling, Industries, Arizona, Planning a Video>]
+categories: [<one or two of: Gear and Tech, Craft, Storytelling, Fields, Arizona, Planning a Video>]
 ---
 ```
 
@@ -94,10 +94,10 @@ In the post, every image is followed on the next line by an italic caption: `![a
 ## 6. Check and publish
 
 - `npm run check` must report 0 errors and no warnings about the new post.
-- Re-read the built page in `dist/post/<slug>.html`: facts against sources, voice, every image and link, at least four visuals.
+- Re-read the built page in `dist/blog/<slug>.html`: facts against sources, voice, every image and link, at least four visuals.
 - Commit to `main` ("New post: <title>") and push. Cloudflare publishes it in a minute or two.
 - If something can't meet these rules (a fact you couldn't verify, no fitting image), cut it. If the post as a whole can't meet them, push it to a branch named `draft/<slug>` instead of `main` and say why.
 
 ## 7. Report
 
-Send the partners a short message: the post title, its link (`https://thrillwave.com/post/<slug>`), one line on why this topic, and anything worth a second look.
+Send the partners a short message: the post title, its link (`https://thrillwave.com/blog/<slug>`), one line on why this topic, and anything worth a second look.

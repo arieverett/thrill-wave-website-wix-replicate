@@ -124,7 +124,7 @@ for (const line of redirects.split('\n')) {
 // Group repeated warnings (e.g. 40 long blog titles) into one line
 const groups = new Map();
 for (const w of warnings) {
-  const kind = w.replace(/^\/post\/[^:]+/, '/post/*').replace(/\d+ chars/, 'N chars');
+  const kind = w.replace(/^\/blog\/[^:]+/, '/blog/*').replace(/\d+ chars/, 'N chars');
   groups.set(kind, [...(groups.get(kind) || []), w]);
 }
 for (const [kind, list] of groups) console.log(`  \x1b[33mwarning\x1b[0m ${list.length > 3 ? `${kind} (${list.length} pages)` : list.join('\n  \x1b[33mwarning\x1b[0m ')}`);

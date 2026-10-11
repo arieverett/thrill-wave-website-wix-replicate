@@ -4,7 +4,7 @@ date: 2026-07-21
 author: Chris Kuzman
 cover_image: https://images.unsplash.com/photo-1566827886072-417be1953f36?w=1600&h=900&fit=crop&q=80&auto=format
 cover_alt: "A stack of old books on a wooden desk"
-categories: [Industries]
+categories: [Fields]
 ---
 
 A good video lets people meet you before they ever walk into your office. For a law firm, that matters: clients are trusting you with something big. But if you've never hired a video crew, it's hard to know what to look for. Here's what we'd check if we were in your shoes.

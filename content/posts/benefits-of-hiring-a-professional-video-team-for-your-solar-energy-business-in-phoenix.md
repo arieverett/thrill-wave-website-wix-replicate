@@ -3,7 +3,7 @@ title: "Why Hire a Pro Video Team for Your Phoenix Solar Business"
 date: 2026-08-02
 author: Chris Kuzman
 cover_image: /images/blog/benefits-of-hiring-a-professional-video-team-for-your-solar-energy-business-in-phoenix/rooftop-solar-panels.jpg
-categories: [Industries]
+categories: [Fields]
 ---
 
 Phoenix gets more sun than almost anywhere in the country, so it's no surprise the solar market here is crowded. Every installer promises lower bills and a greener roof. The hard part is getting people to believe you over the next company in their inbox. That's where a professional video team earns its keep.

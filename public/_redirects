@@ -76,16 +76,16 @@
 /blog/categories/music       /blog                         301
 /blog/categories/design      /blog/categories/craft        301
 /blog/categories/photography /blog/categories/craft        301
-/blog/categories/healthcare  /blog/categories/industries   301
-/blog/categories/medical     /blog/categories/industries   301
-/blog/categories/finance     /blog/categories/industries   301
+/blog/categories/healthcare  /blog/categories/fields   301
+/blog/categories/medical     /blog/categories/fields   301
+/blog/categories/finance     /blog/categories/fields   301
 
 # Customer and industry restructure, Oct 3, 2026
-/who-we-serve/agencies              /customers/agencies-and-pr-firms       301
-/who-we-serve/brands                /customers/businesses                  301
-/who-we-serve/companies             /customers/businesses                  301
-/industries/nonprofits              /customers/nonprofits-and-public-service 301
-/who-we-serve/nonprofits-and-government /customers/nonprofits-and-public-service 301
+/who-we-serve/agencies              /clients/agencies-and-pr-firms       301
+/who-we-serve/brands                /clients/businesses                  301
+/who-we-serve/companies             /clients/businesses                  301
+/industries/nonprofits              /clients/nonprofits-and-public-service 301
+/who-we-serve/nonprofits-and-government /clients/nonprofits-and-public-service 301
 /industries/medical-and-biotech     /fields/medical                       301
 /industries/beauty                  /fields/medical                       301
 /industries/wellness                /fields/medical                       301
@@ -100,13 +100,13 @@
 /industries/industrial              /fields/builders-and-makers           301
 /industries/manufacturing           /fields/builders-and-makers           301
 /industries/food                    /fields/food-and-hospitality          301
-/who-we-serve/media                 /customers/media-and-publishing        301
+/who-we-serve/media                 /clients/media-and-publishing        301
 
 # Posts rewritten in our current voice on Oct 6, 2026 (new titles and addresses)
-/post/promote-your-phoenix-based-medical-practice-with-video /post/how-to-film-a-medical-practice-with-care 301
-/post/the-power-of-video-interviews-to-promote-your-business /post/how-to-film-an-interview-people-believe 301
-/post/grow-your-dental-practice-with-video-production /post/filming-a-dental-practice-for-nervous-patients 301
-/post/leveraging-video-production-for-your-next-event-in-phoenix /post/how-to-film-an-event-so-it-lasts 301
+/post/promote-your-phoenix-based-medical-practice-with-video /blog/how-to-film-a-medical-practice-with-care 301
+/post/the-power-of-video-interviews-to-promote-your-business /blog/how-to-film-an-interview-people-believe 301
+/post/grow-your-dental-practice-with-video-production /blog/filming-a-dental-practice-for-nervous-patients 301
+/post/leveraging-video-production-for-your-next-event-in-phoenix /blog/how-to-film-an-event-so-it-lasts 301
 
 # Case study renamed Oct 8, 2026 (Dear Mom is now part of the Welcome to WIC series)
 /case-studies/dear-mom      /case-studies/welcome-to-wic 301
@@ -129,11 +129,51 @@
 /industries/sports                      /fields/sports 301
 /industries/tech                        /fields/tech 301
 /industries/tribal-nations              /fields/tribal-nations 301
-/who-we-serve               /customers        301
-/who-we-serve/              /customers        301
-/who-we-serve/agencies-and-pr-firms         /customers/agencies-and-pr-firms 301
-/who-we-serve/businesses                    /customers/businesses 301
-/who-we-serve/film                          /customers/film 301
-/who-we-serve/media-and-publishing          /customers/media-and-publishing 301
-/who-we-serve/nonprofits-and-public-service /customers/nonprofits-and-public-service 301
-/who-we-serve/schools-and-institutions      /customers/schools-and-institutions 301
+/who-we-serve               /clients        301
+/who-we-serve/              /clients        301
+/who-we-serve/agencies-and-pr-firms         /clients/agencies-and-pr-firms 301
+/who-we-serve/businesses                    /clients/businesses 301
+/who-we-serve/film                          /clients/film 301
+/who-we-serve/media-and-publishing          /clients/media-and-publishing 301
+/who-we-serve/nonprofits-and-public-service /clients/nonprofits-and-public-service 301
+/who-we-serve/schools-and-institutions      /clients/schools-and-institutions 301
+/customers                  /clients          301
+/customers/                 /clients          301
+/customers/agencies-and-pr-firms            /clients/agencies-and-pr-firms 301
+/customers/businesses                       /clients/businesses 301
+/customers/film                             /clients/film 301
+/customers/media-and-publishing             /clients/media-and-publishing 301
+/customers/nonprofits-and-public-service    /clients/nonprofits-and-public-service 301
+/customers/schools-and-institutions         /clients/schools-and-institutions 301
+
+# Blog: the Industries category became Fields, and posts moved from the Wix-era /post/<name> to /blog/<name>
+# (Oct 11, 2026).
+/blog/categories/industries /blog/categories/fields 301
+/post/apple-reference-image-human-stories /blog/apple-reference-image-human-stories 301
+/post/benefits-of-hiring-a-professional-video-team-for-your-solar-energy-business-in-phoenix /blog/benefits-of-hiring-a-professional-video-team-for-your-solar-energy-business-in-phoenix 301
+/post/commercial-photography-and-video-production-for-sports-and-media-in-phoenix-and-scottsdale /blog/commercial-photography-and-video-production-for-sports-and-media-in-phoenix-and-scottsdale 301
+/post/considerations-when-hiring-a-video-team-for-your-phoenix-law-offices /blog/considerations-when-hiring-a-video-team-for-your-phoenix-law-offices 301
+/post/equipment-doesn-t-make-the-production-but-it-can-set-it-apart /blog/equipment-doesn-t-make-the-production-but-it-can-set-it-apart 301
+/post/exploring-the-different-types-of-video-commercials-to-market-your-business /blog/exploring-the-different-types-of-video-commercials-to-market-your-business 301
+/post/filming-a-dental-practice-for-nervous-patients /blog/filming-a-dental-practice-for-nervous-patients 301
+/post/filming-public-health-stories-with-tribal-communities /blog/filming-public-health-stories-with-tribal-communities 301
+/post/how-to-film-a-medical-practice-with-care /blog/how-to-film-a-medical-practice-with-care 301
+/post/how-to-film-an-event-so-it-lasts /blog/how-to-film-an-event-so-it-lasts 301
+/post/how-to-film-an-interview-people-believe /blog/how-to-film-an-interview-people-believe 301
+/post/how-to-measure-the-roi-of-video-production-for-your-business /blog/how-to-measure-the-roi-of-video-production-for-your-business 301
+/post/making-your-voice-your-power-docuseries /blog/making-your-voice-your-power-docuseries 301
+/post/no-ai-will-not-be-totally-replacing-humans-for-video-production /blog/no-ai-will-not-be-totally-replacing-humans-for-video-production 301
+/post/the-difference-and-benefits-of-8-bit-video-vs-10-bit-video /blog/the-difference-and-benefits-of-8-bit-video-vs-10-bit-video 301
+/post/understanding-your-target-audience-main-segments-and-how-to-approach-them /blog/understanding-your-target-audience-main-segments-and-how-to-approach-them 301
+/post/vertical-anamorphic-sony-fx9-project-hail-mary /blog/vertical-anamorphic-sony-fx9-project-hail-mary 301
+/post/video-production-and-commercial-photography-services-for-financial-services-companies-in-phoenix-and /blog/video-production-and-commercial-photography-services-for-financial-services-companies-in-phoenix-and 301
+/post/video-production-in-flagstaff-that-stands-out /blog/video-production-in-flagstaff-that-stands-out 301
+/post/video-production-services-for-phoenix-s-metropolitan-area /blog/video-production-services-for-phoenix-s-metropolitan-area 301
+/post/what-to-consider-when-hiring-a-video-production-crew-in-phoenix /blog/what-to-consider-when-hiring-a-video-production-crew-in-phoenix 301
+/post/why-aerospace-and-defense-companies-need-to-leverage-video-to-convey-complex-topics /blog/why-aerospace-and-defense-companies-need-to-leverage-video-to-convey-complex-topics 301
+/post/why-hire-a-video-crew-to-capture-your-next-big-phoenix-based-event /blog/why-hire-a-video-crew-to-capture-your-next-big-phoenix-based-event 301
+/post/why-phoenix-az-has-a-quickly-growing-film-video-production-community /blog/why-phoenix-az-has-a-quickly-growing-film-video-production-community 301
+/post/why-phoenix-based-physical-therapists-are-filming-more-video-content /blog/why-phoenix-based-physical-therapists-are-filming-more-video-content 301
+/post/why-video-production-for-marketing-campaigns-are-so-expensive /blog/why-video-production-for-marketing-campaigns-are-so-expensive 301
+/post/why-we-use-sony-s-fx-cinema-line-cameras /blog/why-we-use-sony-s-fx-cinema-line-cameras 301
+/post/why-you-need-documentary-style-testimonials-for-your-business /blog/why-you-need-documentary-style-testimonials-for-your-business 301

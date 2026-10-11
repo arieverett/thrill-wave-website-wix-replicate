@@ -47,7 +47,7 @@
     {"label": "About", "href": "/about"},
     {"label": "Services", "children": [
       {"label": "Our services", "href": "/services"},
-      {"label": "Our customers", "href": "/customers"},
+      {"label": "Our clients", "href": "/clients"},
       {"label": "Our fields", "href": "/fields"}
     ]},
     {"label": "Work", "children": [

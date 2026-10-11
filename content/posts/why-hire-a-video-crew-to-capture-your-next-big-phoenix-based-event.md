@@ -4,7 +4,7 @@ date: 2026-06-28
 author: Chris Kuzman
 cover_image: https://images.unsplash.com/photo-1453090927415-5f45085b65c0?w=1600&h=900&fit=crop&q=80&auto=format
 cover_alt: "A microphone under a spotlight on a foggy stage"
-categories: [Arizona, Industries]
+categories: [Arizona, Fields]
 ---
 
 Putting on an event is a lot of work. Months of planning, a few sleepless nights, and then it's over in a day. A good video crew makes sure all that effort keeps paying off long after the lights go down.

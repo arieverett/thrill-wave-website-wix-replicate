@@ -5,7 +5,7 @@ date: 2026-03-16
 author: Chris Kuzman
 cover_image: https://images.unsplash.com/photo-1722586663955-2f96a4c1f255?w=1600&h=900&fit=crop&q=80&auto=format
 cover_alt: "An empty orange dental chair"
-categories: [Industries]
+categories: [Fields]
 ---
 
 Let's be honest: most people aren't thrilled about going to the dentist. A lot of that dread comes from not knowing what's about to happen. That makes dental practices one of the best places for a film to do some good. It can let a nervous patient meet the team, see the room and understand the procedure before they ever sit in the chair.

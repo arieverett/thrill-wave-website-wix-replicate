@@ -4,7 +4,7 @@ date: 2026-08-25
 author: Chris Kuzman
 cover_image: https://images.unsplash.com/photo-1705411394725-9f76e0979e4b?w=1600&h=900&fit=crop&q=80&auto=format
 cover_alt: "A glass office tower against the sky"
-categories: [Industries]
+categories: [Fields]
 ---
 
 ## Introduction
