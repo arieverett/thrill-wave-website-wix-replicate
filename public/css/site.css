@@ -423,8 +423,6 @@ body:is(.nav-open, .nav-closing) .site-header { -webkit-backdrop-filter: none; b
 /* Keep scrolling: a flat pill button like the rest of the site, in LOOK Studios' blue (#192DFE) */
 :root { --pill-blue: 25, 45, 254; --pill-blue-lite: 130, 145, 255; }
 .btn--blue { background: rgb(var(--pill-blue)); border-color: rgb(var(--pill-blue)); color: #fff; }
-.btn--blue:hover { background: #0f1fd6; border-color: #0f1fd6; }
-.pill:hover { transform: translateY(-2px) scale(1.02); filter: brightness(1.1); }
 .pill__label { position: relative; z-index: 3; }
 /* The liquid: fills the lower half of the capsule (following its round ends), with a bright meniscus line that
    tilts back and forth as it sloshes */
@@ -483,6 +481,41 @@ body:is(.nav-open, .nav-closing) .site-header { -webkit-backdrop-filter: none; b
 @keyframes tw-sheen { 0% { background-position: 100% 0; } 50%, 100% { background-position: 0% 0; } }
 @keyframes tw-sheen-mask { 0% { -webkit-mask-position: 100% 0; mask-position: 100% 0; } 50%, 100% { -webkit-mask-position: 0% 0; mask-position: 0% 0; } }
 @keyframes tw-draw { from { transform: scaleY(0); } }
+/* Hover and press, the same for both pills (Oct 11, 2026; blue used to darken and red used to rise).
+   Hover, on a mouse: the button lifts and charges up, a halo in its own colour blooms around it, and the letters
+   jolt for a split second (a red/cyan glitch, like a terminal signal catching) before settling into a soft glow.
+   Press, mouse or tap: it squeezes in, flashes bright, springs back, and fires a ring of light outward in its own
+   colour (site.js adds the ring and .is-pressed). On phones a tap plays the glitch too. */
+.hero .pill-row .btn { transition: transform .45s cubic-bezier(.34, 1.56, .64, 1), filter .35s var(--ease); }
+.hero .pill-row .btn::before { content: ""; position: absolute; z-index: 0; inset: -1px; border-radius: inherit; pointer-events: none; opacity: 0;
+  box-shadow: 0 0 0 1px rgba(var(--glow), .7), 0 0 16px 2px rgba(var(--glow), .55), 0 0 42px 6px rgba(var(--glow), .3);
+  transition: opacity .35s var(--ease); }
+.hero .pill-row .pill__label { transition: text-shadow .35s var(--ease); }
+@media (hover: hover) {
+  .hero .pill-row .btn:hover { transform: translateY(-3px) scale(1.04); filter: brightness(1.12) saturate(1.1); }
+  .hero .pill-row .btn:hover::before { opacity: 1; }
+  .hero .pill-row .btn:hover .pill__label { animation: tw-glitch .4s linear both; }
+}
+.hero .pill-row .btn:active, .hero .pill-row .btn.is-pressed { transform: translateY(0) scale(.94); filter: brightness(1.35) saturate(1.2); transition-duration: .08s; }
+.hero .pill-row .btn.is-pressed::before { opacity: 1; }
+.hero .pill-row .btn.is-pressed .pill__label { animation: tw-glitch .4s linear both; }
+/* The ring of light a press fires: it leaves the button's edge and fades as it spreads */
+.pill__ring { position: absolute; z-index: 6; inset: -1px; border-radius: inherit; pointer-events: none;
+  outline: 2px solid rgba(var(--glow), .95); outline-offset: 0;
+  filter: drop-shadow(0 0 4px rgba(var(--glow), .95)) drop-shadow(0 0 12px rgba(var(--glow), .6));
+  animation: tw-ring .6s cubic-bezier(.2, .7, .3, 1) forwards; }
+@keyframes tw-ring { to { outline-offset: 18px; outline-width: 1px; opacity: 0; } }
+@keyframes tw-glitch {
+  0% { transform: translate(0); text-shadow: -2px 0 rgba(255, 0, 60, .95), 2px 0 rgba(0, 240, 255, .95); }
+  20% { transform: translate(-2px, 1px); text-shadow: 3px 0 rgba(255, 0, 60, .95), -3px 0 rgba(0, 240, 255, .95); }
+  40% { transform: translate(2px, -1px); text-shadow: -3px 0 rgba(255, 0, 60, .9), 2px 0 rgba(0, 240, 255, .9); }
+  60% { transform: translate(-1px, 0); text-shadow: 1px 0 rgba(255, 0, 60, .8), -1px 0 rgba(0, 240, 255, .8); }
+  100% { transform: none; text-shadow: 0 0 6px rgba(255, 255, 255, .8), 0 0 16px rgba(var(--glow), .95); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .hero .pill-row .btn, .hero .pill-row .btn:hover, .hero .pill-row .btn:active, .hero .pill-row .btn.is-pressed { transform: none; }
+  .hero .pill-row .btn:hover .pill__label, .hero .pill-row .btn.is-pressed .pill__label { animation: none; text-shadow: 0 0 6px rgba(255, 255, 255, .8), 0 0 16px rgba(var(--glow), .95); }
+}
 /* The pulse travels the whole line, top to bottom */
 @keyframes tw-trail { 0% { top: -60px; opacity: 0; } 10% { opacity: 1; } 88% { opacity: 1; } 100% { top: calc(100% - 60px); opacity: 0; } }
 @media (max-width: 760px) {

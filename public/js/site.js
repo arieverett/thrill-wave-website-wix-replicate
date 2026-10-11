@@ -223,6 +223,32 @@ if (pillChoices.length && !pillIgnored) {
   addEventListener('pageshow', (e) => { if (e.persisted) sent.clear(); });
 }
 // ---------------------------------------------------------------------------
+// Homepage hero pills: one shared press for both (site.css "Hover and press"): the button squeezes in while held
+// and fires a ring of light outward. The red pill waits a beat before leaving for the terminal site so the ring
+// is seen (the choice beacon above uses keepalive, so it still goes out).
+// ---------------------------------------------------------------------------
+$$('.hero .pill-row .btn').forEach((btn) => {
+  const release = () => btn.classList.remove('is-pressed');
+  btn.addEventListener('pointerdown', (e) => {
+    if (e.button > 0) return;
+    btn.classList.add('is-pressed');
+    if (reduceMotion) return;
+    const ring = document.createElement('span');
+    ring.className = 'pill__ring';
+    ring.setAttribute('aria-hidden', 'true');
+    ring.addEventListener('animationend', () => ring.remove(), { once: true });
+    btn.append(ring);
+  });
+  ['pointerup', 'pointercancel', 'pointerleave'].forEach((t) => btn.addEventListener(t, release));
+  if (btn.dataset.pillChoice === 'red' && !reduceMotion) {
+    btn.addEventListener('click', (e) => {
+      if (e.button !== 0 || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey || e.defaultPrevented) return;
+      e.preventDefault();
+      setTimeout(() => { location.href = btn.href; }, 260);
+    });
+  }
+});
+// ---------------------------------------------------------------------------
 // Homepage hero: the neon line under Keep scrolling runs from the button down to just above 01's kicker
 // ---------------------------------------------------------------------------
 const trail = $('.pill-trail');
