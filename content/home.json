@@ -278,6 +278,7 @@
     },
     {
       "name": "Agencies & PR firms",
+      "hideFromSearch": true,
       "short": "Agencies",
       "text": "We produce for creative agencies and PR firms under your name, to your brief and on your timeline.",
       "still": "sF4KJxf99nA",
@@ -640,6 +641,7 @@
     },
     {
       "name": "Sports",
+      "hideFromSearch": true,
       "pillar": "Athletics",
       "still": "jduIrHZT0og:3",
       "zoom": true,
@@ -860,6 +862,7 @@
     },
     {
       "name": "Products",
+      "hideFromSearch": true,
       "pillar": "Arts",
       "still": "WoFqn7U9tq4",
       "clients": [
