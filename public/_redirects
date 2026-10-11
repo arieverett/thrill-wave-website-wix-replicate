@@ -32,6 +32,8 @@
 /blog/categories/law        /blog             301
 
 # Common guesses
+/intel                      /blog             301
+/intel/                     /blog             301
 /home                       /                 301
 # Old Wix addresses Google still lists as links (Search Console, Oct 11, 2026)
 /aboutus                    /about            301
