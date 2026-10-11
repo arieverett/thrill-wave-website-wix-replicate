@@ -39,7 +39,7 @@ Good lighting, clean audio and a careful edit are the difference between a phone
 
 Every event is different. Before the day, we sit down with you to learn what it's for, who it's for and what you want people to feel. Then we plan the coverage around that, so the final film sounds like you.
 
-We've filmed festival aftermovies for [Relentless Beats](/portfolio), and we love filming events in Phoenix and beyond.
+We've filmed festival aftermovies for [Relentless Beats](/work), and we love filming events in Phoenix and beyond.
 
 Have an event coming up? [Let's get it on film](/contact).
 

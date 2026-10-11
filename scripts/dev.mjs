@@ -6,7 +6,7 @@
 //   - first run installs the packages it needs (npm install) automatically
 //   - opens http://localhost:8788 in your default browser (skip: npm run dev -- --no-open)
 //   - port already taken? it moves to the next free one, like Live Server
-//   - clean URLs (/portfolio serves portfolio.html; /portfolio.html redirects)
+//   - clean URLs (/work serves work.html; /work.html redirects)
 //   - public/_redirects and public/_headers applied, CSP included
 //   - 404.html for unknown paths
 //   - POST /api/contact runs functions/api/contact.js. Without a FORM_WEBHOOK_URL

@@ -19,7 +19,7 @@ Here's why they work:
 4. **Someone else says it**: Praise means more when it comes from a happy customer than from you. It helps quiet the doubts a new customer might have.
 5. **They set you apart**: Your customers' stories are yours alone. Nobody else can tell them, and that's what makes you different.
 
-This is some of our favorite work. Films like *Mike's Story with Melanoma Treatment* for [Nektar](/portfolio) show how much a single honest story can carry.
+This is some of our favorite work. Films like *Mike's Story with Melanoma Treatment* for [Nektar](/work) show how much a single honest story can carry.
 
 If you want to earn trust with the people you're trying to reach, let your customers tell your story.
 

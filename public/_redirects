@@ -9,7 +9,7 @@
 
 # Pages taken off the site on Sept 29, 2026 (kept offline, not on the web).
 # The 301s send visitors somewhere useful and tell Google to drop the old pages.
-/medical                    /portfolio#healthcare-medical 301
+/medical                    /work#medical 301
 /marketingchallenges        /contact          301
 /app-landing-page           /sitrep           301
 /post/premium-video-services-for-local-businesses-in-phoenix /blog 301
@@ -37,7 +37,6 @@
 /aboutus                    /about            301
 /aboutus/                   /about            301
 /blog/categories/business   /blog             301
-/work                       /portfolio        301
 
 # Unfinished post with factual errors and copyrighted movie posters, taken off Oct 1, 2026.
 /post/the-history-of-cinema-in-the-state-of-arizona-and-the-future /blog 301
@@ -82,26 +81,26 @@
 /blog/categories/finance     /blog/categories/industries   301
 
 # Customer and industry restructure, Oct 3, 2026
-/who-we-serve/agencies              /who-we-serve/agencies-and-pr-firms       301
-/who-we-serve/brands                /who-we-serve/businesses                  301
-/who-we-serve/companies             /who-we-serve/businesses                  301
-/industries/nonprofits              /who-we-serve/nonprofits-and-public-service 301
-/who-we-serve/nonprofits-and-government /who-we-serve/nonprofits-and-public-service 301
-/industries/medical-and-biotech     /industries/medical                       301
-/industries/beauty                  /industries/medical                       301
-/industries/wellness                /industries/medical                       301
-/industries/sports-and-fitness      /industries/sports                        301
-/industries/finance                 /industries/professional-services         301
-/industries/real-estate             /industries/tech                          301
-/industries/construction            /industries/builders-and-makers           301
-/industries/consumer-products       /industries/products                      301
-/industries/hospitality               /industries/food-and-hospitality          301
+/who-we-serve/agencies              /customers/agencies-and-pr-firms       301
+/who-we-serve/brands                /customers/businesses                  301
+/who-we-serve/companies             /customers/businesses                  301
+/industries/nonprofits              /customers/nonprofits-and-public-service 301
+/who-we-serve/nonprofits-and-government /customers/nonprofits-and-public-service 301
+/industries/medical-and-biotech     /fields/medical                       301
+/industries/beauty                  /fields/medical                       301
+/industries/wellness                /fields/medical                       301
+/industries/sports-and-fitness      /fields/sports                        301
+/industries/finance                 /fields/professional-services         301
+/industries/real-estate             /fields/tech                          301
+/industries/construction            /fields/builders-and-makers           301
+/industries/consumer-products       /fields/products                      301
+/industries/hospitality               /fields/food-and-hospitality          301
 
 # Fields rename, Oct 4, 2026
-/industries/industrial              /industries/builders-and-makers           301
-/industries/manufacturing           /industries/builders-and-makers           301
-/industries/food                    /industries/food-and-hospitality          301
-/who-we-serve/media                 /who-we-serve/media-and-publishing        301
+/industries/industrial              /fields/builders-and-makers           301
+/industries/manufacturing           /fields/builders-and-makers           301
+/industries/food                    /fields/food-and-hospitality          301
+/who-we-serve/media                 /customers/media-and-publishing        301
 
 # Posts rewritten in our current voice on Oct 6, 2026 (new titles and addresses)
 /post/promote-your-phoenix-based-medical-practice-with-video /post/how-to-film-a-medical-practice-with-care 301
@@ -111,3 +110,30 @@
 
 # Case study renamed Oct 8, 2026 (Dear Mom is now part of the Welcome to WIC series)
 /case-studies/dear-mom      /case-studies/welcome-to-wic 301
+
+# Renamed Oct 11, 2026 so the addresses match the menu: Portfolio -> /work, Industries -> /fields,
+# Who we serve -> /customers. Keep these below the specific old-page rules above (first match wins).
+/portfolio                  /work             301
+/portfolio/                 /work             301
+/industries                 /fields           301
+/industries/                /fields           301
+/industries/arts-and-culture            /fields/arts-and-culture 301
+/industries/builders-and-makers         /fields/builders-and-makers 301
+/industries/education-and-research      /fields/education-and-research 301
+/industries/food-and-hospitality        /fields/food-and-hospitality 301
+/industries/government-and-public-affairs /fields/government-and-public-affairs 301
+/industries/live-events                 /fields/live-events 301
+/industries/medical                     /fields/medical 301
+/industries/products                    /fields/products 301
+/industries/professional-services       /fields/professional-services 301
+/industries/sports                      /fields/sports 301
+/industries/tech                        /fields/tech 301
+/industries/tribal-nations              /fields/tribal-nations 301
+/who-we-serve               /customers        301
+/who-we-serve/              /customers        301
+/who-we-serve/agencies-and-pr-firms         /customers/agencies-and-pr-firms 301
+/who-we-serve/businesses                    /customers/businesses 301
+/who-we-serve/film                          /customers/film 301
+/who-we-serve/media-and-publishing          /customers/media-and-publishing 301
+/who-we-serve/nonprofits-and-public-service /customers/nonprofits-and-public-service 301
+/who-we-serve/schools-and-institutions      /customers/schools-and-institutions 301

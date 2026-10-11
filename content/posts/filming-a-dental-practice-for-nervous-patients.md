@@ -33,6 +33,6 @@ One well-planned shoot day can usually cover all four films. That keeps the prac
 
 ## If you run a dental practice
 
-We've made films for medical and healthcare practices, and we bring the same care to dental work. If you want to help nervous patients feel ready for their first visit, you can see more of our healthcare work on our [Medical page](/industries/medical), or [message us](/contact) and we'll think it through with you.
+We've made films for medical and healthcare practices, and we bring the same care to dental work. If you want to help nervous patients feel ready for their first visit, you can see more of our healthcare work on our [Medical page](/fields/medical), or [message us](/contact) and we'll think it through with you.
 
 *Cover photo: note thanun on [Unsplash](https://unsplash.com/photos/a-dental-room-with-a-chair-and-lights-MCSmR0mw1CU).*

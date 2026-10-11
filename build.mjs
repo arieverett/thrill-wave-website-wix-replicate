@@ -18,7 +18,7 @@
 //   - minified, content-hashed CSS/JS filenames, so browsers can cache them for a year
 //   - width/height on every local <img>, so nothing shifts while images load
 //
-// Every Wix URL is kept (/portfolio, /post/<slug>, /blog/categories/<cat>...) so
+// Every Wix URL is kept or redirected (/portfolio now /work, /post/<slug>, /blog/categories/<cat>...) so
 // search rankings carry over. Cloudflare Pages serves foo.html at /foo.
 //
 // Where the code lives (lib/):

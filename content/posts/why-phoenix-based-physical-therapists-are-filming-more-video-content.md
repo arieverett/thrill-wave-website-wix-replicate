@@ -35,7 +35,7 @@ One well-planned shoot can give you a practice film, short clips for social medi
 
 Phoenix has plenty of physical therapy options. A film that shows who you are, and why patients love working with you, helps you stand apart.
 
-For an example, see *Fitness Forward Performance*, our film with [Aurelio Physical Therapy](/portfolio).
+For an example, see *Fitness Forward Performance*, our film with [Aurelio Physical Therapy](/work).
 
 Ready to show patients what makes your practice special? [Let's talk](/contact).
 

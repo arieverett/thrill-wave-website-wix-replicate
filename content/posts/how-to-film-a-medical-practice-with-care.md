@@ -47,6 +47,6 @@ On the day, we let the patient talk at their own pace and in their own order. We
 
 ## If you run a practice
 
-If you're thinking about films for your practice, start with the questions your patients ask most. The best medical films answer them clearly and kindly, and the trust follows. You can see more of our healthcare work on our [Medical page](/industries/medical), and if you'd like to talk through what your patients need to hear, [message us](/contact).
+If you're thinking about films for your practice, start with the questions your patients ask most. The best medical films answer them clearly and kindly, and the trust follows. You can see more of our healthcare work on our [Medical page](/fields/medical), and if you'd like to talk through what your patients need to hear, [message us](/contact).
 
 *Cover photo: Hush Naidoo Jade Photography on [Unsplash](https://unsplash.com/photos/black-and-gray-stethoscope-yo01Z-9HQAw).*

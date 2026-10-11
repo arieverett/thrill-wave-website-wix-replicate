@@ -96,7 +96,7 @@ Post is where vertical anamorphic either clicks or confuses everyone, so we labe
 
 A tall frame changes what you can say. A standing person fills it top to bottom. A tower, a rocket or a canyon wall gets its full height. Project Hail Mary used that height to make space feel enormous. On a phone, the same idea lets a single face hold the whole screen, with the soft, stretched character of anamorphic glass around it.
 
-It's a small rotation with a big change in feeling, and that's our favorite kind of filmmaking problem. If you want to see how we shoot, the [portfolio](/portfolio) is a good place to start.
+It's a small rotation with a big change in feeling, and that's our favorite kind of filmmaking problem. If you want to see how we shoot, the [portfolio](/work) is a good place to start.
 
 *Cover photo: Jason Leung on [Unsplash](https://unsplash.com/photos/black-camera-lens-on-brown-wooden-table-buwxTB45Xlw).*
 

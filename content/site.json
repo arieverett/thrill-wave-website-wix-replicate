@@ -47,11 +47,11 @@
     {"label": "About", "href": "/about"},
     {"label": "Services", "children": [
       {"label": "Our services", "href": "/services"},
-      {"label": "Our customers", "href": "/who-we-serve"},
-      {"label": "Our fields", "href": "/industries"}
+      {"label": "Our customers", "href": "/customers"},
+      {"label": "Our fields", "href": "/fields"}
     ]},
     {"label": "Work", "children": [
-      {"label": "Portfolio", "href": "/portfolio"},
+      {"label": "Portfolio", "href": "/work"},
       {"label": "Case studies", "href": "/case-studies"}
     ]},
     {"label": "Process", "children": [
