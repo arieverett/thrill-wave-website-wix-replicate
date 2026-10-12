@@ -1118,9 +1118,7 @@
       "zoom": true,
       "link": "/case-studies/decadence-arizona",
       "story": "Relentless Beats' New Year's Eve festival takes over Phoenix Raceway for two nights. Our aftermovie lets fans relive it, and it puts next year's festival in front of everyone who missed it.",
-      "video": {
-        "youtube": "pDk121-TCto"
-      },
+      "video": { "youtube": "pDk121-TCto", "zoom": true },
       "stats": [
         {
           "value": "50,000",
