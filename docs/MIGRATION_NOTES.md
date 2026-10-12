@@ -51,6 +51,22 @@ Where the new site goes beyond Wix, it's additive: entrance and scroll animation
 - Blog likes, views and comments, member profiles (`/profile/*` now redirects to the blog) and the paywall.
 - Wix Forms submission history and Wix Analytics history. Export them from the Wix dashboard before cancelling.
 
+## Next up (Ari, Oct 11, 2026): for a later night
+
+**Tony's notes (email, Oct 9, 2026).** Overall: take a Rick Rubin approach and subtract as much as we can while keeping the same vibe and intel, so only what's truly necessary stays. Focus the site on making films only.
+- Remove Photography and Rentals as services everywhere (homepage What we do, Services page sections, service lists). Tony doesn't want to rent out gear or shoot photos; they read as afterthoughts. This changes the standing "five services" rule in `docs/WORKING_RULES.md` (18), so confirm the new list with all three partners first.
+- Keep: "Take the red pill" / "Keep scrolling", "We make complicated stories simple.", Services "Things people tell us on the first call", Our clients and Fields, Intel/Blog, Contact, About.
+- Homepage opening sentence and the 01 "There's no such thing as an audience" title: already changed on Oct 11 (headline "We make films you feel.", 01 "For people, by people.").
+- Make a new hype reel for the homepage clip under the hero, in the new vibe (Tony).
+- Services: swap the pixelated Slander image.
+- Process/SITREP: replace the static image behind the moving video with a high-resolution image of the real SITREP interface, and replace Chris's screen recording (reads as fumbling while typing) with a faster GIF or loop.
+
+**Work page and homepage work section.** The partners want a better way to show the best 9 to 15 films, maybe with no sections. Ideas so far: one main film with the rest picked underneath; a full-width widescreen carousel; or a Sandwich-style grid of tiles side by side with a 3-second video preview that plays on hover. Tony wants to replace the work itself as new films in the new style come in.
+
+**Thumbnails.** Go through every film tile: pick the best still from each film, then upscale and grade it so it looks impressive (softened, filmic, light grain, never over-sharpened or AI-looking), and add it to `content/video-thumbnails.json` and the list in `docs/IMAGE_LIBRARY.md`. Done so far (Oct 11): Ireland, Decadence 2025 and 2023, UBS & Finnerty, Paradise Valley, Gold Rush 2024, Golf Digest, Your Voice Your Power (episode 4 and trailer), plus the Government & Public Affairs, Tribal Nations and Live Events field images. Still on YouTube frames include Welcome to WIC / Dear Mom tiles, No Trick All Treat and the rest of the portfolio.
+
+**Also open:** Chris's unmerged `copy-audit` branch (case studies, services, FAQ); his "people everywhere feel the same" line for homepage 01; the blog newsletter sign-up still isn't connected (hide or connect it).
+
 ## Next up (noted Sept 29, 2026)
 
 - **Next session (noted Oct 1, 2026):**
