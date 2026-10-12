@@ -1437,9 +1437,9 @@ body.subnav-stuck .site-header { background: transparent; -webkit-backdrop-filte
 .roster h3 { margin: 0; font-size: 1.05rem; }
 .roster__role { margin: 4px 0 12px; font-weight: 600; font-size: .85rem; color: var(--ink); }
 .roster__body p:last-child { margin: 0; font-size: .88rem; color: var(--muted); }
-/* Phones and tablets: two across with the third centered under them, so the team doesn't take a whole screen each */
+/* Phones and tablets: two across with the third under the first (left aligned), so the team doesn't take a whole screen each */
 @media (max-width: 800px) {
-  .roster { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; }
+  .roster { display: flex; flex-wrap: wrap; justify-content: flex-start; gap: 10px; }
   .roster li { flex: 0 0 calc(50% - 5px); }
   .roster__body { padding: 12px 12px 14px; }
   .roster h3 { font-size: .86rem; }
@@ -1576,7 +1576,7 @@ body:not(.page-sections) .kicker::before { content: none; }
 
 /* Intel: nine posts at first, then a See more button (site.js); every post stays in the page for search engines */
 .post-grid > [hidden] { display: none; }
-.post-more { display: flex; justify-content: center; margin-top: 44px; }
+.post-more { display: flex; justify-content: flex-start; margin-top: 44px; }
 .section--posts { padding-top: clamp(32px, 4vw, 48px); }
 
 /* Menu groups: the name is a button that opens the dropdown (it isn't a link). Laptops: looks like the other
@@ -1730,9 +1730,9 @@ body:not(.page-sections) .kicker::before { content: none; }
 .section--dark + .section--dark { margin-top: -1px; }
 /* A sentence that follows the promise list (Services: "in case you like numbers...") gets room to breathe */
 .promise-list + p { margin-top: clamp(22px, 3vw, 32px); }
-/* Who we serve and Industries tiles: a short last row sits in the center instead of hugging the left.
+/* Who we serve, Industries and case study tiles: everything left aligned, including a short last row (Ari, Oct 11, 2026).
    Same column counts as before (industries 4 / 3 / 2, customers 3), laid out with wrapping flex. */
-.industry-cards, .audience-cards { display: flex; flex-wrap: wrap; justify-content: center; gap: var(--tile-gap); }
+.industry-cards, .audience-cards { display: flex; flex-wrap: wrap; justify-content: flex-start; gap: var(--tile-gap); }
 .industry-cards { --tile-cols: 4; --tile-gap: 12px; }
 .audience-cards { --tile-cols: 3; --tile-gap: 16px; }
 .industry-cards > li, .audience-cards > li { flex: 0 0 calc((100% - (var(--tile-cols) - 1) * var(--tile-gap)) / var(--tile-cols)); min-width: 0; }
