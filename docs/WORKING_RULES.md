@@ -37,7 +37,7 @@ All three can change this site. Only Ari works on the terminal site (`thrill-wav
 5. No agency or big-business jargon, buzzwords or sales pitching. Warm and conversational, like sandwich.co, and willing to take a side; nothing like lookstudios.co.
 6. Every page reads like an elevator pitch that flows top to bottom toward reaching out, in full sentences, with a colon lead-in before every list, grid or set of films.
 7. Use a documentary reporting approach and vocabulary (report, sources, facts, in their own words), but never name journalism, journalists or reporters.
-8. Stories live against three backdrops: athletics, the arts and academics. Fields copy can lean on that.
+8. Our fields span five arenas: art, science, health, commerce and governance (Oct 11, 2026; replaces athletics, the arts and academics). Fields copy can lean on that.
 9. Thrill Wave reads as dependable and true, never fleeting or mercenary. Avoid lines like "We go wherever the story is."
 10. Copy shows complex things made simple, effective and beautiful.
 11. Copy about who we serve starts from the idea that every organization changes someone's life, and our job is to find whose (manifesto draft, Oct 8, 2026; this replaces the Oct 5 rule that the copy first says Thrill Wave serves everyone). Then it names the recurring ones.
