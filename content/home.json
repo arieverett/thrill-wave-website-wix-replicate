@@ -341,7 +341,9 @@
       "example": {
         "youtube": "Gh67yEMyOCs",
         "client": "ITCA Native Vote",
-        "title": "Your Voice, Your Power"
+        "title": "Your Voice, Your Power",
+        "frame": 3,
+        "zoom": true
       },
       "seoTitle": "Tribal Nations Video Production",
       "intro": "We make public health, education and civic films with the Inter Tribal Council of Arizona, which represents 21 tribal nations. The lesson has been the same every time: do the research first, then let community members tell their own stories.",
