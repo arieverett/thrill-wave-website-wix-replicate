@@ -223,11 +223,11 @@ if (pillChoices.length && !pillIgnored) {
   addEventListener('pageshow', (e) => { if (e.persisted) sent.clear(); });
 }
 // ---------------------------------------------------------------------------
-// Homepage hero pills: one shared press for both (site.css "Hover and press"): the button squeezes in while held
-// and fires a ring of light outward. The red pill waits a beat before leaving for the terminal site so the ring
+// Homepage hero red pill press (site.css "Hover and press"): the button squeezes in while held and fires a ring
+// of light outward. The red pill waits a beat before leaving for the terminal site so the ring
 // is seen (the choice beacon above uses keepalive, so it still goes out).
 // ---------------------------------------------------------------------------
-$$('.hero .pill-row .btn').forEach((btn) => {
+$$('.hero .pill-row .pill').forEach((btn) => {
   const release = () => btn.classList.remove('is-pressed');
   btn.addEventListener('pointerdown', (e) => {
     if (e.button > 0) return;
