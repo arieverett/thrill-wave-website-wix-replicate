@@ -330,7 +330,7 @@
     {
       "name": "Tribal Nations",
       "pillar": "Academics",
-      "still": "QlP7wPaFcVU:3",
+      "still": "/images/portfolio/dear-mom-kitchen-hug.webp",
       "zoom": true,
       "clients": [
         "Inter Tribal Council of Arizona"
@@ -392,7 +392,8 @@
       "name": "Government & Public Affairs",
       "short": "Government",
       "pillar": "Academics",
-      "still": "Gh67yEMyOCs:1",
+      "still": "/images/portfolio/your-voice-your-power-interview.webp",
+      "heroFocus": "top",
       "clients": [
         "Inter Tribal Council of Arizona",
         "Paradise Valley Mountain Preserve Trust"
