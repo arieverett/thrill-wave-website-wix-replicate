@@ -8,6 +8,13 @@ const reduceMotion = matchMedia('(prefers-reduced-motion: reduce)').matches;
 const quietVideo = reduceMotion || navigator.connection?.saveData;
 if (quietVideo) document.documentElement.classList.add('quiet-video'); // keeps the homepage hero's thumbnail for them (site.css)
 
+// Easter egg for the curious: a note in the browser's developer console (Oct 12, 2026)
+console.log(
+  '%cTHRILL WAVE%c\n\nyou\'re the kind of person who opens the console.\nwe should talk.\n\nhi@thrillwave.com\n',
+  'font: 800 28px/1.1 "League Spartan", system-ui, sans-serif; color: #ff0000; letter-spacing: .04em;',
+  'font: 500 13px/1.5 ui-monospace, Menlo, monospace; color: inherit;'
+);
+
 // Embedded players (YouTube, Vimeo) talk to the page with postMessage, usually as JSON strings
 const YT = 'https://www.youtube-nocookie.com';
 const VIMEO = 'https://player.vimeo.com';
