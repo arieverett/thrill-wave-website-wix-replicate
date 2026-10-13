@@ -726,10 +726,10 @@ body:is(.nav-open, .nav-closing) .site-header { -webkit-backdrop-filter: none; b
 .video--zoom.video--still img { transform: none; }
 .video--zoom.video--still:hover img, .video--zoom.video--still:focus-visible img { transform: scale(1.05); }
 .cta--dark .work-grid { margin: 28px 0 32px; }
-/* Homepage "Our work" (Oct 13, 2026, back from a carousel to a grid): 3 across and 3 rows of 4:5 tiles, like a social
-   profile grid. Phones go 2 across, and the ninth film is left out there so the grid ends on a full row. */
+/* Homepage "Our work" (Oct 13, 2026, back from a carousel to a grid): 3 across and 3 rows of widescreen 16:9 tiles.
+   Phones go 2 across, and the ninth film is left out there so the grid ends on a full row. */
 .work-grid.work-grid--portrait { grid-template-columns: repeat(3, minmax(0, 1fr)); }
-.work-grid--portrait .video { aspect-ratio: 4 / 5; }
+.work-grid--portrait .video { aspect-ratio: 16 / 9; }
 .work-grid--portrait .video__label { font-size: .92rem; }
 @media (max-width: 560px) {
   .work-grid.work-grid--portrait { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; }
