@@ -10,9 +10,9 @@
     {
       "icon": "camera",
       "name": "Production",
-      "text": "We plan the shoot and run it: casting, locations, directing, camera, light and sound, on the ground and in the air.",
-      "more": "This is everything from the first call sheet to the last shot. We find the right people and places, then bring cinema cameras, lighting, sound and aerials, run by a crew with a decade in the field.",
-      "includes": "Producing, casting, locations, permits, schedules, directing, cinematography, lighting, sound, drone, cable cam, high-speed rigs"
+      "text": "We plan the shoot and run it: casting, locations, directing, camera, light and sound, plus stills on location or in the studio.",
+      "more": "This is everything from the first call sheet to the last shot. We find the right people and places, then bring cinema cameras, lighting, sound and aerials, run by a crew with a decade in the field. The same eye shoots your stills, on location or in the studio, and if you already have a crew, our kit and our people can step in wherever you need a hand.",
+      "includes": "Producing, casting, locations, permits, schedules, directing, cinematography, lighting, sound, drone, cable cam, high-speed rigs, stills and portraits"
     },
     {
       "icon": "sliders",
@@ -20,20 +20,6 @@
       "text": "We cut, color and finish the film, then make a version for every screen.",
       "more": "This is where the story comes together. We edit, color, mix and add graphics, then cut a version for every place the film needs to play.",
       "includes": "Editing, color grading, mixing, motion graphics, subtitles, social cuts"
-    },
-    {
-      "icon": "photo",
-      "name": "Photography",
-      "text": "We shoot stills with the same eye: brand imagery, portraits, products and behind the scenes.",
-      "more": "Our stills come from the same eye as our films. We can shoot them alongside the film or on their own.",
-      "includes": "Brand imagery, portraits, products, behind the scenes"
-    },
-    {
-      "icon": "aperture",
-      "name": "Rentals",
-      "text": "You can rent our cinema cameras, lenses and lighting, with or without our crew.",
-      "more": "Our own cinema kit is available to rent, on its own or with our crew to run it.",
-      "includes": "Cinema cameras, lenses, lighting, crew optional"
     }
   ],
   "audiences": [

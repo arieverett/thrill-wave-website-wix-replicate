@@ -22,7 +22,7 @@ All three can change this site. Only Ari works on the terminal site (`thrill-wav
 - Design and copy often go through several quick rounds in one sitting. Keep each change small, clear and easy to undo.
 - All three partners update this site, often at the same time with their own Claude. Before starting, fetch the latest `main` and check for other branches and recent commits so you don't work on top of a stale copy or redo someone else's change. Touch only the pages, content and code the request needs: no drive-by cleanups, reformatting or "while I'm here" edits in shared files (`site.css`, `lib/`, `content/*.json`). Never touch, rebase, merge or delete someone else's branch, and never force-push. Right before pushing, fetch and rebase onto the latest `main` again; if a conflict touches someone else's work, stop and ask rather than choosing a side.
 - Quality over quantity: keep sections and pages concise, and cut the weakest films rather than add more.
-- Odd-numbered lists are preferred (for example, five services).
+- Odd-numbered lists are preferred (for example, three services).
 - Keep fast code and SEO/AEO in mind in every change.
 - After new pages go live, remind the partners to resubmit the sitemap in Google Search Console.
 
@@ -53,7 +53,7 @@ All three can change this site. Only Ari works on the terminal site (`thrill-wav
 
 **Services and pricing**
 
-18. Five services (Story, Production, Editing, Photography, Rentals), six customer types and twelve fields, as listed in `content/home.json`. "Photography", not "Commercial photography".
+18. Three services (Story, Production, Editing; Photography and Rentals folded into Production on Oct 13, 2026: stills are part of the shoot, and our kit and crew can step in wherever a client needs a hand), six customer types and twelve fields, as listed in `content/home.json`. "Photography", not "Commercial photography".
 19. Never ask for a client's budget first (the contact form has no budget or timeline fields). Pricing is top-down: what the film needs to do and the timeline, then a fair number. Price questions point people to message us, not to an FAQ.
 
 **Design**
