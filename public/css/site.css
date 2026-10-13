@@ -1092,13 +1092,12 @@ body.subnav-stuck .site-header { background: transparent; -webkit-backdrop-filte
 .is-typing .tw-caret-before::before, .is-typing .tw-caret-after::after { animation: none; }
 @keyframes tw-blink { 50% { opacity: 0; } }
 
-/* Raised tiles (SITREP steps): solid graphite with a light edge along the top, so they read as 3-D on black */
+/* Raised tiles (SITREP steps): even graphite with a light edge along the top, so they read as 3-D on black
+   (Oct 13, 2026: no corner shine, the fill only darkens slightly toward the bottom) */
 .sitrep-steps li { position: relative; border: 1px solid rgba(255, 255, 255, .07); border-radius: 10px;
-  background: linear-gradient(165deg, #2a2a2d 0%, #18181a 48%, #0e0e0f 100%);
+  background: linear-gradient(180deg, #1c1c1e 0%, #121213 100%);
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, .16), inset 0 -1px 0 rgba(0, 0, 0, .7), 0 14px 28px -16px rgba(0, 0, 0, .9);
   transition: border-color .3s, transform .3s var(--ease); }
-.sitrep-steps li::before { content: ""; position: absolute; inset: 0; border-radius: inherit; pointer-events: none;
-  background: radial-gradient(120% 70% at 0% 0%, rgba(255, 255, 255, .1), transparent 55%); }
 
 /* Industries: perfect squares on a darkened film still (with motion), short name and up to three client names.
    The heading link stretches over the whole tile, which goes to the matching work. 4 across, 3 on tablets, 2 on phones. */
