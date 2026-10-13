@@ -1072,3 +1072,42 @@ $$('[data-carousel]').forEach((box) => {
   }
   update();
 });
+
+// Homepage 08 Our process on phones (Oct 13, 2026): the five steps become a row of icons with their names, and
+// tapping one shows its text in a card underneath (SITREP open first). "How we work" folds open one promise at a
+// time. Laptops keep the full timeline and rows; without script phones get the full vertical timeline.
+(() => {
+  const list = $('#process .process');
+  if (!list) return;
+  const steps = [...list.children];
+  const panel = document.createElement('div');
+  panel.className = 'process-panel';
+  panel.setAttribute('aria-live', 'polite');
+  list.after(panel);
+  list.classList.add('is-stepper');
+  const show = (i) => {
+    steps.forEach((li, j) => { li.classList.toggle('is-on', j === i); li.setAttribute('aria-pressed', String(j === i)); });
+    panel.replaceChildren(...[...steps[i].children].filter((c) => !c.classList.contains('process__node')).map((c) => c.cloneNode(true)));
+  };
+  steps.forEach((li, i) => {
+    li.tabIndex = 0;
+    li.setAttribute('role', 'button');
+    li.addEventListener('click', (e) => { if (!e.target.closest('a')) show(i); });
+    li.addEventListener('keydown', (e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); show(i); } });
+  });
+  const key = steps.findIndex((li) => li.classList.contains('process__key'));
+  show(key >= 0 ? key : 0);
+
+  const promises = $('#process .promise-list');
+  if (!promises) return;
+  promises.classList.add('is-folding');
+  const rows = [...promises.children];
+  const open = (i) => rows.forEach((li, j) => { li.classList.toggle('is-open', j === i); li.setAttribute('aria-expanded', String(j === i)); });
+  rows.forEach((li, i) => {
+    li.tabIndex = 0;
+    li.setAttribute('role', 'button');
+    li.addEventListener('click', () => open(li.classList.contains('is-open') ? -1 : i));
+    li.addEventListener('keydown', (e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); open(li.classList.contains('is-open') ? -1 : i); } });
+  });
+  open(0);
+})();

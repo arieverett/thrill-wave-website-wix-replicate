@@ -1976,3 +1976,39 @@ body:not(.page-sections) .kicker::before { content: none; }
 @keyframes rec-blink { 50% { opacity: .25; } }
 @media (prefers-reduced-motion: reduce) { .page-404 .hero--404 .kicker::before { animation: none; } }
 .hero--404 .btn-row { display: flex; flex-wrap: wrap; gap: 12px; }
+
+/* Homepage 08 Our process on phones (Oct 13, 2026): a row of five icons with their names, the tapped step's text in
+   a card underneath (site.js builds .process-panel), and "How we work" folding open one promise at a time.
+   Laptops are unchanged: the panel is hidden and every step and promise shows in full. */
+.process-panel { display: none; }
+@media (max-width: 800px) {
+  #process .process.is-stepper { grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 0; margin-top: 28px; }
+  #process .process.is-stepper::before { top: 22px; bottom: auto; left: 10%; right: 10%; width: auto; height: 1px; background: repeating-linear-gradient(90deg, var(--ink) 0 6px, transparent 6px 12px); }
+  #process .process.is-stepper li { display: flex; flex-direction: column; align-items: center; gap: 8px; cursor: pointer; -webkit-tap-highlight-color: transparent; }
+  #process .process.is-stepper li:focus-visible { outline: none; }
+  #process .process.is-stepper li:focus-visible .process__node { outline: 3px solid var(--accent); outline-offset: 2px; }
+  #process .process.is-stepper .process__node { width: 44px; height: 44px; }
+  #process .process.is-stepper .process__node svg { width: 20px; height: 20px; }
+  #process .process.is-stepper li.is-on .process__node, #process .process.is-stepper li:hover .process__node { background: var(--ink); color: var(--paper); transform: none; }
+  #process .process.is-stepper .process__key:not(.is-on) .process__node { background: var(--paper); color: var(--ink); }
+  #process .process.is-stepper h3 { margin: 0; font-size: .58rem; letter-spacing: .04em; text-align: center; color: var(--muted); transition: color .25s; }
+  #process .process.is-stepper li.is-on h3 { color: var(--ink); }
+  #process .process.is-stepper .process__num, #process .process.is-stepper p, #process .process.is-stepper .process__zoom { display: none; }
+  .process-panel { display: block; margin-top: 18px; padding: 18px; border-radius: 10px; background: #fff; border: 1px solid rgba(0, 0, 0, .12); min-height: 150px; animation: tw-fade .35s ease; }
+  .process-panel h3 { font-size: 1.05rem; letter-spacing: .04em; margin: 0 0 6px; }
+  .process-panel p { margin: 0; font-size: .9rem; color: var(--muted); }
+  .process-panel .process__zoom { margin-top: 12px; }
+  #process .promise-list.is-folding li { position: relative; cursor: pointer; padding-right: 32px; -webkit-tap-highlight-color: transparent; }
+  #process .promise-list.is-folding li::after { content: "+"; position: absolute; right: 6px; top: 14px; font: 400 1.3rem/1 var(--font-body); }
+  #process .promise-list.is-folding li.is-open::after { content: "\2212"; }
+  #process .promise-list.is-folding li:not(.is-open) p { display: none; }
+}
+
+/* Homepage carousels (03 Our clients, 04 Fields, 06 Our work), Oct 13, 2026: on laptops the rows are cropped to
+   the content column so their edges line up with the text and buttons above and below them. Phones stay edge to edge. */
+@media (min-width: 801px) {
+  .carousel--cards, .carousel--tiles { margin-inline: 0; }
+  .carousel--films { width: calc(100% - 2 * var(--gutter)); max-width: var(--content); }
+  .carousel--films .carousel__arrow--prev, .carousel--cards .carousel__arrow--prev, .carousel--tiles .carousel__arrow--prev { left: 8px; }
+  .carousel--films .carousel__arrow--next, .carousel--cards .carousel__arrow--next, .carousel--tiles .carousel__arrow--next { right: 8px; }
+}
