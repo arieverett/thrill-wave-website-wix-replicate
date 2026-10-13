@@ -620,6 +620,7 @@ body:is(.nav-open, .nav-closing) .site-header { -webkit-backdrop-filter: none; b
 
 /* ---------- sections ---------- */
 .section { padding: var(--section) 0; }
+.section--tight { padding-block: calc(var(--section) * .6); } /* homepage Our work (Oct 13, 2026): less air above and below */
 .section--tight { padding: clamp(40px, 6vw, 72px) 0; }
 .section--alt { background: var(--paper-alt); }
 .section--soft { background: var(--paper-soft); }
@@ -1498,8 +1499,7 @@ body.subnav-stuck .site-header { background: transparent; -webkit-backdrop-filte
 
 /* Page ending on pages without numbered sections: line + label, no number */
 body:not(.page-sections) .kicker::before { content: none; }
-/* Black page followed by the black ending: a hairline keeps them from merging */
-.page-black .cta--ender, .section--dark + .cta--ender { border-top: 1px solid rgba(255, 255, 255, .1); }
+/* Black page followed by the black ending: no hairline (Oct 13, 2026), the two run together; the footer keeps its line */
 .section--dark + .cta--ender { padding-top: var(--section); }
 
 /* =====================================================================
