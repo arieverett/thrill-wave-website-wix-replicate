@@ -726,16 +726,17 @@ body:is(.nav-open, .nav-closing) .site-header { -webkit-backdrop-filter: none; b
 .video--zoom.video--still img { transform: none; }
 .video--zoom.video--still:hover img, .video--zoom.video--still:focus-visible img { transform: scale(1.05); }
 .cta--dark .work-grid { margin: 28px 0 32px; }
-/* Homepage "Our work": 3 across and 3 rows of 4:5 tiles, like a social profile grid. Phones keep 3 across with tight gaps,
-   smaller titles and a smaller play button. */
+/* Homepage "Our work" (Oct 13, 2026, back from a carousel to a grid): 3 across and 3 rows of 4:5 tiles, like a social
+   profile grid. Phones go 2 across, and the ninth film is left out there so the grid ends on a full row. */
 .work-grid.work-grid--portrait { grid-template-columns: repeat(3, minmax(0, 1fr)); }
 .work-grid--portrait .video { aspect-ratio: 4 / 5; }
 .work-grid--portrait .video__label { font-size: .92rem; }
 @media (max-width: 560px) {
-  .work-grid.work-grid--portrait { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 4px; }
-  .work-grid--portrait .video { border-radius: 4px; }
-  .work-grid--portrait .video__label { left: 7px; right: 7px; bottom: 7px; font-size: .6rem; line-height: 1.25; }
-  .work-grid--portrait .video .video__play, .work-grid--portrait .video:hover .video__play { opacity: .9; transform: scale(.55); }
+  .work-grid.work-grid--portrait { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; }
+  .work-grid--portrait > .work-tile:nth-child(9) { display: none; }
+  .work-grid--portrait .video { border-radius: 6px; }
+  .work-grid--portrait .video__label { left: 10px; right: 10px; bottom: 10px; font-size: .78rem; line-height: 1.25; }
+  .work-grid--portrait .video .video__play, .work-grid--portrait .video:hover .video__play { opacity: .9; transform: scale(.7); }
 }
 .video--outline { border: 1px solid rgba(255, 255, 255, .45); } /* same outline as the .step-cards tiles */
 .video--feature .video__play { opacity: 1; transform: none; width: 84px; height: 84px; margin: -42px 0 0 -42px; }
@@ -2003,11 +2004,10 @@ body:not(.page-sections) .kicker::before { content: none; }
   #process .promise-list.is-folding li:not(.is-open) p { display: none; }
 }
 
-/* Homepage carousels (03 Our clients, 04 Fields, 06 Our work), Oct 13, 2026: on laptops the rows are cropped to
-   the content column so their edges line up with the text and buttons above and below them. Phones stay edge to edge. */
+/* Homepage carousels (03 Our clients, 04 Fields), Oct 13, 2026: on laptops the rows are cropped to the content
+   column so their edges line up with the text and buttons above and below them. Phones stay edge to edge. */
 @media (min-width: 801px) {
   .carousel--cards, .carousel--tiles { margin-inline: 0; }
-  .carousel--films { width: calc(100% - 2 * var(--gutter)); max-width: var(--content); }
-  .carousel--films .carousel__arrow--prev, .carousel--cards .carousel__arrow--prev, .carousel--tiles .carousel__arrow--prev { left: 8px; }
-  .carousel--films .carousel__arrow--next, .carousel--cards .carousel__arrow--next, .carousel--tiles .carousel__arrow--next { right: 8px; }
+  .carousel--cards .carousel__arrow--prev, .carousel--tiles .carousel__arrow--prev { left: 8px; }
+  .carousel--cards .carousel__arrow--next, .carousel--tiles .carousel__arrow--next { right: 8px; }
 }
