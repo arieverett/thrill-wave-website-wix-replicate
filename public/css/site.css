@@ -2032,12 +2032,11 @@ body:not(.page-sections) .kicker::before { content: none; }
   .sitrep-split .work-grid--single .work-tile { min-width: 0; height: 100%; }
   .sitrep-split .work-grid--single .video { height: 100%; aspect-ratio: auto; }
 }
-}
 
 /* All-black homepage (Oct 13, 2026): the cards that were built for white bands (Our clients, The team, the phone
    Process card) in their dark form, so the whole page reads as one black screen. */
-.section--dark .audience-cards li, .section--dark .team li { border-color: rgba(255, 255, 255, .14); background: var(--ink-soft); }
-.section--dark .audience-cards li:hover, .section--dark .team li:hover { border-color: rgba(255, 255, 255, .9); }
+.section--dark .audience-cards li, .section--dark .team li { border-color: rgba(255, 255, 255, .1); background: var(--ink-soft); } /* same hairline as the Fields tiles */
+.section--dark .audience-cards li:hover, .section--dark .team li:hover { border-color: rgba(255, 255, 255, .22); }
 .section--dark .team__body { background: var(--ink-soft); }
 .section--dark .audience-cards h3, .section--dark .team h3 { color: var(--on-dark); }
 .section--dark .audience-cards p, .section--dark .team p { color: #bdbdc2; }
