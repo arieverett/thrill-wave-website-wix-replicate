@@ -1074,7 +1074,7 @@ $$('[data-carousel]').forEach((box) => {
 });
 
 // Homepage 08 Our process on phones (Oct 13, 2026): the five steps become a row of icons with their names, and
-// tapping one shows its text in a card underneath (SITREP open first). "How we work" folds open one promise at a
+// tapping one shows its text in a card underneath (Idea first; swipe the card or use its arrows for the next step). "How we work" folds open one promise at a
 // time. Laptops keep the full timeline and rows; without script phones get the full vertical timeline.
 (() => {
   const list = $('#process .process');
@@ -1085,18 +1085,40 @@ $$('[data-carousel]').forEach((box) => {
   panel.setAttribute('aria-live', 'polite');
   list.after(panel);
   list.classList.add('is-stepper');
-  const show = (i) => {
-    steps.forEach((li, j) => { li.classList.toggle('is-on', j === i); li.setAttribute('aria-pressed', String(j === i)); });
-    panel.replaceChildren(...[...steps[i].children].filter((c) => !c.classList.contains('process__node')).map((c) => c.cloneNode(true)));
+  let current = 0;
+  const arrow = (dir) => {
+    const b = document.createElement('button');
+    b.type = 'button';
+    b.className = `process-panel__arrow process-panel__arrow--${dir < 0 ? 'prev' : 'next'}`;
+    b.setAttribute('aria-label', dir < 0 ? 'Previous step' : 'Next step');
+    b.innerHTML = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="${dir < 0 ? 'M15 5l-7 7 7 7' : 'M9 5l7 7-7 7'}"/></svg>`;
+    b.addEventListener('click', () => show(current + dir));
+    return b;
   };
+  const nav = document.createElement('div');
+  nav.className = 'process-panel__nav';
+  nav.append(arrow(-1), arrow(1));
+  const show = (i) => {
+    current = (i + steps.length) % steps.length;
+    steps.forEach((li, j) => { li.classList.toggle('is-on', j === current); li.setAttribute('aria-pressed', String(j === current)); });
+    panel.replaceChildren(...[...steps[current].children].filter((c) => !c.classList.contains('process__node')).map((c) => c.cloneNode(true)), nav);
+  };
+  // Swipe left or right on the card for the next or previous step
+  let touchX = null;
+  panel.addEventListener('touchstart', (e) => { touchX = e.touches[0].clientX; }, { passive: true });
+  panel.addEventListener('touchend', (e) => {
+    if (touchX === null) return;
+    const dx = e.changedTouches[0].clientX - touchX;
+    touchX = null;
+    if (Math.abs(dx) > 40) show(current + (dx < 0 ? 1 : -1));
+  }, { passive: true });
   steps.forEach((li, i) => {
     li.tabIndex = 0;
     li.setAttribute('role', 'button');
     li.addEventListener('click', (e) => { if (!e.target.closest('a')) show(i); });
     li.addEventListener('keydown', (e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); show(i); } });
   });
-  const key = steps.findIndex((li) => li.classList.contains('process__key'));
-  show(key >= 0 ? key : 0);
+  show(0);
 
   const promises = $('#process .promise-list');
   if (!promises) return;
