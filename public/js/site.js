@@ -938,6 +938,33 @@ $$('img[src*="i.ytimg.com/vi/"][src*="/maxres"]').forEach((img) => {
   else img.addEventListener('load', fix, { once: true });
 });
 
+
+// Click and drag sideways with a mouse (Oct 13, 2026): for people without a trackpad or side-scrolling mouse.
+// Touch keeps the browser's own swipe. A real drag swallows the click that would otherwise follow it.
+const dragToScroll = (track) => {
+  let startX = 0; let startLeft = 0; let moved = false; let active = false;
+  track.addEventListener('pointerdown', (e) => {
+    if (e.pointerType !== 'mouse' || e.button !== 0) return;
+    active = true; moved = false; startX = e.clientX; startLeft = track.scrollLeft;
+    track.classList.add('is-dragging');
+  });
+  track.addEventListener('pointermove', (e) => {
+    if (!active) return;
+    const dx = e.clientX - startX;
+    if (Math.abs(dx) > 4) { moved = true; track.style.scrollSnapType = 'none'; track.style.scrollBehavior = 'auto'; track.scrollLeft = startLeft - dx; }
+  });
+  const end = () => {
+    if (!active) return;
+    active = false; track.classList.remove('is-dragging');
+    track.style.scrollSnapType = ''; track.style.scrollBehavior = '';
+  };
+  track.addEventListener('pointerup', end);
+  track.addEventListener('pointercancel', end);
+  track.addEventListener('pointerleave', end);
+  track.addEventListener('click', (e) => { if (moved) { e.preventDefault(); e.stopPropagation(); moved = false; } }, true);
+  track.addEventListener('dragstart', (e) => e.preventDefault());
+};
+
 // Homepage carousels. Plain ones (04 Industries) scroll a screen at a time; "focus" ones (03 Who we serve, 06 Our work)
 // keep one tile in the middle at full size while the tiles beside it shrink the further they are from the center,
 // all sitting on the same bottom line. With data-loop the row wraps around forever: the list is copied once on each
@@ -965,6 +992,7 @@ $$('[data-carousel]').forEach((box) => {
     track.append(...real.map(copy));
   }
   const items = [...track.children];
+  dragToScroll(track);
   const smooth = reduceMotion ? 'auto' : 'smooth';
   const chevron = (d) => `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="${d}"/></svg>`;
   const step = () => (items[1] ? items[1].offsetLeft - items[0].offsetLeft : track.clientWidth);
@@ -1131,5 +1159,46 @@ $$('[data-carousel]').forEach((box) => {
     li.addEventListener('click', () => open(li.classList.contains('is-open') ? -1 : i));
     li.addEventListener('keydown', (e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); open(li.classList.contains('is-open') ? -1 : i); } });
   });
-  open(0);
+  open(-1);
 })();
+
+// Homepage 02 What we do (Oct 13, 2026): one service at a time, story style. The bars above show where you are,
+// arrows step through (laptops), swipe or drag moves it too, and the bars follow the scroll.
+$$('[data-story]').forEach((box) => {
+  const track = $('.story__track', box);
+  const bars = $$('.story__bars li', box);
+  const slides = [...track.children];
+  if (!track || slides.length < 2) return;
+  dragToScroll(track);
+  const smooth = reduceMotion ? 'auto' : 'smooth';
+  let current = 0;
+  const goTo = (i) => {
+    current = Math.max(0, Math.min(slides.length - 1, i));
+    track.scrollTo({ left: slides[current].offsetLeft - track.offsetLeft, behavior: smooth });
+  };
+  const nav = document.createElement('div');
+  nav.className = 'story__nav';
+  for (const dir of [-1, 1]) {
+    const b = document.createElement('button');
+    b.type = 'button';
+    b.className = 'story__arrow';
+    b.setAttribute('aria-label', dir < 0 ? 'Previous service' : 'Next service');
+    b.innerHTML = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="${dir < 0 ? 'M15 5l-7 7 7 7' : 'M9 5l7 7-7 7'}"/></svg>`;
+    b.addEventListener('click', () => goTo(current + dir));
+    nav.append(b);
+  }
+  box.append(nav);
+  bars.forEach((bar, i) => { bar.addEventListener('click', () => goTo(i)); });
+  const update = () => {
+    const x = track.scrollLeft + track.clientWidth / 2;
+    let best = 0;
+    slides.forEach((s, i) => { if (Math.abs(s.offsetLeft - track.offsetLeft + s.offsetWidth / 2 - x) < Math.abs(slides[best].offsetLeft - track.offsetLeft + slides[best].offsetWidth / 2 - x)) best = i; });
+    current = best;
+    bars.forEach((bar, i) => bar.classList.toggle('is-on', i === best));
+    nav.children[0].disabled = best === 0;
+    nav.children[1].disabled = best === slides.length - 1;
+  };
+  let frame = 0;
+  track.addEventListener('scroll', () => { if (!frame) frame = requestAnimationFrame(() => { frame = 0; update(); }); }, { passive: true });
+  update();
+});
