@@ -25,6 +25,7 @@
   --alert: #e5484d;           /* "failure mode" labels */
   --ember: #e8621a;           /* proof card gradient */
   --on-dark: #ffffff;
+  --on-dark-text: #e4e4e7;        /* paragraphs on black: a touch off-white for the eyes (Oct 13, 2026) */
   --font-body: "Montserrat", "Montserrat Fallback", system-ui, -apple-system, "Segoe UI", sans-serif;
   --font-display: "League Spartan", "League Spartan Fallback", "Futura", system-ui, sans-serif;
   /* Long reading (Intel posts, Privacy, Terms): each device's own system font, the one people read
@@ -1979,7 +1980,7 @@ body:not(.page-sections) .kicker::before { content: none; }
 /* Homepage 08 Our process on phones (Oct 13, 2026): a row of five icons with their names, the tapped step's text in
    a card underneath (site.js builds .process-panel), and "How we work" folding open one promise at a time.
    Laptops are unchanged: the panel is hidden and every step and promise shows in full. */
-.process-panel { display: none; }
+.process-panel, .process__bars { display: none; }
 @media (max-width: 800px) {
   #process .process.is-stepper { grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 0; margin-top: 28px; }
   #process .process.is-stepper::before { top: 22px; bottom: auto; left: 10%; right: 10%; width: auto; height: 1px; background: currentColor; opacity: .4; }
@@ -2062,49 +2063,58 @@ body:not(.page-sections) .kicker::before { content: none; }
 
 /* 02 What we do, story style (Oct 13, 2026) */
 .story { position: relative; margin-top: 22px; }
-.story__bars { list-style: none; margin: 0 0 16px; padding: 0; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; }
-.story__bars li { height: 3px; border-radius: 2px; background: rgba(255, 255, 255, .18); cursor: pointer; transition: background-color .3s; }
-.story__bars li.is-on { background: var(--accent); }
+.story__bars { position: relative; list-style: none; margin: 0 0 16px; padding: 0; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; }
+.story__bars li { height: 3px; border-radius: 2px; background: rgba(255, 255, 255, .18); cursor: pointer; }
+.story__hl { position: absolute; top: 0; height: 3px; border-radius: 2px; background: var(--accent); transition: left .45s var(--ease), width .45s var(--ease), box-shadow .3s; pointer-events: none; }
+.story__hl.is-moving { box-shadow: 0 0 10px 2px rgba(255, 0, 0, .75); }
 .story__track { display: flex; gap: 14px; overflow-x: auto; scroll-snap-type: x mandatory; scrollbar-width: none; overscroll-behavior-x: contain; cursor: grab; }
 .story__track::-webkit-scrollbar { display: none; }
 .story__track.is-dragging { cursor: grabbing; }
-.story__slide { flex: 0 0 100%; min-width: 0; scroll-snap-align: start; display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 0; overflow: hidden; border-radius: 5px; background: var(--ink-soft); outline: 1px solid rgba(255, 255, 255, .1); outline-offset: -1px; }
-.story__media { position: relative; min-height: 100%; }
+.story__slide { flex: 0 0 100%; min-width: 0; scroll-snap-align: start; display: grid; grid-template-columns: minmax(0, 11fr) minmax(0, 9fr); gap: 0; overflow: hidden; border-radius: 5px; background: var(--ink-soft); outline: 1px solid rgba(255, 255, 255, .1); outline-offset: -1px; }
+.story__media { position: relative; aspect-ratio: 4 / 3; }
 .story__media img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; display: block; }
-.story__text { padding: clamp(24px, 3.5vw, 44px); display: flex; flex-direction: column; justify-content: center; }
+.story__text { padding: clamp(24px, 3.5vw, 40px) clamp(24px, 3.5vw, 40px) clamp(24px, 3.5vw, 40px) clamp(22px, 3vw, 34px); display: flex; flex-direction: column; justify-content: center; }
 .story__num { font: 500 .78rem/1 var(--font-body); letter-spacing: .12em; color: var(--accent); margin-bottom: 14px; }
 .story__text h3 { margin: 0 0 10px; font-size: clamp(1.4rem, 2.4vw, 1.9rem); letter-spacing: .04em; }
 .story__text p { margin: 0; font-size: .95rem; color: #bdbdc2; }
-.story__includes { margin-top: 14px !important; font: 500 .68rem/1.5 var(--font-body) !important; letter-spacing: .06em; text-transform: uppercase; color: #8a8a8f !important; }
-.story__nav { position: absolute; top: -8px; right: 0; transform: translateY(-100%); display: flex; gap: 8px; }
-.story__arrow { display: grid; place-items: center; width: 36px; height: 36px; border-radius: 50%; border: 1px solid rgba(255, 255, 255, .3); background: none; color: var(--on-dark); cursor: pointer; transition: border-color .2s, opacity .2s; }
+.story__includes { list-style: none; margin: 16px 0 0; padding: 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 6px 14px; }
+.story__includes li { position: relative; padding-left: 14px; font: 500 .74rem/1.35 var(--font-body); color: #bdbdc2; }
+.story__includes li::before { content: ""; position: absolute; left: 0; top: .42em; width: 6px; height: 6px; border-radius: 50%; background: var(--accent); }
+.story__arrow { position: absolute; top: calc(50% + 10px); z-index: 2; display: grid; place-items: center; width: 38px; height: 38px; margin-top: -19px; border-radius: 50%; border: 1px solid rgba(255, 255, 255, .25); background: rgba(0, 0, 0, .6); -webkit-backdrop-filter: blur(6px); backdrop-filter: blur(6px); color: var(--on-dark); cursor: pointer; transition: border-color .2s, opacity .2s; }
+.story__arrow--prev { left: -19px; }
+.story__arrow--next { right: -19px; }
 .story__arrow:hover { border-color: var(--on-dark); }
 .story__arrow[disabled] { opacity: .3; cursor: default; }
 .story__arrow svg { width: 16px; height: 16px; }
 @media (max-width: 760px) {
   .story__slide { grid-template-columns: minmax(0, 1fr); width: 100%; }
   .story__media { aspect-ratio: 2 / 1; min-height: 0; }
-  .story__text { min-width: 0; }
-  .story__text { padding: 18px 16px 20px; }
+  .story__text { min-width: 0; padding: 18px 16px 20px; }
   .story__text h3 { font-size: 1.3rem; }
   .story__text p { font-size: .88rem; }
-  .story__nav { display: none; }
+  .story__includes { gap: 5px 10px; }
+  .story__includes li { font-size: .7rem; }
+  .story__arrow { width: 32px; height: 32px; margin-top: -16px; }
+  .story__arrow--prev { left: -10px; }
+  .story__arrow--next { right: -10px; }
 }
 
 /* Process (Oct 13, 2026): square-cornered icon tiles, red numbers, arrows in the top right of the phone card */
-.process__node { border-radius: 5px; }
 .process__num, .process-panel .process__num { color: var(--accent); }
 .section--dark .process__num { color: var(--accent); }
 @media (max-width: 800px) {
   #process .process.is-stepper { margin-top: 22px; }
-  .process-panel { padding: 16px 18px 18px; padding-right: 96px; min-height: 0; margin-top: 14px; }
+  .process-panel { padding: 16px 18px 18px; padding-right: 96px; min-height: 0; margin-top: 14px; background: none; border-color: rgba(255, 255, 255, .1); }
+  .process__bars { grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 6px; margin: 12px 0 0; }
+  .process__bars li { height: 2px; }
+  .process__bars .story__hl { height: 2px; }
   .process-panel__nav { top: 12px; right: 12px; bottom: auto; }
   .process-panel__arrow { width: 32px; height: 32px; border-color: rgba(255, 255, 255, .25); color: #9a9a9f; }
   .process-panel .process__num { margin-bottom: 6px; }
   #process .subhead { margin-top: 28px; }
   #process .promise-list { margin-top: 10px; }
   #process .promise-list.is-folding li { padding: 12px 32px 12px 4px; }
-  .carousel--cards { --focus-w: 58vw; }
+  .carousel--cards { --focus-w: 52vw; }
 }
 
 /* Case studies on phones (Oct 13, 2026): the same two columns as laptops, with a shorter caption (label and link) */
@@ -2122,4 +2132,28 @@ body:not(.page-sections) .kicker::before { content: none; }
   .cases.is-ready .cases__caption > p:not(.cases__goal) { display: none; }
   .cases__goal { margin-bottom: 8px !important; font-size: .6rem !important; }
   .cases__link { font-size: .62rem; }
+}
+
+/* Body text on black (Oct 13, 2026): paragraphs a touch off-white; headings stay pure white */
+.section--dark > .container > p:not(.kicker), .cta--dark p, .section--dark .split-media__text > p { color: var(--on-dark-text); }
+
+/* Case study captions: the full line on laptops, a short blurb on phones, and a crop that keeps faces in view */
+.cases__blurb { display: none; }
+@media (max-width: 760px) {
+  .cases__text { display: none; }
+  .cases.is-ready .cases__caption > p.cases__blurb { display: block; margin: 0 0 10px; font-size: .72rem; line-height: 1.35; }
+  .cases__panel img { object-position: var(--focus-phone, 50% 25%); }
+  .fp-35-30 { --focus-phone: 35% 30%; } .fp-92-40 { --focus-phone: 92% 40%; } .fp-38-35 { --focus-phone: 38% 35%; }
+}
+
+/* SITREP on phones (Oct 13, 2026): dividers between the three steps, smaller screens, the demo cropped like laptops */
+@media (max-width: 700px) {
+  .sitrep-steps { gap: 0; border-top: 1px solid rgba(255, 255, 255, .14); border-bottom: 1px solid rgba(255, 255, 255, .14); }
+  .sitrep-steps li { padding: 12px 10px; }
+  .sitrep-steps li + li { border-left: 1px solid rgba(255, 255, 255, .14); }
+  .sitrep-steps li:first-child { padding-left: 0; }
+  .sitrep-steps li:last-child { padding-right: 0; }
+  .sitrep-steps__screen { aspect-ratio: 16 / 10; }
+  #sitrep .work-grid--single { width: 78%; margin-inline: auto; }
+  #sitrep .work-grid--single .video { aspect-ratio: 1; }
 }

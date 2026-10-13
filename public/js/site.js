@@ -1101,6 +1101,37 @@ $$('[data-carousel]').forEach((box) => {
   update();
 });
 
+// Story bars (Oct 13, 2026): a row of thin bars with one red highlight that slides to the current one and glows
+// while it moves. Tap or click a bar to jump; swipe across the row to step. Used by 02 What we do and 07 Our process.
+const storyBars = (bars, onPick) => {
+  const items = $$('li', bars);
+  const hl = document.createElement('span');
+  hl.className = 'story__hl';
+  bars.append(hl);
+  let current = 0;
+  let glow = 0;
+  const place = (animate = true) => {
+    const it = items[current];
+    if (!it) return;
+    if (!animate) hl.style.transition = 'none';
+    hl.style.left = `${it.offsetLeft}px`;
+    hl.style.width = `${it.offsetWidth}px`;
+    if (!animate) { void hl.offsetWidth; hl.style.transition = ''; }
+    else { hl.classList.add('is-moving'); clearTimeout(glow); glow = setTimeout(() => hl.classList.remove('is-moving'), 520); }
+  };
+  items.forEach((it, i) => { it.addEventListener('click', () => onPick(i)); });
+  let touchX = null;
+  bars.addEventListener('touchstart', (e) => { touchX = e.touches[0].clientX; }, { passive: true });
+  bars.addEventListener('touchend', (e) => {
+    if (touchX === null) return;
+    const dx = e.changedTouches[0].clientX - touchX; touchX = null;
+    if (Math.abs(dx) > 30) onPick(current + (dx < 0 ? 1 : -1));
+  }, { passive: true });
+  addEventListener('resize', () => place(false));
+  place(false);
+  return { set(i, animate = true) { if (i === current && animate) return; current = i; items.forEach((it, k) => it.classList.toggle('is-on', k === i)); place(animate); } };
+};
+
 // Homepage 08 Our process on phones (Oct 13, 2026): the five steps become a row of icons with their names, and
 // tapping one shows its text in a card underneath (Idea first; swipe the card or use its arrows for the next step). "How we work" folds open one promise at a
 // time. Laptops keep the full timeline and rows; without script phones get the full vertical timeline.
@@ -1126,11 +1157,19 @@ $$('[data-carousel]').forEach((box) => {
   const nav = document.createElement('div');
   nav.className = 'process-panel__nav';
   nav.append(arrow(-1), arrow(1));
+  const bars = document.createElement('ol');
+  bars.className = 'story__bars process__bars';
+  bars.setAttribute('aria-hidden', 'true');
+  bars.innerHTML = steps.map(() => '<li></li>').join('');
+  list.after(bars);
+  let indicator = null;
   const show = (i) => {
     current = (i + steps.length) % steps.length;
     steps.forEach((li, j) => { li.classList.toggle('is-on', j === current); li.setAttribute('aria-pressed', String(j === current)); });
     panel.replaceChildren(...[...steps[current].children].filter((c) => !c.classList.contains('process__node')).map((c) => c.cloneNode(true)), nav);
+    if (indicator) indicator.set(current);
   };
+  indicator = storyBars(bars, show);
   // Swipe left or right on the card for the next or previous step
   let touchX = null;
   panel.addEventListener('touchstart', (e) => { touchX = e.touches[0].clientX; }, { passive: true });
@@ -1162,11 +1201,12 @@ $$('[data-carousel]').forEach((box) => {
   open(-1);
 })();
 
+
 // Homepage 02 What we do (Oct 13, 2026): one service at a time, story style. The bars above show where you are,
 // arrows step through (laptops), swipe or drag moves it too, and the bars follow the scroll.
 $$('[data-story]').forEach((box) => {
   const track = $('.story__track', box);
-  const bars = $$('.story__bars li', box);
+  const bars = $('.story__bars', box);
   const slides = [...track.children];
   if (!track || slides.length < 2) return;
   dragToScroll(track);
@@ -1176,27 +1216,26 @@ $$('[data-story]').forEach((box) => {
     current = Math.max(0, Math.min(slides.length - 1, i));
     track.scrollTo({ left: slides[current].offsetLeft - track.offsetLeft, behavior: smooth });
   };
-  const nav = document.createElement('div');
-  nav.className = 'story__nav';
+  const indicator = storyBars(bars, goTo);
+  const arrows = [];
   for (const dir of [-1, 1]) {
     const b = document.createElement('button');
     b.type = 'button';
-    b.className = 'story__arrow';
-    b.setAttribute('aria-label', dir < 0 ? 'Previous service' : 'Next service');
+    b.className = `story__arrow story__arrow--${dir < 0 ? 'prev' : 'next'}`;
+    b.setAttribute('aria-label', dir < 0 ? 'Previous' : 'Next');
     b.innerHTML = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="${dir < 0 ? 'M15 5l-7 7 7 7' : 'M9 5l7 7-7 7'}"/></svg>`;
     b.addEventListener('click', () => goTo(current + dir));
-    nav.append(b);
+    box.append(b);
+    arrows.push(b);
   }
-  box.append(nav);
-  bars.forEach((bar, i) => { bar.addEventListener('click', () => goTo(i)); });
   const update = () => {
     const x = track.scrollLeft + track.clientWidth / 2;
     let best = 0;
     slides.forEach((s, i) => { if (Math.abs(s.offsetLeft - track.offsetLeft + s.offsetWidth / 2 - x) < Math.abs(slides[best].offsetLeft - track.offsetLeft + slides[best].offsetWidth / 2 - x)) best = i; });
     current = best;
-    bars.forEach((bar, i) => bar.classList.toggle('is-on', i === best));
-    nav.children[0].disabled = best === 0;
-    nav.children[1].disabled = best === slides.length - 1;
+    indicator.set(best);
+    arrows[0].disabled = best === 0;
+    arrows[1].disabled = best === slides.length - 1;
   };
   let frame = 0;
   track.addEventListener('scroll', () => { if (!frame) frame = requestAnimationFrame(() => { frame = 0; update(); }); }, { passive: true });
