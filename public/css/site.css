@@ -738,7 +738,7 @@ body:is(.nav-open, .nav-closing) .site-header { -webkit-backdrop-filter: none; b
   .work-grid--portrait .video__label { left: 10px; right: 10px; bottom: 10px; font-size: .78rem; line-height: 1.25; }
   .work-grid--portrait .video .video__play, .work-grid--portrait .video:hover .video__play { opacity: .9; transform: scale(.7); }
 }
-.video--outline { border: 1px solid rgba(255, 255, 255, .45); } /* same outline as the .step-cards tiles */
+.video--outline { border: 1px solid #2e2e31; } /* the SITREP demo: a dark grey edge (Oct 13, 2026) */
 .video--feature .video__play { opacity: 1; transform: none; width: 84px; height: 84px; margin: -42px 0 0 -42px; }
 .video--feature .video__play::after { left: 34px; top: 27px; border-width: 15px 0 15px 24px; }
 .video--feature .video__label { font-size: clamp(1rem, 1.6vw, 1.3rem); left: clamp(14px, 2vw, 24px); bottom: clamp(12px, 1.8vw, 22px); }
@@ -2009,22 +2009,23 @@ body:not(.page-sections) .kicker::before { content: none; }
   .carousel--cards .carousel__arrow--next, .carousel--tiles .carousel__arrow--next { right: 8px; }
 }
 
-/* Homepage SITREP on laptops (Oct 13, 2026): three columns. The three step tiles stack in the left column (screen on
-   top, then the step and its line, same raised style, just smaller), and the demo film fills the right two columns,
-   cropped to the tiles' height (the recording has black bars at its sides, and site.js crops the player to fit).
+/* Homepage SITREP on laptops (Oct 13, 2026, layout A): the three steps as numbered rows on the left, each with a small
+   version of its red animated screen, divided like the Case studies and Intel lists; the demo film on the right.
    Phones keep the three tiles across with the film underneath. */
 @media (min-width: 761px) {
-  .sitrep-split { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 2fr); gap: 14px; align-items: stretch; margin-top: 28px; }
-  .sitrep-split .sitrep-steps { grid-template-columns: minmax(0, 1fr); gap: 14px; margin: 0; }
-  .sitrep-split .sitrep-steps li { display: grid; grid-template-columns: minmax(0, 2fr) minmax(0, 3fr); grid-template-rows: auto auto; align-content: center; column-gap: 14px; aspect-ratio: auto; padding: 12px; }
-  .sitrep-split .sitrep-steps__screen { grid-row: 1 / 3; align-self: stretch; min-height: 96px; margin: 0; }
-  .sitrep-split .sitrep-glyphs svg { width: 18px; height: 18px; }
-  .sitrep-split .sitrep-steps h4 { margin: 0 0 4px; font-size: .95rem; }
-  .sitrep-split .sitrep-steps p { margin: 0; font-size: .82rem; line-height: 1.4; }
+  .sitrep-split { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); gap: 28px; align-items: center; margin-top: 28px; }
+  .sitrep-split .sitrep-steps { grid-template-columns: minmax(0, 1fr); gap: 0; margin: 0; border-bottom: 1px solid rgba(255, 255, 255, .14); }
+  .sitrep-split .sitrep-steps li { display: grid; grid-template-columns: 64px minmax(0, 1fr); grid-template-rows: auto auto; align-content: center; column-gap: 16px; aspect-ratio: auto; padding: 16px 0; border: 0; border-top: 1px solid rgba(255, 255, 255, .14); border-radius: 0; background: none; box-shadow: none; }
+  .sitrep-split .sitrep-steps li:hover { border-color: rgba(255, 255, 255, .14); transform: none; background: rgba(255, 255, 255, .03); }
+  .sitrep-split .sitrep-steps__screen { grid-row: 1 / 3; width: 64px; height: 64px; min-height: 0; margin: 0; border-radius: 3px; }
+  .sitrep-split .sitrep-steps__num { top: 4px; right: 5px; font-size: .5rem; }
+  .sitrep-split .sitrep-glyphs { gap: 4px; }
+  .sitrep-split .sitrep-glyphs svg { width: 12px; height: 12px; }
+  .sitrep-split .sitrep-steps h4 { grid-column: 2; margin: 0 0 4px; font-size: 1rem; }
+  .sitrep-split .sitrep-steps p { grid-column: 2; margin: 0; font-size: .86rem; line-height: 1.4; }
   .sitrep-split .work-grid--single { grid-template-columns: minmax(0, 1fr); min-width: 0; margin: 0; }
   .sitrep-split .work-grid--single .work-tile { min-width: 0; }
-  .sitrep-split .work-grid--single .work-tile, .sitrep-split .work-grid--single .video { height: 100%; }
-  .sitrep-split .work-grid--single .video { aspect-ratio: auto; }
+}
 }
 
 /* All-black homepage (Oct 13, 2026): the cards that were built for white bands (Our clients, The team, the phone
@@ -2037,3 +2038,7 @@ body:not(.page-sections) .kicker::before { content: none; }
 .section--dark .process-panel { background: var(--ink-soft); border-color: rgba(255, 255, 255, .14); }
 .section--dark .process-panel p { color: #bdbdc2; }
 .section--dark .promise-list.is-folding li::after { color: var(--on-dark); }
+/* Homepage team cards on black (Oct 13, 2026): the name band stays white so the cards pop */
+.section--dark .team__body { background: var(--paper); }
+.section--dark .team h3 { color: var(--ink); }
+.section--dark .team p { color: var(--muted); }
