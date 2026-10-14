@@ -1118,15 +1118,12 @@ body.subnav-stuck .site-header { background: transparent; -webkit-backdrop-filte
 .industry-cards li:has(a:focus-visible) { outline: 3px solid var(--accent); outline-offset: 3px; }
 .industry-cards .industry-cards__clients { margin: 6px 0 0; font: 500 .6rem/1.55 var(--font-body); letter-spacing: .08em; text-transform: uppercase; color: rgba(255, 255, 255, .72);
   display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; overflow: hidden; }
-.industry-cards__go { position: absolute; top: 14px; right: 14px; color: rgba(255, 255, 255, .8); transition: transform .3s var(--ease); }
-.industry-cards li:hover .industry-cards__go { transform: translate(2px, -2px); }
 @media (max-width: 900px) { .industry-cards { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
 @media (max-width: 800px) {
   .industry-cards { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
   .industry-cards li { padding: 12px; border-radius: 4px; }
   .industry-cards h3 { font-size: .9rem; }
-  .industry-cards__go { top: 10px; right: 10px; }
-}
+  }
 
 /* What we do: service rows */
 .service-list { list-style: none; margin: 36px 0 0; padding: 0; border-bottom: 1px solid rgba(255, 255, 255, .14); }
@@ -1748,9 +1745,6 @@ body:not(.page-sections) .kicker::before { content: none; }
 .carousel > .industry-cards::-webkit-scrollbar, .carousel > .work-grid::-webkit-scrollbar { display: none; }
 .carousel > .industry-cards > li, .carousel > .work-grid > .work-tile { scroll-snap-align: start; }
 .carousel > .industry-cards { --tile-gap: var(--car-gap); }
-.carousel--work { max-width: calc(var(--content) + 2 * var(--gutter)); margin: 32px auto 0; --car-gap: clamp(10px, 1.2vw, 16px); }
-.carousel--work > .work-grid { max-width: none; margin: 0; padding-inline: var(--gutter); scroll-padding-inline: var(--gutter); }
-.carousel--work > .work-grid > .work-tile { flex: 0 0 calc((100% - 2 * var(--car-gap)) / 3); min-width: 0; }
 .carousel__arrow {
   position: absolute; z-index: 3; top: calc(50% - 14px); transform: translateY(-50%);
   display: grid; place-items: center; width: 40px; height: 40px; padding: 0; border: 1px solid rgba(255, 255, 255, .35); border-radius: 50%;
@@ -1763,29 +1757,18 @@ body:not(.page-sections) .kicker::before { content: none; }
 .carousel__arrow svg { width: 18px; height: 18px; }
 .carousel__arrow--prev { left: 8px; }
 .carousel__arrow--next { right: 8px; }
-.carousel--work .carousel__arrow--prev { left: calc(var(--gutter) + 8px); }
-.carousel--work .carousel__arrow--next { right: calc(var(--gutter) + 8px); }
 .carousel__dots { display: flex; justify-content: center; gap: 8px; height: 28px; align-items: flex-end; }
 .carousel__dots span { width: 6px; height: 6px; border-radius: 50%; background: currentColor; opacity: .25; transition: opacity .25s, width .25s; }
 .carousel__dots span.is-on { opacity: .9; width: 18px; border-radius: 2px; }
 .carousel.is-static .carousel__arrow, .carousel.is-static .carousel__dots { display: none; }
 @media (max-width: 800px) {
   .carousel > .industry-cards { --tile-cols: 1.7; }
-  .carousel--work > .work-grid > .work-tile { flex-basis: calc((100% - var(--car-gap)) / 1.6); }
-  .carousel__arrow { width: 34px; height: 34px; }
-}
-@media (max-width: 560px) {
-  .carousel--work { --car-gap: 10px; }
-  .carousel--work .work-grid--portrait .video { border-radius: 4px; }
-  .carousel--work .work-grid--portrait .video__label { left: 12px; right: 12px; bottom: 12px; font-size: .9rem; line-height: 1.3; }
-  .carousel--work .work-grid--portrait .video .video__play, .carousel--work .work-grid--portrait .video:hover .video__play { opacity: .9; transform: scale(.75); }
+    .carousel__arrow { width: 34px; height: 34px; }
 }
 
 /* Phones: the newest Intel post is a 4:5 card instead of a tall 9:16 one, so it doesn't fill the screen */
-@media (max-width: 760px) {
-  .intel-card--tall .intel-card__media { aspect-ratio: 4 / 5; }
-}
-.carousel--work .carousel__arrow { top: 26%; } /* clear of the films' play buttons */
+
+ /* clear of the films' play buttons */
 /* Industry tiles: the backdrop each one belongs to (Athletics, Arts, Academics), a small red label above the name */
 
 /* ---------- Focus carousels (03 Who we serve, 06 Our work) ----------
@@ -1812,26 +1795,13 @@ body:not(.page-sections) .kicker::before { content: none; }
 .carousel--cards > .audience-cards { margin-inline: calc(-1 * var(--gutter)); padding-inline: calc(50% - var(--focus-w) / 2 + var(--gutter)); }
 
 /* 06 Our work: big 4:5 films, edge to edge */
-.carousel--films { --focus-w: clamp(260px, 30vw, 400px); --focus-gap: 0px; --focus-shrink: .26; margin-top: 28px; }
-.carousel--films > .work-grid { padding-block: 24px; }
-.carousel--films .work-grid--portrait .video { aspect-ratio: 4 / 5; border-radius: 5px; }
-.carousel--films .work-grid--portrait .video__label { font-size: clamp(.95rem, 1.2vw, 1.1rem); }
-.carousel--films .work-tile.is-center .video .video__play { opacity: .95; transform: scale(1); }
-.carousel--films .carousel__arrow--prev { left: max(8px, calc(50% - var(--focus-w) / 2 - 60px)); }
-.carousel--films .carousel__arrow--next { right: max(8px, calc(50% - var(--focus-w) / 2 - 60px)); }
 @media (max-width: 800px) {
   .carousel--cards { --focus-w: 68vw; }
-  .carousel--films { --focus-w: 70vw; }
-}
+  }
 @media (max-width: 700px) {
   .carousel--cards .audience-cards__body { padding: 14px 14px 18px; }
   .carousel--cards .audience-cards h3 { font-size: 1rem; letter-spacing: .05em; margin-bottom: .4em; }
   .carousel--cards .audience-cards p { font-size: .86rem; line-height: 1.45; }
-}
-@media (max-width: 560px) {
-  .carousel--films .work-grid--portrait .video { border-radius: 4px; }
-  .carousel--films .work-grid--portrait .video__label { left: 12px; right: 12px; bottom: 12px; font-size: .92rem; line-height: 1.3; }
-  .carousel--films .work-grid--portrait .video .video__play { opacity: .9; transform: scale(.75); }
 }
 
 /* 04 Industries on the homepage: tall 4:5 tiles */
@@ -1843,7 +1813,6 @@ body:not(.page-sections) .kicker::before { content: none; }
   content: ""; position: absolute; z-index: 5; left: 0; right: 0; bottom: 0; height: calc(var(--section) + clamp(40px, 6vw, 80px));
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, .55) 55%, #000 100%); pointer-events: none;
 }
-#what-we-do.section--light-services { padding-top: clamp(8px, 2vw, 24px); }
 /* The services list on a white band */
 .section:not(.section--dark) .service-list, .section:not(.section--dark) .service-list li { border-color: rgba(0, 0, 0, .12); }
 .section:not(.section--dark) .service-list li:hover { background: rgba(0, 0, 0, .03); }
@@ -1855,11 +1824,6 @@ body:not(.page-sections) .kicker::before { content: none; }
    06 Our work stays inside the page's content width; its tiles touch with no gap. 03 keeps a small gap. */
 .carousel--focus > .audience-cards > li, .carousel--focus > .work-grid > .work-tile { transform-origin: calc(50% - var(--side, 0) * 50%) 50%; }
 .carousel--cards { --focus-gap: 10px; --focus-shrink: .16; }
-.carousel--films { --focus-gap: 0px; --focus-shrink: .14; max-width: calc(var(--content) + 2 * var(--gutter)); margin-inline: auto; overflow: hidden; --focus-w: clamp(260px, 30vw, 360px); }
-.carousel--films > .work-grid { padding-inline: calc(50% - var(--focus-w) / 2); }
-.carousel--films .carousel__arrow--prev { left: calc(var(--gutter) + 6px); }
-.carousel--films .carousel__arrow--next { right: calc(var(--gutter) + 6px); }
-@media (max-width: 800px) { .carousel--films { --focus-w: 66vw; } }
 
 /* 04 Industries: bigger 4:5 tiles, three across on laptops */
 .carousel > .industry-cards { --tile-cols: 3; }
@@ -1871,8 +1835,6 @@ body:not(.page-sections) .kicker::before { content: none; }
    (they shrink toward the middle tile and down to the shelf). 06 Our work: a bigger middle film, smaller side films. */
 .carousel--focus > .audience-cards, .carousel--focus > .work-grid { align-items: flex-end; }
 .carousel--focus > .audience-cards > li, .carousel--focus > .work-grid > .work-tile { transform-origin: calc(50% - var(--side, 0) * 50%) 100%; }
-.carousel--films { --focus-w: clamp(280px, 34vw, 430px); --focus-shrink: .32; }
-@media (max-width: 800px) { .carousel--films { --focus-w: 68vw; --focus-shrink: .28; } }
 
 /* 04 Industries: tall 9:16 tiles */
 .carousel > .industry-cards > li { aspect-ratio: 9 / 16; }
@@ -1920,14 +1882,7 @@ body:not(.page-sections) .kicker::before { content: none; }
 @media (max-width: 800px) { .carousel--cards { --focus-w: 58vw; } }
 
 /* 06 Our work: side films tuck behind the middle one, which lifts off the page with a soft shadow */
-.carousel--films { --focus-gap: calc(var(--focus-w) * -.3); --focus-shrink: .3; }
-.carousel--films > .work-grid > .work-tile { transform-origin: 50% 100%; opacity: 1; filter: brightness(calc(1 - var(--d, 0) * .22)); position: relative; }
-.carousel--films > .work-grid > .work-tile .video { transition: box-shadow .3s ease-out; }
-.carousel--films > .work-grid > .work-tile.is-center .video { box-shadow: 0 34px 60px -18px rgba(0, 0, 0, .55), 0 14px 26px -10px rgba(0, 0, 0, .35); }
-.carousel--films > .work-grid { padding-block: 24px 52px; }
 /* (gap can't go negative, so the overlap comes from negative side margins on each film instead) */
-.carousel--films { --focus-gap: 0px; }
-.carousel--films > .work-grid > .work-tile { margin-inline: calc(var(--focus-w) * -.14); }
 
 /* Film tiles: which part of the frame shows in a tall crop (focus in content/portfolio.json, "x63" = 63% across) */
 .video img { object-position: var(--focus, 50% 50%); }
@@ -1938,22 +1893,17 @@ body:not(.page-sections) .kicker::before { content: none; }
 
 /* 06 Our work, back to the same look as 03: side films shrink toward the middle one and sit on the same bottom line,
    a small gap between them, no overlap, no shadow. The films stay bigger than 03's cards. */
-.carousel--films { --focus-gap: 10px; --focus-shrink: .16; }
-.carousel--films > .work-grid > .work-tile { margin-inline: 0; transform-origin: calc(50% - var(--side, 0) * 50%) 100%; opacity: calc(1 - var(--d, 0) * .4); filter: none; }
-.carousel--films > .work-grid > .work-tile.is-center .video { box-shadow: none; }
-.carousel--films > .work-grid { padding-block: 18px; }
 
 /* Homepage carousels, round 6 (Oct 4, 2026): all three rows (03, 04, 06) share one width, the content column plus
    the page margins on each side (so edge to edge on phones), and every tile in 03 and 06 stays the same size:
    no grow, shrink or fade as the row moves. */
 .carousel--cards, .carousel--tiles { max-width: none; margin-inline: calc(-1 * var(--gutter)); overflow: hidden; }
-.carousel--films { max-width: calc(var(--content) + 2 * var(--gutter)); margin-inline: auto; overflow: hidden; }
-.carousel--cards > .audience-cards, .carousel--tiles > .industry-cards, .carousel--films > .work-grid { margin-inline: 0; padding-inline: calc(50% - var(--focus-w) / 2); }
-.carousel--cards, .carousel--films { --focus-shrink: 0; }
+.carousel--cards > .audience-cards, .carousel--tiles > .industry-cards { margin-inline: 0; padding-inline: calc(50% - var(--focus-w) / 2); }
+.carousel--cards { --focus-shrink: 0; }
 .carousel--focus > .audience-cards > li, .carousel--focus > .work-grid > .work-tile { transform: none; opacity: 1; filter: none; transition: none; }
 .carousel--focus > .audience-cards > li:hover { transform: none; }
-.carousel--films .carousel__arrow--prev, .carousel--cards .carousel__arrow--prev, .carousel--tiles .carousel__arrow--prev { left: calc(var(--gutter) + 6px); }
-.carousel--films .carousel__arrow--next, .carousel--cards .carousel__arrow--next, .carousel--tiles .carousel__arrow--next { right: calc(var(--gutter) + 6px); }
+.carousel--cards .carousel__arrow--prev, .carousel--tiles .carousel__arrow--prev { left: calc(var(--gutter) + 6px); }
+.carousel--cards .carousel__arrow--next, .carousel--tiles .carousel__arrow--next { right: calc(var(--gutter) + 6px); }
 
 /* 03 Who we serve carousel: every card the same height (the tallest card sets it), photo on top, text below. */
 .carousel--cards > .audience-cards { align-items: stretch; }
@@ -2143,8 +2093,7 @@ body:not(.page-sections) .kicker::before { content: none; }
   .cases__text { display: none; }
   .cases.is-ready .cases__caption > p.cases__blurb { display: block; margin: 0 0 10px; font-size: .72rem; line-height: 1.35; }
   .cases__panel img { object-position: var(--focus-phone, 50% 25%); }
-  .fp-35-30 { --focus-phone: 35% 30%; } .fp-92-40 { --focus-phone: 92% 40%; } .fp-38-35 { --focus-phone: 38% 35%; }
-}
+  .fp-35-30 { --focus-phone: 35% 30%; } .fp-92-40 { --focus-phone: 92% 40%; } }
 
 /* SITREP on phones (Oct 13, 2026): dividers between the three steps, smaller screens, the demo cropped like laptops */
 @media (max-width: 700px) {
@@ -2161,7 +2110,7 @@ body:not(.page-sections) .kicker::before { content: none; }
 /* 03 Our clients and 05 Fields (Oct 13, 2026): story bars above the row and plain arrows above right, no dots */
 .carousel.has-bars { padding-top: 44px; }
 .carousel__bars { position: absolute; top: 14px; left: 0; right: 96px; margin: 0; grid-template-columns: repeat(var(--bars, 6), minmax(0, 1fr)); }
-.carousel--films .carousel__bars, .carousel--cards .carousel__bars, .carousel--tiles .carousel__bars { left: 0; right: 0; }
+.carousel--cards .carousel__bars, .carousel--tiles .carousel__bars { left: 0; right: 0; }
 .carousel.has-bars .carousel__dots { display: none; }
 .carousel.has-bars .carousel__arrow { top: 0; bottom: auto; transform: none; width: 32px; height: 32px; border: 0; background: none; opacity: .85; filter: drop-shadow(0 1px 3px rgba(0, 0, 0, .8)); }
 .carousel.has-bars .carousel__arrow svg { width: 22px; height: 22px; }
@@ -2193,7 +2142,6 @@ body:not(.page-sections) .kicker::before { content: none; }
 #process .promise-list.is-folding li::after { content: "+"; position: absolute; right: 8px; top: 50%; transform: translateY(-50%); font: 400 1.3rem/1 var(--font-body); color: var(--on-dark); }
 #process .promise-list.is-folding li.is-open::after { content: "\2212"; }
 #process .promise-list.is-folding li:not(.is-open) p { display: none; }
-@media (min-width: 701px) { #process .promise-list.is-folding li { grid-template-columns: 44px minmax(0, 1fr); padding-right: 40px; } #process .promise-list.is-folding li p { grid-column: 2; margin-top: 6px; } }
 
 /* SITREP demo: no outline; the picture and the cropped player nudged left so the tool sits centered in the crop */
 .video--outline { border-color: transparent; }
@@ -2299,4 +2247,23 @@ body:not(.page-sections) .kicker::before { content: none; }
   .carousel--cards .audience-cards__body { padding: 11px 11px 12px; }
   .carousel--cards .audience-cards h3 { font-size: .84rem; margin-bottom: .35em; }
   .carousel--cards .audience-cards p { font-size: .72rem; line-height: 1.38; }
+}
+
+/* How we work on laptops (Oct 13, 2026): a click-through like the case studies. Titles on the left (white number,
+   chevron), the chosen promise's line in a dark panel on the right. Phones keep the folding rows above. */
+.how-tabs__panel { display: none; }
+@media (min-width: 801px) {
+  .how-tabs { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 28px; align-items: stretch; margin-top: 18px; }
+  .how-tabs #process .promise-list, #process .how-tabs .promise-list { margin: 0; }
+  #process .how-tabs .promise-list li { grid-template-columns: 36px minmax(0, 1fr) 16px; gap: 10px; padding: 16px 12px; color: rgba(255, 255, 255, .55); transition: color .25s, background-color .25s; }
+  #process .how-tabs .promise-list li:hover, #process .how-tabs .promise-list li.is-open { color: var(--on-dark); background: rgba(255, 255, 255, .04); }
+  #process .how-tabs .promise-list h4 { color: inherit; font-size: .98rem; }
+  #process .how-tabs .promise-list li p { display: none; }
+  #process .how-tabs .promise-list li::after { content: ""; position: static; transform: none; width: 7px; height: 7px; border: solid currentColor; border-width: 1.6px 1.6px 0 0; rotate: 45deg; justify-self: center; }
+  #process .how-tabs .promise-list li.is-open::after { content: ""; }
+  #process .how-tabs .promise-list__num { color: var(--on-dark); }
+  .how-tabs__panel { display: flex; align-items: center; padding: 22px 26px; border-radius: 5px; background: var(--ink-soft); outline: 1px solid rgba(255, 255, 255, .1); outline-offset: -1px; }
+  .how-tabs__panel p { margin: 0; font-size: 1rem; line-height: 1.6; color: var(--on-dark-text); }
+  /* Process timeline numbers in white on laptops */
+  .process h3 .process__num { color: var(--on-dark); }
 }

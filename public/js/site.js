@@ -992,47 +992,29 @@ const storyBars = (bars, onPick) => {
 
 // Click and drag sideways with a mouse (Oct 13, 2026): for people without a trackpad or side-scrolling mouse.
 // Touch keeps the browser's own swipe. A real drag swallows the click that would otherwise follow it.
-const dragToScroll = (track, steps) => {
-  let startX = 0; let startLeft = 0; let moved = false; let active = false; let startIndex = 0;
+const dragToScroll = (track) => {
+  let startX = 0; let startLeft = 0; let moved = false; let active = false;
   track.addEventListener('pointerdown', (e) => {
     if (e.pointerType !== 'mouse' || e.button !== 0) return;
     active = true; moved = false; startX = e.clientX; startLeft = track.scrollLeft;
-    startIndex = steps ? steps.index() : 0;
     track.classList.add('is-dragging');
   });
   track.addEventListener('pointermove', (e) => {
     if (!active) return;
     const dx = e.clientX - startX;
-    if (Math.abs(dx) > 12) { moved = true; track.style.scrollSnapType = 'none'; track.style.scrollBehavior = 'auto'; track.scrollLeft = startLeft - dx; }
+    // A short dead zone and a slightly slower follow, so a click with a wobble doesn't move the row
+    if (moved || Math.abs(dx) > 10) { moved = true; track.style.scrollSnapType = 'none'; track.style.scrollBehavior = 'auto'; track.scrollLeft = startLeft - dx * 0.85; }
   });
-  const end = (e) => {
+  const end = () => {
     if (!active) return;
     active = false; track.classList.remove('is-dragging');
     track.style.scrollSnapType = ''; track.style.scrollBehavior = '';
-    // One step per drag: a real pull moves exactly one tile the way you pulled, a small one settles back
-    if (steps && moved) {
-      const dx = (e && 'clientX' in e ? e.clientX : startX) - startX;
-      steps.go(startIndex + (Math.abs(dx) > 50 ? (dx < 0 ? 1 : -1) : 0));
-    }
   };
   track.addEventListener('pointerup', end);
   track.addEventListener('pointercancel', end);
   track.addEventListener('pointerleave', end);
   track.addEventListener('click', (e) => { if (moved) { e.preventDefault(); e.stopPropagation(); moved = false; } }, true);
   track.addEventListener('dragstart', (e) => e.preventDefault());
-  // Trackpads and side-scrolling mice: one sideways swipe moves exactly one tile, however hard the flick
-  if (steps) {
-    let locked = false; let quiet = 0; let acc = 0;
-    track.addEventListener('wheel', (e) => {
-      if (Math.abs(e.deltaX) <= Math.abs(e.deltaY)) return;
-      e.preventDefault();
-      clearTimeout(quiet);
-      quiet = setTimeout(() => { locked = false; acc = 0; }, 260);
-      if (locked) return;
-      acc += e.deltaX;
-      if (Math.abs(acc) > 24) { locked = true; steps.go(steps.index() + (acc > 0 ? 1 : -1)); acc = 0; }
-    }, { passive: false });
-  }
 };
 
 // Homepage carousels. Plain ones (04 Industries) scroll a screen at a time; "focus" ones (03 Who we serve, 06 Our work)
@@ -1086,9 +1068,7 @@ $$('[data-carousel]').forEach((box) => {
   };
   const prev = arrow(-1);
   const next = arrow(1);
-  dragToScroll(track, focus
-    ? { index: () => Math.max(0, current), go: (i) => centerOn(items[Math.max(0, Math.min(items.length - 1, i))]) }
-    : null);
+  dragToScroll(track);
   const dots = document.createElement('div');
   dots.className = 'carousel__dots';
   dots.setAttribute('aria-hidden', 'true');
@@ -1247,16 +1227,35 @@ $$('[data-carousel]').forEach((box) => {
 
   const promises = $('#process .promise-list');
   if (!promises) return;
+  // Laptops: a click-through like the case studies (titles on the left, the chosen line in a panel on the right).
+  // Phones: each promise folds open under its title, all closed to start.
   promises.classList.add('is-folding');
   const rows = [...promises.children];
-  const open = (i) => rows.forEach((li, j) => { li.classList.toggle('is-open', j === i); li.setAttribute('aria-expanded', String(j === i)); });
+  const wide = matchMedia('(min-width: 801px)');
+  const how = document.createElement('div');
+  how.className = 'how-tabs';
+  const howPanel = document.createElement('div');
+  howPanel.className = 'how-tabs__panel';
+  howPanel.setAttribute('aria-live', 'polite');
+  promises.replaceWith(how);
+  how.append(promises, howPanel);
+  let openRow = -1;
+  const open = (i) => {
+    openRow = i;
+    rows.forEach((li, j) => { li.classList.toggle('is-open', j === i); li.setAttribute('aria-expanded', String(j === i)); });
+    const text = rows[i] && $('p', rows[i]);
+    howPanel.replaceChildren(...(text ? [text.cloneNode(true)] : []));
+  };
+  const pick = (i) => open(wide.matches ? i : (openRow === i ? -1 : i));
   rows.forEach((li, i) => {
     li.tabIndex = 0;
     li.setAttribute('role', 'button');
-    li.addEventListener('click', () => open(li.classList.contains('is-open') ? -1 : i));
-    li.addEventListener('keydown', (e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); open(li.classList.contains('is-open') ? -1 : i); } });
+    li.addEventListener('click', () => pick(i));
+    li.addEventListener('keydown', (e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); pick(i); } });
   });
-  open(-1);
+  const reset = () => open(wide.matches ? 0 : -1);
+  wide.addEventListener('change', reset);
+  reset();
 })();
 
 
@@ -1273,7 +1272,7 @@ $$('[data-story]').forEach((box) => {
     current = Math.max(0, Math.min(slides.length - 1, i));
     track.scrollTo({ left: slides[current].offsetLeft - track.offsetLeft, behavior: smooth });
   };
-  dragToScroll(track, { index: () => current, go: goTo });
+  dragToScroll(track);
   const indicator = storyBars(bars, goTo);
   const arrows = [];
   for (const dir of [-1, 1]) {

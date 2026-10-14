@@ -98,3 +98,14 @@ Where the new site goes beyond Wix, it's additive: entrance and scroll animation
 - **Rollback:** the site as it was before this pass is tagged `pre-manifesto-v0` (commit `ace9097`). Each page is its own commit, so one page can be reverted on its own.
 - **Still a draft:** Chris, Ari and Tony are working through the manifesto over the next few weeks. Until ITCA okays it, don't name anyone in *Your Voice, Your Power* or describe individual episodes, and claim nothing about its viewers or results.
 - **Manifesto v0.2 (Oct 9, 2026):** Chris's follow-up set the mechanism (nothing changes anyone unless they feel something real; nothing real comes out unless someone goes and gets it; the camera comes last), two hard rules (no actors; we find the feeling, we don't add it, with the nevers beside any emotion claim), the line "Blood, sweat and tears built this boring world." and the word rules (film, cuts, filmmakers; "video" only in "video production company"). About, Home, Process, SITREP, Who we serve, the Businesses, Professional Services and Builders & makers pages, every field and customer page headline, the FAQ questions, llms.txt and the docs follow it. Films that use actors stay on the site until Tony decides (curation is his call).
+
+## Homepage redesign pass (Ari, Oct 13, 2026)
+
+- Whole homepage black; even section spacing; order: Who we are, What we do, Our work (with the client logos tucked under it), Our clients, Fields, Case studies, Our process, SITREP, Intel, The team.
+- What we do is "Core capabilities": three services (Story, Production, Editing; Photography and Rentals folded into Production) in a story-style carousel.
+- Our clients and Fields carousels: equal 9:16 tiles, story bars above, side chevrons. Our work: 3-across widescreen grid (2 across on phones, ninth film hidden there).
+- Case studies on phones: two columns with a short blurb; labels Education, Education, Exposure, Trust, Awareness, Exposure.
+- Process: timeline with story bars (phones: tap-through stepper); How we work is a click-through on laptops and folds on phones.
+- SITREP: steps as rows beside the demo on laptops (the demo is cropped to hide its side bars); three across on phones.
+- Intel titled "Notes from the field." with three equal rows. Team cards dark.
+- Still open: a cooler Process icon treatment (line-draw on hover was the pick in mockups, not built yet); a custom 3D asset set for Core capabilities if wanted.
