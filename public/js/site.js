@@ -955,16 +955,36 @@ const storyBars = (bars, onPick) => {
     hl.style.left = `${it.offsetLeft}px`;
     hl.style.width = `${it.offsetWidth}px`;
     if (!animate) { void hl.offsetWidth; hl.style.transition = ''; }
-    else { hl.classList.add('is-moving'); clearTimeout(glow); glow = setTimeout(() => hl.classList.remove('is-moving'), 220); }
+    else { hl.classList.add('is-moving'); clearTimeout(glow); glow = setTimeout(() => hl.classList.remove('is-moving'), 240); }
   };
-  items.forEach((it, i) => { it.addEventListener('click', () => onPick(i)); });
-  let touchX = null;
-  bars.addEventListener('touchstart', (e) => { touchX = e.touches[0].clientX; }, { passive: true });
-  bars.addEventListener('touchend', (e) => {
-    if (touchX === null) return;
-    const dx = e.changedTouches[0].clientX - touchX; touchX = null;
-    if (Math.abs(dx) > 30) onPick(current + (dx < 0 ? 1 : -1));
-  }, { passive: true });
+  // Tap or click a bar to jump to it; press and slide along the row (finger or mouse) to scrub through them.
+  // Whatever bar is under the pointer is the one that shows, so every gesture lands where people expect.
+  const under = (x) => {
+    let best = 0; let bestD = Infinity;
+    items.forEach((it, i) => {
+      const r = it.getBoundingClientRect();
+      const d = x < r.left ? r.left - x : x > r.right ? x - r.right : 0;
+      if (d < bestD) { bestD = d; best = i; }
+    });
+    return best;
+  };
+  let scrubbing = false; let last = -1;
+  bars.addEventListener('pointerdown', (e) => {
+    if (e.pointerType === 'mouse' && e.button !== 0) return;
+    scrubbing = true;
+    try { bars.setPointerCapture(e.pointerId); } catch {}
+    last = under(e.clientX);
+    if (last !== current) onPick(last);
+    if (e.pointerType === 'mouse') e.preventDefault();
+  });
+  bars.addEventListener('pointermove', (e) => {
+    if (!scrubbing) return;
+    const i = under(e.clientX);
+    if (i !== last) { last = i; onPick(i); }
+  });
+  const stop = () => { scrubbing = false; };
+  bars.addEventListener('pointerup', stop);
+  bars.addEventListener('pointercancel', stop);
   addEventListener('resize', () => place(false));
   place(false);
   return { set(i, animate = true) { if (i === current && animate) return; current = i; items.forEach((it, k) => it.classList.toggle('is-on', k === i)); place(animate); } };
@@ -972,28 +992,47 @@ const storyBars = (bars, onPick) => {
 
 // Click and drag sideways with a mouse (Oct 13, 2026): for people without a trackpad or side-scrolling mouse.
 // Touch keeps the browser's own swipe. A real drag swallows the click that would otherwise follow it.
-const dragToScroll = (track) => {
-  let startX = 0; let startLeft = 0; let moved = false; let active = false;
+const dragToScroll = (track, steps) => {
+  let startX = 0; let startLeft = 0; let moved = false; let active = false; let startIndex = 0;
   track.addEventListener('pointerdown', (e) => {
     if (e.pointerType !== 'mouse' || e.button !== 0) return;
     active = true; moved = false; startX = e.clientX; startLeft = track.scrollLeft;
+    startIndex = steps ? steps.index() : 0;
     track.classList.add('is-dragging');
   });
   track.addEventListener('pointermove', (e) => {
     if (!active) return;
     const dx = e.clientX - startX;
-    if (Math.abs(dx) > 4) { moved = true; track.style.scrollSnapType = 'none'; track.style.scrollBehavior = 'auto'; track.scrollLeft = startLeft - dx; }
+    if (Math.abs(dx) > 12) { moved = true; track.style.scrollSnapType = 'none'; track.style.scrollBehavior = 'auto'; track.scrollLeft = startLeft - dx; }
   });
-  const end = () => {
+  const end = (e) => {
     if (!active) return;
     active = false; track.classList.remove('is-dragging');
     track.style.scrollSnapType = ''; track.style.scrollBehavior = '';
+    // One step per drag: a real pull moves exactly one tile the way you pulled, a small one settles back
+    if (steps && moved) {
+      const dx = (e && 'clientX' in e ? e.clientX : startX) - startX;
+      steps.go(startIndex + (Math.abs(dx) > 50 ? (dx < 0 ? 1 : -1) : 0));
+    }
   };
   track.addEventListener('pointerup', end);
   track.addEventListener('pointercancel', end);
   track.addEventListener('pointerleave', end);
   track.addEventListener('click', (e) => { if (moved) { e.preventDefault(); e.stopPropagation(); moved = false; } }, true);
   track.addEventListener('dragstart', (e) => e.preventDefault());
+  // Trackpads and side-scrolling mice: one sideways swipe moves exactly one tile, however hard the flick
+  if (steps) {
+    let locked = false; let quiet = 0; let acc = 0;
+    track.addEventListener('wheel', (e) => {
+      if (Math.abs(e.deltaX) <= Math.abs(e.deltaY)) return;
+      e.preventDefault();
+      clearTimeout(quiet);
+      quiet = setTimeout(() => { locked = false; acc = 0; }, 260);
+      if (locked) return;
+      acc += e.deltaX;
+      if (Math.abs(acc) > 24) { locked = true; steps.go(steps.index() + (acc > 0 ? 1 : -1)); acc = 0; }
+    }, { passive: false });
+  }
 };
 
 // Homepage carousels. Plain ones (04 Industries) scroll a screen at a time; "focus" ones (03 Who we serve, 06 Our work)
@@ -1023,7 +1062,6 @@ $$('[data-carousel]').forEach((box) => {
     track.append(...real.map(copy));
   }
   const items = [...track.children];
-  dragToScroll(track);
   const smooth = reduceMotion ? 'auto' : 'smooth';
   const chevron = (d) => `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="${d}"/></svg>`;
   const step = () => (items[1] ? items[1].offsetLeft - items[0].offsetLeft : track.clientWidth);
@@ -1048,6 +1086,9 @@ $$('[data-carousel]').forEach((box) => {
   };
   const prev = arrow(-1);
   const next = arrow(1);
+  dragToScroll(track, focus
+    ? { index: () => Math.max(0, current), go: (i) => centerOn(items[Math.max(0, Math.min(items.length - 1, i))]) }
+    : null);
   const dots = document.createElement('div');
   dots.className = 'carousel__dots';
   dots.setAttribute('aria-hidden', 'true');
@@ -1226,13 +1267,13 @@ $$('[data-story]').forEach((box) => {
   const bars = $('.story__bars', box);
   const slides = [...track.children];
   if (!track || slides.length < 2) return;
-  dragToScroll(track);
   const smooth = reduceMotion ? 'auto' : 'smooth';
   let current = 0;
   const goTo = (i) => {
     current = Math.max(0, Math.min(slides.length - 1, i));
     track.scrollTo({ left: slides[current].offsetLeft - track.offsetLeft, behavior: smooth });
   };
+  dragToScroll(track, { index: () => current, go: goTo });
   const indicator = storyBars(bars, goTo);
   const arrows = [];
   for (const dir of [-1, 1]) {

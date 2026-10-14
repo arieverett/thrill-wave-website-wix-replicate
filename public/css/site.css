@@ -2168,6 +2168,7 @@ body:not(.page-sections) .kicker::before { content: none; }
 .carousel.has-bars .carousel__arrow--prev { left: auto; right: 36px; }
 .carousel.has-bars .carousel__arrow--next { right: 0; }
 .carousel.has-bars .carousel__arrow:hover { background: none; opacity: 1; }
+.carousel.has-bars .carousel__arrow, .carousel.has-bars .carousel__arrow:hover, .carousel.has-bars .carousel__arrow:focus-visible { background: none; border: 0; border-radius: 0; -webkit-backdrop-filter: none; backdrop-filter: none; }
 @media (max-width: 800px) {
   .carousel.has-bars { padding-top: 34px; }
   .carousel--cards.has-bars .carousel__bars, .carousel--tiles.has-bars .carousel__bars { left: var(--gutter); right: var(--gutter); top: 10px; }
@@ -2205,4 +2206,68 @@ body:not(.page-sections) .kicker::before { content: none; }
   .sitrep-steps li:last-child { padding-right: 0; }
   .sitrep-steps { grid-template-columns: calc((100% - 20px) / 3 + 0px) calc((100% - 20px) / 3 + 20px) calc((100% - 20px) / 3 + 0px); }
   #sitrep .work-grid--single { width: 84%; }
+}
+
+/* ===== Oct 13, 2026, evening pass ===== */
+
+/* Story bars everywhere: a bigger, taller hit area (the bar itself stays thin), scrub with finger or mouse,
+   and a touch more glow as the highlight sets off */
+.story__bars { touch-action: pan-y; cursor: pointer; -webkit-user-select: none; user-select: none; }
+.story__bars li { position: relative; }
+.story__bars li::after { content: ""; position: absolute; inset: -14px -4px; }
+.story__hl.is-moving { box-shadow: 0 0 9px 2px rgba(255, 0, 0, .72); }
+
+/* 02 Core capabilities: still on the left third, text on the right two thirds; on phones every still is the same
+   16:9 band and the text sits clear of the arrows */
+.story__slide { grid-template-columns: minmax(0, 1fr) minmax(0, 2fr); }
+@media (max-width: 760px) {
+  .story__slide { grid-template-columns: minmax(0, 1fr); grid-template-rows: auto 1fr; min-height: 0; align-content: start; }
+  .story__media { aspect-ratio: 16 / 9; min-height: 0; }
+  .story__text { padding: 18px 36px 22px; justify-content: flex-start; }
+  .story__arrow { width: 30px; height: 40px; }
+  .story__arrow--prev { left: 0; }
+  .story__arrow--next { right: 0; }
+}
+
+/* 03 Our clients and 05 Fields on laptops: plain chevrons on the left and right of the row, with a soft shadow */
+@media (min-width: 801px) {
+  .carousel__bars { right: 0; }
+  .carousel.has-bars .carousel__arrow { z-index: 30; top: calc(44px + (100% - 44px) / 2); margin-top: -22px; width: 44px; height: 44px; opacity: .95; filter: drop-shadow(0 2px 6px rgba(0, 0, 0, .9)) drop-shadow(0 0 2px rgba(0, 0, 0, .6)); }
+  .carousel.has-bars .carousel__arrow svg { width: 28px; height: 28px; }
+  .carousel.has-bars .carousel__arrow--prev { left: 6px; right: auto; }
+  .carousel.has-bars .carousel__arrow--next { right: 6px; left: auto; }
+  .carousel.has-bars .carousel__arrow:hover { transform: scale(1.1); }
+}
+
+/* Case studies on phones: one line per row, so every row is the same height */
+@media (max-width: 760px) {
+  .cases.is-ready { grid-template-columns: minmax(0, 1.12fr) minmax(0, 1fr); }
+  .cases__client, .cases__title { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .fp-46-30 { --focus-phone: 46% 30%; } .fp-78-30 { --focus-phone: 78% 30%; } .fp-70-30 { --focus-phone: 70% 30%; }
+}
+
+/* Process: the number sits in front of the step name (01 IDEA), in red; icons centered in their columns on laptops */
+.process h3 .process__num, .process-panel h3 .process__num { display: inline; margin: 0 8px 0 0; font: 500 .72rem/1 var(--font-body); letter-spacing: .1em; color: var(--accent); vertical-align: 2px; }
+@media (min-width: 801px) {
+  .process li .process__node { margin-inline: auto; }
+  .process::before { left: calc((100% - 64px) / 10); right: calc((100% - 64px) / 10); }
+}
+/* Phone step card: black, with plain chevrons at the far left and right like the carousels */
+@media (max-width: 800px) {
+  .section--dark .process-panel, .process-panel { background: #000; border-color: rgba(255, 255, 255, .1); padding: 16px 40px 18px; }
+  .process-panel__nav { position: absolute; inset: 0; top: 0; right: 0; bottom: 0; display: block; pointer-events: none; }
+  .process-panel__arrow { position: absolute; top: 50%; width: 32px; height: 44px; margin-top: -22px; border: 0; border-radius: 0; background: none; color: var(--on-dark); pointer-events: auto; filter: drop-shadow(0 1px 3px rgba(0, 0, 0, .8)); }
+  .process-panel__arrow:active { background: none; transform: scale(.92); }
+  .process-panel__arrow svg { width: 22px; height: 22px; }
+  .process-panel__arrow--prev { left: 4px; }
+  .process-panel__arrow--next { right: 4px; }
+}
+
+/* SITREP on phones: the dividers start just under the top of the screens and stop at the text, like laptops */
+@media (max-width: 700px) {
+  .sitrep-steps li, .sitrep-steps li:first-child, .sitrep-steps li:last-child { padding-top: 0; padding-bottom: 0; }
+  .sitrep-steps { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0 20px; }
+  .sitrep-steps li, .sitrep-steps li:first-child, .sitrep-steps li:last-child, .sitrep-steps li + li { padding: 0; }
+  .sitrep-steps li + li { border-left: 0; }
+  .sitrep-steps li + li::before { content: ""; position: absolute; left: -10px; top: 6px; bottom: 2px; width: 1px; background: rgba(255, 255, 255, .14); }
 }
