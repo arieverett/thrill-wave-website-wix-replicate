@@ -939,6 +939,37 @@ $$('img[src*="i.ytimg.com/vi/"][src*="/maxres"]').forEach((img) => {
 });
 
 
+// Story bars (Oct 13, 2026): a row of thin bars with one red highlight that slides to the current one and glows
+// while it moves. Tap or click a bar to jump; swipe across the row to step. Used by 02 What we do and 07 Our process.
+const storyBars = (bars, onPick) => {
+  const items = $$('li', bars);
+  const hl = document.createElement('span');
+  hl.className = 'story__hl';
+  bars.append(hl);
+  let current = 0;
+  let glow = 0;
+  const place = (animate = true) => {
+    const it = items[current];
+    if (!it) return;
+    if (!animate) hl.style.transition = 'none';
+    hl.style.left = `${it.offsetLeft}px`;
+    hl.style.width = `${it.offsetWidth}px`;
+    if (!animate) { void hl.offsetWidth; hl.style.transition = ''; }
+    else { hl.classList.add('is-moving'); clearTimeout(glow); glow = setTimeout(() => hl.classList.remove('is-moving'), 220); }
+  };
+  items.forEach((it, i) => { it.addEventListener('click', () => onPick(i)); });
+  let touchX = null;
+  bars.addEventListener('touchstart', (e) => { touchX = e.touches[0].clientX; }, { passive: true });
+  bars.addEventListener('touchend', (e) => {
+    if (touchX === null) return;
+    const dx = e.changedTouches[0].clientX - touchX; touchX = null;
+    if (Math.abs(dx) > 30) onPick(current + (dx < 0 ? 1 : -1));
+  }, { passive: true });
+  addEventListener('resize', () => place(false));
+  place(false);
+  return { set(i, animate = true) { if (i === current && animate) return; current = i; items.forEach((it, k) => it.classList.toggle('is-on', k === i)); place(animate); } };
+};
+
 // Click and drag sideways with a mouse (Oct 13, 2026): for people without a trackpad or side-scrolling mouse.
 // Touch keeps the browser's own swipe. A real drag swallows the click that would otherwise follow it.
 const dragToScroll = (track) => {
@@ -1021,6 +1052,18 @@ $$('[data-carousel]').forEach((box) => {
   dots.className = 'carousel__dots';
   dots.setAttribute('aria-hidden', 'true');
   box.append(prev, next, dots);
+  // Focus carousels (03 Our clients, 05 Fields): story bars above the row instead of dots (Oct 13, 2026)
+  let indicator = null;
+  if (focus && n > 1) {
+    const bars = document.createElement('ol');
+    bars.className = 'story__bars carousel__bars';
+    bars.setAttribute('aria-hidden', 'true');
+    bars.innerHTML = '<li></li>'.repeat(n);
+    bars.style.setProperty('--bars', n);
+    box.prepend(bars);
+    indicator = storyBars(bars, (i) => centerOn(items[loop ? n + ((i % n) + n) % n : Math.max(0, Math.min(n - 1, i))]));
+    box.classList.add('has-bars');
+  }
   let pages = 0;
   let current = -1;
   const setDots = (count, on) => {
@@ -1055,6 +1098,7 @@ $$('[data-carousel]').forEach((box) => {
         items.forEach((it, i) => it.classList.toggle('is-center', i === best));
       }
       setDots(n, best % n);
+      if (indicator) indicator.set(best % n);
       prev.disabled = !loop && best === 0;
       next.disabled = !loop && best === items.length - 1;
       return;
@@ -1101,37 +1145,6 @@ $$('[data-carousel]').forEach((box) => {
   update();
 });
 
-// Story bars (Oct 13, 2026): a row of thin bars with one red highlight that slides to the current one and glows
-// while it moves. Tap or click a bar to jump; swipe across the row to step. Used by 02 What we do and 07 Our process.
-const storyBars = (bars, onPick) => {
-  const items = $$('li', bars);
-  const hl = document.createElement('span');
-  hl.className = 'story__hl';
-  bars.append(hl);
-  let current = 0;
-  let glow = 0;
-  const place = (animate = true) => {
-    const it = items[current];
-    if (!it) return;
-    if (!animate) hl.style.transition = 'none';
-    hl.style.left = `${it.offsetLeft}px`;
-    hl.style.width = `${it.offsetWidth}px`;
-    if (!animate) { void hl.offsetWidth; hl.style.transition = ''; }
-    else { hl.classList.add('is-moving'); clearTimeout(glow); glow = setTimeout(() => hl.classList.remove('is-moving'), 520); }
-  };
-  items.forEach((it, i) => { it.addEventListener('click', () => onPick(i)); });
-  let touchX = null;
-  bars.addEventListener('touchstart', (e) => { touchX = e.touches[0].clientX; }, { passive: true });
-  bars.addEventListener('touchend', (e) => {
-    if (touchX === null) return;
-    const dx = e.changedTouches[0].clientX - touchX; touchX = null;
-    if (Math.abs(dx) > 30) onPick(current + (dx < 0 ? 1 : -1));
-  }, { passive: true });
-  addEventListener('resize', () => place(false));
-  place(false);
-  return { set(i, animate = true) { if (i === current && animate) return; current = i; items.forEach((it, k) => it.classList.toggle('is-on', k === i)); place(animate); } };
-};
-
 // Homepage 08 Our process on phones (Oct 13, 2026): the five steps become a row of icons with their names, and
 // tapping one shows its text in a card underneath (Idea first; swipe the card or use its arrows for the next step). "How we work" folds open one promise at a
 // time. Laptops keep the full timeline and rows; without script phones get the full vertical timeline.
@@ -1161,7 +1174,11 @@ const storyBars = (bars, onPick) => {
   bars.className = 'story__bars process__bars';
   bars.setAttribute('aria-hidden', 'true');
   bars.innerHTML = steps.map(() => '<li></li>').join('');
-  list.after(bars);
+  const wrap = document.createElement('div');
+  wrap.className = 'process-wrap';
+  list.replaceWith(wrap);
+  wrap.append(bars, list, panel);
+  steps.forEach((li, i) => li.addEventListener('mouseenter', () => { if (matchMedia('(min-width: 801px)').matches && indicator) indicator.set(i); }));
   let indicator = null;
   const show = (i) => {
     current = (i + steps.length) % steps.length;

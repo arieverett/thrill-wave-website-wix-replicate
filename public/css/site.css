@@ -1980,7 +1980,7 @@ body:not(.page-sections) .kicker::before { content: none; }
 /* Homepage 08 Our process on phones (Oct 13, 2026): a row of five icons with their names, the tapped step's text in
    a card underneath (site.js builds .process-panel), and "How we work" folding open one promise at a time.
    Laptops are unchanged: the panel is hidden and every step and promise shows in full. */
-.process-panel, .process__bars { display: none; }
+.process-panel { display: none; }
 @media (max-width: 800px) {
   #process .process.is-stepper { grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 0; margin-top: 28px; }
   #process .process.is-stepper::before { top: 22px; bottom: auto; left: 10%; right: 10%; width: auto; height: 1px; background: currentColor; opacity: .4; }
@@ -2004,10 +2004,7 @@ body:not(.page-sections) .kicker::before { content: none; }
   .process-panel h3 { font-size: 1.05rem; letter-spacing: .04em; margin: 0 0 6px; }
   .process-panel p { margin: 0; font-size: .9rem; color: var(--muted); }
   .process-panel .process__zoom { margin-top: 12px; }
-  #process .promise-list.is-folding li { position: relative; cursor: pointer; padding-right: 32px; -webkit-tap-highlight-color: transparent; }
-  #process .promise-list.is-folding li::after { content: "+"; position: absolute; right: 6px; top: 14px; font: 400 1.3rem/1 var(--font-body); }
-  #process .promise-list.is-folding li.is-open::after { content: "\2212"; }
-  #process .promise-list.is-folding li:not(.is-open) p { display: none; }
+  #process .promise-list.is-folding li { padding-right: 32px; -webkit-tap-highlight-color: transparent; }
 }
 
 /* Homepage carousels (03 Our clients, 04 Fields), Oct 13, 2026: on laptops the rows are cropped to the content
@@ -2065,13 +2062,14 @@ body:not(.page-sections) .kicker::before { content: none; }
 .story { position: relative; margin-top: 22px; }
 .story__bars { position: relative; list-style: none; margin: 0 0 16px; padding: 0; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; }
 .story__bars li { height: 3px; border-radius: 2px; background: rgba(255, 255, 255, .18); cursor: pointer; }
-.story__hl { position: absolute; top: 0; height: 3px; border-radius: 2px; background: var(--accent); transition: left .45s var(--ease), width .45s var(--ease), box-shadow .3s; pointer-events: none; }
-.story__hl.is-moving { box-shadow: 0 0 10px 2px rgba(255, 0, 0, .75); }
+.story__hl { position: absolute; top: 0; height: 3px; border-radius: 2px; background: var(--accent); transition: left .45s var(--ease), width .45s var(--ease), box-shadow .35s ease-out; pointer-events: none; }
+.story__hl.is-moving { box-shadow: 0 0 7px 1px rgba(255, 0, 0, .55); transition: left .45s var(--ease), width .45s var(--ease), box-shadow 0s; }
 .story__track { display: flex; gap: 14px; overflow-x: auto; scroll-snap-type: x mandatory; scrollbar-width: none; overscroll-behavior-x: contain; cursor: grab; }
 .story__track::-webkit-scrollbar { display: none; }
 .story__track.is-dragging { cursor: grabbing; }
-.story__slide { flex: 0 0 100%; min-width: 0; scroll-snap-align: start; display: grid; grid-template-columns: minmax(0, 11fr) minmax(0, 9fr); gap: 0; overflow: hidden; border-radius: 5px; background: var(--ink-soft); outline: 1px solid rgba(255, 255, 255, .1); outline-offset: -1px; }
-.story__media { position: relative; aspect-ratio: 4 / 3; }
+.story__slide { flex: 0 0 100%; min-width: 0; scroll-snap-align: start; display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 0; align-items: stretch; overflow: hidden; border-radius: 5px; background: var(--ink-soft); outline: 1px solid rgba(255, 255, 255, .1); outline-offset: -1px; }
+.story__media { position: relative; min-width: 0; }
+.story__slide { min-height: clamp(280px, 25vw, 360px); }
 .story__media img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; display: block; }
 .story__text { padding: clamp(24px, 3.5vw, 40px) clamp(24px, 3.5vw, 40px) clamp(24px, 3.5vw, 40px) clamp(22px, 3vw, 34px); display: flex; flex-direction: column; justify-content: center; }
 .story__num { font: 500 .78rem/1 var(--font-body); letter-spacing: .12em; color: var(--accent); margin-bottom: 14px; }
@@ -2080,12 +2078,13 @@ body:not(.page-sections) .kicker::before { content: none; }
 .story__includes { list-style: none; margin: 16px 0 0; padding: 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 6px 14px; }
 .story__includes li { position: relative; padding-left: 14px; font: 500 .74rem/1.35 var(--font-body); color: #bdbdc2; }
 .story__includes li::before { content: ""; position: absolute; left: 0; top: .42em; width: 6px; height: 6px; border-radius: 50%; background: var(--accent); }
-.story__arrow { position: absolute; top: calc(50% + 10px); z-index: 2; display: grid; place-items: center; width: 38px; height: 38px; margin-top: -19px; border-radius: 50%; border: 1px solid rgba(255, 255, 255, .25); background: rgba(0, 0, 0, .6); -webkit-backdrop-filter: blur(6px); backdrop-filter: blur(6px); color: var(--on-dark); cursor: pointer; transition: border-color .2s, opacity .2s; }
-.story__arrow--prev { left: -19px; }
-.story__arrow--next { right: -19px; }
+.story__arrow { position: absolute; top: calc(50% + 10px); z-index: 2; display: grid; place-items: center; width: 44px; height: 44px; margin-top: -22px; border: 0; background: none; color: var(--on-dark); cursor: pointer; filter: drop-shadow(0 1px 4px rgba(0, 0, 0, .8)); transition: opacity .2s, transform .2s; }
+.story__arrow:hover { transform: scale(1.1); }
+.story__arrow--prev { left: 6px; }
+.story__arrow--next { right: 6px; }
 .story__arrow:hover { border-color: var(--on-dark); }
 .story__arrow[disabled] { opacity: .3; cursor: default; }
-.story__arrow svg { width: 16px; height: 16px; }
+.story__arrow svg { width: 26px; height: 26px; }
 @media (max-width: 760px) {
   .story__slide { grid-template-columns: minmax(0, 1fr); width: 100%; }
   .story__media { aspect-ratio: 2 / 1; min-height: 0; }
@@ -2094,9 +2093,10 @@ body:not(.page-sections) .kicker::before { content: none; }
   .story__text p { font-size: .88rem; }
   .story__includes { gap: 5px 10px; }
   .story__includes li { font-size: .7rem; }
-  .story__arrow { width: 32px; height: 32px; margin-top: -16px; }
-  .story__arrow--prev { left: -10px; }
-  .story__arrow--next { right: -10px; }
+  .story__arrow { width: 40px; height: 40px; margin-top: -20px; }
+  .story__arrow svg { width: 22px; height: 22px; }
+  .story__arrow--prev { left: 2px; }
+  .story__arrow--next { right: 2px; }
 }
 
 /* Process (Oct 13, 2026): square-cornered icon tiles, red numbers, arrows in the top right of the phone card */
@@ -2156,4 +2156,53 @@ body:not(.page-sections) .kicker::before { content: none; }
   .sitrep-steps__screen { aspect-ratio: 16 / 10; }
   #sitrep .work-grid--single { width: 78%; margin-inline: auto; }
   #sitrep .work-grid--single .video { aspect-ratio: 1; }
+}
+
+/* 03 Our clients and 05 Fields (Oct 13, 2026): story bars above the row and plain arrows above right, no dots */
+.carousel.has-bars { padding-top: 44px; }
+.carousel__bars { position: absolute; top: 14px; left: 0; right: 96px; margin: 0; grid-template-columns: repeat(var(--bars, 6), minmax(0, 1fr)); }
+.carousel--films .carousel__bars, .carousel--cards .carousel__bars, .carousel--tiles .carousel__bars { left: 0; right: 0; }
+.carousel.has-bars .carousel__dots { display: none; }
+.carousel.has-bars .carousel__arrow { top: 0; bottom: auto; transform: none; width: 32px; height: 32px; border: 0; background: none; opacity: .85; filter: drop-shadow(0 1px 3px rgba(0, 0, 0, .8)); }
+.carousel.has-bars .carousel__arrow svg { width: 22px; height: 22px; }
+.carousel.has-bars .carousel__arrow--prev { left: auto; right: 36px; }
+.carousel.has-bars .carousel__arrow--next { right: 0; }
+.carousel.has-bars .carousel__arrow:hover { background: none; opacity: 1; }
+@media (max-width: 800px) {
+  .carousel.has-bars { padding-top: 34px; }
+  .carousel--cards.has-bars .carousel__bars, .carousel--tiles.has-bars .carousel__bars { left: var(--gutter); right: var(--gutter); top: 10px; }
+  .carousel__bars { right: 0; }
+  .carousel.has-bars .carousel__arrow { display: none; }
+}
+
+/* Process (Oct 13, 2026): bars above the icons on laptops (follow the mouse), under them on phones; the phone card
+   near black; the step line and Zoom in on one line; How we work folds on every width */
+.process-wrap { display: flex; flex-direction: column; }
+.story__bars.process__bars { display: grid; order: 0; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 16px; margin: 44px 0 18px; }
+.process-wrap .process { order: 1; margin-top: 0; }
+.process-wrap .process-panel { order: 2; }
+@media (max-width: 800px) {
+  .story__bars.process__bars { order: 1; gap: 6px; margin: 12px 0 0; }
+  .process-wrap .process { order: 0; }
+  .process-panel { background: #0a0a0b; }
+  .process-panel p { display: inline; }
+  .process-panel .process__zoom { display: inline-flex; margin: 0 0 0 10px; vertical-align: baseline; }
+}
+#process .promise-list.is-folding li { position: relative; cursor: pointer; }
+#process .promise-list.is-folding li::after { content: "+"; position: absolute; right: 8px; top: 50%; transform: translateY(-50%); font: 400 1.3rem/1 var(--font-body); color: var(--on-dark); }
+#process .promise-list.is-folding li.is-open::after { content: "\2212"; }
+#process .promise-list.is-folding li:not(.is-open) p { display: none; }
+@media (min-width: 701px) { #process .promise-list.is-folding li { grid-template-columns: 44px minmax(0, 1fr); padding-right: 40px; } #process .promise-list.is-folding li p { grid-column: 2; margin-top: 6px; } }
+
+/* SITREP demo: no outline; the picture and the cropped player nudged left so the tool sits centered in the crop */
+.video--outline { border-color: transparent; }
+#sitrep .work-grid--single .video img { object-position: 46% 50%; }
+#sitrep .work-grid--single .video.is-cropped .video__player iframe { left: 46%; }
+@media (max-width: 700px) {
+  .sitrep-steps { border-top: 0; border-bottom: 0; }
+  .sitrep-steps li, .sitrep-steps li:first-child, .sitrep-steps li:last-child { padding: 4px 10px; }
+  .sitrep-steps li:first-child { padding-left: 0; }
+  .sitrep-steps li:last-child { padding-right: 0; }
+  .sitrep-steps { grid-template-columns: calc((100% - 20px) / 3 + 0px) calc((100% - 20px) / 3 + 20px) calc((100% - 20px) / 3 + 0px); }
+  #sitrep .work-grid--single { width: 84%; }
 }
