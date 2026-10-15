@@ -9,7 +9,7 @@
 
 # Pages taken off the site on Sept 29, 2026 (kept offline, not on the web).
 # The 301s send visitors somewhere useful and tell Google to drop the old pages.
-/medical                    /work#medical 301
+/medical                    /work 301
 /marketingchallenges        /contact          301
 /app-landing-page           /sitrep           301
 /post/premium-video-services-for-local-businesses-in-phoenix /blog 301
@@ -124,7 +124,8 @@
 /industries/education-and-research      /fields/education-and-research 301
 /industries/food-and-hospitality        /fields/food-and-hospitality 301
 /industries/government-and-public-affairs /fields/government-and-public-affairs 301
-/industries/live-events                 /fields/live-events 301
+/industries/live-events                 /fields/events 301
+/fields/live-events                     /fields/events 301
 /industries/medical                     /fields/medical 301
 /industries/products                    /fields/products 301
 /industries/professional-services       /fields/professional-services 301

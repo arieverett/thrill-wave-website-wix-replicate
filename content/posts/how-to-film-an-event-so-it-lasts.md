@@ -44,6 +44,6 @@ We find a quiet corner with good light, ask one or two open questions and let pe
 
 ## If you're planning an event
 
-A film is the part of your event that lasts. If you're planning one worth remembering, you can see more of our event work on our [Live Events page](/fields/live-events), and if you'd like to talk it through, [message us](/contact).
+A film is the part of your event that lasts. If you're planning one worth remembering, you can see more of our event work on our [Events page](/fields/events), and if you'd like to talk it through, [message us](/contact).
 
 *Cover photo: Mark Thompson on [Unsplash](https://unsplash.com/photos/grayscale-photo-of-people-walking-on-hall-QM3suFW_Y4E).*

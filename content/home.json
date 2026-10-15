@@ -57,7 +57,7 @@
       "related": [
         "Tribal Nations",
         "Government & Public Affairs",
-        "Live Events"
+        "Events"
       ],
       "quote": {
         "text": "They came in last-minute for a short film project and were amazing! Super high quality, professional and creative problem solvers when things didn't go to plan (as they sometimes tend to do on set).",
@@ -291,7 +291,7 @@
       ],
       "related": [
         "Government & Public Affairs",
-        "Live Events",
+        "Events",
         "Products"
       ],
       "quote": {
@@ -384,7 +384,7 @@
         "Inter Tribal Council of Arizona",
         "Paradise Valley Mountain Preserve Trust"
       ],
-      "link": "/work#government-and-public-affairs",
+      "link": "/work",
       "text": "We make civic, public health and policy films for public agencies and the organizations that work alongside them.",
       "title": "Public work, explained plainly.",
       "example": "tkqnm36YAfM",
@@ -444,7 +444,7 @@
         "Nektar",
         "Andres Plastic Surgery"
       ],
-      "link": "/work#medical",
+      "link": "/work",
       "text": "We make patient stories, product launches and procedure explainers with the care and accuracy medicine asks for.",
       "title": "Care and accuracy, on camera.",
       "example": "8BruwRwC9Tg",
@@ -488,7 +488,7 @@
         "ITCA Tribal Epidemiology Center",
         "New Pathways For Youth"
       ],
-      "link": "/work#education-and-research",
+      "link": "/work",
       "text": "We explain science, research and learning on camera, from the lab to the classroom, in plain words.",
       "title": "Hard ideas, made simple.",
       "example": { "youtube": "uPjYjRDq_qU", "client": "New Pathways For Youth", "title": "It Begins With Me" },
@@ -536,7 +536,7 @@
         "Opendoor",
         "Ridgeline"
       ],
-      "link": "/work#tech",
+      "link": "/work",
       "text": "We explain products and platforms simply, with real people at the center.",
       "title": "Complex, made simple.",
       "example": "Jqci51WSpO0",
@@ -639,7 +639,7 @@
         "UFC",
         "Golf Digest"
       ],
-      "link": "/work#sports",
+      "link": "/work",
       "text": "We film athletes, teams and events with the same energy they bring to the field.",
       "title": "Energy you can feel.",
       "example": "jduIrHZT0og",
@@ -672,7 +672,7 @@
       ]
     },
     {
-      "name": "Live Events",
+      "name": "Events",
       "pillar": "Arts",
       "still": "/images/fields/live-events-stage-silhouette-orange-lasers.webp",
       "zoom": true,
@@ -681,12 +681,12 @@
         "Music Celebrations International",
         "Wonderspaces"
       ],
-      "link": "/work#live-events",
+      "link": "/work",
       "text": "We cover festivals, concerts and conferences, from multi-camera coverage to the aftermovie everyone shares.",
       "title": "Relive it. Then sell the next one.",
       "example": "pDk121-TCto",
-      "seoTitle": "Live Event Video Production",
-      "intro": "Festivals and live events are made to be felt, not explained. We've made aftermovies for Relentless Beats festivals like Decadence Arizona and Gold Rush, filmed Wonderspaces' immersive art shows and traveled to Ireland with Music Celebrations International.",
+      "seoTitle": "Event Video Production",
+      "intro": "Festivals and events are made to be felt, not explained. We've made aftermovies for Relentless Beats festivals like Decadence Arizona and Gold Rush, filmed Wonderspaces' immersive art shows and traveled to Ireland with Music Celebrations International.",
       "faq": [
         {
           "q": "How fast can we get an aftermovie?",
@@ -728,7 +728,7 @@
         "Wax Society",
         "Relentless Beats"
       ],
-      "link": "/work#arts-and-culture",
+      "link": "/work",
       "text": "We film music, museums, art spaces and performances, and the artists who make them.",
       "title": "Made to be felt.",
       "example": "n26-IyiVLsw",
@@ -803,7 +803,7 @@
         "We make brand films, menu and product films, event recaps and social cuts.",
         "The films play on your website and booking pages, across social and in pitches to partners and stores."
       ],
-      "link": "/work#food-and-hospitality",
+      "link": "/work",
       "headline": "Food and hospitality films"
     },
     {
@@ -815,7 +815,7 @@
         "Citgo & Brundage Bone",
         "IMS Builders"
       ],
-      "link": "/work#builders-and-makers",
+      "link": "/work",
       "text": "We film crews, job sites, plants and the scale of the work, across construction, manufacturing and energy.",
       "title": "The scale of the work.",
       "example": "CN1IN8xlTVg",
@@ -859,7 +859,7 @@
         "Hypnotik",
         "Neighbor"
       ],
-      "link": "/work#products",
+      "link": "/work",
       "text": "We make launch films, product demos and social cuts that make a product the one people reach for.",
       "title": "The one people reach for.",
       "example": "WoFqn7U9tq4",
@@ -1131,7 +1131,7 @@
         }
       ],
       "lede": "We cut two nights at Phoenix Raceway into an aftermovie that sells next year's festival.",
-      "industry": "Live Events",
+      "industry": "Events",
       "customer": "Businesses",
       "services": [
         "Production",

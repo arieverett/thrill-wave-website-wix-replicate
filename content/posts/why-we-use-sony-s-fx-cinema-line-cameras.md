@@ -16,7 +16,7 @@ The FX cameras give us beautiful images with wide dynamic range, so we can hold 
 
 ## Versatility
 
-We film everything from documentaries to commercials to live events, so our cameras have to keep up. The FX line is compact and light enough to take almost anywhere, with high frame rates for slow motion, reliable autofocus and plenty of options for resolution and recording formats. The same camera can go from a tripod in a studio to a gimbal in the desert.
+We film everything from documentaries to commercials to events, so our cameras have to keep up. The FX line is compact and light enough to take almost anywhere, with high frame rates for slow motion, reliable autofocus and plenty of options for resolution and recording formats. The same camera can go from a tripod in a studio to a gimbal in the desert.
 
 ## Built to Work
 

@@ -34,7 +34,7 @@ Describe it in plain words. It's research and a point of view, not a product pit
 
 ## Where stories live
 
-Our fields span five arenas (Ari, Oct 11, 2026; replaces the old three backdrops of athletics, the arts and academics): art (arts and culture, live events), science (education and research, tech), health (medical), commerce (businesses, professional services, builders and makers, food) and governance (government, tribal nations, public affairs and the nonprofits working alongside them). Lead with these five, not athletics, since sports isn't what we want to be known for. The fields aren't labeled by arena on the site (the old backdrop labels were removed). The site calls our industries "Fields" (the address is /fields, renamed from /industries on Oct 11, 2026), and copy about them can lean on the arenas: the setting changes, but the human story underneath doesn't.
+Our fields span five arenas (Ari, Oct 11, 2026; replaces the old three backdrops of athletics, the arts and academics): art (arts and culture, events), science (education and research, tech), health (medical), commerce (businesses, professional services, builders and makers, food) and governance (government, tribal nations, public affairs and the nonprofits working alongside them). Lead with these five, not athletics, since sports isn't what we want to be known for. The fields aren't labeled by arena on the site (the old backdrop labels were removed). The site calls our industries "Fields" (the address is /fields, renamed from /industries on Oct 11, 2026), and copy about them can lean on the arenas: the setting changes, but the human story underneath doesn't.
 
 ## How we report
 

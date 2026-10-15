@@ -77,8 +77,8 @@
       ]
     },
     {
-      "name": "Live Events",
-      "slug": "live-events",
+      "name": "Events",
+      "slug": "events",
       "videos": [
         { "client": "Relentless Beats", "title": "Decadence Arizona 2025 Aftermovie", "youtube": "pDk121-TCto", "zoom": true },
         { "client": "Relentless Beats", "title": "Decadence 2023 Aftermovie", "youtube": "24xC8pzZNxw", "zoom": true },
