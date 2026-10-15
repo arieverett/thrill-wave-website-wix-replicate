@@ -2,6 +2,8 @@
 
 How the Thrill Wave partners like site work done, and the standing decisions behind the site. Read this alongside `CLAUDE.md` and `docs/VOICE.md` before making changes. If this file and the live content disagree about what's on a page, trust the content. If they disagree about a rule, ask before changing it.
 
+**Decision log:** the partners' handoffs and call notes are in `docs/handoffs/`, and `docs/handoffs/README.md` tracks every site decision (done, decided but not built, or open). Read it before a site pass; where it's newer than this file, it wins.
+
 ## Who asks for changes
 
 Thrill Wave's three co-founders ask for changes in plain English:
@@ -17,6 +19,7 @@ All three can change this site. Only Ari works on the terminal site (`thrill-wav
 - Keep explanations non-technical, and say what changed on the live site.
 - After every major change, share a link to the changed page.
 - Run `npm run check` (0 errors) before every push, and look at the page at laptop and phone widths.
+- Chris's rule (Oct 9, 2026): all work goes to the separate preview copy of the site (github.com/ckuzman/ckuzman.github.io, shown at https://ckuzman.github.io; git remote `preview`), and nothing reaches the live site without a partner's explicit green light in chat. Ari's rule (Oct 11) is that all three partners push with their own Claude after fetching the latest `main`. The two haven't been reconciled; see the open items in `docs/handoffs/README.md`.
 - Anything a partner should approve first goes to a branch, with the Cloudflare preview link. Changes to a partner's bio, byline or films always go to a preview first, so that person sees them before they go live.
 - If two partners ask for conflicting changes, don't pick a side. Lay out both requests and let them decide together.
 - Design and copy often go through several quick rounds in one sitting. Keep each change small, clear and easy to undo.
@@ -63,6 +66,13 @@ All three can change this site. Only Ari works on the terminal site (`thrill-wav
 22. Paragraph text runs the full width of its column on every screen. Only headlines may be capped (`npm run check` enforces this).
 22a. The homepage is all black (Ari, Oct 13, 2026), with the same gap between every section after the hero, and each section should fit about one screen on a laptop or phone. Paragraphs on black use the off-white `--on-dark-text`; headings stay pure white.
 22b. Homepage carousels and step-throughs share one pattern (Oct 13, 2026): thin "story bars" above them with a red highlight that glides between positions (tap, click or slide along the bars to move), plain shadowed chevrons with no circle, swipe on phones and click-and-drag on laptops. Every photo tile on black gets the same 10% white hairline as the Fields tiles. Corners are small (about 5px on tiles).
+
+**Decisions from Chris's Oct 9, 2026 chat (not in a document)**
+
+- *Your Voice, Your Power* has aired everywhere: the case study's episode guide and screenings stand. Still claim nothing about viewers or results we haven't sourced.
+- Tribal Nations is not a field; it's who we work with. The ITCA work belongs under Government & Public Affairs and Education & research, and tribal councils under the Nonprofits & public service client type. Built on the preview, waiting for a green light.
+- The blog stays named Intel (Tony, Oct 9). Ari proposed on Oct 14 that it leaves the main site structure until a newsletter exists; open.
+- The homepage's red pill button will eventually lead to a separate site or page holding the blog of edgy, contrarian takes, so the main site stays warm and plain. Until then it points at terminal.thrillwave.com; don't repurpose it.
 
 **Terminal site**
 

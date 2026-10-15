@@ -2,7 +2,7 @@
 
 The Thrill Wave partners (Ari, Tony, Chris) are not developers. They ask Claude to make changes in plain English; Claude edits this repo, checks the result, and pushes. Keep explanations non-technical and confirm what changed on the live site.
 
-Before making changes, read `docs/WORKING_RULES.md` (how the partners like work done, who can change what, and the standing decisions behind the site) along with `docs/VOICE.md`.
+Before making changes, read `docs/WORKING_RULES.md` (how the partners like work done, who can change what, and the standing decisions behind the site) along with `docs/VOICE.md`, and then `docs/handoffs/README.md`: the partners' handoff documents and call notes live in `docs/handoffs/`, and that README is the decision log of what's done, what's decided but not built, and what the partners still have to settle. Where a newer handoff and a rule file disagree, the handoff is the decision and the rule file needs updating.
 
 ## How the site works
 

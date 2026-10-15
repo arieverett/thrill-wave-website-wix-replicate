@@ -109,3 +109,4 @@ Where the new site goes beyond Wix, it's additive: entrance and scroll animation
 - SITREP: steps as rows beside the demo on laptops (the demo is cropped to hide its side bars); three across on phones.
 - Intel titled "Notes from the field." with three equal rows. Team cards dark.
 - Still open: a cooler Process icon treatment (line-draw on hover was the pick in mockups, not built yet); a custom 3D asset set for Core capabilities if wanted.
+- **Handoffs folder (Oct 15, 2026):** every partner handoff and the site parts of the Oct 9 and Oct 14 call notes are in `docs/handoffs/`, with `docs/handoffs/README.md` as the decision log (done, decided but not built, open). Added by Chris's session so the buildout works from the same record; the full call notes stay in Drive because this repo is public.
