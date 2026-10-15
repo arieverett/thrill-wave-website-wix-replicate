@@ -791,6 +791,13 @@ body.subnav-stuck .site-header { background: transparent; -webkit-backdrop-filte
 /* Work page (Oct 15, 2026): one grid, so the films rise into the bottom of the hero photo instead of leaving a black gap */
 .portfolio-cat--all { position: relative; z-index: 3; padding-top: 0; margin-top: calc(-1 * clamp(40px, 14vh, 150px)); }
 .portfolio-cat--all .work-grid { margin-top: 0; }
+/* Work page (Oct 15, 2026): two films a row, widescreen tiles on every screen size */
+.portfolio-cat--all .work-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+@media (max-width: 560px) {
+  .portfolio-cat--all .video { aspect-ratio: 16 / 9; }
+  .portfolio-cat--all .video:not(.video--zoom) img[src*="/hq"] { transform: none; }
+  .portfolio-cat--all .video .video__play, .portfolio-cat--all .video:hover .video__play { transform: scale(.4); }
+}
 @media (max-width: 560px) { .portfolio-cat--all { margin-top: calc(-1 * clamp(16px, 4vh, 40px)); } } /* phones: taller text, smaller overlap */
 
 /* ---------- cards: one style for every numbered/outlined tile on the site ----------
