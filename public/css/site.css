@@ -1382,10 +1382,10 @@ body.subnav-stuck .site-header { background: transparent; -webkit-backdrop-filte
 .page-black .post-card__meta, .page-black .post-card p:last-child { color: #9a9a9f; }
 
 /* Portfolio intro: social icons inline after "keep up with us on:" */
-.inline-social-row { display: inline-flex; gap: 6px; vertical-align: middle; margin-left: 4px; }
-.inline-social { display: inline-grid; place-items: center; width: 26px; height: 26px; border-radius: 50%; background: var(--paper); transition: background-color .25s; }
+.inline-social-row { display: inline-flex; gap: .4em; vertical-align: -.4em; margin-block: -.15em; } /* sits on the text line, no indent when it wraps (Oct 15, 2026) */
+.inline-social { display: inline-grid; place-items: center; width: 1.5em; height: 1.5em; border-radius: 50%; background: var(--paper); transition: background-color .25s; }
 .inline-social:hover { background: var(--accent); }
-.inline-social svg { width: 13px; height: 13px; fill: var(--ink); transition: fill .25s; }
+.inline-social svg { width: .75em; height: .75em; fill: var(--ink); transition: fill .25s; }
 .inline-social:hover svg { fill: var(--on-dark); }
 
 /* Legal pages (privacy, terms) on the black page style */
