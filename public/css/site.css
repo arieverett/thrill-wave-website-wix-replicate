@@ -2007,6 +2007,9 @@ body:not(.page-sections) .kicker::before { content: none; }
 .page-home main > .section--after-reel.has-side-video { padding-bottom: var(--home-gap); }
 .page-home main > .section--after-reel.has-side-video::after { height: var(--home-gap); }
 .page-home .section--tight { padding-block: 0 calc(var(--home-gap) * .4); } /* the client logos read as part of Our work */
+/* Oct 15, 2026: same gap from See all our work to the client logos title as from the films to that button */
+.page-home .section--tight.section--to-next { padding-bottom: 0; }
+.page-home main > .section--dark + .section--joined { padding-top: 36px; }
 
 /* Tile hairline (Oct 13, 2026): the same 10% white line the Fields tiles have, on every photo tile on black
    (work films, case study stills, Intel thumbnails). Drawn as an outline so it sits above the image. */
