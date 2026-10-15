@@ -788,6 +788,10 @@ body.subnav-stuck .site-header { background: transparent; -webkit-backdrop-filte
 }
 .portfolio-cat__title { font-size: clamp(1.3rem, 2.4vw, 1.8rem); margin: 0; }
 .portfolio-cat .work-grid { margin-top: 20px; }
+/* Work page (Oct 15, 2026): one grid, so the hero text sits low and the films start right under it */
+.hero--work { align-items: flex-end; }
+.hero--work .hero__content { padding-bottom: 28px; }
+.portfolio-cat--all { padding-top: 0; }
 
 /* ---------- cards: one style for every numbered/outlined tile on the site ----------
    Home SITREP steps, SITREP page (process, failure modes, proof) and the Process page. */
