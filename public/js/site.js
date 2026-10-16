@@ -1319,3 +1319,38 @@ $$('[data-story]').forEach((box) => {
   if (document.fonts) document.fonts.ready.then(check);
   addEventListener('resize', queue);
 })();
+
+// ---------------------------------------------------------------------------
+// Work page view switcher (cleanup pass, Oct 16, 2026; after MAJOR's portfolio). Wide laptops only (the CSS hides
+// the switch below 1100px, where the grid is the only view). Picking a view slides the films out, swaps the
+// layout, then bounces them back in one after another. The choice is remembered in this browser when it can be.
+// ---------------------------------------------------------------------------
+(() => {
+  const list = document.querySelector('[data-films]');
+  const buttons = document.querySelectorAll('.view-switch [data-view]');
+  if (!list || !buttons.length) return;
+  list.querySelectorAll('.film').forEach((f, i) => f.style.setProperty('--i', i));
+  const still = matchMedia('(prefers-reduced-motion: reduce)');
+  const mark = (view) => buttons.forEach((b) => b.setAttribute('aria-pressed', String(b.dataset.view === view)));
+  const show = (view, animate) => {
+    if (view === list.dataset.view) return;
+    mark(view);
+    try { localStorage.setItem('tw-work-view', view); } catch (e) { /* storage blocked: fine */ }
+    if (!animate || still.matches) { list.dataset.view = view; return; }
+    list.classList.remove('is-entering');
+    list.classList.add('is-leaving');
+    setTimeout(() => {
+      list.dataset.view = view;
+      list.classList.remove('is-leaving');
+      void list.offsetWidth; // restart the entrance animation
+      list.classList.add('is-entering');
+      const top = list.getBoundingClientRect().top;
+      if (top < 0) scrollBy({ top: top - 120, behavior: 'smooth' });
+      setTimeout(() => list.classList.remove('is-entering'), 620 + list.children.length * 28);
+    }, 190);
+  };
+  buttons.forEach((b) => b.addEventListener('click', () => show(b.dataset.view, true)));
+  let saved = '';
+  try { saved = localStorage.getItem('tw-work-view') || ''; } catch (e) { /* storage blocked */ }
+  if (saved && [...buttons].some((b) => b.dataset.view === saved) && matchMedia('(min-width: 1100px)').matches) show(saved, false);
+})();

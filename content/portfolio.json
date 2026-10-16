@@ -1,15 +1,35 @@
 {
   "intro": "Good stories live in every field. Here's our work, grouped by the fields we know best, so you can start with the one closest to yours:",
   "featured": [
-    { "client": "UBS & Finnerty Partners", "title": "Service Without Compromise", "youtube": "Qd40htwEmJM", "autoplay": true, "focus": "x63", "frame": 2 },
-    { "client": "ITCA Native Vote", "title": "Your Voice, Your Power: Official Trailer", "youtube": "GeGdzjb263U", "frame": 2, "zoom": true, "focus": "right" },
-    { "client": "Andres Plastic Surgery", "title": "Your Body, High Standards", "youtube": "N3yfL_gk_vE", "zoom": true, "focus": "x35" },
-    { "client": "Rumco", "title": "Building With Integrity", "youtube": "CN1IN8xlTVg" },
-    { "client": "Music Celebrations International", "title": "Ireland", "youtube": "oXOPxKmigKA", "focus": "x86" },
-    { "client": "Relentless Beats", "title": "Decadence Arizona 2025 Aftermovie", "youtube": "pDk121-TCto", "zoom": true, "frame": 2, "focus": "x0" },
+    { "client": "ITCA Native Vote", "title": "Your Voice, Your Power: Official Trailer", "capTitle": "Your Voice, Your Power", "youtube": "GeGdzjb263U", "frame": 2, "zoom": true, "focus": "right" },
+    { "client": "UBS & Finnerty Partners", "title": "Service Without Compromise", "capClient": "UBS & Finnerty", "youtube": "Qd40htwEmJM", "focus": "x63", "frame": 2 },
     { "client": "ITCA WIC", "title": "Dear Mom", "youtube": "QlP7wPaFcVU", "zoom": true },
-    { "client": "Boston Scientific", "title": "Rezum", "youtube": "ECfZ1gZtzlE", "focus": "x41" },
-    { "client": "Training Mask", "title": "Learn To Breathe", "youtube": "jduIrHZT0og", "frame": 3, "zoom": true }
+    { "client": "Music Celebrations International", "title": "Ireland", "capClient": "Music Celebrations", "youtube": "oXOPxKmigKA", "focus": "x86" },
+    { "client": "Relentless Beats", "title": "Decadence Arizona 2025 Aftermovie", "capTitle": "Decadence", "youtube": "pDk121-TCto", "zoom": true, "frame": 2, "focus": "x0" }
+  ],
+  "_work": "The Work page, in this order (cleanup pass, Oct 16, 2026; provisional until Chris and Tony's shortlist). The five featured films lead, then the rest. Each entry is a YouTube ID from featured or categories, or { youtube, capClient, capTitle, field } to shorten the caption line or set the field tag. Swapping a film is one line here; its page data stays in categories.",
+  "work": [
+    { "youtube": "GeGdzjb263U", "field": "Government" },
+    "Qd40htwEmJM",
+    { "youtube": "QlP7wPaFcVU", "field": "Government" },
+    "oXOPxKmigKA",
+    "pDk121-TCto",
+    "ECfZ1gZtzlE",
+    { "youtube": "tkqnm36YAfM", "capClient": "Paradise Valley Preserve" },
+    { "youtube": "gHevHv0usIo", "capClient": "UMOM" },
+    { "youtube": "N3yfL_gk_vE", "capTitle": "High Standards" },
+    { "youtube": "3hlumlH16HI", "capTitle": "Respiratory Vaccinations", "field": "Education & research" },
+    { "youtube": "8BruwRwC9Tg", "capTitle": "Mike's Story" },
+    "CN1IN8xlTVg",
+    { "youtube": "ABYrJD7QISk" },
+    { "youtube": "Jqci51WSpO0", "capTitle": "Manage Your Risk" },
+    "URDFnWXJH_s",
+    { "youtube": "d_pofos5ZLs", "capTitle": "Payments Simplified" },
+    "oTBdp-MwnxA",
+    "n26-IyiVLsw",
+    "D46bYNK_lvw",
+    "mxQFKiYivmI",
+    { "youtube": "ACgPMAyPQeI", "capTitle": "Sustainable Furniture" }
   ],
   "categories": [
     {
