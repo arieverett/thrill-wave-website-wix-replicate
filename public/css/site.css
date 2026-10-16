@@ -2324,3 +2324,8 @@ body:not(.page-sections) .kicker::before { content: none; }
 .link-dots a { color: var(--on-dark); text-decoration: none; border-bottom: 1px solid rgba(255, 255, 255, .25); transition: border-color .2s, color .2s; }
 .link-dots a:hover { color: var(--accent); border-color: var(--accent); }
 .link-dots__label { margin-right: 4px; color: var(--on-dark-text); }
+
+/* Process numbers (Oct 16, 2026): bold like the film cards and case studies, grey until that step is the one
+   showing, then red. The phone card always shows the current step, so its number is red. */
+.process h3 .process__num, .process-panel h3 .process__num, .process-panel .process__num { font: 800 .8rem/1 var(--font-display); letter-spacing: 0; color: #8a8a8f; transition: color .25s; }
+.process li.is-on h3 .process__num, .process-panel h3 .process__num, .process-panel .process__num { color: var(--accent); }
