@@ -65,7 +65,7 @@ All three can change this site. Only Ari works on the terminal site (`thrill-wav
 21. One accent color, pure red #FF0000, on black and white. Red fades into black, not white.
 22. Paragraph text runs the full width of its column on every screen. Only headlines may be capped (`npm run check` enforces this).
 22a. The homepage is all black (Ari, Oct 13, 2026), with the same gap between every section after the hero, and each section should fit about one screen on a laptop or phone. Paragraphs on black use the off-white `--on-dark-text`; headings stay pure white.
-22b. Homepage carousels and step-throughs share one pattern (Oct 13, 2026): thin "story bars" above them with a red highlight that glides between positions (tap, click or slide along the bars to move), plain shadowed chevrons with no circle, swipe on phones and click-and-drag on laptops. Every photo tile on black gets the same 10% white hairline as the Fields tiles. Corners are small (about 5px on tiles).
+22b. Homepage carousels and step-throughs share one pattern (Oct 13, 2026): thin "story bars" above them with a red highlight that glides between positions (tap, click or slide along the bars to move), plain shadowed chevrons with no circle, swipe on phones and click-and-drag on laptops. Every photo tile on black gets the same 10% white hairline as the Fields tiles. Corners are small (about 8px on tiles; Oct 16, 2026 split the difference after the Oct 13 halving).
 
 **Decisions from Chris's Oct 9, 2026 chat (not in a document)**
 
