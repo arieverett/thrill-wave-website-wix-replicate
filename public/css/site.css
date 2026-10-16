@@ -2327,5 +2327,6 @@ body:not(.page-sections) .kicker::before { content: none; }
 
 /* Process numbers (Oct 16, 2026): bold like the film cards and case studies, grey until that step is the one
    showing, then red. The phone card always shows the current step, so its number is red. */
-.process h3 .process__num, .process-panel h3 .process__num, .process-panel .process__num { font: 800 .8rem/1 var(--font-display); letter-spacing: 0; color: #8a8a8f; transition: color .25s; }
-.process li.is-on h3 .process__num, .process-panel h3 .process__num, .process-panel .process__num { color: var(--accent); }
+.process h3 .process__num, .process-panel h3 .process__num, .process-panel .process__num { font: 800 .8rem/1 var(--font-display); letter-spacing: 0; color: var(--accent); transition: color .25s; }
+/* Homepage step-through only: grey until that step is the one showing (hover or tap). The Process page's full timeline keeps every number red. */
+.process.is-stepper li:not(.is-on) h3 .process__num { color: #8a8a8f; }

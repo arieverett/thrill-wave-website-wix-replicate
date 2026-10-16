@@ -797,7 +797,7 @@ for (const grid of $$('.post-grid[data-show]')) {
 // ---------------------------------------------------------------------------
 const REVEAL = [
   '.section__title', '.section .container > p', '.section .container > .lede', '.reel',
-  '.work-tile', '.step-cards li', '.team li', '.post-card', '.proof__title',
+  '.work-tile', '.feature-row', '.step-cards li', '.team li', '.post-card', '.proof__title',
   '.booking', '.map', '.portfolio-cat__title',
   '.cta h2', '.cta p', '.kicker', '.service-list li', '.cases__tab', '.charter li', '.guide__item', '.audience-cards li', '.industry-cards li', '.sitrep-steps li', '.promise-list li', '.process li', '.stats li', '.lessons li', '.roster li', '.campfire', '.intel-card', '.intel__intro > *',
 ].join(',');
