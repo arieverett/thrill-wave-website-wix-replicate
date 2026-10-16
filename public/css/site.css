@@ -2306,12 +2306,18 @@ body:not(.page-sections) .kicker::before { content: none; }
 .feature-row__play-icon { position: relative; flex: none; width: 24px; height: 24px; border-radius: 50%; outline: 1px solid rgba(255, 255, 255, .45); outline-offset: -1px; transition: background-color .25s, outline-color .25s; }
 .feature-row__play-icon::after { content: ""; position: absolute; left: 9px; top: 7px; border-style: solid; border-width: 5px 0 5px 8px; border-color: transparent transparent transparent currentColor; }
 .feature-row__play:hover .feature-row__play-icon, .feature-row__play:focus-visible .feature-row__play-icon { background: var(--accent); outline-color: var(--accent); }
-@media (max-width: 860px) {
+@media (max-width: 640px) {
   .feature-row { grid-template-columns: 1fr; }
   .feature-row__card::before { top: 0; right: 0; bottom: auto; width: auto; height: 2px; transform: scaleX(0); transform-origin: left; }
   .feature-row:hover .feature-row__card::before, .feature-row:focus-within .feature-row__card::before { transform: scaleX(1); }
   .feature-row__play { margin-top: 0; }
 }
+@media (min-width: 641px) and (max-width: 860px) {
+  .feature-row { grid-template-columns: minmax(0, 7fr) minmax(0, 5fr); }
+  .feature-row__did { font-size: .8rem; }
+}
+/* Closing Start a project block: keep its label on one line beside the clip on phones */
+.cta--ender .kicker { white-space: nowrap; }
 
 /* Slim line of text links separated by dots (homepage Who we work with, Oct 16, 2026) */
 .link-dots { margin: 20px 0 0; font-size: .95rem; line-height: 1.9; color: #8a8a8f; }
