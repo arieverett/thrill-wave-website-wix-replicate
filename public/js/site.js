@@ -1199,7 +1199,8 @@ $$('[data-carousel]').forEach((box) => {
   wrap.className = 'process-wrap';
   list.replaceWith(wrap);
   wrap.append(bars, list, panel);
-  steps.forEach((li, i) => li.addEventListener('mouseenter', () => { if (matchMedia('(min-width: 801px)').matches && indicator) indicator.set(i); }));
+  // Laptops: hovering a step makes it the current one (bar, white icon and red number all follow the pointer)
+  steps.forEach((li, i) => li.addEventListener('mouseenter', () => { if (matchMedia('(min-width: 801px)').matches && indicator) show(i); }));
   let indicator = null;
   const show = (i) => {
     current = (i + steps.length) % steps.length;
