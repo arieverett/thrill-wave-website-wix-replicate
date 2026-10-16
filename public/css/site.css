@@ -2379,3 +2379,9 @@ body:not(.page-sections) .kicker::before { content: none; }
   .films--work.is-leaving .film { transition: none; }
   .films--work.is-entering .film { animation: none; }
 }
+
+/* Slim line of text links separated by dots (homepage Who we work with mock-up, Oct 16, 2026) */
+.link-dots { margin: 20px 0 0; font-size: .95rem; line-height: 1.9; color: #8a8a8f; }
+.link-dots a { color: var(--on-dark); text-decoration: none; border-bottom: 1px solid rgba(255, 255, 255, .25); transition: border-color .2s, color .2s; }
+.link-dots a:hover { color: var(--accent); border-color: var(--accent); }
+.link-dots__label { margin-right: 10px; font: 600 .66rem/1 var(--font-body); letter-spacing: .14em; text-transform: uppercase; color: #8a8a8f; }
