@@ -2283,3 +2283,39 @@ body:not(.page-sections) .kicker::before { content: none; }
   /* Process timeline numbers in white on laptops */
   .process h3 .process__num { color: var(--on-dark); }
 }
+
+/* Homepage Our work (Oct 16, 2026): one film per row. A wide still on the left with a card laid over its right
+   edge: number and client, the title, one line on what we made, what we did, and a quiet watch link. A red line
+   draws across the top of the card when the row is hovered. Phones: still on top, the card tucked up under it. */
+.feature-rows { list-style: none; margin: 32px 0 0; padding: 0; display: grid; gap: clamp(28px, 4vw, 44px); }
+.feature-row { position: relative; display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); align-items: center; }
+.feature-row__media { grid-column: 1 / 10; grid-row: 1; position: relative; display: block; aspect-ratio: 16 / 9; overflow: hidden; border-radius: 5px; background: #111; outline: 1px solid rgba(255, 255, 255, .1); outline-offset: -1px; }
+.feature-row__media img { width: 100%; height: 100%; object-fit: cover; object-position: var(--focus, 50% 50%); transition: transform 1.1s var(--ease), filter .5s; filter: brightness(.88); }
+.feature-row__media.is-zoom img { transform: scale(1.4); }
+.feature-row:hover .feature-row__media img { transform: scale(1.04); filter: none; }
+.feature-row:hover .feature-row__media.is-zoom img { transform: scale(1.44); }
+.feature-row__card { grid-column: 8 / 13; grid-row: 1; position: relative; z-index: 1; padding: clamp(18px, 2.2vw, 26px); border-radius: 5px; background: rgba(12, 12, 12, .94); outline: 1px solid rgba(255, 255, 255, .1); outline-offset: -1px; box-shadow: 0 18px 40px rgba(0, 0, 0, .55); }
+.feature-row__card::before { content: ""; position: absolute; left: 0; right: 0; top: 0; height: 2px; border-radius: 5px 5px 0 0; background: var(--accent); transform: scaleX(0); transform-origin: left; transition: transform .6s var(--ease); }
+.feature-row:hover .feature-row__card::before, .feature-row:focus-within .feature-row__card::before { transform: scaleX(1); }
+.feature-row__top { display: flex; align-items: baseline; gap: 10px; margin: 0; font: 600 .66rem/1.3 var(--font-body); letter-spacing: .14em; text-transform: uppercase; color: #9a9a9f; }
+.feature-row__num { font: 800 .8rem/1 var(--font-display); letter-spacing: 0; color: var(--accent); }
+.feature-row__title { margin: 10px 0 0; font: 800 clamp(1.25rem, 2.1vw, 1.6rem)/1.08 var(--font-display); text-transform: uppercase; color: var(--on-dark); }
+.feature-row__did { margin: 10px 0 0; font-size: .88rem; line-height: 1.55; color: var(--on-dark-text); }
+.feature-row__services { margin: 14px 0 0; padding-top: 12px; border-top: 1px solid rgba(255, 255, 255, .1); font-size: .78rem; color: var(--on-dark); }
+.feature-row__services span { margin-right: 8px; font-weight: 600; font-size: .62rem; letter-spacing: .14em; text-transform: uppercase; color: #8a8a8f; }
+.feature-row__play { display: inline-flex; align-items: center; gap: 9px; margin-top: 14px; font: 600 .68rem/1 var(--font-body); letter-spacing: .14em; text-transform: uppercase; color: var(--on-dark); text-decoration: none; }
+.feature-row__play-icon { position: relative; width: 24px; height: 24px; border-radius: 50%; outline: 1px solid rgba(255, 255, 255, .45); outline-offset: -1px; transition: background-color .25s, outline-color .25s; }
+.feature-row__play-icon::after { content: ""; position: absolute; left: 9px; top: 7px; border-style: solid; border-width: 5px 0 5px 8px; border-color: transparent transparent transparent currentColor; }
+.feature-row__play:hover .feature-row__play-icon, .feature-row__play:focus-visible .feature-row__play-icon { background: var(--accent); outline-color: var(--accent); }
+@media (max-width: 720px) {
+  .feature-rows { gap: 30px; }
+  .feature-row__media { grid-column: 1 / -1; }
+  .feature-row__card { grid-column: 1 / -1; grid-row: 2; margin: -34px 14px 0; }
+  .feature-row__did { font-size: .86rem; }
+}
+
+/* Slim line of text links separated by dots (homepage Who we work with, Oct 16, 2026) */
+.link-dots { margin: 20px 0 0; font-size: .95rem; line-height: 1.9; color: #8a8a8f; }
+.link-dots a { color: var(--on-dark); text-decoration: none; border-bottom: 1px solid rgba(255, 255, 255, .25); transition: border-color .2s, color .2s; }
+.link-dots a:hover { color: var(--accent); border-color: var(--accent); }
+.link-dots__label { margin-right: 10px; font: 600 .66rem/1 var(--font-body); letter-spacing: .14em; text-transform: uppercase; color: #8a8a8f; }

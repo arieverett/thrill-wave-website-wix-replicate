@@ -24,6 +24,7 @@ The call notes are trimmed to the website, brand and workflow parts. Pricing, le
 - Section 01 opens by saying what we are, a video production company in Phoenix (Oct 9 call; live Oct 11, in Ari's words).
 - "Boring" out of the homepage Our clients line and the manifesto heading, now "Blood, sweat and tears built this world." (Oct 9 call; live Oct 11).
 - Three services: Story, Production, Editing. Photography and Rentals folded into Production (Tony's Oct 9 notes; agreed Oct 14; live Oct 13).
+- Homepage shortened (Ari, Oct 16, 2026): Who we are, What we do, Our work (five featured films, one per row, each a still with a card: client, title, one line on what we made and what we did) and the client logos, Who we work with (client types as text links over the field tiles), Case studies, How we work (the five process steps with SITREP as step three). The separate Our clients, Fields, Process, SITREP, Intel and Team sections came off the homepage; every page stays in the menu.
 - Work page is one grid of films with no field sections (Oct 9 and Oct 14 calls; live Oct 15). Addresses renamed to /work, /fields and /clients with redirects (Oct 11).
 - Your Voice, Your Power has aired, so the case study's episode guide and screenings stand (Chris, Oct 9).
 - The manifesto on About, v0.2 beats (Oct 9; live Oct 9), except where noted below.
