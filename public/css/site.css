@@ -73,9 +73,11 @@ h3 { font-size: 1.1rem; }
 p { margin: 0 0 1em; }  /* no text-wrap: pretty: iPhone Safari applies it to whole paragraphs and breaks lines early */
 strong { font-weight: 700; }
 /* Highlighted text: red behind it, and the text keeps its own colour (no colour set here on purpose).
-   On red areas (About hero, red buttons) the highlight is black so it still shows. */
+   Only on things filled red (red buttons, the SITREP hero's red <mark>, the Services price tag) is the highlight black so it still shows.
+   The About hero is a dark photo now (Oct 20, 2026), so it gets the red highlight like everywhere else. */
 ::selection { background: var(--accent); }
-:is(.hero--about, .btn--red)::selection, :is(.hero--about, .btn--red) ::selection { background: var(--ink); }
+:is(.hero--about:not(.hero--about-photo), .btn--red, .display mark, .stats__tag)::selection,
+:is(.hero--about:not(.hero--about-photo), .btn--red, .display mark, .stats__tag) ::selection { background: var(--ink); }
 
 .container { width: 100%; max-width: calc(var(--content) + 2 * var(--gutter)); margin: 0 auto; padding: 0 var(--gutter); }
 /* Keep reading lines comfortable (about 70 characters) inside the wider column */
