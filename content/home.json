@@ -24,110 +24,6 @@
   ],
   "audiences": [
     {
-      "name": "Film",
-      "text": "We make documentaries, docuseries and shorts with filmmakers and studios, from the first treatment to the festival cut.",
-      "still": "oXOPxKmigKA",
-      "focus": "right",
-      "example": { "youtube": "GeGdzjb263U", "client": "ITCA Native Vote", "title": "Your Voice, Your Power: Official Trailer", "frame": 2, "zoom": true, "focus": "right" },
-      "title": "Stories that take time to tell.",
-      "seoTitle": "Documentary Film Production",
-      "headline": "Documentary film",
-      "faq": [
-        {
-          "q": "Can you join our documentary as crew?",
-          "a": "Yes. You can hire us as the full crew from treatment to delivery, or as extra hands for field production or post."
-        },
-        {
-          "q": "Have you made a docuseries?",
-          "a": "We have. Your Voice, Your Power is a 10-part docuseries on tribal voting that we made with ITCA Native Vote over a year, and it has already played at the NatiVisions Film Festival and the Heard Museum."
-        }
-      ],
-      "work": [
-        "oXOPxKmigKA",
-        {
-          "youtube": "Gh67yEMyOCs",
-          "client": "ITCA Native Vote",
-          "title": "Your Voice, Your Power",
-          "frame": 3,
-          "zoom": true
-        },
-        "gHevHv0usIo",
-        "8BruwRwC9Tg"
-      ],
-      "related": [
-        "Tribal Nations",
-        "Government & Public Affairs",
-        "Events"
-      ],
-      "quote": {
-        "text": "They came in last-minute for a short film project and were amazing! Super high quality, professional and creative problem solvers when things didn't go to plan (as they sometimes tend to do on set).",
-        "name": "Rhys",
-        "role": "Google review"
-      },
-      "about": "We bring a decade in the field to stories that take time, as the whole crew or as an extra set of hands. Here's the trailer for Your Voice, Your Power, the 10-part docuseries we made with ITCA Native Vote:",
-      "heading": "Patience is part of the job.",
-      "intro": "Documentaries, docuseries and shorts take time, and we like it that way. We bring a decade in the field to stories that need room to breathe, whether we're the whole crew or an extra set of hands on someone else's film.",
-      "approach": "A documentary needs people who can work quietly for weeks, and our founders have run sets for a decade. The best moments come once people forget the camera is there, so we earn their trust before we roll. When it's time to finish, we do color, sound and delivery to spec for festivals, streaming or broadcast. Here are a few of the films we've made:",
-      "points": [
-        "We work with documentary filmmakers, producers, festivals and studios.",
-        "We can be the whole crew from treatment to delivery, or an extra set of hands for the shoot or the edit.",
-        "We make documentaries, docuseries and shorts for festivals, streaming and broadcast.",
-        "Our films have played at festivals, on streaming services and on broadcast."
-      ]
-    },
-    {
-      "name": "Media & publishing",
-      "short": "Media",
-      "text": "We do field production, segments, promos and series for networks, public media, news outlets and publishers, delivered to broadcast spec.",
-      "still": "2g7dOnDKYZo",
-      "example": "2g7dOnDKYZo",
-      "title": "Broadcast-ready, on deadline.",
-      "seoTitle": "Video Production for Media & Publishing",
-      "headline": "Films for media and publishing",
-      "faq": [
-        {
-          "q": "Do you provide field crews for networks and publishers?",
-          "a": "Yes. We bring camera, sound and producer support for interviews, segments and promos, delivered to your specs."
-        },
-        {
-          "q": "Who have you worked with in media?",
-          "a": "We've worked with NBC, the NFL, UFC and Golf Digest, and Your Voice, Your Power, our 10-part docuseries with the Inter Tribal Council of Arizona, has played at the NatiVisions Film Festival and the Heard Museum."
-        }
-      ],
-      "work": [
-        "2g7dOnDKYZo",
-        {
-          "youtube": "Gh67yEMyOCs",
-          "client": "ITCA Native Vote",
-          "title": "Your Voice, Your Power",
-          "frame": 3,
-          "zoom": true
-        },
-        "sF4KJxf99nA",
-        "jduIrHZT0og"
-      ],
-      "related": [
-        "Sports",
-        "Arts & culture",
-        "Tribal Nations"
-      ],
-      "quote": {
-        "text": "The best video production company I've ever worked with; and I have a 10 year background in television production / video production.",
-        "name": "Kent L.",
-        "role": "Thumbtack review"
-      },
-      "about": "We know broadcast specs and deadlines, and we show up ready to roll. Here's What Would Bubba Watson Shoot?, which we made for Golf Digest:",
-      "heading": "Specs are specs.",
-      "intro": "We do field production, segments, promos and series for networks, public media, news outlets, magazines, publishers and streaming channels. We know broadcast specs, we know deadlines, and we show up ready to roll. Your Voice, Your Power, our docuseries with the Inter Tribal Council of Arizona, has played at the NatiVisions Film Festival and the Heard Museum.",
-      "approach": "Frame rates, codecs and loudness match your delivery sheet the first time. Air dates don't move, so we turn edits around fast without cutting corners. Our field crews arrive prepped and get the interview in one sitting. Here's some of what we've made for media:",
-      "points": [
-        "We work with networks, public media, news outlets, magazines, publishers and streaming channels.",
-        "We send field crews, report the story, shoot interviews and turn edits around fast, delivered to your specs.",
-        "We make series, segments, promos, sizzles and short documentaries.",
-        "The work runs on broadcast and public media, on publisher and news sites and across their channels."
-      ]
-    },
-    {
       "name": "Nonprofits & public service",
       "short": "Nonprofits",
       "text": "We make films for nonprofits, NGOs, tribal councils and public agencies that move people to give, join and act.",
@@ -160,7 +56,7 @@
       ],
       "related": [
         "Government & Public Affairs",
-        "Tribal Nations"
+        "Education & research"
       ],
       "about": "The people on camera trust you with their stories, so we treat them with the same care you would. Here's Kelly's Story, which we made with UMOM New Day Centers:",
       "heading": "Dignity comes first.",
@@ -218,6 +114,114 @@
         "We research the subject first, then let teachers, researchers and artists explain it in their own words.",
         "We make explainers, recruiting films, donor and grant films, exhibition films and short documentaries.",
         "The films play in classrooms and lobbies, at galas, in grant reports and on websites and social."
+      ]
+    },
+    {
+      "name": "Film",
+      "text": "We make documentaries, docuseries and shorts with filmmakers and studios, from the first treatment to the festival cut.",
+      "still": "oXOPxKmigKA",
+      "focus": "right",
+      "example": { "youtube": "GeGdzjb263U", "client": "ITCA Native Vote", "title": "Your Voice, Your Power: Official Trailer", "frame": 2, "zoom": true, "focus": "right" },
+      "title": "Stories that take time to tell.",
+      "seoTitle": "Documentary Film Production",
+      "headline": "Documentary film",
+      "faq": [
+        {
+          "q": "Can you join our documentary as crew?",
+          "a": "Yes. You can hire us as the full crew from treatment to delivery, or as extra hands for field production or post."
+        },
+        {
+          "q": "Have you made a docuseries?",
+          "a": "We have. Your Voice, Your Power is a 10-part docuseries on tribal voting that we made with ITCA Native Vote over a year, and it has already played at the NatiVisions Film Festival and the Heard Museum."
+        }
+      ],
+      "work": [
+        "oXOPxKmigKA",
+        {
+          "youtube": "Gh67yEMyOCs",
+          "client": "ITCA Native Vote",
+          "title": "Your Voice, Your Power",
+          "frame": 3,
+          "zoom": true
+        },
+        {
+          "youtube": "gHevHv0usIo",
+          "client": "UMOM New Day Centers",
+          "title": "Stephanie's Story"
+        },
+        "8BruwRwC9Tg"
+      ],
+      "related": [
+        "Government & Public Affairs",
+        "Arts & culture",
+        "Events"
+      ],
+      "quote": {
+        "text": "They came in last-minute for a short film project and were amazing! Super high quality, professional and creative problem solvers when things didn't go to plan (as they sometimes tend to do on set).",
+        "name": "Rhys",
+        "role": "Google review"
+      },
+      "about": "We bring a decade in the field to stories that take time, as the whole crew or as an extra set of hands. Here's the trailer for Your Voice, Your Power, the 10-part docuseries we made with ITCA Native Vote:",
+      "heading": "Patience is part of the job.",
+      "intro": "Documentaries, docuseries and shorts take time, and we like it that way. We bring a decade in the field to stories that need room to breathe, whether we're the whole crew or an extra set of hands on someone else's film.",
+      "approach": "A documentary needs people who can work quietly for weeks, and our founders have run sets for a decade. The best moments come once people forget the camera is there, so we earn their trust before we roll. When it's time to finish, we do color, sound and delivery to spec for festivals, streaming or broadcast. Here are a few of the films we've made:",
+      "points": [
+        "We work with documentary filmmakers, producers, festivals and studios.",
+        "We can be the whole crew from treatment to delivery, or an extra set of hands for the shoot or the edit.",
+        "We make documentaries, docuseries and shorts for festivals, streaming and broadcast.",
+        "Our films have played at festivals, on streaming services and on broadcast."
+      ]
+    },
+    {
+      "name": "Media & publishing",
+      "short": "Media",
+      "text": "We do field production, segments, promos and series for networks, public media, news outlets and publishers, delivered to broadcast spec.",
+      "still": "2g7dOnDKYZo",
+      "example": "2g7dOnDKYZo",
+      "title": "Broadcast-ready, on deadline.",
+      "seoTitle": "Video Production for Media & Publishing",
+      "headline": "Films for media and publishing",
+      "faq": [
+        {
+          "q": "Do you provide field crews for networks and publishers?",
+          "a": "Yes. We bring camera, sound and producer support for interviews, segments and promos, delivered to your specs."
+        },
+        {
+          "q": "Who have you worked with in media?",
+          "a": "We've worked with NBC, the NFL, UFC and Golf Digest, and Your Voice, Your Power, our 10-part docuseries with the Inter Tribal Council of Arizona, has played at the NatiVisions Film Festival and the Heard Museum."
+        }
+      ],
+      "work": [
+        "2g7dOnDKYZo",
+        {
+          "youtube": "Gh67yEMyOCs",
+          "client": "ITCA Native Vote",
+          "title": "Your Voice, Your Power",
+          "frame": 3,
+          "zoom": true
+        },
+        "sF4KJxf99nA",
+        "jduIrHZT0og"
+      ],
+      "related": [
+        "Sports",
+        "Arts & culture",
+        "Government & Public Affairs"
+      ],
+      "quote": {
+        "text": "The best video production company I've ever worked with; and I have a 10 year background in television production / video production.",
+        "name": "Kent L.",
+        "role": "Thumbtack review"
+      },
+      "about": "We know broadcast specs and deadlines, and we show up ready to roll. Here's What Would Bubba Watson Shoot?, which we made for Golf Digest:",
+      "heading": "Specs are specs.",
+      "intro": "We do field production, segments, promos and series for networks, public media, news outlets, magazines, publishers and streaming channels. We know broadcast specs, we know deadlines, and we show up ready to roll. Your Voice, Your Power, our docuseries with the Inter Tribal Council of Arizona, has played at the NatiVisions Film Festival and the Heard Museum.",
+      "approach": "Frame rates, codecs and loudness match your delivery sheet the first time. Air dates don't move, so we turn edits around fast without cutting corners. Our field crews arrive prepped and get the interview in one sitting. Here's some of what we've made for media:",
+      "points": [
+        "We work with networks, public media, news outlets, magazines, publishers and streaming channels.",
+        "We send field crews, report the story, shoot interviews and turn edits around fast, delivered to your specs.",
+        "We make series, segments, promos, sizzles and short documentaries.",
+        "The work runs on broadcast and public media, on publisher and news sites and across their channels."
       ]
     },
     {
@@ -313,67 +317,6 @@
     }
   ],
   "industries": [
-    {
-      "name": "Tribal Nations",
-      "pillar": "Academics",
-      "still": "/images/portfolio/dear-mom-kitchen-hug.webp",
-      "zoom": true,
-      "clients": [
-        "Inter Tribal Council of Arizona"
-      ],
-      "link": "/sitrep#itca",
-      "text": "We make public health, education and civic films with tribal communities, told in their own voices.",
-      "title": "In their own voices.",
-      "example": {
-        "youtube": "Gh67yEMyOCs",
-        "client": "ITCA Native Vote",
-        "title": "Your Voice, Your Power",
-        "frame": 3,
-        "zoom": true
-      },
-      "seoTitle": "Tribal Nations Video Production",
-      "intro": "We make public health, education and civic films with the Inter Tribal Council of Arizona, which represents 21 tribal nations. The lesson has been the same every time: do the research first, then let community members tell their own stories.",
-      "faq": [
-        {
-          "q": "Have you worked with tribal governments before?",
-          "a": "Yes. Our work for the Inter Tribal Council of Arizona includes WIC nutrition PSAs, vaccine education for its Tribal Epidemiology Center and Your Voice, Your Power, a 10-part docuseries on tribal voting."
-        },
-        {
-          "q": "What does a SITREP add to a film for tribal communities?",
-          "a": "It finds the real barrier before we film. For ITCA's WIC program, our research showed the problem was trust, not awareness, and that changed the whole direction of the films."
-        }
-      ],
-      "work": [
-        "QlP7wPaFcVU",
-        {
-          "youtube": "zLy49zenWIM",
-          "client": "ITCA WIC",
-          "title": "Welcome to WIC"
-        },
-        {
-          "youtube": "Gh67yEMyOCs",
-          "client": "ITCA Native Vote",
-          "title": "Your Voice, Your Power",
-          "frame": 3,
-          "zoom": true
-        },
-        {
-          "vimeo": "1175739079",
-          "client": "ITCA TEC",
-          "title": "Case Study Using SITREP",
-          "thumbnail": "https://i.vimeocdn.com/video/2206610840-ab9c7452ada6128dda809c82750fb931c920b1da79ebba045b626a540217cd86-d_1280x720"
-        }
-      ],
-      "about": "We make these films with the Inter Tribal Council of Arizona, and community members always tell the story themselves. Here's an episode of Your Voice, Your Power, our docuseries on tribal voting:",
-      "heading": "Research first, then listen.",
-      "approach": "Many communities have good reason to doubt messages from outside, so our research looks for that history before we plan anything. That way the film speaks to it instead of around it. Leaders, elders, mothers and young voters speak for themselves, with no outside narrator. We film where people live and work, and we ask before we point a camera at anything. Here's some of the work we've made together:",
-      "points": [
-        "We work with tribal governments, councils and tribal health programs.",
-        "We do the research first, then film leaders and community members telling their own stories, on location.",
-        "We make public health, education, civic and cultural films.",
-        "The films play at community events, in clinics, on tribal media and across social."
-      ]
-    },
     {
       "name": "Government & Public Affairs",
       "short": "Government",
@@ -1061,7 +1004,7 @@
         }
       ],
       "lede": "A welcome film, a series of short guides and Dear Mom, so tribal families trust WIC enough to enroll and know what to do once they have.",
-      "industry": "Tribal Nations",
+      "industry": "Government & Public Affairs",
       "customer": "Nonprofits & public service",
       "services": [
         "Story",
@@ -1098,6 +1041,53 @@
         { "youtube": "uHuDTpE5i0Y", "client": "ITCA WIC", "title": "Juice" },
         { "youtube": "59KnjYdf8mM", "client": "ITCA WIC", "title": "Infant Foods" },
         { "youtube": "HrzU8obX0ao", "client": "ITCA WIC", "title": "Infant Formula" }
+      ]
+    },
+    {
+      "client": "ITCA TEC",
+      "title": "Vaccine education",
+      "listTitle": "Vaccine Education",
+      "goal": "Awareness",
+      "focusPhone": "70-30",
+      "blurb": "Plain answers about vaccines, from trusted voices.",
+      "text": "Tribal health leaders explain vaccines to their own communities, in their own words.",
+      "image": "https://i.vimeocdn.com/video/2206610840-ab9c7452ada6128dda809c82750fb931c920b1da79ebba045b626a540217cd86-d_1280x720",
+      "link": "/case-studies/vaccine-education",
+      "story": "ITCA's Tribal Epidemiology Center needed vaccine education for communities with good reason to distrust government health programs. Standard messaging had backfired, so our research pointed us to tribal health leaders and community members telling it in their own words. This breakdown walks through every choice we made.",
+      "video": {
+        "vimeo": "1175739079",
+        "thumbnail": "https://i.vimeocdn.com/video/2206610840-ab9c7452ada6128dda809c82750fb931c920b1da79ebba045b626a540217cd86-d_1280x720",
+        "title": "Case Study Using SITREP"
+      },
+      "stats": [
+        { "value": "1.4x", "label": "Flu hospitalization rate for American Indian and Alaska Native adults compared with White adults, 2009 to 2023", "source": "CDC" },
+        { "value": "35%", "label": "American Indian and Alaska Native adults who got a flu shot in the 2023 to 2024 season", "source": "CDC" },
+        { "value": "21", "label": "Tribal nations in the Inter Tribal Council of Arizona", "source": "ITCA" }
+      ],
+      "lede": "Tribal health leaders explain vaccines to their own communities, in their own words.",
+      "industry": "Education & research",
+      "customer": "Nonprofits & public service",
+      "services": [
+        "Story",
+        "Production",
+        "Editing"
+      ],
+      "sitrep": [
+        "ITCA's Tribal Epidemiology Center needed vaccine education for communities with good reason to doubt government health programs.",
+        "Our research showed that standard messaging had backfired, and that people needed to hear from their own leaders rather than outside authorities.",
+        "So we filmed tribal health directors and community members on location, speaking in their own words."
+      ],
+      "work": [
+        { "youtube": "3hlumlH16HI", "client": "ITCA TEC", "title": "Recommended Respiratory Vaccinations" },
+        { "youtube": "zs1_1xC4My8", "client": "ITCA TEC", "title": "Talk to Your Healthcare Provider" },
+        { "youtube": "_OCpwTAXRNk", "client": "ITCA TEC", "title": "Contact Your Healthcare Provider" },
+        { "youtube": "cmaXGZGLShU", "client": "ITCA TEC", "title": "Speak with Your Healthcare Provider" },
+        {
+          "vimeo": "1175739079",
+          "client": "ITCA TEC",
+          "title": "Case Study Using SITREP",
+          "thumbnail": "https://i.vimeocdn.com/video/2206610840-ab9c7452ada6128dda809c82750fb931c920b1da79ebba045b626a540217cd86-d_1280x720"
+        }
       ]
     },
     {
@@ -1184,53 +1174,6 @@
       ],
       "work": [
         "Qd40htwEmJM"
-      ]
-    },
-    {
-      "client": "ITCA TEC",
-      "title": "Vaccine education",
-      "listTitle": "Vaccine Education",
-      "goal": "Awareness",
-      "focusPhone": "70-30",
-      "blurb": "Plain answers about vaccines, from trusted voices.",
-      "text": "Tribal health leaders explain vaccines to their own communities, in their own words.",
-      "image": "https://i.vimeocdn.com/video/2206610840-ab9c7452ada6128dda809c82750fb931c920b1da79ebba045b626a540217cd86-d_1280x720",
-      "link": "/case-studies/vaccine-education",
-      "story": "ITCA's Tribal Epidemiology Center needed vaccine education for communities with good reason to distrust government health programs. Standard messaging had backfired, so our research pointed us to tribal health leaders and community members telling it in their own words. This breakdown walks through every choice we made.",
-      "video": {
-        "vimeo": "1175739079",
-        "thumbnail": "https://i.vimeocdn.com/video/2206610840-ab9c7452ada6128dda809c82750fb931c920b1da79ebba045b626a540217cd86-d_1280x720",
-        "title": "Case Study Using SITREP"
-      },
-      "stats": [
-        { "value": "1.4x", "label": "Flu hospitalization rate for American Indian and Alaska Native adults compared with White adults, 2009 to 2023", "source": "CDC" },
-        { "value": "35%", "label": "American Indian and Alaska Native adults who got a flu shot in the 2023 to 2024 season", "source": "CDC" },
-        { "value": "21", "label": "Tribal nations in the Inter Tribal Council of Arizona", "source": "ITCA" }
-      ],
-      "lede": "Tribal health leaders explain vaccines to their own communities, in their own words.",
-      "industry": "Tribal Nations",
-      "customer": "Nonprofits & public service",
-      "services": [
-        "Story",
-        "Production",
-        "Editing"
-      ],
-      "sitrep": [
-        "ITCA's Tribal Epidemiology Center needed vaccine education for communities with good reason to doubt government health programs.",
-        "Our research showed that standard messaging had backfired, and that people needed to hear from their own leaders rather than outside authorities.",
-        "So we filmed tribal health directors and community members on location, speaking in their own words."
-      ],
-      "work": [
-        { "youtube": "3hlumlH16HI", "client": "ITCA TEC", "title": "Recommended Respiratory Vaccinations" },
-        { "youtube": "zs1_1xC4My8", "client": "ITCA TEC", "title": "Talk to Your Healthcare Provider" },
-        { "youtube": "_OCpwTAXRNk", "client": "ITCA TEC", "title": "Contact Your Healthcare Provider" },
-        { "youtube": "cmaXGZGLShU", "client": "ITCA TEC", "title": "Speak with Your Healthcare Provider" },
-        {
-          "vimeo": "1175739079",
-          "client": "ITCA TEC",
-          "title": "Case Study Using SITREP",
-          "thumbnail": "https://i.vimeocdn.com/video/2206610840-ab9c7452ada6128dda809c82750fb931c920b1da79ebba045b626a540217cd86-d_1280x720"
-        }
       ]
     },
     {

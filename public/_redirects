@@ -131,7 +131,7 @@
 /industries/professional-services       /fields/professional-services 301
 /industries/sports                      /fields/sports 301
 /industries/tech                        /fields/tech 301
-/industries/tribal-nations              /fields/tribal-nations 301
+/industries/tribal-nations              /fields/government-and-public-affairs 301
 /who-we-serve               /clients        301
 /who-we-serve/              /clients        301
 /who-we-serve/agencies-and-pr-firms         /clients/agencies-and-pr-firms 301
@@ -180,3 +180,6 @@
 /post/why-video-production-for-marketing-campaigns-are-so-expensive /blog/why-video-production-for-marketing-campaigns-are-so-expensive 301
 /post/why-we-use-sony-s-fx-cinema-line-cameras /blog/why-we-use-sony-s-fx-cinema-line-cameras 301
 /post/why-you-need-documentary-style-testimonials-for-your-business /blog/why-you-need-documentary-style-testimonials-for-your-business 301
+
+# Tribal Nations stopped being a field Oct 14, 2026 (it's who we work with, not a field); the ITCA work lives under Government & Public Affairs
+/fields/tribal-nations      /fields/government-and-public-affairs 301
