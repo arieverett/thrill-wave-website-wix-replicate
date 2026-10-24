@@ -9,22 +9,13 @@
   ],
   "categories": [
     {
-      "name": "Tribal Nations",
-      "slug": "tribal-nations",
-      "videos": [
-        { "youtube": "Gh67yEMyOCs", "client": "ITCA Native Vote", "title": "Your Voice, Your Power", "frame": 3, "zoom": true },
-        { "client": "ITCA WIC", "title": "Dear Mom", "youtube": "QlP7wPaFcVU", "zoom": true },
-        { "youtube": "3hlumlH16HI", "client": "ITCA TEC", "title": "Recommended Respiratory Vaccinations" }
-      ]
-    },
-    {
       "name": "Government & Public Affairs",
       "slug": "government-and-public-affairs",
       "short": "Government",
       "videos": [
-        { "client": "Paradise Valley Mountain Preserve Trust", "title": "Protect Our Land", "youtube": "tkqnm36YAfM", "zoom": true },
-        { "client": "ITCA TEC", "title": "Contact Your Healthcare Provider", "youtube": "_OCpwTAXRNk", "frame": 1 },
-        { "client": "UMOM New Day Centers", "title": "Stephanie's Story", "youtube": "gHevHv0usIo" }
+        { "client": "ITCA Native Vote", "title": "Your Voice, Your Power", "youtube": "Gh67yEMyOCs", "zoom": true, "frame": 3 },
+        { "client": "ITCA WIC", "title": "Dear Mom", "youtube": "QlP7wPaFcVU", "zoom": true },
+        { "client": "Paradise Valley Mountain Preserve Trust", "title": "Protect Our Land", "youtube": "tkqnm36YAfM", "zoom": true }
       ]
     },
     {

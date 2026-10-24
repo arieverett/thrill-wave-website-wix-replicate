@@ -56,7 +56,7 @@ All three can change this site. Only Ari works on the terminal site (`thrill-wav
 
 **Services and pricing**
 
-18. Three services (Story, Production, Editing; Photography and Rentals folded into Production on Oct 13, 2026: stills are part of the shoot, and our kit and crew can step in wherever a client needs a hand), six customer types and twelve fields, as listed in `content/home.json`. "Photography", not "Commercial photography".
+18. Three services (Story, Production, Editing; Photography and Rentals folded into Production on Oct 13, 2026: stills are part of the shoot, and our kit and crew can step in wherever a client needs a hand), six customer types and eleven fields (Tribal Nations came out on Oct 14, 2026), as listed in `content/home.json`. "Photography", not "Commercial photography".
 19. Never ask for a client's budget first (the contact form has no budget or timeline fields). Pricing is top-down: what the film needs to do and the timeline, then a fair number. Price questions point people to message us, not to an FAQ.
 
 **Design**
