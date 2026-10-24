@@ -4,7 +4,6 @@
 # Wix pages that were empty or placeholders
 /paywall                    /                 301
 /inquiry-services-page      /contact          301
-/pricing-plans/*            /contact          301
 /plans-pricing              /contact          301
 
 # Pages taken off the site on Sept 29, 2026 (kept offline, not on the web).
@@ -23,8 +22,6 @@
 /post/becoming-the-world-s-first-ai-powered-marketing-agency /blog 301
 
 # Wix blog plumbing
-/blog/page/*                /blog             301
-/profile/*                  /blog             301
 /blog/categories/tech       /blog             301
 /blog/categories/sports     /blog             301
 /blog/categories/art        /blog             301
@@ -183,3 +180,11 @@
 
 # Tribal Nations stopped being a field Oct 14, 2026 (it's who we work with, not a field); the ITCA work lives under Government & Public Affairs
 /fields/tribal-nations      /fields/government-and-public-affairs 301
+
+# Wildcard rules stay at the bottom, and every new redirect goes above this block (Oct 24, 2026).
+# Cloudflare Pages counts every rule from the first wildcard (*) to the end of the file as a "dynamic" rule,
+# reads only 100 of those and silently skips the rest. With the wildcards near the top, every rule after the
+# first hundred (the old /post/ blog addresses, /who-we-serve, /customers...) was ignored. npm run check catches it now.
+/pricing-plans/*            /contact          301
+/blog/page/*                /blog             301
+/profile/*                  /blog             301

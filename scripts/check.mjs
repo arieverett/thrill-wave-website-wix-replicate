@@ -121,6 +121,15 @@ for (const line of redirects.split('\n')) {
   if (!resolves(p === '/' ? '/index' : p)) errors.push(`_redirects: ${from} points to missing page ${to}`);
 }
 
+// Cloudflare Pages counts every redirect from the first wildcard (*) or placeholder (:name) rule to the end of the file
+// as a "dynamic" rule, reads only 100 of them and silently skips the rest. Wildcard rules belong at the bottom.
+{
+  const rules = redirects.split('\n').map((l) => l.trim()).filter((l) => l && !l.startsWith('#'));
+  const first = rules.findIndex((l) => /\*|\/:[A-Za-z]/.test(l.split(/\s+/)[0]));
+  const dynamic = first === -1 ? 0 : rules.length - first;
+  if (dynamic > 100) errors.push(`_redirects: ${dynamic} rules sit at or below the first wildcard rule, and Cloudflare reads only 100 of them and skips the rest; move the wildcard rules to the bottom of the file`);
+}
+
 // Group repeated warnings (e.g. 40 long blog titles) into one line
 const groups = new Map();
 for (const w of warnings) {
