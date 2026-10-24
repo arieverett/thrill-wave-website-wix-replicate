@@ -56,7 +56,7 @@ All three can change this site. Only Ari works on the terminal site (`thrill-wav
 
 **Services and pricing**
 
-18. Three services (Story, Production, Editing; Photography and Rentals folded into Production on Oct 13, 2026: stills are part of the shoot, and our kit and crew can step in wherever a client needs a hand), six customer types and twelve fields, as listed in `content/home.json`. "Photography", not "Commercial photography".
+18. Three services (Story, Production, Editing; Photography and Rentals folded into Production on Oct 13, 2026: stills are part of the shoot, and our kit and crew can step in wherever a client needs a hand), six customer types and eleven fields (Tribal Nations came out on Oct 14, 2026), as listed in `content/home.json`. "Photography", not "Commercial photography".
 19. Never ask for a client's budget first (the contact form has no budget or timeline fields). Pricing is top-down: what the film needs to do and the timeline, then a fair number. Price questions point people to message us, not to an FAQ.
 
 **Design**
@@ -73,6 +73,10 @@ All three can change this site. Only Ari works on the terminal site (`thrill-wav
 - Tribal Nations is not a field; it's who we work with. The ITCA work belongs under Government & Public Affairs and Education & research, and tribal councils under the Nonprofits & public service client type. Built on the preview, waiting for a green light.
 - The blog stays named Intel (Tony, Oct 9). Ari proposed on Oct 14 that it leaves the main site structure until a newsletter exists; open.
 - The homepage's red pill button will eventually lead to a separate site or page holding the blog of edgy, contrarian takes, so the main site stays warm and plain. Until then it points at terminal.thrillwave.com; don't repurpose it.
+
+**Decisions from Chris's Oct 21, 2026 homepage brief (`docs/handoffs/2026-10-21-homepage-copy-brief.md`)**
+
+- The homepage is built from the brief, copy verbatim, and frozen until mid-January 2027 (add a client quote, add a caption, fix a fact; nothing else). The position: "We make films about hard subjects and hard places for organizations that can't afford to get it wrong." The brief's writing rules apply on that page and win over rules 4, 6, 9 and 15 above where they differ ("Three partners" is on the page, no colon lead-ins, "We work anywhere" in the hero, client quotes on the homepage once two exist). Research is "homework" on the homepage; SITREP isn't named there. The brief is for the homepage only: the rest of the site stays, with its menu (Chris, in chat, Oct 21). Wix is out; the site is built here.
 
 **Terminal site**
 
