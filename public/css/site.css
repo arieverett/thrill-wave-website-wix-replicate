@@ -2334,3 +2334,13 @@ body:not(.page-sections) .kicker::before { content: none; }
 .process h3 .process__num, .process-panel h3 .process__num, .process-panel .process__num { font: 800 .8rem/1 var(--font-display); letter-spacing: 0; color: var(--accent); transition: color .25s; }
 /* Homepage step-through only: grey until that step is the one showing (hover or tap). The Process page's full timeline keeps every number red. */
 .process.is-stepper li:not(.is-on) h3 .process__num { color: #8a8a8f; }
+
+/* Homepage hero, Oct 24, 2026: the one line under the headline (Chris's Oct 21 brief). On laptops it keeps to the text's
+   side of the logo clip, like the headline does; on phones it stops short of the logo. It arrives with the buttons and
+   the menu bar once the headline has typed (site.js adds .chrome-in to body; the 7s fallback shows it anyway if the
+   script never runs), and reduced motion shows it straight away. */
+.hero--home .hero__lede { max-width: 62.5%; }
+.page-typed .hero--home .hero__lede { animation: tw-fade .5s ease 7s backwards; }
+.page-typed.chrome-in .hero--home .hero__lede { animation: tw-fade-in .5s ease-out backwards; }
+@media (max-width: 760px) { .hero--home .hero__lede { max-width: 72%; } }
+@media (prefers-reduced-motion: reduce) { .page-typed .hero--home .hero__lede { animation: none; } }

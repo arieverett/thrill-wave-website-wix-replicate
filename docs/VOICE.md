@@ -1,5 +1,7 @@
 # Thrill Wave voice guide
 
+> **Read first (Oct 24, 2026).** The position changed on Oct 21: "We make films about hard subjects and hard places for organizations that can't afford to get it wrong." Chris's brief and rationale are in `docs/handoffs/2026-10-21-homepage-copy-brief.md` and `2026-10-21-homepage-rationale.md`, and the brief's writing rules win over this guide on the homepage, the About lede and manifesto, and the closing block. The manifesto section below (v0.2) is superseded on the About page by the brief's seven lines; it stays here as background for the older pages until they get their own pass.
+
 How every page, post and line on thrillwave.com (and terminal.thrillwave.com) should sound. When in doubt, read sandwich.co out loud, then do the opposite of lookstudios.co.
 
 ## Who we are, in one breath

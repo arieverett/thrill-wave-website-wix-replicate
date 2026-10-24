@@ -74,6 +74,10 @@ All three can change this site. Only Ari works on the terminal site (`thrill-wav
 - The blog stays named Intel (Tony, Oct 9). Ari proposed on Oct 14 that it leaves the main site structure until a newsletter exists; open.
 - The homepage's red pill button will eventually lead to a separate site or page holding the blog of edgy, contrarian takes, so the main site stays warm and plain. Until then it points at terminal.thrillwave.com; don't repurpose it.
 
+**Decisions from Chris's Oct 21, 2026 homepage brief (`docs/handoffs/2026-10-21-homepage-copy-brief.md`)**
+
+- The homepage copy follows the brief. On the live site the brief's words sit in Ari's existing layout (the hero, section 01, the About lede and manifesto, the closing block; Oct 24, 2026); the brief's full nine-block homepage is on the preview and comes to live with Ari's design pass and Tony's reel. The copy is frozen until mid-January 2027 (add a client quote, add a caption, fix a fact; nothing else). The position: "We make films about hard subjects and hard places for organizations that can't afford to get it wrong." The brief's writing rules apply on that page and win over rules 4, 6, 9 and 15 above where they differ ("Three partners" is on the page, no colon lead-ins, "We work anywhere" in the hero, client quotes on the homepage once two exist). Research is "homework" on the homepage; SITREP isn't named there. The brief is for the homepage only: the rest of the site stays, with its menu (Chris, in chat, Oct 21). Wix is out; the site is built here.
+
 **Terminal site**
 
 23. Keep terminal.thrillwave.com out of search (noindexed) as an easter egg.
